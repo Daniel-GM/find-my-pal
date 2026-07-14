@@ -10,6 +10,7 @@ Aplicação web para jogadores de Palworld consultarem Pals, descobrirem combina
 - **Concluídos** — marque combinações como feitas; elas vão para uma lista separada e podem ser desmarcadas a qualquer momento.
 - **Mounts** — consulte montarias por tipo (ground, flying, water), com nível de sela, velocidade, stamina e habilidade.
 - **Boss Drops** — veja quais itens cada Pal dropa e quais Pals dropam um item específico.
+- **Crafting Planner** — calcule materiais brutos e etapas de craft em ordem de dependência (com rotas alternativas).
 - **Builds** — sugestões de builds pré-montadas baseadas em partner skills (melee, sniper, miner, lumberjack, tank, speedrunner).
 - **Tema Claro/Escuro** — alternância completa de tema, com escuro como padrão.
 - **Internacionalização** — suporte a inglês (en) e português do Brasil (pt-BR).
@@ -62,11 +63,12 @@ npm run build     # build de produção
 npm run lint      # ESLint
 npm run test      # Vitest em modo watch
 npm run test:run  # Vitest uma única vez
+npm run update:crafting  # valida/normaliza o catálogo de craft
 ```
 
 ## Testes
 
-O projeto usa Vitest. Os testes estão em `app/src/**/__tests__/` e cobrem helpers de breeding, elementos, drops, mounts, Pals, partner skills e imagens.
+O projeto usa Vitest. Os testes estão em `app/src/**/__tests__/` e cobrem helpers de breeding, elementos, drops, mounts, Pals, partner skills, imagens e o planejador de crafting.
 
 ```bash
 cd app
@@ -89,3 +91,19 @@ A pasta `deploy-dist/` foi removida da raiz porque o build pode ser regenerado a
 Os dados dos Pals, drops, montarias e partner skills foram extraídos de fontes da comunidade (paldb.cc, wiki.gg, palpedia) e consolidados nos arquivos dentro de `app/src/data/`.
 
 Os arquivos brutos utilizados durante a construção da base estão em `data/raw/`.
+
+### Crafting catalog
+
+O catálogo versionado vive em `app/src/data/json/crafting.json` (`schemaVersion: 1`).
+
+- **Fonte principal desta release:** páginas PalDB rotuladas como v1.0.0 (2026-07-10), com IDs estáveis alinhados a códigos do jogo / Technology IDs da Pocketpair quando disponíveis.
+- **Não misturar** quantidades conflitantes da wiki.gg com PalDB no mesmo snapshot.
+- Metadados `gameVersion`, `generatedAt` e `sources[]` são exibidos na UI e cobertos por testes.
+- Para atualizar: coloque um snapshot revisado em `.memory/scratch/` (gitignored), depois rode:
+
+```bash
+cd app
+node scripts/update-crafting-data.mjs ../.memory/scratch/crafting-raw.json
+```
+
+O script valida IDs, referências, quantidades positivas, defaults e entidades selecionáveis; em seguida escreve o JSON normalizado.
