@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import type { BreedingCombination } from '@/lib/breeding';
 
-export type View = 'breeding' | 'packages' | 'completed' | 'mounts' | 'pals' | 'bossdrops' | 'builds';
+export type View = 'breeding' | 'packages' | 'completed' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting';
 
 export interface Package {
   id: string;
@@ -31,6 +31,21 @@ interface PersistedState {
 
 const STORAGE_KEY = 'palworld-breeding-manager';
 
+const VALID_VIEWS: View[] = [
+  'breeding',
+  'packages',
+  'completed',
+  'mounts',
+  'pals',
+  'bossdrops',
+  'builds',
+  'crafting',
+];
+
+function isValidView(value: unknown): value is View {
+  return typeof value === 'string' && (VALID_VIEWS as string[]).includes(value);
+}
+
 function loadState(): PersistedState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -44,7 +59,7 @@ function loadState(): PersistedState {
         completed: parsed.completed || [],
         theme: parsed.theme || 'dark',
         lastSelectedPalId: parsed.lastSelectedPalId || null,
-        currentView: parsed.currentView || 'breeding',
+        currentView: isValidView(parsed.currentView) ? parsed.currentView : 'breeding',
       };
     }
   } catch {

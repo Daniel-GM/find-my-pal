@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "PalDB v1.0.0 (2026-07-10)",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "sources": [
+    {
+      "name": "PalDB Gigantic Furnace",
+      "url": "https://paldb.cc/en/Gigantic_Furnace",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Computer",
+      "url": "https://paldb.cc/en/Computer",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Bio Battery",
+      "url": "https://paldb.cc/en/Bio_Battery",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Carbon Fiber",
+      "url": "https://paldb.cc/en/Carbon_Fiber",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Circuit Board",
+      "url": "https://paldb.cc/en/Circuit_Board",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Polymer",
+      "url": "https://paldb.cc/en/Polymer",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Plasteel",
+      "url": "https://paldb.cc/en/Plasteel",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Refined Ingot",
+      "url": "https://paldb.cc/en/Refined_Ingot",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "PalDB Charcoal",
+      "url": "https://paldb.cc/en/Charcoal",
+      "retrievedAt": "2026-07-14"
+    },
+    {
+      "name": "Pocketpair Technology IDs",
+      "url": "https://docs.palworldgame.com/settings-and-operation/technologyids/",
+      "retrievedAt": "2026-07-14"
+    }
+  ],
+  "entities": [
+    { "id": "Ore", "kind": "material", "names": { "en": "Ore", "pt-BR": "Minério" }, "iconName": "CopperOre", "selectable": false },
+    { "id": "Coal", "kind": "material", "names": { "en": "Coal", "pt-BR": "Carvão" }, "iconName": "Coal", "selectable": false },
+    { "id": "Wood", "kind": "material", "names": { "en": "Wood", "pt-BR": "Madeira" }, "iconName": "Wood", "selectable": false },
+    { "id": "CrudeOil", "kind": "material", "names": { "en": "Crude Oil", "pt-BR": "Petróleo Bruto" }, "iconName": "CrudeOil", "selectable": false },
+    { "id": "HighQualityPalOil", "kind": "material", "names": { "en": "High Quality Pal Oil", "pt-BR": "Óleo de Pal de Alta Qualidade" }, "iconName": "PalOil", "selectable": false },
+    { "id": "Sulfur", "kind": "material", "names": { "en": "Sulfur", "pt-BR": "Enxofre" }, "iconName": "Sulfur", "selectable": false },
+    { "id": "FlameOrgan", "kind": "material", "names": { "en": "Flame Organ", "pt-BR": "Órgão de Chama" }, "iconName": "FireOrgan", "selectable": false },
+    { "id": "PureQuartz", "kind": "material", "names": { "en": "Pure Quartz", "pt-BR": "Quartzo Puro" }, "iconName": "Quartz", "selectable": false },
+    { "id": "ElectricOrgan", "kind": "material", "names": { "en": "Electric Organ", "pt-BR": "Órgão Elétrico" }, "iconName": "ElectricOrgan", "selectable": false },
+    { "id": "PaldiumFragment", "kind": "material", "names": { "en": "Paldium Fragment", "pt-BR": "Fragmento de Paldium" }, "iconName": "Pal_crystal_S", "selectable": false },
+    { "id": "Chromite", "kind": "material", "names": { "en": "Chromite", "pt-BR": "Cromita" }, "iconName": "Chromium", "selectable": false },
+    { "id": "HexoliteQuartz", "kind": "material", "names": { "en": "Hexolite Quartz", "pt-BR": "Quartzo de Hexolite" }, "iconName": "RainbowCrystal", "selectable": false },
+    { "id": "CoralumOre", "kind": "material", "names": { "en": "Coralum Ore", "pt-BR": "Minério de Coralum" }, "iconName": "CoralumOre", "selectable": false },
+    { "id": "Fiber", "kind": "material", "names": { "en": "Fiber", "pt-BR": "Fibra" }, "iconName": "Fiber", "selectable": false },
+    { "id": "Stone", "kind": "material", "names": { "en": "Stone", "pt-BR": "Pedra" }, "iconName": "Stone", "selectable": false },
+    { "id": "Leather", "kind": "material", "names": { "en": "Leather", "pt-BR": "Couro" }, "iconName": "Leather", "selectable": false },
+    { "id": "Bone", "kind": "material", "names": { "en": "Bone", "pt-BR": "Osso" }, "iconName": "Bone", "selectable": false },
+    { "id": "IceOrgan", "kind": "material", "names": { "en": "Ice Organ", "pt-BR": "Órgão de Gelo" }, "iconName": "IceOrgan", "selectable": false },
+    { "id": "CryogenicCoolant", "kind": "material", "names": { "en": "Cryogenic Coolant", "pt-BR": "Fluido Criogênico" }, "iconName": "Bio_Coolant", "selectable": false },
+    { "id": "CorrosiveSolvent", "kind": "material", "names": { "en": "Corrosive Solvent", "pt-BR": "Solvente Corrosivo" }, "iconName": "Corrosive_Solvent", "selectable": false },
+
+    { "id": "Charcoal", "kind": "material", "names": { "en": "Charcoal", "pt-BR": "Carvão Vegetal" }, "iconName": "Charcoal", "selectable": true },
+    { "id": "Ingot", "kind": "material", "names": { "en": "Ingot", "pt-BR": "Lingote" }, "iconName": "CopperIngot", "selectable": true },
+    { "id": "RefinedIngot", "kind": "material", "names": { "en": "Refined Ingot", "pt-BR": "Lingote Refinado" }, "iconName": "IronIngot", "selectable": true },
+    { "id": "PalMetalIngot", "kind": "material", "names": { "en": "Pal Metal Ingot", "pt-BR": "Lingote de Metal de Pal" }, "iconName": "StealIngot", "selectable": true },
+    { "id": "Plasteel", "kind": "material", "names": { "en": "Plasteel", "pt-BR": "Plasteel" }, "iconName": "Plastic", "selectable": true },
+    { "id": "Hexolite", "kind": "material", "names": { "en": "Hexolite", "pt-BR": "Hexolite" }, "iconName": "StainlessSteel", "selectable": true },
+    { "id": "CoralumIngot", "kind": "material", "names": { "en": "Coralum Ingot", "pt-BR": "Lingote de Coralum" }, "iconName": "CoralumIngot", "selectable": true },
+    { "id": "Polymer", "kind": "material", "names": { "en": "Polymer", "pt-BR": "Polímero" }, "iconName": "Polymer", "selectable": true },
+    { "id": "CarbonFiber", "kind": "material", "names": { "en": "Carbon Fiber", "pt-BR": "Fibra de Carbono" }, "iconName": "CarbonFiber", "selectable": true },
+    { "id": "CircuitBoard", "kind": "material", "names": { "en": "Circuit Board", "pt-BR": "Placa de Circuito" }, "iconName": "ElectronicCircuit", "selectable": true },
+    { "id": "BioBattery", "kind": "material", "names": { "en": "Bio Battery", "pt-BR": "Bateria Bio" }, "iconName": "Bio_Battery", "selectable": true },
+    { "id": "Computer", "kind": "item", "names": { "en": "Computer", "pt-BR": "Computador" }, "iconName": "Computer", "selectable": true },
+    { "id": "Cloth", "kind": "material", "names": { "en": "Cloth", "pt-BR": "Tecido" }, "iconName": "Cloth", "selectable": true },
+    { "id": "Nail", "kind": "material", "names": { "en": "Nail", "pt-BR": "Prego" }, "iconName": "MachineParts", "selectable": true },
+    { "id": "Cement", "kind": "material", "names": { "en": "Cement", "pt-BR": "Cimento" }, "iconName": "Cement", "selectable": true },
+    { "id": "Gunpowder", "kind": "material", "names": { "en": "Gunpowder", "pt-BR": "Pólvora" }, "iconName": "Gunpowder2", "selectable": true },
+
+    { "id": "station_primitive_furnace", "kind": "structure", "names": { "en": "Primitive Furnace", "pt-BR": "Fornalha Primitiva" }, "selectable": false },
+    { "id": "station_improved_furnace", "kind": "structure", "names": { "en": "Improved Furnace", "pt-BR": "Fornalha Melhorada" }, "selectable": false },
+    { "id": "station_electric_furnace", "kind": "structure", "names": { "en": "Electric Furnace", "pt-BR": "Fornalha Elétrica" }, "selectable": false },
+    { "id": "station_gigantic_furnace", "kind": "structure", "names": { "en": "Gigantic Furnace", "pt-BR": "Fornalha Gigante" }, "selectable": false },
+    { "id": "station_ancient_furnace", "kind": "structure", "names": { "en": "Ancient Furnace", "pt-BR": "Fornalha Ancestral" }, "selectable": false },
+    { "id": "station_production_assembly_line", "kind": "structure", "names": { "en": "Production Assembly Line", "pt-BR": "Linha de Montagem" }, "selectable": false },
+    { "id": "station_production_assembly_line_ii", "kind": "structure", "names": { "en": "Production Assembly Line II", "pt-BR": "Linha de Montagem II" }, "selectable": false },
+    { "id": "station_advanced_workshop", "kind": "structure", "names": { "en": "Advanced Workshop", "pt-BR": "Oficina Avançada" }, "selectable": false },
+    { "id": "station_ancient_workbench", "kind": "structure", "names": { "en": "Ancient Workbench", "pt-BR": "Bancada Ancestral" }, "selectable": false },
+    { "id": "station_primitive_workbench", "kind": "structure", "names": { "en": "Primitive Workbench", "pt-BR": "Bancada Primitiva" }, "selectable": false },
+
+    { "id": "GiganticFurnace", "kind": "structure", "names": { "en": "Gigantic Furnace", "pt-BR": "Fornalha Gigante" }, "iconName": "BlastFurnace4", "selectable": true },
+    { "id": "ElectricFurnace", "kind": "structure", "names": { "en": "Electric Furnace", "pt-BR": "Fornalha Elétrica" }, "iconName": "ElectricFurnace", "selectable": true },
+    { "id": "ProductionAssemblyLineII", "kind": "structure", "names": { "en": "Production Assembly Line II", "pt-BR": "Linha de Montagem II" }, "iconName": "Factory2", "selectable": true },
+    { "id": "WeaponAssemblyLineII", "kind": "structure", "names": { "en": "Weapon Assembly Line II", "pt-BR": "Linha de Armas II" }, "iconName": "WeaponFactory2", "selectable": true },
+    { "id": "SphereAssemblyLineII", "kind": "structure", "names": { "en": "Sphere Assembly Line II", "pt-BR": "Linha de Esferas II" }, "iconName": "SphereFactory2", "selectable": true },
+    { "id": "Refrigerator", "kind": "structure", "names": { "en": "Refrigerator", "pt-BR": "Geladeira" }, "iconName": "Refrigerator", "selectable": true },
+    { "id": "ElectricKitchen", "kind": "structure", "names": { "en": "Electric Kitchen", "pt-BR": "Cozinha Elétrica" }, "iconName": "ElectricKitchen", "selectable": true },
+    { "id": "ElectricMedicineWorkbench", "kind": "structure", "names": { "en": "Electric Medicine Workbench", "pt-BR": "Bancada de Medicina Elétrica" }, "iconName": "MedicineFactory2", "selectable": true },
+    { "id": "AdvancedChest", "kind": "structure", "names": { "en": "Advanced Chest", "pt-BR": "Baú Avançado" }, "iconName": "Chest3", "selectable": true },
+    { "id": "AdvancedSphereAssemblyLine", "kind": "structure", "names": { "en": "Advanced Sphere Assembly Line", "pt-BR": "Linha Avançada de Esferas" }, "iconName": "SphereFactory3", "selectable": true },
+    { "id": "MountedMissileLauncher", "kind": "structure", "names": { "en": "Mounted Missile Launcher", "pt-BR": "Lançador de Mísseis Montado" }, "iconName": "MissileLauncher", "selectable": true }
+  ],
+  "recipes": [
+    {
+      "id": "charcoal_wood",
+      "output": { "entityId": "Charcoal", "quantity": 1 },
+      "ingredients": [{ "entityId": "Wood", "quantity": 2 }],
+      "stationIds": ["station_primitive_furnace", "station_improved_furnace", "station_electric_furnace", "station_gigantic_furnace", "station_ancient_furnace"],
+      "sourceUrl": "https://paldb.cc/en/Charcoal",
+      "isDefault": true
+    },
+    {
+      "id": "ingot_ore",
+      "output": { "entityId": "Ingot", "quantity": 1 },
+      "ingredients": [{ "entityId": "Ore", "quantity": 2 }],
+      "stationIds": ["station_primitive_furnace", "station_improved_furnace", "station_electric_furnace", "station_gigantic_furnace", "station_ancient_furnace"],
+      "sourceUrl": "https://paldb.cc/en/Gigantic_Furnace",
+      "isDefault": true
+    },
+    {
+      "id": "refined_ingot_ore_coal",
+      "output": { "entityId": "RefinedIngot", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Ore", "quantity": 2 },
+        { "entityId": "Coal", "quantity": 2 }
+      ],
+      "stationIds": ["station_improved_furnace", "station_electric_furnace", "station_gigantic_furnace", "station_ancient_furnace"],
+      "sourceUrl": "https://paldb.cc/en/Refined_Ingot",
+      "isDefault": true
+    },
+    {
+      "id": "pal_metal_ingot",
+      "output": { "entityId": "PalMetalIngot", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Ore", "quantity": 4 },
+        { "entityId": "PureQuartz", "quantity": 1 },
+        { "entityId": "PaldiumFragment", "quantity": 2 }
+      ],
+      "stationIds": ["station_electric_furnace", "station_gigantic_furnace", "station_ancient_furnace"],
+      "sourceUrl": "https://paldb.cc/en/Gigantic_Furnace",
+      "isDefault": true
+    },
+    {
+      "id": "plasteel_oil_ore",
+      "output": { "entityId": "Plasteel", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "CrudeOil", "quantity": 2 },
+        { "entityId": "Ore", "quantity": 5 }
+      ],
+      "stationIds": ["station_electric_furnace", "station_gigantic_furnace", "station_ancient_furnace"],
+      "technologyLevel": 50,
+      "sourceUrl": "https://paldb.cc/en/Plasteel",
+      "isDefault": true
+    },
+    {
+      "id": "hexolite_chromite_quartz",
+      "output": { "entityId": "Hexolite", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Chromite", "quantity": 1 },
+        { "entityId": "HexoliteQuartz", "quantity": 1 }
+      ],
+      "stationIds": ["station_gigantic_furnace", "station_ancient_furnace"],
+      "technologyLevel": 58,
+      "sourceUrl": "https://paldb.cc/en/Gigantic_Furnace",
+      "isDefault": true
+    },
+    {
+      "id": "coralum_ingot",
+      "output": { "entityId": "CoralumIngot", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "CoralumOre", "quantity": 2 },
+        { "entityId": "Coal", "quantity": 5 }
+      ],
+      "stationIds": ["station_gigantic_furnace", "station_ancient_furnace"],
+      "technologyLevel": 62,
+      "sourceUrl": "https://paldb.cc/en/Gigantic_Furnace",
+      "isDefault": true
+    },
+    {
+      "id": "polymer_oil_sulfur",
+      "output": { "entityId": "Polymer", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "HighQualityPalOil", "quantity": 2 },
+        { "entityId": "Sulfur", "quantity": 1 }
+      ],
+      "stationIds": ["station_production_assembly_line", "station_production_assembly_line_ii", "station_advanced_workshop", "station_ancient_workbench"],
+      "technologyLevel": 33,
+      "sourceUrl": "https://paldb.cc/en/Polymer",
+      "isDefault": true
+    },
+    {
+      "id": "carbon_fiber_coal",
+      "output": { "entityId": "CarbonFiber", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Coal", "quantity": 2 },
+        { "entityId": "FlameOrgan", "quantity": 1 }
+      ],
+      "stationIds": ["station_production_assembly_line", "station_production_assembly_line_ii", "station_advanced_workshop", "station_ancient_workbench"],
+      "technologyLevel": 35,
+      "sourceUrl": "https://paldb.cc/en/Carbon_Fiber",
+      "isDefault": true
+    },
+    {
+      "id": "carbon_fiber_charcoal",
+      "output": { "entityId": "CarbonFiber", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Charcoal", "quantity": 5 },
+        { "entityId": "FlameOrgan", "quantity": 1 }
+      ],
+      "stationIds": ["station_production_assembly_line", "station_production_assembly_line_ii", "station_advanced_workshop", "station_ancient_workbench"],
+      "technologyLevel": 35,
+      "sourceUrl": "https://paldb.cc/en/Carbon_Fiber",
+      "isDefault": false
+    },
+    {
+      "id": "circuit_board_quartz_polymer",
+      "output": { "entityId": "CircuitBoard", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "PureQuartz", "quantity": 2 },
+        { "entityId": "Polymer", "quantity": 1 }
+      ],
+      "stationIds": ["station_production_assembly_line", "station_production_assembly_line_ii", "station_advanced_workshop", "station_ancient_workbench"],
+      "technologyLevel": 35,
+      "sourceUrl": "https://paldb.cc/en/Circuit_Board",
+      "isDefault": true
+    },
+    {
+      "id": "bio_battery",
+      "output": { "entityId": "BioBattery", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "ElectricOrgan", "quantity": 1 },
+        { "entityId": "RefinedIngot", "quantity": 1 },
+        { "entityId": "CarbonFiber", "quantity": 1 }
+      ],
+      "stationIds": ["station_production_assembly_line_ii", "station_advanced_workshop", "station_ancient_workbench"],
+      "technologyLevel": 44,
+      "sourceUrl": "https://paldb.cc/en/Bio_Battery",
+      "isDefault": true
+    },
+    {
+      "id": "computer",
+      "output": { "entityId": "Computer", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "CircuitBoard", "quantity": 2 },
+        { "entityId": "Plasteel", "quantity": 3 },
+        { "entityId": "BioBattery", "quantity": 2 },
+        { "entityId": "CarbonFiber", "quantity": 2 }
+      ],
+      "stationIds": ["station_production_assembly_line_ii", "station_advanced_workshop", "station_ancient_workbench"],
+      "technologyLevel": 50,
+      "sourceUrl": "https://paldb.cc/en/Computer",
+      "isDefault": true
+    },
+    {
+      "id": "cloth_fiber",
+      "output": { "entityId": "Cloth", "quantity": 1 },
+      "ingredients": [{ "entityId": "Fiber", "quantity": 2 }],
+      "stationIds": ["station_primitive_workbench"],
+      "sourceUrl": "https://docs.palworldgame.com/settings-and-operation/technologyids/",
+      "isDefault": true
+    },
+    {
+      "id": "nail_ingot",
+      "output": { "entityId": "Nail", "quantity": 2 },
+      "ingredients": [{ "entityId": "Ingot", "quantity": 1 }],
+      "stationIds": ["station_primitive_workbench"],
+      "sourceUrl": "https://docs.palworldgame.com/settings-and-operation/technologyids/",
+      "isDefault": true
+    },
+    {
+      "id": "cement_stone",
+      "output": { "entityId": "Cement", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Stone", "quantity": 5 },
+        { "entityId": "Bone", "quantity": 1 }
+      ],
+      "stationIds": ["station_primitive_workbench"],
+      "sourceUrl": "https://docs.palworldgame.com/settings-and-operation/technologyids/",
+      "isDefault": true
+    },
+    {
+      "id": "gunpowder_charcoal_sulfur",
+      "output": { "entityId": "Gunpowder", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Charcoal", "quantity": 2 },
+        { "entityId": "Sulfur", "quantity": 1 }
+      ],
+      "stationIds": ["station_primitive_workbench"],
+      "technologyLevel": 21,
+      "sourceUrl": "https://paldb.cc/en/Charcoal",
+      "isDefault": true
+    },
+    {
+      "id": "gigantic_furnace",
+      "output": { "entityId": "GiganticFurnace", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Plasteel", "quantity": 150 },
+        { "entityId": "Polymer", "quantity": 100 },
+        { "entityId": "FlameOrgan", "quantity": 200 },
+        { "entityId": "Computer", "quantity": 12 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 58,
+      "sourceUrl": "https://paldb.cc/en/Gigantic_Furnace",
+      "isDefault": true
+    },
+    {
+      "id": "electric_furnace",
+      "output": { "entityId": "ElectricFurnace", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 50 },
+        { "entityId": "BioBattery", "quantity": 4 },
+        { "entityId": "Polymer", "quantity": 20 },
+        { "entityId": "CryogenicCoolant", "quantity": 10 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 44,
+      "sourceUrl": "https://paldb.cc/en/Bio_Battery",
+      "isDefault": true
+    },
+    {
+      "id": "production_assembly_line_ii",
+      "output": { "entityId": "ProductionAssemblyLineII", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 100 },
+        { "entityId": "CircuitBoard", "quantity": 10 },
+        { "entityId": "Cement", "quantity": 30 },
+        { "entityId": "CorrosiveSolvent", "quantity": 5 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 42,
+      "sourceUrl": "https://paldb.cc/en/Circuit_Board",
+      "isDefault": true
+    },
+    {
+      "id": "weapon_assembly_line_ii",
+      "output": { "entityId": "WeaponAssemblyLineII", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 100 },
+        { "entityId": "CircuitBoard", "quantity": 10 },
+        { "entityId": "CorrosiveSolvent", "quantity": 5 },
+        { "entityId": "BioBattery", "quantity": 5 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 47,
+      "sourceUrl": "https://paldb.cc/en/Bio_Battery",
+      "isDefault": true
+    },
+    {
+      "id": "sphere_assembly_line_ii",
+      "output": { "entityId": "SphereAssemblyLineII", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 100 },
+        { "entityId": "CircuitBoard", "quantity": 10 },
+        { "entityId": "Nail", "quantity": 30 },
+        { "entityId": "PaldiumFragment", "quantity": 50 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 35,
+      "sourceUrl": "https://paldb.cc/en/Circuit_Board",
+      "isDefault": true
+    },
+    {
+      "id": "refrigerator",
+      "output": { "entityId": "Refrigerator", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 50 },
+        { "entityId": "Polymer", "quantity": 20 },
+        { "entityId": "CryogenicCoolant", "quantity": 10 },
+        { "entityId": "CircuitBoard", "quantity": 5 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 38,
+      "sourceUrl": "https://paldb.cc/en/Circuit_Board",
+      "isDefault": true
+    },
+    {
+      "id": "electric_kitchen",
+      "output": { "entityId": "ElectricKitchen", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 30 },
+        { "entityId": "CircuitBoard", "quantity": 5 },
+        { "entityId": "Charcoal", "quantity": 20 },
+        { "entityId": "FlameOrgan", "quantity": 5 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 41,
+      "sourceUrl": "https://paldb.cc/en/Circuit_Board",
+      "isDefault": true
+    },
+    {
+      "id": "electric_medicine_workbench",
+      "output": { "entityId": "ElectricMedicineWorkbench", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 40 },
+        { "entityId": "CircuitBoard", "quantity": 10 },
+        { "entityId": "CarbonFiber", "quantity": 10 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 43,
+      "sourceUrl": "https://paldb.cc/en/Carbon_Fiber",
+      "isDefault": true
+    },
+    {
+      "id": "advanced_chest",
+      "output": { "entityId": "AdvancedChest", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Hexolite", "quantity": 20 },
+        { "entityId": "CarbonFiber", "quantity": 20 },
+        { "entityId": "Computer", "quantity": 2 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 59,
+      "sourceUrl": "https://paldb.cc/en/Carbon_Fiber",
+      "isDefault": true
+    },
+    {
+      "id": "advanced_sphere_assembly_line",
+      "output": { "entityId": "AdvancedSphereAssemblyLine", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "Hexolite", "quantity": 50 },
+        { "entityId": "Plasteel", "quantity": 50 },
+        { "entityId": "Computer", "quantity": 10 },
+        { "entityId": "BioBattery", "quantity": 10 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 58,
+      "sourceUrl": "https://paldb.cc/en/Computer",
+      "isDefault": true
+    },
+    {
+      "id": "mounted_missile_launcher",
+      "output": { "entityId": "MountedMissileLauncher", "quantity": 1 },
+      "ingredients": [
+        { "entityId": "RefinedIngot", "quantity": 20 },
+        { "entityId": "Computer", "quantity": 5 },
+        { "entityId": "BioBattery", "quantity": 3 },
+        { "entityId": "Cement", "quantity": 30 }
+      ],
+      "stationIds": [],
+      "technologyLevel": 50,
+      "sourceUrl": "https://paldb.cc/en/Computer",
+      "isDefault": true
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import {
   X,
   Wrench,
   Globe,
+  Factory,
 } from 'lucide-react';
 import type { AppState, View } from '@/hooks/useAppState';
 import { PALS, ELEMENTS } from '@/data/pals';
@@ -32,6 +33,7 @@ function useNavItems(): { view: View; labelKey: string; icon: typeof GitBranch }
     { view: 'mounts', labelKey: t('nav.mounts'), icon: TrendingUp },
     { view: 'pals', labelKey: t('nav.pals'), icon: Users },
     { view: 'bossdrops', labelKey: t('nav.bossDrops'), icon: Crown },
+    { view: 'crafting', labelKey: t('nav.crafting'), icon: Factory },
     { view: 'builds', labelKey: t('nav.builds'), icon: Wrench },
   ];
 }

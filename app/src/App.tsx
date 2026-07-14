@@ -8,6 +8,7 @@ import Mounts from './pages/Mounts';
 import PalsPage from './pages/Pals';
 import BossDrops from './pages/BossDrops';
 import Builds from './pages/Builds';
+import CraftingPlanner from './pages/CraftingPlanner';
 
 export default function App() {
   const appState = useAppState();
@@ -21,6 +22,7 @@ export default function App() {
         {appState.currentView === 'mounts' && <Mounts />}
         {appState.currentView === 'pals' && <PalsPage />}
         {appState.currentView === 'bossdrops' && <BossDrops />}
+        {appState.currentView === 'crafting' && <CraftingPlanner />}
         {appState.currentView === 'builds' && <Builds />}
       </Layout>
     </I18nProvider>

@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "update:crafting": "node scripts/update-crafting-data.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
