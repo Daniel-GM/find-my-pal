@@ -266,88 +266,86 @@ export default function Navbar({ appState }: NavbarProps) {
       {/* Pal List */}
       <div className="flex-1 overflow-y-auto px-2 pb-2 min-h-0">
         <div className="grid grid-cols-2 gap-1.5">
-          <div>
-            {filteredPals.map((pal, index) => {
-              const isSelected = selectedPalId === pal.id;
+          {filteredPals.map((pal, index) => {
+            const isSelected = selectedPalId === pal.id;
 
-              return (
-                <motion.button
-                  key={pal.id}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.005, duration: 0.15 }}
-                  onClick={() =>
-                    selectPal(isSelected ? null : pal.id)
+            return (
+              <motion.button
+                key={pal.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.005, duration: 0.15 }}
+                onClick={() =>
+                  selectPal(isSelected ? null : pal.id)
+                }
+                className="flex flex-col items-center gap-1 cursor-pointer transition-all duration-100"
+                style={{
+                  padding: 8,
+                  borderRadius: 8,
+                  backgroundColor: isSelected
+                    ? 'var(--bg-active)'
+                    : 'transparent',
+                  borderLeft: isSelected
+                    ? '3px solid var(--accent-violet)'
+                    : '3px solid transparent',
+                }}
+                onMouseEnter={(e) => {
+                  if (!isSelected) {
+                    e.currentTarget.style.backgroundColor = 'var(--bg-hover)';
                   }
-                  className="flex flex-col items-center gap-1 cursor-pointer transition-all duration-100"
+                }}
+                onMouseLeave={(e) => {
+                  if (!isSelected) {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                  }
+                }}
+              >
+                {/* Pal Icon */}
+                <PalImage
+                  iconName={pal.iconName}
+                  name={pal.name}
+                  size="sm"
                   style={{
-                    padding: 8,
-                    borderRadius: 8,
-                    backgroundColor: isSelected
-                      ? 'var(--bg-active)'
-                      : 'transparent',
-                    borderLeft: isSelected
-                      ? '3px solid var(--accent-violet)'
-                      : '3px solid transparent',
+                    border: isSelected
+                      ? '2px solid var(--accent-violet)'
+                      : '2px solid transparent',
                   }}
-                  onMouseEnter={(e) => {
-                    if (!isSelected) {
-                      e.currentTarget.style.backgroundColor = 'var(--bg-hover)';
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!isSelected) {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                    }
-                  }}
+                />
+
+                {/* Pal Name */}
+                <span
+                  className="text-[12px] font-medium text-center w-full truncate"
+                  style={{ color: 'var(--text-primary)' }}
                 >
-                  {/* Pal Icon */}
-                  <PalImage
-                    iconName={pal.iconName}
-                    name={pal.name}
-                    size="sm"
-                    style={{
-                      border: isSelected
-                        ? '2px solid var(--accent-violet)'
-                        : '2px solid transparent',
-                    }}
-                  />
+                  {pal.name}
+                </span>
 
-                  {/* Pal Name */}
-                  <span
-                    className="text-[12px] font-medium text-center w-full truncate"
-                    style={{ color: 'var(--text-primary)' }}
-                  >
-                    {pal.name}
-                  </span>
+                {/* Pal Number */}
+                <span
+                  className="text-[10px]"
+                  style={{ color: 'var(--text-muted)' }}
+                >
+                  {pal.number === 0 ? '???' : `#${String(pal.number).padStart(3, '0')}`}
+                </span>
 
-                  {/* Pal Number */}
-                  <span
-                    className="text-[10px]"
-                    style={{ color: 'var(--text-muted)' }}
-                  >
-                    {pal.number === 0 ? '???' : `#${String(pal.number).padStart(3, '0')}`}
-                  </span>
-
-                  {/* Element Icons */}
-                  <div className="flex gap-0.5">
-                    {pal.elements.map((el) => (
-                      <img
-                        key={el}
-                        src={getElementIconUrl(el)}
-                        alt=""
-                        className="element-icon"
-                        loading="lazy"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.display = 'none';
-                        }}
-                      />
-                    ))}
-                  </div>
-                </motion.button>
-              );
-            })}
-          </div>
+                {/* Element Icons */}
+                <div className="flex gap-0.5">
+                  {pal.elements.map((el) => (
+                    <img
+                      key={el}
+                      src={getElementIconUrl(el)}
+                      alt=""
+                      className="element-icon"
+                      loading="lazy"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                  ))}
+                </div>
+              </motion.button>
+            );
+          })}
         </div>
 
         {filteredPals.length === 0 && (
