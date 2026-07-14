@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* App Design Tokens - Dark Mode (Default) */
+    --bg-base: #0E0E12;
+    --bg-surface: #16161C;
+    --bg-sidebar: #121218;
+    --bg-hover: #1E1E28;
+    --bg-active: #28283A;
+    --text-primary: #F5F5FA;
+    --text-secondary: #9494A6;
+    --text-muted: #5C5C6E;
+    --accent-violet: #8B5CF6;
+    --accent-violet-hover: #7C3AED;
+    --accent-emerald: #34D399;
+    --accent-red: #F87171;
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-active: rgba(139,92,246,0.3);
+
+    /* Element Colors */
+    --element-neutral: #B8B8C8;
+    --element-neutral-bg: rgba(184,184,200,0.15);
+    --element-fire: #F87171;
+    --element-fire-bg: rgba(248,113,113,0.15);
+    --element-water: #60A5FA;
+    --element-water-bg: rgba(96,165,250,0.15);
+    --element-grass: #34D399;
+    --element-grass-bg: rgba(52,211,153,0.15);
+    --element-electric: #FBBF24;
+    --element-electric-bg: rgba(251,191,36,0.15);
+    --element-ice: #A5F3FC;
+    --element-ice-bg: rgba(165,243,252,0.15);
+    --element-ground: #D97706;
+    --element-ground-bg: rgba(217,119,6,0.15);
+    --element-dark: #818CF8;
+    --element-dark-bg: rgba(129,140,248,0.15);
+    --element-dragon: #A78BFA;
+    --element-dragon-bg: rgba(167,139,250,0.15);
+
+    /* shadcn tokens - dark mode defaults */
+    --background: 240 7% 6%;
+    --foreground: 240 10% 98%;
+    --card: 240 7% 9%;
+    --card-foreground: 240 10% 98%;
+    --popover: 240 7% 9%;
+    --popover-foreground: 240 10% 98%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 240 10% 98%;
+    --muted: 240 4% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 240 4% 15%;
+    --accent-foreground: 240 10% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 262 83% 58%;
+    --radius: 0.625rem;
+    --sidebar-background: 240 7% 8%;
+    --sidebar-foreground: 240 10% 98%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 15%;
+    --sidebar-accent-foreground: 240 10% 98%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .light {
+    --bg-base: #F8F8FC;
+    --bg-surface: #FFFFFF;
+    --bg-sidebar: #F0F0F5;
+    --bg-hover: #E8E8EF;
+    --bg-active: #E0E0EA;
+    --text-primary: #1A1A2E;
+    --text-secondary: #6B6B7B;
+    --text-muted: #A0A0B0;
+    --accent-violet: #7C3AED;
+    --accent-violet-hover: #6D28D9;
+    --accent-emerald: #34D399;
+    --accent-red: #F87171;
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-active: rgba(124,58,237,0.3);
+
+    /* shadcn tokens - light mode */
+    --background: 240 20% 98%;
+    --foreground: 240 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 30% 12%;
+    --primary: 262 83% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 10% 95%;
+    --secondary-foreground: 240 30% 12%;
+    --muted: 240 10% 95%;
+    --muted-foreground: 240 10% 45%;
+    --accent: 240 10% 95%;
+    --accent-foreground: 240 30% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 90%;
+    --input: 240 10% 90%;
+    --ring: 262 83% 52%;
+    --sidebar-background: 240 15% 96%;
+    --sidebar-foreground: 240 30% 12%;
+    --sidebar-primary: 262 83% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 10% 95%;
+    --sidebar-accent-foreground: 240 30% 12%;
+    --sidebar-border: 240 10% 90%;
+    --sidebar-ring: 262 83% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-hover);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-hover) transparent;
+  }
+}
+
+/* Pal image styles */
+.pal-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  image-rendering: auto;
+}
+
+.pal-icon-lg {
+  width: 56px;
+  height: 56px;
+}
+
+.pal-icon-sm {
+  width: 32px;
+  height: 32px;
+}
+
+/* Element icon */
+.element-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* Work skill icon */
+.work-skill-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.work-skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Work suitability section */
+.work-suitability-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

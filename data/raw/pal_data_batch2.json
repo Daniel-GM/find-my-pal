@@ -1,0 +1,609 @@
+{
+  "Killamari": {
+    "number": 30,
+    "elements": [
+      "dark",
+      "water"
+    ],
+    "workSuitability": {
+      "watering": 1,
+      "gathering": 1,
+      "transporting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NegativeOctopus_icon_normal.png"
+  },
+  "Killamari Primo": {
+    "number": 30,
+    "elements": [
+      "normal",
+      "water"
+    ],
+    "workSuitability": {
+      "watering": 1,
+      "gathering": 1,
+      "transporting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NegativeOctopus_Neutral_icon_normal.png"
+  },
+  "Fuddler": {
+    "number": 31,
+    "elements": [
+      "earth",
+      "normal"
+    ],
+    "workSuitability": {
+      "handiwork": 1,
+      "mining": 1,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CuteMole_icon_normal.png"
+  },
+  "Eikthyrdeer": {
+    "number": 32,
+    "elements": [
+      "normal",
+      "earth"
+    ],
+    "workSuitability": {
+      "deforesting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Deer_icon_normal.png"
+  },
+  "Eikthyrdeer Terra": {
+    "number": 32,
+    "elements": [
+      "earth",
+      "normal"
+    ],
+    "workSuitability": {
+      "deforesting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Deer_Ground_icon_normal.png"
+  },
+  "Direhowl": {
+    "number": 33,
+    "elements": [
+      "normal",
+      "earth"
+    ],
+    "workSuitability": {
+      "gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Garm_icon_normal.png"
+  },
+  "Caprity": {
+    "number": 34,
+    "elements": [
+      "leaf",
+      "normal"
+    ],
+    "workSuitability": {
+      "planting": 2,
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BerryGoat_icon_normal.png"
+  },
+  "Caprity Noct": {
+    "number": 34,
+    "elements": [
+      "dark",
+      "leaf"
+    ],
+    "workSuitability": {
+      "planting": 2,
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BerryGoat_Dark_icon_normal.png"
+  },
+  "Swee": {
+    "number": 35,
+    "elements": [
+      "ice",
+      "normal"
+    ],
+    "workSuitability": {
+      "gathering": 1,
+      "cooling": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MopBaby_icon_normal.png"
+  },
+  "Sweepa": {
+    "number": 36,
+    "elements": [
+      "ice",
+      "normal"
+    ],
+    "workSuitability": {
+      "gathering": 2,
+      "cooling": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MopKing_icon_normal.png"
+  },
+  "Turtacle": {
+    "number": 37,
+    "elements": [
+      "water"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "mining": 1,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_TentacleTurtle_icon_normal.png"
+  },
+  "Turtacle Terra": {
+    "number": 37,
+    "elements": [
+      "water",
+      "earth"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "mining": 3,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_TentacleTurtle_Ground_icon_normal.png"
+  },
+  "Hangyu": {
+    "number": 38,
+    "elements": [
+      "earth",
+      "normal"
+    ],
+    "workSuitability": {
+      "handiwork": 1,
+      "gathering": 1,
+      "transporting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WindChimes_icon_normal.png"
+  },
+  "Hangyu Cryst": {
+    "number": 38,
+    "elements": [
+      "ice",
+      "normal"
+    ],
+    "workSuitability": {
+      "handiwork": 3,
+      "gathering": 2,
+      "cooling": 2,
+      "transporting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WindChimes_Ice_icon_normal.png"
+  },
+  "Woolipop": {
+    "number": 39,
+    "elements": [
+      "normal",
+      "earth"
+    ],
+    "workSuitability": {
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SweetsSheep_icon_normal.png"
+  },
+  "Woolipop Terra": {
+    "number": 39,
+    "elements": [
+      "earth"
+    ],
+    "workSuitability": {
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SweetsSheep_Ground_icon_normal.png"
+  },
+  "Mozzarina": {
+    "number": 40,
+    "elements": [
+      "normal",
+      "earth"
+    ],
+    "workSuitability": {
+      "farming": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CowPal_icon_normal.png"
+  },
+  "Azurobe": {
+    "number": 41,
+    "elements": [
+      "water",
+      "dragon"
+    ],
+    "workSuitability": {
+      "watering": 4
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueDragon_icon_normal.png"
+  },
+  "Azurobe Cryst": {
+    "number": 41,
+    "elements": [
+      "ice",
+      "dragon"
+    ],
+    "workSuitability": {
+      "cooling": 4
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueDragon_Ice_icon_normal.png"
+  },
+  "Sparkit": {
+    "number": 42,
+    "elements": [
+      "electricity",
+      "earth"
+    ],
+    "workSuitability": {
+      "generating_electricity": 1,
+      "handiwork": 1,
+      "transporting": 1,
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecCat_icon_normal.png"
+  },
+  "Kelpsea": {
+    "number": 43,
+    "elements": [
+      "water",
+      "dragon"
+    ],
+    "workSuitability": {
+      "watering": 1,
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kelpie_icon_normal.png"
+  },
+  "Kelpsea Ignis": {
+    "number": 43,
+    "elements": [
+      "fire",
+      "dragon"
+    ],
+    "workSuitability": {
+      "kindling": 1,
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kelpie_Fire_icon_normal.png"
+  },
+  "Ribbuny": {
+    "number": 44,
+    "elements": [
+      "normal",
+      "ice"
+    ],
+    "workSuitability": {
+      "handiwork": 1,
+      "gathering": 1,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkRabbit_icon_normal.png"
+  },
+  "Ribbuny Botan": {
+    "number": 44,
+    "elements": [
+      "leaf",
+      "earth"
+    ],
+    "workSuitability": {
+      "planting": 2,
+      "handiwork": 2,
+      "gathering": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkRabbit_Grass_icon_normal.png"
+  },
+  "Jelliette": {
+    "number": 45,
+    "elements": [
+      "water"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_JellyfishFairy_icon_normal.png"
+  },
+  "Jellroy": {
+    "number": 46,
+    "elements": [
+      "water",
+      "dark"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "handiwork": 1,
+      "medicine_production": 1,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_JellyfishGhost_icon_normal.png"
+  },
+  "Amione": {
+    "number": 47,
+    "elements": [
+      "water"
+    ],
+    "workSuitability": {
+      "watering": 1,
+      "handiwork": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ClioneTwins_icon_normal.png"
+  },
+  "Gloopie": {
+    "number": 48,
+    "elements": [
+      "water",
+      "dark"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "handiwork": 2,
+      "transporting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_OctopusGirl_icon_normal.png"
+  },
+  "Gloopie Primo": {
+    "number": 48,
+    "elements": [
+      "water",
+      "normal"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "handiwork": 2,
+      "transporting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_OctopusGirl_Neutral_icon_normal.png"
+  },
+  "Galeclaw": {
+    "number": 49,
+    "elements": [
+      "normal",
+      "earth"
+    ],
+    "workSuitability": {
+      "gathering": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Eagle_icon_normal.png"
+  },
+  "Wispaw": {
+    "number": 50,
+    "elements": [
+      "dark",
+      "ice"
+    ],
+    "workSuitability": {
+      "handiwork": 2,
+      "deforesting": 1,
+      "medicine_production": 1,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostBlackCat_icon_normal.png"
+  },
+  "Nitewing": {
+    "number": 51,
+    "elements": [
+      "normal",
+      "leaf"
+    ],
+    "workSuitability": {
+      "gathering": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HawkBird_icon_normal.png"
+  },
+  "Tombat": {
+    "number": 52,
+    "elements": [
+      "dark",
+      "normal"
+    ],
+    "workSuitability": {
+      "gathering": 2,
+      "mining": 3,
+      "transporting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CatBat_icon_normal.png"
+  },
+  "Tocotoco": {
+    "number": 53,
+    "elements": [
+      "normal",
+      "earth"
+    ],
+    "workSuitability": {
+      "gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ColorfulBird_icon_normal.png"
+  },
+  "Univolt": {
+    "number": 54,
+    "elements": [
+      "electricity"
+    ],
+    "workSuitability": {
+      "generating_electricity": 3,
+      "deforesting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kirin_icon_normal.png"
+  },
+  "Univolt Cryst": {
+    "number": 54,
+    "elements": [
+      "ice"
+    ],
+    "workSuitability": {
+      "deforesting": 3,
+      "cooling": 6
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kirin_Ice_icon_normal.png"
+  },
+  "Gobfin": {
+    "number": 55,
+    "elements": [
+      "water",
+      "normal"
+    ],
+    "workSuitability": {
+      "watering": 2,
+      "handiwork": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SharkKid_icon_normal.png"
+  },
+  "Gobfin Ignis": {
+    "number": 55,
+    "elements": [
+      "fire",
+      "normal"
+    ],
+    "workSuitability": {
+      "kindling": 2,
+      "handiwork": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SharkKid_Fire_icon_normal.png"
+  },
+  "Loupmoon": {
+    "number": 56,
+    "elements": [
+      "dark",
+      "ice"
+    ],
+    "workSuitability": {
+      "handiwork": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Werewolf_icon_normal.png"
+  },
+  "Loupmoon Cryst": {
+    "number": 56,
+    "elements": [
+      "ice"
+    ],
+    "workSuitability": {
+      "handiwork": 4,
+      "cooling": 4
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Werewolf_Ice_icon_normal.png"
+  },
+  "Cawgnito": {
+    "number": 57,
+    "elements": [
+      "dark",
+      "normal"
+    ],
+    "workSuitability": {
+      "deforesting": 2,
+      "farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkCrow_icon_normal.png"
+  },
+  "Arsox": {
+    "number": 58,
+    "elements": [
+      "fire",
+      "earth"
+    ],
+    "workSuitability": {
+      "kindling": 3,
+      "deforesting": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlameBuffalo_icon_normal.png"
+  },
+  "Muffly": {
+    "number": 59,
+    "elements": [
+      "ice",
+      "normal"
+    ],
+    "workSuitability": {
+      "cooling": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FluffyBird_icon_normal.png"
+  },
+  "Bristla": {
+    "number": 60,
+    "elements": [
+      "leaf",
+      "ice"
+    ],
+    "workSuitability": {
+      "planting": 2,
+      "handiwork": 2,
+      "gathering": 2,
+      "medicine_production": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LittleBriarRose_icon_normal.png"
+  },
+  "Cinnamoth": {
+    "number": 61,
+    "elements": [
+      "leaf",
+      "normal"
+    ],
+    "workSuitability": {
+      "planting": 2,
+      "gathering": 2,
+      "medicine_production": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CuteButterfly_icon_normal.png"
+  },
+  "Puffolt": {
+    "number": 62,
+    "elements": [
+      "electricity"
+    ],
+    "workSuitability": {
+      "generating_electricity": 2,
+      "transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecPomeranian_icon_normal.png"
+  },
+  "Elphidran": {
+    "number": 63,
+    "elements": [
+      "dragon",
+      "dark"
+    ],
+    "workSuitability": {
+      "deforesting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FairyDragon_icon_normal.png"
+  },
+  "Elphidran Aqua": {
+    "number": 63,
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "workSuitability": {
+      "watering": 4,
+      "deforesting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FairyDragon_Water_icon_normal.png"
+  },
+  "Vanwyrm": {
+    "number": 64,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "workSuitability": {
+      "kindling": 2,
+      "transporting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BirdDragon_icon_normal.png"
+  },
+  "Vanwyrm Cryst": {
+    "number": 64,
+    "elements": [
+      "ice",
+      "dark"
+    ],
+    "workSuitability": {
+      "cooling": 2,
+      "transporting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BirdDragon_Ice_icon_normal.png"
+  }
+}

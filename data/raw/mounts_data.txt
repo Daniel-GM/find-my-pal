@@ -1,0 +1,113 @@
+Aegidron|ground|79|850|1100|300|Can be ridden. While in party, player and party Pals take 60% less damage from explosive attacks, and are immune to Stun. (Does not stack)
+Arsox|ground|15|700|1050|120|Can be ridden. While in party, the player gains Cold Resistance +2. (Does not stack)
+Astegon|flying|39|700|1100|300|Can be ridden as a flying mount. Increases the damage dealt to ores by 1100%, and you can obtain 150% more Ore while mounted.
+Azurmane|ground|58|900|1260|220|Can be ridden. Grants Air Dash, to move at even higher speeds.
+Azurobe|water|24|920|1000|160|Can be ridden to travel on water. While mounted, changes the player's attack type to Water and increases Attack by 5%.
+Azurobe Cryst|water|27|920|1000|160|Can be ridden to travel on water. While mounted, changes the player’s attack type to Ice and increases Attack by 5%.
+Bastigor|ground|73|750|1100|270|Can be ridden. While mounted, delivers crushing blows with a hammer forged from Ice.
+Beakon|flying|29|750|1200|160|Can be ridden as a flying mount. While mounted, changes the player's attack type to Electric and increases Attack by 5%. This Pal’s Movement Speed increases by 5% for each other Electric Pal in your party. (Excluding Beakon )
+Beakon Cryst|flying|71|750|1200|160|Can be ridden as a flying mount. While mounted, changes the player's attack type to Ice and increases Attack by 5%. This Pal’s Movement Speed increases by 5% for each other Ice Pal in your party. (Excluding Beakon Cryst )
+Blazamut|ground|46|800|1200|190|Can be ridden. While in party, increases the Attack and Defense of the Pal fighting alongside you by 5% whenever you defeat an enemy. This effect lasts 20 seconds and stacks up to five times.
+Blazamut Ryu|ground|55|800|1200|190|Can be ridden. While in party, improves player's and Pals' Dragon damage to enemy weak points by 25%. (Does not stack)
+Blazehowl|ground|33|800|1200|150|Can be ridden. While in party, Grass Pals drop 40% more items when defeated. (Does not stack)
+Blazehowl Noct|ground|35|800|1200|150|Can be ridden. While in party, Neutral Pals drop 40% more items when defeated. (Does not stack)
+Braloha|ground|36|600|1020|270|Can be ridden. While in your base, increases the egg production speed of Pals assigned to Breeding Farm by 20%. (Does not stack)
+Broncherry|ground|33|550|1020|150|Can be ridden. While in party, Pal Eggs you pick up have a 35% chance of becoming an Alpha Pal Egg. (Does not stack)
+Broncherry Aqua|ground|44|550|1020|150|Can be ridden. While in party, Pal Eggs you pick up have a 45% chance of becoming an Alpha Pal Egg. (Does not stack)
+Bulldosu|ground|53|600|810|110|Can be ridden. While in party, player and party Pals take 15% less Electric damage and are immune to Electrify. (Does not stack)
+Celesdir|ground|54|800|1200|260|Can be ridden. This Pal's Attack and Movement Speed increases by 2% for each other Neutral Pal in your party. When in party, recovers Health of the player and Party Pals by 0.15% per second. (Does not stack)
+Celesdir Noct|ground|78|800|1200|260|Can be ridden. While in party, the Pal fighting alongside you gradually loses Health in exchange for 40% Attack increase. (Does not stack)
+Chillet|ground|11|750|1050|100|Can be ridden. While mounted, changes the player’s attack type to Dragon and increases Attack by 5%.
+Chillet Ignis|ground|40|750|1050|100|Can be ridden. While mounted, changes the player’s attack type to Fire and increases Attack by 5%.
+Dazemu|ground|28|900|1200|100|Can be ridden. Movement Speed is increased by 50% while mounted on sand.
+Dinossom|ground|24|700|1030|130|Can be ridden. While in party, increase Defense of Dragon Pals by 15%. (Does not stack)
+Dinossom Lux|ground|34|700|1030|130|Can be ridden. While in party, increases Defense of Electric Pals by 15%. (Does not stack)
+Direhowl|ground|9|800|1050|70|Can be ridden. Moves slightly faster than most mounts.
+Dualith|ground|48|600|800|210|Can be ridden. When activated, Dualith fires a powerful Grass laser from its right hand.
+Dualith Noct|ground|69|600|800|210|Can be ridden. When activated, Dualith Noct fires a powerful Dark laser from its right hand.
+Dynamoff|flying|66|700|1000|140|Can be ridden as a flying mount. While at a base, shortens the time it takes to incubate eggs by 20%. (Does not stack)
+Eidrolon|flying|68|1400|2750|130|Can be ridden as a flying mount. This Pal's Attack and Movement Speed increase by 2% for each other Dragonor Dark Pal in your party.
+Eidrolon Ignis|flying|76|1400|2750|130|Can be ridden as a flying mount. This Pal's Attack and Movement Speed increase by 2% or each other Dragon or Fire Pal in your party. (Excluding Eidrolon Ignis )
+Eikthyrdeer|ground|12|700|900|100|Can be ridden. Can perform a double jump while mounted and increases lumbering efficiency by 220%.
+Eikthyrdeer Terra|ground|21|700|900|100|Can be ridden. Can perform a double jump while mounted. While at a base, increases the Lumbering Work Suitability Level for all other Base Pals by +1 (Does not stack)
+Elphidran|flying|20|700|1000|130|Can be ridden as a flying mount. While flying, Movement Speed is increased. While in party, Dark Pals drop 40% more items when defeated. (Does not stack)
+Elphidran Aqua|flying|32|700|1000|130|Can be ridden as a flying mount. While flying, Movement Speed is increased. While in party, player and party Pals take 15% less Fire damage and are immune to Burn. (Does not stack)
+Faleris|flying|60|1000|1400|230|Can be ridden as a flying mount. While in party, Ice Pals drop 40% more items when defeated. (Does not stack)
+Faleris Aqua|flying|60|1000|1400|230|Can be ridden as a flying mount. While in party, Fire Pals drop 40% more items when defeated. (Does not stack)
+Fenglope|ground|26|750|1050|140|Can be ridden. Can double jump while mounted.
+Fenglope Lux|ground|57|750|1050|140|Can be ridden. Can double jump while mounted. While in party, Water Pals drop 40% more items when defeated. (Does not stack)
+Frostallion|flying|62|1200|1800|300|Can be ridden as a flying mount. While mounted, changes the player's attack type to Ice, inflict Freeze 2, increases Attack by 10%.
+Frostallion Noct|flying|62|1200|1800|300|Can be ridden as a flying mount. While mounted, changes the player's attack type to Dark, inflict Blind 2, increases Attack by 10%.
+Ghangler|water|31|1200|1350|320|Can be ridden to travel on water. This Pal’s Movement Speed increases by 5% for each other Dark or Water Pal in your party. (Excluding Ghangler )
+Ghangler Ignis|water|42|1200|1350|320|Can be ridden to travel on water. This Pal’s Movement Speed increases by 5% for each other Fire or Water Pal in your party. (Excluding Ghangler Ignis )
+Gildane|ground|54|840|1260|200|Can be ridden. While mounted, changes the player’s attack type to Ground and increases Attack by 5%.
+Grintale|ground|19|650|1000|100|Can be ridden. While in party, picking up a Pal Egg has a 50% chance of receiving one extra. (Does not stack)
+Grizzbolt|ground|40|600|1000|180|Can be ridden. Can rapidly fire a minigun while mounted.
+Hartalis|ground|70|900|1900|400|Can be ridden. While mounted, it generates a barrier that blocks all attacks. Can triple jump while mounted.
+Helzephyr|flying|25|700|1100|170|Can be ridden as a flying mount. While mounted, changes the player’s attack type to Dark and increases Attack by 5%.
+Helzephyr Lux|flying|47|700|1100|170|Can be ridden as a flying mount. While mounted, changes the player’s attack type to Electric and increases Attack by 5%.
+Jetragon|flying|79|1700|3300|110|Can be ridden as a flying mount. Can rapidly fire a missile launcher while mounted.
+Jormuntide|water|40|1080|1800|150|Can be ridden to travel on water. While in party, increases player's and Pals' damage to enemies afflicted with Soak by 50%. (Does not stack)
+Jormuntide Ignis|ground|59|600|1000|150|Can be ridden. While in party, nullifies lava damage and increases player's and Pals' damage to enemies afflicted with Burn by 50%. (Does not stack)
+Kingpaca|ground|23|700|1040|170|Can be ridden. This Pal's Defense and Movement Speed increase by 5% for each Melpaca in party.
+Kingpaca Cryst|ground|46|700|1040|170|Can be ridden. This Pal's Defense and Movement Speed increase by 5% for each Melpaca in party.
+Kitsun|ground|57|700|1100|140|Can be ridden. While in party, player and party Pals take 15% less Ice damage and are immune to Freeze. (Does not stack)
+Kitsun Noct|ground|59|700|1100|140|Can be ridden. While in party, player and party Pals take 15% less Dark damage and are immune to Blind. (Does not stack)
+Mammorest|ground|28|600|1030|180|Can be ridden. While mounted, increases logging efficiency by 220% and mining efficiency by 500%.
+Mammorest Cryst|ground|41|600|1030|180|Can be ridden. While mounted, increases logging efficiency by 220% and mining efficiency by 500%.
+Maraith|ground|37|700|1100|130|Can be ridden. While in party, all Party Pals' Active Skill cooldowns are reduced by 30% whenever you defeat an enemy. (Does not stack)
+Melpaca|ground|7|500|900|100|Can be ridden. While in party, increases Kingpaca 's Defense and Movement Speed. Sometimes drops Wool when assigned to Ranch .
+Moldron Cryst|ground|70|650|850|270|Can be ridden. While in party, improves player's and Pals' Ice damage to enemy weak points by 25%. (Does not stack)
+Mossanda|ground|32|600|1000|130|Can be ridden. Can rapidly fire a grenade launcher while mounted.
+Mossanda Lux|ground|34|600|1000|130|Can be ridden. Can rapidly fire a grenade launcher while mounted.
+Necromus|ground|61|1300|1900|350|Can be ridden. Can double jump while mounted. When Twin Spears skill is activated, a Paladius in your party will appear and attack alongside you.
+Neptilius|water|64|1800|2000|410|Can be ridden to travel on water. While mounted, it can leap high into the air over water.
+Nitewing|flying|15|600|750|100|Can be ridden as a flying mount.
+Ophydia|ground|72|700|1500|100|Can be ridden. While in party, the player's attacks inflict Soak 2. (Does not stack)
+Paladius|ground|61|800|1800|400|Can be ridden. Can triple jump while mounted. Activate Spear Thrust to have Necromus stay by your side and attack enemies in tandem.
+Palumba|ground|35|550|1000|180|Can be ridden. Movement Speed is increased by 155% while mounted on grass.
+Panthalus|flying|0|3000|3000|100|Can be ridden as a flying mount. Only 1 can be summoned to a base. While at a base, it constantly patrols the skies and bombards intruders from high above. level value 1 ActiveSkillMainValueByRank 1.1 Awakening : 2 ActiveSkillMainValueByRank 1.3 Awakening : (Damage Up: S) 3 ActiveSkillMainValueByRank 1.6 Awakening : (Damage Up: M) 4 ActiveSkillMainValueByRank 2 Awakening : (Damage Up: L) 5 ActiveSkillMainValueByRank 2.5 Awakening : (Damage Up: XL)
+Polapup|ground|26|250|375|120|Can be ridden. Movement Speed is increased by 80% while mounted on snow. Can also slide quickly down slopes.
+Polapup Terra|ground|55|250|375|120|Can be ridden. Movement Speed is increased by 80% while mounted on snow. Can also slide quickly down slopes. While it starts out slow, the top speed it can hit while sliding is no joke.
+Pyrin|ground|29|850|1300|100|Can be ridden. While mounted, changes the player’s attack type to Fire and increases Attack by 5%.
+Pyrin Noct|ground|34|850|1300|100|Can be ridden. While mounted, changes the player’s attack type to Dark and increases Attack by 5%.
+Quivern|flying|38|900|1400|220|Can be ridden as a flying mount. While in party, increases Attack of Dragon Pals by 15%. (Does not stack)
+Quivern Botan|flying|45|900|1400|220|Can be ridden as a flying mount. While mounted, changes the player’s attack type to Grass and increases Attack by 5%.
+Ragnahawk|flying|33|800|1300|150|Can be ridden as a flying mount. While mounted, changes the player’s attack type to Fire and increases Attack by 5%.
+Rayhound|ground|30|700|1150|100|Can be ridden. Can perform a double jump while mounted. This Pal’s Movement Speed increases by 5% for each other Electric Pal in your party. (Excluding Rayhound )
+Rayhound Cryst|ground|32|700|1150|100|Can be ridden. Can perform a double jump while mounted. While in party, increases Defense of Ice Pals by 15%. (Does not stack)
+Reindrix|ground|31|700|1070|140|Can be ridden. While in party, the player gains Heat Resistance +2. (Does not stack)
+Relaxaurus|ground|45|650|1000|200|Can be ridden. Can rapidly fire a missile launcher while mounted.
+Relaxaurus Lux|ground|48|650|1000|200|Can be ridden. Can rapidly fire a missile launcher while mounted.
+Reptyro|ground|42|550|1000|220|Can be ridden. While in party, reduces weight of all types of ore by 30%. (Does not stack)
+Reptyro Cryst|ground|43|550|1000|220|Can be ridden. While in party, reduces weight of all types of ore by 35%. (Does not stack)
+Roujay|flying|72|950|1350|200|Can be ridden as a flying mount. While in party, increases player's and Pals' damage to enemies afflicted with Blind by 50%. (Does not stack)
+Rushoar|ground|6|500|800|100|Can be ridden. While mounted, increases efficiency of destroying Stone by 500%.
+Selyne|flying|53|1000|1600|300|Can be ridden as a flying mount. While mounted, enhances Neutral and Dark attacks by 15%.
+Shadowbeak|flying|47|1100|1600|250|Can be ridden as a flying mount. While flying, Movement Speed is increased. Enhances Dark attacks by 15% while mounted.
+Shaolong|flying|77|1400|2800|100|Can be ridden as a flying mount. This Pal's Attack increases by 4% for each other Dragon Pal in your party.
+Shroomer|ground|39|740|1050|220|Can be ridden. Sometimes drops Mushroom or Cavern Mushroom when assigned to Ranch .
+Shroomer Noct|ground|39|740|1050|220|Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases by 10%.
+Silvegis|ground|60|700|1050|280|Can be ridden. While in party, reduces shield regeneration delay by 30% and reduces damage taken by your shield by 65%. (Does not stack)
+Solmora|water|65|1100|1300|220|Can be ridden to travel on water. While in party, makes it easier to fish up talented Pals. (Does not stack)
+Solmora Lux|water|66|1100|1300|220|Can be ridden to travel on water. While mounted, changes the player's attack type to Electric and increases Attack by 5%. While in party, makes it easier to fish up talented Pals. (Does not stack)
+Starryon|ground|57|900|1250|230|Can be ridden. Boosts jumping ability while mounted. This Pal's movement speed increases by +50% at night.
+Starryon Primo|ground|77|900|1250|230|Can be ridden. Boosts Jump Power while mounted. This Pal’s Movement Speed increases by 5% for each other Neutral Pal in your party. (Excluding Starryon Primo )
+Surfent|water|16|900|1440|100|Can be ridden to travel on water. Sometimes drops Leather when assigned to Ranch .
+Surfent Terra|ground|25|500|800|100|Can be ridden. While in party, the player's attacks inflict Muddy 2. (Does not stack)
+Suzaku|flying|43|850|1100|350|Can be ridden as a flying mount. This Pal’s Movement Speed increases by 5% for each other Fire Pal in your party. (Excluding Suzaku )
+Suzaku Aqua|flying|44|850|1100|350|Can be ridden as a flying mount. This Pal’s Movement Speed increases by 5% for each other Water Pal in your party. (Excluding Suzaku Aqua )
+Sweepa|ground|20|650|1020|120|Can be ridden. This Pal's Attack and Defense increase by 12% for each Swee in party.
+Tarantriss|ground|20|640|1000|100|Can be ridden. Can double jump while mounted. Additionally, can shoot spider web to grapple and move at high speed.
+Tetroise Primo|ground|75|360|540|200|Can be ridden. While in party, increases the durability of all weapons and armor by 80%. (Does not stack)
+Univolt|ground|14|720|1100|100|Can be ridden. While in party, improves player's and Pals' Electric damage to weak points by 25%. (Does not stack)
+Univolt Cryst|ground|64|720|1100|100|Can be ridden. While mounted, changes the player’s attack type to Ice and increases Attack by 5%.
+Vanwyrm|flying|21|700|850|150|Can be ridden as a flying mount. While in party, increases damage player deals to enemy weak points by 20%. (Does not stack)
+Vanwyrm Cryst|flying|22|700|850|150|Can be ridden as a flying mount. While in party, increases damage player deals to enemy weak points by 30%. (Does not stack)
+Whalaska|ground|42|600|750|200|Can be ridden. While in party, fishing minigames start with the capture gauge increased by 5%. Additionally, while the bars overlap, capture progress increases by 5%. (Does not stack)
+Whalaska Ignis|ground|71|600|750|200|Can be ridden. While in party, fishing minigame begins with the capture gauge 7% higher than usual, and capture progress increases by 7% while the bars overlap. (Does not stack)
+Wumpo|ground|45|600|1050|240|Can be ridden. While at a base, increases the Transporting Work Suitability Level for all other Base Pals by +1. (Does not stack)
+Wumpo Botan|ground|51|600|1050|240|Can be ridden. While in party, player and party Pals take 15% less Ground damage and are immune to Muddy status. (Does not stack)
+Xenogard|ground|41|790|1200|250|Can be ridden. While in party, increases the player's energy weapon damage by 10%. (Does not stack)
+Xenolord|flying|66|1700|2700|300|Can be ridden as a flying mount. While in party, damage done by 20%. (Does not stack)
+Yakumo|ground|41|750|1080|140|Can be ridden. While fighting together, 15% increased chance of encountering pals with the same Passive Skill as this Pal. (Excludes certain Passive Skills)

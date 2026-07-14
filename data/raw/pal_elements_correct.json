@@ -1,0 +1,984 @@
+{
+  "Green Slime": [
+    "grass"
+  ],
+  "Blue Slime": [
+    "water"
+  ],
+  "Red Slime": [
+    "fire"
+  ],
+  "Purple Slime": [
+    "dark"
+  ],
+  "Illuminant Slime": [
+    "neutral"
+  ],
+  "Rainbow Slime": [
+    "neutral"
+  ],
+  "Enchanted Sword": [
+    "neutral"
+  ],
+  "Cave Bat": [
+    "neutral"
+  ],
+  "Illuminant Bat": [
+    "neutral"
+  ],
+  "Eye of Cthulhu": [
+    "dark"
+  ],
+  "Demon Eye": [
+    "dark"
+  ],
+  "Lamball": [
+    "neutral"
+  ],
+  "Cattiva": [
+    "neutral"
+  ],
+  "Chikipi": [
+    "neutral"
+  ],
+  "Lifmunk": [
+    "grass"
+  ],
+  "Fuack": [
+    "water"
+  ],
+  "Fuack Ignis": [
+    "water",
+    "fire"
+  ],
+  "Vixy": [
+    "neutral"
+  ],
+  "Celaray": [
+    "water"
+  ],
+  "Celaray Lux": [
+    "water",
+    "electric"
+  ],
+  "Cremis": [
+    "neutral"
+  ],
+  "Croajiro": [
+    "water"
+  ],
+  "Croajiro Noct": [
+    "water",
+    "dark"
+  ],
+  "Herbil": [
+    "grass",
+    "neutral"
+  ],
+  "Teafant": [
+    "water"
+  ],
+  "Gumoss": [
+    "grass",
+    "ground"
+  ],
+  "Pupperai": [
+    "ground"
+  ],
+  "Clovee": [
+    "grass",
+    "neutral"
+  ],
+  "Jolthog": [
+    "electric"
+  ],
+  "Jolthog Cryst": [
+    "ice"
+  ],
+  "Depresso": [
+    "dark"
+  ],
+  "Pengullet": [
+    "water",
+    "ice"
+  ],
+  "Pengullet Lux": [
+    "water",
+    "electric"
+  ],
+  "Penking": [
+    "water",
+    "ice"
+  ],
+  "Penking Lux": [
+    "water",
+    "electric"
+  ],
+  "Hoocrates": [
+    "dark"
+  ],
+  "Melpaca": [
+    "neutral"
+  ],
+  "Kingpaca": [
+    "neutral"
+  ],
+  "Kingpaca Cryst": [
+    "ice"
+  ],
+  "Daedream": [
+    "dark"
+  ],
+  "Tanzee": [
+    "grass"
+  ],
+  "Tanzee Ignis": [
+    "fire"
+  ],
+  "Nox": [
+    "dark"
+  ],
+  "Flambelle": [
+    "fire"
+  ],
+  "Rooby": [
+    "fire"
+  ],
+  "Mau": [
+    "dark"
+  ],
+  "Mau Cryst": [
+    "ice"
+  ],
+  "Rushoar": [
+    "ground"
+  ],
+  "Foxparks": [
+    "fire"
+  ],
+  "Foxparks Cryst": [
+    "ice"
+  ],
+  "Killamari": [
+    "dark",
+    "water"
+  ],
+  "Killamari Primo": [
+    "neutral",
+    "water"
+  ],
+  "Fuddler": [
+    "ground"
+  ],
+  "Eikthyrdeer": [
+    "neutral"
+  ],
+  "Eikthyrdeer Terra": [
+    "ground"
+  ],
+  "Direhowl": [
+    "neutral"
+  ],
+  "Caprity": [
+    "grass"
+  ],
+  "Caprity Noct": [
+    "dark"
+  ],
+  "Swee": [
+    "ice"
+  ],
+  "Sweepa": [
+    "ice"
+  ],
+  "Turtacle": [
+    "water"
+  ],
+  "Turtacle Terra": [
+    "water",
+    "ground"
+  ],
+  "Hangyu": [
+    "ground"
+  ],
+  "Hangyu Cryst": [
+    "ice"
+  ],
+  "Woolipop": [
+    "neutral"
+  ],
+  "Woolipop Terra": [
+    "ground"
+  ],
+  "Mozzarina": [
+    "neutral"
+  ],
+  "Azurobe": [
+    "water",
+    "dragon"
+  ],
+  "Azurobe Cryst": [
+    "ice",
+    "dragon"
+  ],
+  "Sparkit": [
+    "electric"
+  ],
+  "Kelpsea": [
+    "water"
+  ],
+  "Kelpsea Ignis": [
+    "fire"
+  ],
+  "Ribbuny": [
+    "neutral"
+  ],
+  "Ribbuny Botan": [
+    "grass"
+  ],
+  "Jelliette": [
+    "water"
+  ],
+  "Jellroy": [
+    "water",
+    "dark"
+  ],
+  "Amione": [
+    "water"
+  ],
+  "Gloopie": [
+    "water",
+    "dark"
+  ],
+  "Gloopie Primo": [
+    "water",
+    "neutral"
+  ],
+  "Galeclaw": [
+    "neutral"
+  ],
+  "Wispaw": [
+    "dark"
+  ],
+  "Nitewing": [
+    "neutral"
+  ],
+  "Tombat": [
+    "dark"
+  ],
+  "Tocotoco": [
+    "neutral"
+  ],
+  "Univolt": [
+    "electric"
+  ],
+  "Univolt Cryst": [
+    "ice"
+  ],
+  "Gobfin": [
+    "water"
+  ],
+  "Gobfin Ignis": [
+    "fire"
+  ],
+  "Loupmoon": [
+    "dark"
+  ],
+  "Loupmoon Cryst": [
+    "ice"
+  ],
+  "Cawgnito": [
+    "dark"
+  ],
+  "Arsox": [
+    "fire"
+  ],
+  "Muffly": [
+    "ice"
+  ],
+  "Bristla": [
+    "grass"
+  ],
+  "Cinnamoth": [
+    "grass"
+  ],
+  "Puffolt": [
+    "electric"
+  ],
+  "Elphidran": [
+    "dragon"
+  ],
+  "Elphidran Aqua": [
+    "dragon",
+    "water"
+  ],
+  "Vanwyrm": [
+    "fire",
+    "dark"
+  ],
+  "Vanwyrm Cryst": [
+    "ice",
+    "dark"
+  ],
+  "Felbat": [
+    "dark"
+  ],
+  "Vaelet": [
+    "grass"
+  ],
+  "Beegarde": [
+    "grass"
+  ],
+  "Elizabee": [
+    "grass"
+  ],
+  "Lovander": [
+    "dark"
+  ],
+  "Grintale": [
+    "neutral"
+  ],
+  "Tarantriss": [
+    "dark"
+  ],
+  "Polapup": [
+    "ice",
+    "water"
+  ],
+  "Polapup Terra": [
+    "ice",
+    "ground"
+  ],
+  "Leezpunk": [
+    "dark"
+  ],
+  "Leezpunk Ignis": [
+    "fire"
+  ],
+  "Gorirat": [
+    "neutral"
+  ],
+  "Gorirat Terra": [
+    "ground"
+  ],
+  "Surfent": [
+    "water"
+  ],
+  "Surfent Terra": [
+    "ground"
+  ],
+  "Robinquill": [
+    "grass"
+  ],
+  "Robinquill Terra": [
+    "grass",
+    "ground"
+  ],
+  "Flopie": [
+    "grass"
+  ],
+  "Wixen": [
+    "fire"
+  ],
+  "Wixen Noct": [
+    "fire",
+    "dark"
+  ],
+  "Katress": [
+    "dark"
+  ],
+  "Katress Ignis": [
+    "dark",
+    "fire"
+  ],
+  "Helzephyr": [
+    "dark"
+  ],
+  "Helzephyr Lux": [
+    "dark",
+    "electric"
+  ],
+  "Elgrove": [
+    "grass"
+  ],
+  "Elgrove Cryst": [
+    "ice"
+  ],
+  "Lunaris": [
+    "neutral"
+  ],
+  "Fenglope": [
+    "neutral"
+  ],
+  "Fenglope Lux": [
+    "electric"
+  ],
+  "Dinossom": [
+    "grass",
+    "dragon"
+  ],
+  "Dinossom Lux": [
+    "electric",
+    "dragon"
+  ],
+  "Bushi": [
+    "fire"
+  ],
+  "Bushi Noct": [
+    "fire",
+    "dark"
+  ],
+  "Munchill": [
+    "ice",
+    "water"
+  ],
+  "Mammorest": [
+    "grass",
+    "ground"
+  ],
+  "Mammorest Cryst": [
+    "ice",
+    "ground"
+  ],
+  "Finsider": [
+    "water"
+  ],
+  "Finsider Ignis": [
+    "water",
+    "fire"
+  ],
+  "Petallia": [
+    "grass"
+  ],
+  "Petallia Ignis": [
+    "grass",
+    "fire"
+  ],
+  "Leafan": [
+    "grass"
+  ],
+  "Incineram": [
+    "fire",
+    "dark"
+  ],
+  "Incineram Noct": [
+    "dark"
+  ],
+  "Dazzi": [
+    "electric"
+  ],
+  "Dazzi Noct": [
+    "dark",
+    "electric"
+  ],
+  "Pyrin": [
+    "fire"
+  ],
+  "Pyrin Noct": [
+    "fire",
+    "dark"
+  ],
+  "Relaxaurus": [
+    "dragon",
+    "water"
+  ],
+  "Relaxaurus Lux": [
+    "dragon",
+    "electric"
+  ],
+  "Foxcicle": [
+    "ice"
+  ],
+  "Beakon": [
+    "electric"
+  ],
+  "Beakon Cryst": [
+    "ice"
+  ],
+  "Ghangler": [
+    "dark",
+    "water"
+  ],
+  "Ghangler Ignis": [
+    "fire",
+    "water"
+  ],
+  "Rayhound": [
+    "electric"
+  ],
+  "Rayhound Cryst": [
+    "ice"
+  ],
+  "Menasting": [
+    "dark",
+    "ground"
+  ],
+  "Menasting Terra": [
+    "ground"
+  ],
+  "Needoll": [
+    "grass"
+  ],
+  "Needoll Noct": [
+    "dark",
+    "grass"
+  ],
+  "Reindrix": [
+    "ice"
+  ],
+  "Mossanda": [
+    "grass"
+  ],
+  "Mossanda Lux": [
+    "electric"
+  ],
+  "Chillet": [
+    "ice",
+    "dragon"
+  ],
+  "Chillet Ignis": [
+    "fire",
+    "dragon"
+  ],
+  "Ragnahawk": [
+    "fire"
+  ],
+  "Moldron": [
+    "fire",
+    "ground"
+  ],
+  "Moldron Cryst": [
+    "ice",
+    "ground"
+  ],
+  "Palumba": [
+    "grass"
+  ],
+  "Digtoise": [
+    "ground"
+  ],
+  "Broncherry": [
+    "grass"
+  ],
+  "Broncherry Aqua": [
+    "grass",
+    "water"
+  ],
+  "Dumud": [
+    "ground",
+    "water"
+  ],
+  "Dumud Gild": [
+    "ground",
+    "water"
+  ],
+  "Braloha": [
+    "grass",
+    "ground"
+  ],
+  "Kitsun": [
+    "fire"
+  ],
+  "Kitsun Noct": [
+    "dark"
+  ],
+  "Blazehowl": [
+    "fire"
+  ],
+  "Blazehowl Noct": [
+    "fire",
+    "dark"
+  ],
+  "Warsect": [
+    "ground",
+    "grass"
+  ],
+  "Warsect Terra": [
+    "ground"
+  ],
+  "Frostplume": [
+    "ice"
+  ],
+  "Majex": [
+    "dark",
+    "fire"
+  ],
+  "Sibelyx": [
+    "ice"
+  ],
+  "Sibelyx Primo": [
+    "neutral"
+  ],
+  "Maraith": [
+    "dark"
+  ],
+  "Shroomer": [
+    "grass"
+  ],
+  "Shroomer Noct": [
+    "grass",
+    "dark"
+  ],
+  "Icelyn": [
+    "ice"
+  ],
+  "Gildra": [
+    "dark",
+    "ground"
+  ],
+  "Jormuntide": [
+    "dragon",
+    "water"
+  ],
+  "Jormuntide Ignis": [
+    "dragon",
+    "fire"
+  ],
+  "Suzaku": [
+    "fire"
+  ],
+  "Suzaku Aqua": [
+    "water"
+  ],
+  "Dazemu": [
+    "ground"
+  ],
+  "Quivern": [
+    "dragon"
+  ],
+  "Quivern Botan": [
+    "dragon",
+    "grass"
+  ],
+  "Lullu": [
+    "grass"
+  ],
+  "Kikit": [
+    "ground"
+  ],
+  "Yakumo": [
+    "neutral"
+  ],
+  "Skutlass": [
+    "water"
+  ],
+  "Skutlass Ignis": [
+    "water",
+    "fire"
+  ],
+  "Reptyro": [
+    "fire",
+    "ground"
+  ],
+  "Reptyro Cryst": [
+    "ice",
+    "ground"
+  ],
+  "Starryon": [
+    "dark"
+  ],
+  "Starryon Primo": [
+    "neutral"
+  ],
+  "Pierdon": [
+    "ground"
+  ],
+  "Pierdon Cryst": [
+    "ice"
+  ],
+  "Cryolinx": [
+    "ice"
+  ],
+  "Cryolinx Terra": [
+    "ground"
+  ],
+  "Snugloo": [
+    "ice"
+  ],
+  "Wumpo": [
+    "ice"
+  ],
+  "Wumpo Botan": [
+    "grass"
+  ],
+  "Sootseer": [
+    "dark",
+    "fire"
+  ],
+  "Carnibora": [
+    "grass"
+  ],
+  "Blazamut": [
+    "fire"
+  ],
+  "Blazamut Ryu": [
+    "dragon",
+    "fire"
+  ],
+  "Dualith": [
+    "ground",
+    "grass"
+  ],
+  "Dualith Noct": [
+    "ground",
+    "dark"
+  ],
+  "Anubis": [
+    "ground"
+  ],
+  "Sekhmet": [
+    "ground"
+  ],
+  "Prixter": [
+    "dark",
+    "ground"
+  ],
+  "Prixter Lux": [
+    "electric",
+    "ground"
+  ],
+  "Tetroise": [
+    "ground"
+  ],
+  "Tetroise Primo": [
+    "neutral"
+  ],
+  "Nyafia": [
+    "dark"
+  ],
+  "Mimog": [
+    "neutral"
+  ],
+  "Xenovader": [
+    "dark"
+  ],
+  "Xenogard": [
+    "dragon"
+  ],
+  "Prunelia": [
+    "grass",
+    "dark"
+  ],
+  "Nitemary": [
+    "dark"
+  ],
+  "Nitemary Botan": [
+    "grass"
+  ],
+  "Smokie": [
+    "dark"
+  ],
+  "Smokie Cryst": [
+    "dark",
+    "ice"
+  ],
+  "Omascul": [
+    "dark"
+  ],
+  "Whalaska": [
+    "ice",
+    "water"
+  ],
+  "Whalaska Ignis": [
+    "ice",
+    "fire"
+  ],
+  "Verdash": [
+    "grass"
+  ],
+  "Splatterina": [
+    "dark"
+  ],
+  "Gildane": [
+    "ground"
+  ],
+  "Dogen": [
+    "neutral"
+  ],
+  "Bulldosu": [
+    "ground"
+  ],
+  "Celesdir": [
+    "neutral"
+  ],
+  "Celesdir Noct": [
+    "dark"
+  ],
+  "Astegon": [
+    "dragon",
+    "dark"
+  ],
+  "Knocklem": [
+    "ground"
+  ],
+  "Knocklem Ignis": [
+    "fire"
+  ],
+  "Silvegis": [
+    "dragon"
+  ],
+  "Azurmane": [
+    "electric"
+  ],
+  "Valentail": [
+    "neutral"
+  ],
+  "Snock": [
+    "electric"
+  ],
+  "Snock Lux": [
+    "electric",
+    "ground"
+  ],
+  "Souffline": [
+    "grass"
+  ],
+  "Lapiron": [
+    "ground"
+  ],
+  "Hoodle": [
+    "dark"
+  ],
+  "Slowatt": [
+    "electric"
+  ],
+  "Bakemi": [
+    "dark"
+  ],
+  "Solmora": [
+    "water"
+  ],
+  "Solmora Lux": [
+    "water",
+    "electric"
+  ],
+  "Lapure": [
+    "neutral"
+  ],
+  "Eidrolon": [
+    "dragon",
+    "dark"
+  ],
+  "Eidrolon Ignis": [
+    "dragon",
+    "fire"
+  ],
+  "Dynamoff": [
+    "electric"
+  ],
+  "Tropicaw": [
+    "grass"
+  ],
+  "Flaracle": [
+    "fire"
+  ],
+  "Ophydia": [
+    "grass",
+    "water"
+  ],
+  "Dupin": [
+    "fire"
+  ],
+  "Roujay": [
+    "dark"
+  ],
+  "Venusa": [
+    "dark"
+  ],
+  "Mycora": [
+    "grass"
+  ],
+  "Loomen": [
+    "dark",
+    "fire"
+  ],
+  "Wistella": [
+    "dark"
+  ],
+  "Solenne": [
+    "dark",
+    "neutral"
+  ],
+  "Renjishi": [
+    "fire"
+  ],
+  "Aegidron": [
+    "dragon",
+    "ground"
+  ],
+  "Grizzbolt": [
+    "electric"
+  ],
+  "Lyleen": [
+    "grass"
+  ],
+  "Lyleen Noct": [
+    "dark"
+  ],
+  "Orserk": [
+    "dragon",
+    "electric"
+  ],
+  "Faleris": [
+    "fire"
+  ],
+  "Faleris Aqua": [
+    "water"
+  ],
+  "Shadowbeak": [
+    "dark"
+  ],
+  "Selyne": [
+    "dark",
+    "neutral"
+  ],
+  "Bastigor": [
+    "ice"
+  ],
+  "Shaolong": [
+    "dragon",
+    "water"
+  ],
+  "Silvance": [
+    "grass"
+  ],
+  "Dandilord": [
+    "grass",
+    "dark"
+  ],
+  "Bellanoir": [
+    "dark"
+  ],
+  "Bellanoir Libero": [
+    "dark"
+  ],
+  "Xenolord": [
+    "dark",
+    "dragon"
+  ],
+  "Hartalis": [
+    "neutral"
+  ],
+  "Paladius": [
+    "neutral"
+  ],
+  "Necromus": [
+    "dark"
+  ],
+  "Frostallion": [
+    "ice"
+  ],
+  "Frostallion Noct": [
+    "dark"
+  ],
+  "Neptilius": [
+    "water"
+  ],
+  "Jetragon": [
+    "dragon"
+  ],
+  "Panthalus": [
+    "water"
+  ],
+  "Astralym": []
+}

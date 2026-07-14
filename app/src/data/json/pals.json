@@ -1,0 +1,5615 @@
+[
+  {
+    "id": "green_slime",
+    "iconName": "Green_Slime",
+    "name": "Green Slime",
+    "number": 0,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1430,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 65,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_icon_normal.png"
+  },
+  {
+    "id": "blue_slime",
+    "iconName": "Blue_Slime",
+    "name": "Blue Slime",
+    "number": 0,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1490,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Blue_icon_normal.png"
+  },
+  {
+    "id": "red_slime",
+    "iconName": "Red_Slime",
+    "name": "Red Slime",
+    "number": 0,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1405,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Red_icon_normal.png"
+  },
+  {
+    "id": "purple_slime",
+    "iconName": "Purple_Slime",
+    "name": "Purple Slime",
+    "number": 0,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1390,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 75,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Purple_icon_normal.png"
+  },
+  {
+    "id": "illuminant_slime",
+    "iconName": "Illuminant_Slime",
+    "name": "Illuminant Slime",
+    "number": 0,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1500,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 75,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Pink_icon_normal.png"
+  },
+  {
+    "id": "rainbow_slime",
+    "iconName": "Rainbow_Slime",
+    "name": "Rainbow Slime",
+    "number": 0,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1320,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 105,
+    "attack": 95,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Rainbow_icon_normal.png"
+  },
+  {
+    "id": "enchanted_sword",
+    "iconName": "Enchanted_Sword",
+    "name": "Enchanted Sword",
+    "number": 0,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1380,
+    "workSuitability": {
+      "lumbering": 1
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster002_icon_normal.png"
+  },
+  {
+    "id": "cave_bat",
+    "iconName": "Cave_Bat",
+    "name": "Cave Bat",
+    "number": 0,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1340,
+    "workSuitability": {
+      "gathering": 1
+    },
+    "hp": 65,
+    "attack": 75,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster003_icon_normal.png"
+  },
+  {
+    "id": "illuminant_bat",
+    "iconName": "Illuminant_Bat",
+    "name": "Illuminant Bat",
+    "number": 0,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1250,
+    "workSuitability": {
+      "gathering": 1
+    },
+    "hp": 80,
+    "attack": 80,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster003_Purple_icon_normal.png"
+  },
+  {
+    "id": "eye_of_cthulhu",
+    "iconName": "Eye_of_Cthulhu",
+    "name": "Eye of Cthulhu",
+    "number": 0,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1380,
+    "workSuitability": {
+      "transporting": 4
+    },
+    "hp": 110,
+    "attack": 105,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaBoss001_icon_normal.png"
+  },
+  {
+    "id": "demon_eye",
+    "iconName": "Demon_Eye",
+    "name": "Demon Eye",
+    "number": 0,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1390,
+    "workSuitability": {
+      "transporting": 1
+    },
+    "hp": 105,
+    "attack": 110,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaBoss001_Small_icon_normal.png"
+  },
+  {
+    "id": "lamball",
+    "iconName": "Lamball",
+    "name": "Lamball",
+    "number": 1,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1470,
+    "workSuitability": {
+      "farming": 1,
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SheepBall_icon_normal.png"
+  },
+  {
+    "id": "cattiva",
+    "iconName": "Cattiva",
+    "name": "Cattiva",
+    "number": 2,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1460,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 1,
+      "mining": 1,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkCat_icon_normal.png"
+  },
+  {
+    "id": "chikipi",
+    "iconName": "Chikipi",
+    "name": "Chikipi",
+    "number": 3,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1500,
+    "workSuitability": {
+      "farming": 1,
+      "gathering": 1
+    },
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ChickenPal_icon_normal.png"
+  },
+  {
+    "id": "lifmunk",
+    "iconName": "Lifmunk",
+    "name": "Lifmunk",
+    "number": 4,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1430,
+    "workSuitability": {
+      "lumbering": 1,
+      "gathering": 1,
+      "handiwork": 1,
+      "medicineProduction": 1,
+      "planting": 1
+    },
+    "hp": 75,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Carbunclo_icon_normal.png"
+  },
+  {
+    "id": "fuack",
+    "iconName": "Fuack",
+    "name": "Fuack",
+    "number": 5,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1330,
+    "workSuitability": {
+      "handiwork": 1,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 60,
+    "attack": 80,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BluePlatypus_icon_normal.png"
+  },
+  {
+    "id": "fuack_ignis",
+    "iconName": "Fuack_Ignis",
+    "name": "Fuack Ignis",
+    "number": 0,
+    "elements": [
+      "water",
+      "fire"
+    ],
+    "breedingPower": 1290,
+    "workSuitability": {
+      "handiwork": 1,
+      "kindling": 2,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 60,
+    "attack": 85,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BluePlatypus_Fire_icon_normal.png"
+  },
+  {
+    "id": "vixy",
+    "iconName": "Vixy",
+    "name": "Vixy",
+    "number": 6,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1450,
+    "workSuitability": {
+      "farming": 1,
+      "gathering": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CuteFox_icon_normal.png"
+  },
+  {
+    "id": "celaray",
+    "iconName": "Celaray",
+    "name": "Celaray",
+    "number": 7,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 870,
+    "workSuitability": {
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 80,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlyingManta_icon_normal.png"
+  },
+  {
+    "id": "celaray_lux",
+    "iconName": "Celaray_Lux",
+    "name": "Celaray Lux",
+    "number": 0,
+    "elements": [
+      "water",
+      "electric"
+    ],
+    "breedingPower": 830,
+    "workSuitability": {
+      "generatingElectricity": 2,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 80,
+    "attack": 75,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlyingManta_Thunder_icon_normal.png"
+  },
+  {
+    "id": "cremis",
+    "iconName": "Cremis",
+    "name": "Cremis",
+    "number": 8,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1455,
+    "workSuitability": {
+      "farming": 2,
+      "gathering": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WoolFox_icon_normal.png"
+  },
+  {
+    "id": "croajiro",
+    "iconName": "Croajiro",
+    "name": "Croajiro",
+    "number": 9,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 795,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 1,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 80,
+    "attack": 100,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KendoFrog_icon_normal.png"
+  },
+  {
+    "id": "croajiro_noct",
+    "iconName": "Croajiro_Noct",
+    "name": "Croajiro Noct",
+    "number": 0,
+    "elements": [
+      "water",
+      "dark"
+    ],
+    "breedingPower": 765,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 2,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 85,
+    "attack": 110,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KendoFrog_Dark_icon_normal.png"
+  },
+  {
+    "id": "herbil",
+    "iconName": "Herbil",
+    "name": "Herbil",
+    "number": 10,
+    "elements": [
+      "grass",
+      "neutral"
+    ],
+    "breedingPower": 1445,
+    "workSuitability": {
+      "gathering": 1,
+      "planting": 1,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 75,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LeafMomonga_icon_normal.png"
+  },
+  {
+    "id": "teafant",
+    "iconName": "Teafant",
+    "name": "Teafant",
+    "number": 11,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1490,
+    "workSuitability": {
+      "watering": 1
+    },
+    "hp": 70,
+    "attack": 60,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Ganesha_icon_normal.png"
+  },
+  {
+    "id": "gumoss",
+    "iconName": "Gumoss",
+    "name": "Gumoss",
+    "number": 12,
+    "elements": [
+      "grass",
+      "ground"
+    ],
+    "breedingPower": 1240,
+    "workSuitability": {
+      "planting": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PlantSlime_icon_normal.png"
+  },
+  {
+    "id": "pupperai",
+    "iconName": "Pupperai",
+    "name": "Pupperai",
+    "number": 13,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1450,
+    "workSuitability": {
+      "lumbering": 1,
+      "gathering": 1,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SamuraiDog_icon_normal.png"
+  },
+  {
+    "id": "clovee",
+    "iconName": "Clovee",
+    "name": "Clovee",
+    "number": 14,
+    "elements": [
+      "grass",
+      "neutral"
+    ],
+    "breedingPower": 1460,
+    "workSuitability": {
+      "gathering": 1,
+      "planting": 1
+    },
+    "hp": 80,
+    "attack": 65,
+    "defense": 65,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CloverFairy_icon_normal.png"
+  },
+  {
+    "id": "jolthog",
+    "iconName": "Jolthog",
+    "name": "Jolthog",
+    "number": 15,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 1370,
+    "workSuitability": {
+      "generatingElectricity": 1
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Hedgehog_icon_normal.png"
+  },
+  {
+    "id": "jolthog_cryst",
+    "iconName": "Jolthog_Cryst",
+    "name": "Jolthog Cryst",
+    "number": 0,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1360,
+    "workSuitability": {
+      "cooling": 1
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Hedgehog_Ice_icon_normal.png"
+  },
+  {
+    "id": "depresso",
+    "iconName": "Depresso",
+    "name": "Depresso",
+    "number": 16,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1380,
+    "workSuitability": {
+      "farming": 1,
+      "handiwork": 1,
+      "mining": 1,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NegativeKoala_icon_normal.png"
+  },
+  {
+    "id": "pengullet",
+    "iconName": "Pengullet",
+    "name": "Pengullet",
+    "number": 17,
+    "elements": [
+      "water",
+      "ice"
+    ],
+    "breedingPower": 1350,
+    "workSuitability": {
+      "cooling": 1,
+      "handiwork": 1,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Penguin_icon_normal.png"
+  },
+  {
+    "id": "pengullet_lux",
+    "iconName": "Pengullet_Lux",
+    "name": "Pengullet Lux",
+    "number": 0,
+    "elements": [
+      "water",
+      "electric"
+    ],
+    "breedingPower": 1310,
+    "workSuitability": {
+      "generatingElectricity": 2,
+      "handiwork": 1,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 70,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Penguin_Electric_icon_normal.png"
+  },
+  {
+    "id": "penking",
+    "iconName": "Penking",
+    "name": "Penking",
+    "number": 18,
+    "elements": [
+      "water",
+      "ice"
+    ],
+    "breedingPower": 520,
+    "workSuitability": {
+      "cooling": 2,
+      "handiwork": 2,
+      "mining": 3,
+      "transporting": 3,
+      "watering": 2
+    },
+    "hp": 95,
+    "attack": 95,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CaptainPenguin_icon_normal.png"
+  },
+  {
+    "id": "penking_lux",
+    "iconName": "Penking_Lux",
+    "name": "Penking Lux",
+    "number": 0,
+    "elements": [
+      "water",
+      "electric"
+    ],
+    "breedingPower": 490,
+    "workSuitability": {
+      "generatingElectricity": 3,
+      "handiwork": 2,
+      "mining": 3,
+      "transporting": 3,
+      "watering": 2
+    },
+    "hp": 100,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CaptainPenguin_Black_icon_normal.png"
+  },
+  {
+    "id": "hoocrates",
+    "iconName": "Hoocrates",
+    "name": "Hoocrates",
+    "number": 19,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1390,
+    "workSuitability": {
+      "gathering": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WizardOwl_icon_normal.png"
+  },
+  {
+    "id": "melpaca",
+    "iconName": "Melpaca",
+    "name": "Melpaca",
+    "number": 20,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 890,
+    "workSuitability": {
+      "farming": 2
+    },
+    "hp": 90,
+    "attack": 75,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Alpaca_icon_normal.png"
+  },
+  {
+    "id": "kingpaca",
+    "iconName": "Kingpaca",
+    "name": "Kingpaca",
+    "number": 21,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 470,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 120,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingAlpaca_icon_normal.png"
+  },
+  {
+    "id": "kingpaca_cryst",
+    "iconName": "Kingpaca_Cryst",
+    "name": "Kingpaca Cryst",
+    "number": 0,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 440,
+    "workSuitability": {
+      "cooling": 4,
+      "gathering": 2
+    },
+    "hp": 120,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingAlpaca_Ice_icon_normal.png"
+  },
+  {
+    "id": "daedream",
+    "iconName": "Daedream",
+    "name": "Daedream",
+    "number": 22,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1230,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DreamDemon_icon_normal.png"
+  },
+  {
+    "id": "tanzee",
+    "iconName": "Tanzee",
+    "name": "Tanzee",
+    "number": 23,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1250,
+    "workSuitability": {
+      "lumbering": 1,
+      "gathering": 1,
+      "handiwork": 1,
+      "planting": 1,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Monkey_icon_normal.png"
+  },
+  {
+    "id": "tanzee_ignis",
+    "iconName": "Tanzee_Ignis",
+    "name": "Tanzee Ignis",
+    "number": 0,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1250,
+    "workSuitability": {
+      "lumbering": 1,
+      "handiwork": 1,
+      "kindling": 1,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Monkey_Fire_icon_normal.png"
+  },
+  {
+    "id": "nox",
+    "iconName": "Nox",
+    "name": "Nox",
+    "number": 24,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1180,
+    "workSuitability": {
+      "gathering": 1
+    },
+    "hp": 75,
+    "attack": 85,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NightFox_icon_normal.png"
+  },
+  {
+    "id": "flambelle",
+    "iconName": "Flambelle",
+    "name": "Flambelle",
+    "number": 25,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1405,
+    "workSuitability": {
+      "farming": 1,
+      "handiwork": 1,
+      "kindling": 1,
+      "transporting": 1
+    },
+    "hp": 60,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LavaGirl_icon_normal.png"
+  },
+  {
+    "id": "rooby",
+    "iconName": "Rooby",
+    "name": "Rooby",
+    "number": 26,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1155,
+    "workSuitability": {
+      "farming": 1,
+      "kindling": 1
+    },
+    "hp": 75,
+    "attack": 70,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlameBambi_icon_normal.png"
+  },
+  {
+    "id": "mau",
+    "iconName": "Mau",
+    "name": "Mau",
+    "number": 27,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1480,
+    "workSuitability": {
+      "farming": 1,
+      "gathering": 1
+    },
+    "hp": 70,
+    "attack": 60,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Bastet_icon_normal.png"
+  },
+  {
+    "id": "mau_cryst",
+    "iconName": "Mau_Cryst",
+    "name": "Mau Cryst",
+    "number": 0,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1440,
+    "workSuitability": {
+      "cooling": 1,
+      "farming": 1
+    },
+    "hp": 70,
+    "attack": 65,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Bastet_Ice_icon_normal.png"
+  },
+  {
+    "id": "rushoar",
+    "iconName": "Rushoar",
+    "name": "Rushoar",
+    "number": 28,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1130,
+    "workSuitability": {
+      "mining": 1
+    },
+    "hp": 80,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Boar_icon_normal.png"
+  },
+  {
+    "id": "foxparks",
+    "iconName": "Foxparks",
+    "name": "Foxparks",
+    "number": 29,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1400,
+    "workSuitability": {
+      "kindling": 1
+    },
+    "hp": 65,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kitsunebi_icon_normal.png"
+  },
+  {
+    "id": "foxparks_cryst",
+    "iconName": "Foxparks_Cryst",
+    "name": "Foxparks Cryst",
+    "number": 0,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1305,
+    "workSuitability": {
+      "cooling": 2
+    },
+    "hp": 65,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kitsunebi_Ice_icon_normal.png"
+  },
+  {
+    "id": "killamari",
+    "iconName": "Killamari",
+    "name": "Killamari",
+    "number": 30,
+    "elements": [
+      "dark",
+      "water"
+    ],
+    "breedingPower": 1290,
+    "workSuitability": {
+      "gathering": 1,
+      "transporting": 2,
+      "watering": 1
+    },
+    "hp": 60,
+    "attack": 60,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NegativeOctopus_icon_normal.png"
+  },
+  {
+    "id": "killamari_primo",
+    "iconName": "Killamari_Primo",
+    "name": "Killamari Primo",
+    "number": 30,
+    "elements": [
+      "neutral",
+      "water"
+    ],
+    "breedingPower": 1250,
+    "workSuitability": {
+      "gathering": 1,
+      "transporting": 2,
+      "watering": 1
+    },
+    "hp": 70,
+    "attack": 60,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NegativeOctopus_Neutral_icon_normal.png"
+  },
+  {
+    "id": "fuddler",
+    "iconName": "Fuddler",
+    "name": "Fuddler",
+    "number": 31,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1220,
+    "workSuitability": {
+      "handiwork": 1,
+      "mining": 1,
+      "transporting": 1
+    },
+    "hp": 65,
+    "attack": 80,
+    "defense": 50,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CuteMole_icon_normal.png"
+  },
+  {
+    "id": "eikthyrdeer",
+    "iconName": "Eikthyrdeer",
+    "name": "Eikthyrdeer",
+    "number": 32,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 920,
+    "workSuitability": {
+      "lumbering": 2
+    },
+    "hp": 95,
+    "attack": 80,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Deer_icon_normal.png"
+  },
+  {
+    "id": "eikthyrdeer_terra",
+    "iconName": "Eikthyrdeer_Terra",
+    "name": "Eikthyrdeer Terra",
+    "number": 32,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 900,
+    "workSuitability": {
+      "lumbering": 2
+    },
+    "hp": 95,
+    "attack": 80,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Deer_Ground_icon_normal.png"
+  },
+  {
+    "id": "direhowl",
+    "iconName": "Direhowl",
+    "name": "Direhowl",
+    "number": 33,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1060,
+    "workSuitability": {
+      "gathering": 1
+    },
+    "hp": 80,
+    "attack": 90,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Garm_icon_normal.png"
+  },
+  {
+    "id": "caprity",
+    "iconName": "Caprity",
+    "name": "Caprity",
+    "number": 34,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 930,
+    "workSuitability": {
+      "farming": 1,
+      "planting": 2
+    },
+    "hp": 100,
+    "attack": 70,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BerryGoat_icon_normal.png"
+  },
+  {
+    "id": "caprity_noct",
+    "iconName": "Caprity_Noct",
+    "name": "Caprity Noct",
+    "number": 34,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 855,
+    "workSuitability": {
+      "farming": 1,
+      "planting": 2
+    },
+    "hp": 100,
+    "attack": 75,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BerryGoat_Dark_icon_normal.png"
+  },
+  {
+    "id": "swee",
+    "iconName": "Swee",
+    "name": "Swee",
+    "number": 35,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1300,
+    "workSuitability": {
+      "cooling": 1,
+      "gathering": 1
+    },
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MopBaby_icon_normal.png"
+  },
+  {
+    "id": "sweepa",
+    "iconName": "Sweepa",
+    "name": "Sweepa",
+    "number": 36,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 410,
+    "workSuitability": {
+      "cooling": 3,
+      "gathering": 2
+    },
+    "hp": 100,
+    "attack": 90,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MopKing_icon_normal.png"
+  },
+  {
+    "id": "turtacle",
+    "iconName": "Turtacle",
+    "name": "Turtacle",
+    "number": 37,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1105,
+    "workSuitability": {
+      "mining": 1,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 75,
+    "attack": 75,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_TentacleTurtle_icon_normal.png"
+  },
+  {
+    "id": "turtacle_terra",
+    "iconName": "Turtacle_Terra",
+    "name": "Turtacle Terra",
+    "number": 37,
+    "elements": [
+      "water",
+      "ground"
+    ],
+    "breedingPower": 1065,
+    "workSuitability": {
+      "mining": 3,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 85,
+    "attack": 85,
+    "defense": 125,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_TentacleTurtle_Ground_icon_normal.png"
+  },
+  {
+    "id": "hangyu",
+    "iconName": "Hangyu",
+    "name": "Hangyu",
+    "number": 38,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1420,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 1,
+      "transporting": 2
+    },
+    "hp": 80,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WindChimes_icon_normal.png"
+  },
+  {
+    "id": "hangyu_cryst",
+    "iconName": "Hangyu_Cryst",
+    "name": "Hangyu Cryst",
+    "number": 38,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1422,
+    "workSuitability": {
+      "cooling": 2,
+      "gathering": 2,
+      "handiwork": 3,
+      "transporting": 3
+    },
+    "hp": 80,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WindChimes_Ice_icon_normal.png"
+  },
+  {
+    "id": "woolipop",
+    "iconName": "Woolipop",
+    "name": "Woolipop",
+    "number": 39,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1190,
+    "workSuitability": {
+      "farming": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SweetsSheep_icon_normal.png"
+  },
+  {
+    "id": "woolipop_terra",
+    "iconName": "Woolipop_Terra",
+    "name": "Woolipop Terra",
+    "number": 39,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1190,
+    "workSuitability": {
+      "farming": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SweetsSheep_Ground_icon_normal.png"
+  },
+  {
+    "id": "mozzarina",
+    "iconName": "Mozzarina",
+    "name": "Mozzarina",
+    "number": 40,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 910,
+    "workSuitability": {
+      "farming": 2
+    },
+    "hp": 90,
+    "attack": 50,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CowPal_icon_normal.png"
+  },
+  {
+    "id": "azurobe",
+    "iconName": "Azurobe",
+    "name": "Azurobe",
+    "number": 41,
+    "elements": [
+      "water",
+      "dragon"
+    ],
+    "breedingPower": 500,
+    "workSuitability": {
+      "watering": 4
+    },
+    "hp": 110,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueDragon_icon_normal.png"
+  },
+  {
+    "id": "azurobe_cryst",
+    "iconName": "Azurobe_Cryst",
+    "name": "Azurobe Cryst",
+    "number": 41,
+    "elements": [
+      "ice",
+      "dragon"
+    ],
+    "breedingPower": 480,
+    "workSuitability": {
+      "cooling": 4
+    },
+    "hp": 115,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueDragon_Ice_icon_normal.png"
+  },
+  {
+    "id": "sparkit",
+    "iconName": "Sparkit",
+    "name": "Sparkit",
+    "number": 42,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "farming": 1,
+      "generatingElectricity": 1,
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "hp": 60,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecCat_icon_normal.png"
+  },
+  {
+    "id": "kelpsea",
+    "iconName": "Kelpsea",
+    "name": "Kelpsea",
+    "number": 43,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "farming": 1,
+      "watering": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kelpie_icon_normal.png"
+  },
+  {
+    "id": "kelpsea_ignis",
+    "iconName": "Kelpsea_Ignis",
+    "name": "Kelpsea Ignis",
+    "number": 43,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "farming": 1,
+      "kindling": 1
+    },
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kelpie_Fire_icon_normal.png"
+  },
+  {
+    "id": "ribbuny",
+    "iconName": "Ribbuny",
+    "name": "Ribbuny",
+    "number": 44,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "hp": 75,
+    "attack": 65,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkRabbit_icon_normal.png"
+  },
+  {
+    "id": "ribbuny_botan",
+    "iconName": "Ribbuny_Botan",
+    "name": "Ribbuny Botan",
+    "number": 44,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1205,
+    "workSuitability": {
+      "gathering": 2,
+      "handiwork": 2,
+      "planting": 2,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 65,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkRabbit_Grass_icon_normal.png"
+  },
+  {
+    "id": "jelliette",
+    "iconName": "Jelliette",
+    "name": "Jelliette",
+    "number": 45,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1385,
+    "workSuitability": {
+      "handiwork": 1,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 75,
+    "attack": 90,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_JellyfishFairy_icon_normal.png"
+  },
+  {
+    "id": "jellroy",
+    "iconName": "Jellroy",
+    "name": "Jellroy",
+    "number": 46,
+    "elements": [
+      "water",
+      "dark"
+    ],
+    "breedingPower": 1395,
+    "workSuitability": {
+      "handiwork": 1,
+      "medicineProduction": 1,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 90,
+    "attack": 75,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_JellyfishGhost_icon_normal.png"
+  },
+  {
+    "id": "amione",
+    "iconName": "Amione",
+    "name": "Amione",
+    "number": 47,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 2520,
+    "workSuitability": {
+      "handiwork": 2,
+      "transporting": 1,
+      "watering": 1
+    },
+    "hp": 65,
+    "attack": 70,
+    "defense": 65,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ClioneTwins_icon_normal.png"
+  },
+  {
+    "id": "gloopie",
+    "iconName": "Gloopie",
+    "name": "Gloopie",
+    "number": 48,
+    "elements": [
+      "water",
+      "dark"
+    ],
+    "breedingPower": 1195,
+    "workSuitability": {
+      "handiwork": 2,
+      "transporting": 2,
+      "watering": 2
+    },
+    "hp": 70,
+    "attack": 85,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_OctopusGirl_icon_normal.png"
+  },
+  {
+    "id": "gloopie_primo",
+    "iconName": "Gloopie_Primo",
+    "name": "Gloopie Primo",
+    "number": 48,
+    "elements": [
+      "water",
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 2,
+      "transporting": 2,
+      "watering": 2
+    },
+    "hp": 75,
+    "attack": 85,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_OctopusGirl_Neutral_icon_normal.png"
+  },
+  {
+    "id": "galeclaw",
+    "iconName": "Galeclaw",
+    "name": "Galeclaw",
+    "number": 49,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1030,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 75,
+    "attack": 85,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Eagle_icon_normal.png"
+  },
+  {
+    "id": "wispaw",
+    "iconName": "Wispaw",
+    "name": "Wispaw",
+    "number": 50,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1410,
+    "workSuitability": {
+      "lumbering": 1,
+      "handiwork": 2,
+      "medicineProduction": 1,
+      "transporting": 1
+    },
+    "hp": 85,
+    "attack": 95,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostBlackCat_icon_normal.png"
+  },
+  {
+    "id": "nitewing",
+    "iconName": "Nitewing",
+    "name": "Nitewing",
+    "number": 51,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 100,
+    "attack": 95,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HawkBird_icon_normal.png"
+  },
+  {
+    "id": "tombat",
+    "iconName": "Tombat",
+    "name": "Tombat",
+    "number": 52,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 2,
+      "mining": 3,
+      "transporting": 2
+    },
+    "hp": 95,
+    "attack": 95,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CatBat_icon_normal.png"
+  },
+  {
+    "id": "tocotoco",
+    "iconName": "Tocotoco",
+    "name": "Tocotoco",
+    "number": 53,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 1
+    },
+    "hp": 60,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ColorfulBird_icon_normal.png"
+  },
+  {
+    "id": "univolt",
+    "iconName": "Univolt",
+    "name": "Univolt",
+    "number": 54,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 680,
+    "workSuitability": {
+      "lumbering": 1,
+      "generatingElectricity": 3
+    },
+    "hp": 80,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kirin_icon_normal.png"
+  },
+  {
+    "id": "univolt_cryst",
+    "iconName": "Univolt_Cryst",
+    "name": "Univolt Cryst",
+    "number": 54,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "cooling": 6,
+      "lumbering": 3
+    },
+    "hp": 80,
+    "attack": 105,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kirin_Ice_icon_normal.png"
+  },
+  {
+    "id": "gobfin",
+    "iconName": "Gobfin",
+    "name": "Gobfin",
+    "number": 55,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1090,
+    "workSuitability": {
+      "handiwork": 2,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 90,
+    "attack": 90,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SharkKid_icon_normal.png"
+  },
+  {
+    "id": "gobfin_ignis",
+    "iconName": "Gobfin_Ignis",
+    "name": "Gobfin Ignis",
+    "number": 55,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1100,
+    "workSuitability": {
+      "handiwork": 2,
+      "kindling": 2,
+      "transporting": 1
+    },
+    "hp": 90,
+    "attack": 90,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SharkKid_Fire_icon_normal.png"
+  },
+  {
+    "id": "loupmoon",
+    "iconName": "Loupmoon",
+    "name": "Loupmoon",
+    "number": 56,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 950,
+    "workSuitability": {
+      "handiwork": 2
+    },
+    "hp": 80,
+    "attack": 100,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Werewolf_icon_normal.png"
+  },
+  {
+    "id": "loupmoon_cryst",
+    "iconName": "Loupmoon_Cryst",
+    "name": "Loupmoon Cryst",
+    "number": 56,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 805,
+    "workSuitability": {
+      "cooling": 4,
+      "handiwork": 4
+    },
+    "hp": 80,
+    "attack": 105,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Werewolf_Ice_icon_normal.png"
+  },
+  {
+    "id": "cawgnito",
+    "iconName": "Cawgnito",
+    "name": "Cawgnito",
+    "number": 57,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1080,
+    "workSuitability": {
+      "lumbering": 2,
+      "farming": 1
+    },
+    "hp": 75,
+    "attack": 95,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkCrow_icon_normal.png"
+  },
+  {
+    "id": "arsox",
+    "iconName": "Arsox",
+    "name": "Arsox",
+    "number": 58,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 790,
+    "workSuitability": {
+      "lumbering": 2,
+      "kindling": 3
+    },
+    "hp": 85,
+    "attack": 95,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlameBuffalo_icon_normal.png"
+  },
+  {
+    "id": "muffly",
+    "iconName": "Muffly",
+    "name": "Muffly",
+    "number": 59,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "cooling": 2,
+      "transporting": 1
+    },
+    "hp": 60,
+    "attack": 80,
+    "defense": 55,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FluffyBird_icon_normal.png"
+  },
+  {
+    "id": "bristla",
+    "iconName": "Bristla",
+    "name": "Bristla",
+    "number": 60,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 2690,
+    "workSuitability": {
+      "gathering": 2,
+      "handiwork": 2,
+      "medicineProduction": 2,
+      "planting": 2,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LittleBriarRose_icon_normal.png"
+  },
+  {
+    "id": "cinnamoth",
+    "iconName": "Cinnamoth",
+    "name": "Cinnamoth",
+    "number": 61,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 490,
+    "workSuitability": {
+      "gathering": 2,
+      "medicineProduction": 2,
+      "planting": 2
+    },
+    "hp": 70,
+    "attack": 80,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CuteButterfly_icon_normal.png"
+  },
+  {
+    "id": "puffolt",
+    "iconName": "Puffolt",
+    "name": "Puffolt",
+    "number": 62,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "generatingElectricity": 2,
+      "transporting": 1
+    },
+    "hp": 75,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecPomeranian_icon_normal.png"
+  },
+  {
+    "id": "elphidran",
+    "iconName": "Elphidran",
+    "name": "Elphidran",
+    "number": 63,
+    "elements": [
+      "dragon"
+    ],
+    "breedingPower": 540,
+    "workSuitability": {
+      "lumbering": 3
+    },
+    "hp": 110,
+    "attack": 80,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FairyDragon_icon_normal.png"
+  },
+  {
+    "id": "elphidran_aqua",
+    "iconName": "Elphidran_Aqua",
+    "name": "Elphidran Aqua",
+    "number": 63,
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "breedingPower": 530,
+    "workSuitability": {
+      "lumbering": 3,
+      "watering": 4
+    },
+    "hp": 115,
+    "attack": 80,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FairyDragon_Water_icon_normal.png"
+  },
+  {
+    "id": "vanwyrm",
+    "iconName": "Vanwyrm",
+    "name": "Vanwyrm",
+    "number": 64,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "breedingPower": 660,
+    "workSuitability": {
+      "kindling": 2,
+      "transporting": 3
+    },
+    "hp": 90,
+    "attack": 115,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BirdDragon_icon_normal.png"
+  },
+  {
+    "id": "vanwyrm_cryst",
+    "iconName": "Vanwyrm_Cryst",
+    "name": "Vanwyrm Cryst",
+    "number": 64,
+    "elements": [
+      "ice",
+      "dark"
+    ],
+    "breedingPower": 620,
+    "workSuitability": {
+      "cooling": 2,
+      "transporting": 3
+    },
+    "hp": 90,
+    "attack": 120,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BirdDragon_Ice_icon_normal.png"
+  },
+  {
+    "id": "felbat",
+    "iconName": "Felbat",
+    "name": "Felbat",
+    "number": 65,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1010,
+    "workSuitability": {
+      "medicineProduction": 3
+    },
+    "hp": 100,
+    "attack": 105,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CatVampire_icon_normal.png"
+  },
+  {
+    "id": "vaelet",
+    "iconName": "Vaelet",
+    "name": "Vaelet",
+    "number": 66,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1050,
+    "workSuitability": {
+      "farming": 2,
+      "gathering": 3,
+      "handiwork": 3,
+      "medicineProduction": 3,
+      "planting": 3,
+      "transporting": 2
+    },
+    "hp": 100,
+    "attack": 100,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_VioletFairy_icon_normal.png"
+  },
+  {
+    "id": "beegarde",
+    "iconName": "Beegarde",
+    "name": "Beegarde",
+    "number": 67,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1070,
+    "workSuitability": {
+      "lumbering": 2,
+      "farming": 3,
+      "gathering": 3,
+      "handiwork": 2,
+      "medicineProduction": 2,
+      "planting": 2,
+      "transporting": 2
+    },
+    "hp": 80,
+    "attack": 90,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SoldierBee_icon_normal.png"
+  },
+  {
+    "id": "elizabee",
+    "iconName": "Elizabee",
+    "name": "Elizabee",
+    "number": 68,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 330,
+    "workSuitability": {
+      "lumbering": 3,
+      "gathering": 4,
+      "handiwork": 4,
+      "medicineProduction": 4,
+      "planting": 4
+    },
+    "hp": 90,
+    "attack": 105,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_QueenBee_icon_normal.png"
+  },
+  {
+    "id": "lovander",
+    "iconName": "Lovander",
+    "name": "Lovander",
+    "number": 69,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 940,
+    "workSuitability": {
+      "handiwork": 3,
+      "medicineProduction": 3,
+      "mining": 2,
+      "transporting": 2
+    },
+    "hp": 120,
+    "attack": 70,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkLizard_icon_normal.png"
+  },
+  {
+    "id": "grintale",
+    "iconName": "Grintale",
+    "name": "Grintale",
+    "number": 70,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 510,
+    "workSuitability": {
+      "gathering": 3
+    },
+    "hp": 110,
+    "attack": 80,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NaughtyCat_icon_normal.png"
+  },
+  {
+    "id": "tarantriss",
+    "iconName": "Tarantriss",
+    "name": "Tarantriss",
+    "number": 71,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 825,
+    "workSuitability": {
+      "gathering": 3,
+      "handiwork": 3,
+      "medicineProduction": 2,
+      "transporting": 2
+    },
+    "hp": 110,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PurpleSpider_icon_normal.png"
+  },
+  {
+    "id": "polapup",
+    "iconName": "Polapup",
+    "name": "Polapup",
+    "number": 72,
+    "elements": [
+      "ice",
+      "water"
+    ],
+    "breedingPower": 745,
+    "workSuitability": {
+      "cooling": 4,
+      "watering": 3
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceSeal_icon_normal.png"
+  },
+  {
+    "id": "polapup_terra",
+    "iconName": "Polapup_Terra",
+    "name": "Polapup Terra",
+    "number": 72,
+    "elements": [
+      "ice",
+      "ground"
+    ],
+    "breedingPower": 745,
+    "workSuitability": {
+      "cooling": 4,
+      "mining": 4
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceSeal_Ground_icon_normal.png"
+  },
+  {
+    "id": "leezpunk",
+    "iconName": "Leezpunk",
+    "name": "Leezpunk",
+    "number": 73,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1120,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 2,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 80,
+    "defense": 50,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LizardMan_icon_normal.png"
+  },
+  {
+    "id": "leezpunk_ignis",
+    "iconName": "Leezpunk_Ignis",
+    "name": "Leezpunk Ignis",
+    "number": 73,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1140,
+    "workSuitability": {
+      "gathering": 1,
+      "handiwork": 2,
+      "kindling": 2,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 80,
+    "defense": 50,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LizardMan_Fire_icon_normal.png"
+  },
+  {
+    "id": "gorirat",
+    "iconName": "Gorirat",
+    "name": "Gorirat",
+    "number": 74,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1040,
+    "workSuitability": {
+      "lumbering": 3,
+      "handiwork": 2,
+      "transporting": 3
+    },
+    "hp": 90,
+    "attack": 95,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Gorilla_icon_normal.png"
+  },
+  {
+    "id": "gorirat_terra",
+    "iconName": "Gorirat_Terra",
+    "name": "Gorirat Terra",
+    "number": 74,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1030,
+    "workSuitability": {
+      "handiwork": 2,
+      "mining": 3,
+      "transporting": 3
+    },
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Gorilla_Ground_icon_normal.png"
+  },
+  {
+    "id": "surfent",
+    "iconName": "Surfent",
+    "name": "Surfent",
+    "number": 75,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 560,
+    "workSuitability": {
+      "farming": 2,
+      "watering": 3
+    },
+    "hp": 90,
+    "attack": 90,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Serpent_icon_normal.png"
+  },
+  {
+    "id": "surfent_terra",
+    "iconName": "Surfent_Terra",
+    "name": "Surfent Terra",
+    "number": 75,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 550,
+    "workSuitability": {
+      "gathering": 3
+    },
+    "hp": 90,
+    "attack": 90,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Serpent_Ground_icon_normal.png"
+  },
+  {
+    "id": "robinquill",
+    "iconName": "Robinquill",
+    "name": "Robinquill",
+    "number": 76,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1020,
+    "workSuitability": {
+      "lumbering": 2,
+      "gathering": 3,
+      "handiwork": 3,
+      "medicineProduction": 1,
+      "planting": 2,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 105,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RobinHood_icon_normal.png"
+  },
+  {
+    "id": "robinquill_terra",
+    "iconName": "Robinquill_Terra",
+    "name": "Robinquill Terra",
+    "number": 76,
+    "elements": [
+      "grass",
+      "ground"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "lumbering": 2,
+      "gathering": 3,
+      "handiwork": 3,
+      "medicineProduction": 2,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 105,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RobinHood_Ground_icon_normal.png"
+  },
+  {
+    "id": "flopie",
+    "iconName": "Flopie",
+    "name": "Flopie",
+    "number": 77,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 2,
+      "handiwork": 2,
+      "medicineProduction": 1,
+      "planting": 2,
+      "transporting": 1
+    },
+    "hp": 75,
+    "attack": 65,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlowerRabbit_icon_normal.png"
+  },
+  {
+    "id": "wixen",
+    "iconName": "Wixen",
+    "name": "Wixen",
+    "number": 78,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1160,
+    "workSuitability": {
+      "handiwork": 3,
+      "kindling": 3,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 110,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FoxMage_icon_normal.png"
+  },
+  {
+    "id": "wixen_noct",
+    "iconName": "Wixen_Noct",
+    "name": "Wixen Noct",
+    "number": 78,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "breedingPower": 1150,
+    "workSuitability": {
+      "handiwork": 4,
+      "kindling": 4,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 110,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FoxMage_Dark_icon_normal.png"
+  },
+  {
+    "id": "katress",
+    "iconName": "Katress",
+    "name": "Katress",
+    "number": 79,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 700,
+    "workSuitability": {
+      "handiwork": 3,
+      "medicineProduction": 3,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 105,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CatMage_icon_normal.png"
+  },
+  {
+    "id": "katress_ignis",
+    "iconName": "Katress_Ignis",
+    "name": "Katress Ignis",
+    "number": 79,
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "breedingPower": 690,
+    "workSuitability": {
+      "handiwork": 3,
+      "kindling": 3,
+      "medicineProduction": 3,
+      "transporting": 2
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CatMage_Fire_icon_normal.png"
+  },
+  {
+    "id": "helzephyr",
+    "iconName": "Helzephyr",
+    "name": "Helzephyr",
+    "number": 80,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 190,
+    "workSuitability": {
+      "transporting": 4
+    },
+    "hp": 100,
+    "attack": 125,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HadesBird_icon_normal.png"
+  },
+  {
+    "id": "helzephyr_lux",
+    "iconName": "Helzephyr_Lux",
+    "name": "Helzephyr Lux",
+    "number": 80,
+    "elements": [
+      "dark",
+      "electric"
+    ],
+    "breedingPower": 180,
+    "workSuitability": {
+      "generatingElectricity": 4,
+      "transporting": 5
+    },
+    "hp": 105,
+    "attack": 125,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HadesBird_Electric_icon_normal.png"
+  },
+  {
+    "id": "elgrove",
+    "iconName": "Elgrove",
+    "name": "Elgrove",
+    "number": 81,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "lumbering": 3,
+      "gathering": 2,
+      "mining": 2,
+      "planting": 3,
+      "transporting": 3
+    },
+    "hp": 110,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassMinotaur_icon_normal.png"
+  },
+  {
+    "id": "elgrove_cryst",
+    "iconName": "Elgrove_Cryst",
+    "name": "Elgrove Cryst",
+    "number": 81,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "cooling": 5,
+      "lumbering": 3,
+      "mining": 3,
+      "transporting": 3
+    },
+    "hp": 120,
+    "attack": 100,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassMinotaur_Ice_icon_normal.png"
+  },
+  {
+    "id": "lunaris",
+    "iconName": "Lunaris",
+    "name": "Lunaris",
+    "number": 82,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1110,
+    "workSuitability": {
+      "gathering": 2,
+      "handiwork": 4,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Mutant_icon_normal.png"
+  },
+  {
+    "id": "fenglope",
+    "iconName": "Fenglope",
+    "name": "Fenglope",
+    "number": 83,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 980,
+    "workSuitability": {
+      "lumbering": 3
+    },
+    "hp": 110,
+    "attack": 110,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FengyunDeeper_icon_normal.png"
+  },
+  {
+    "id": "fenglope_lux",
+    "iconName": "Fenglope_Lux",
+    "name": "Fenglope Lux",
+    "number": 83,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 835,
+    "workSuitability": {
+      "lumbering": 4,
+      "generatingElectricity": 5
+    },
+    "hp": 110,
+    "attack": 115,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FengyunDeeper_Electric_icon_normal.png"
+  },
+  {
+    "id": "dinossom",
+    "iconName": "Dinossom",
+    "name": "Dinossom",
+    "number": 84,
+    "elements": [
+      "grass",
+      "dragon"
+    ],
+    "breedingPower": 820,
+    "workSuitability": {
+      "lumbering": 3,
+      "planting": 3
+    },
+    "hp": 110,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlowerDinosaur_icon_normal.png"
+  },
+  {
+    "id": "dinossom_lux",
+    "iconName": "Dinossom_Lux",
+    "name": "Dinossom Lux",
+    "number": 84,
+    "elements": [
+      "electric",
+      "dragon"
+    ],
+    "breedingPower": 810,
+    "workSuitability": {
+      "lumbering": 4,
+      "generatingElectricity": 3
+    },
+    "hp": 110,
+    "attack": 90,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlowerDinosaur_Electric_icon_normal.png"
+  },
+  {
+    "id": "bushi",
+    "iconName": "Bushi",
+    "name": "Bushi",
+    "number": 85,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 640,
+    "workSuitability": {
+      "lumbering": 3,
+      "gathering": 1,
+      "handiwork": 2,
+      "kindling": 2,
+      "transporting": 2
+    },
+    "hp": 80,
+    "attack": 125,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Ronin_icon_normal.png"
+  },
+  {
+    "id": "bushi_noct",
+    "iconName": "Bushi_Noct",
+    "name": "Bushi Noct",
+    "number": 85,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "breedingPower": 650,
+    "workSuitability": {
+      "lumbering": 5,
+      "gathering": 1,
+      "handiwork": 2,
+      "kindling": 2,
+      "transporting": 2
+    },
+    "hp": 80,
+    "attack": 130,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Ronin_Dark_icon_normal.png"
+  },
+  {
+    "id": "munchill",
+    "iconName": "Munchill",
+    "name": "Munchill",
+    "number": 86,
+    "elements": [
+      "ice",
+      "water"
+    ],
+    "breedingPower": 1335,
+    "workSuitability": {
+      "cooling": 3,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceCrocodile_icon_normal.png"
+  },
+  {
+    "id": "mammorest",
+    "iconName": "Mammorest",
+    "name": "Mammorest",
+    "number": 87,
+    "elements": [
+      "grass",
+      "ground"
+    ],
+    "breedingPower": 300,
+    "workSuitability": {
+      "lumbering": 4,
+      "mining": 4,
+      "planting": 4
+    },
+    "hp": 150,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassMammoth_icon_normal.png"
+  },
+  {
+    "id": "mammorest_cryst",
+    "iconName": "Mammorest_Cryst",
+    "name": "Mammorest Cryst",
+    "number": 87,
+    "elements": [
+      "ice",
+      "ground"
+    ],
+    "breedingPower": 290,
+    "workSuitability": {
+      "cooling": 5,
+      "lumbering": 5,
+      "mining": 4
+    },
+    "hp": 150,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassMammoth_Ice_icon_normal.png"
+  },
+  {
+    "id": "finsider",
+    "iconName": "Finsider",
+    "name": "Finsider",
+    "number": 88,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 75,
+    "attack": 85,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_StuffedShark_icon_normal.png"
+  },
+  {
+    "id": "finsider_ignis",
+    "iconName": "Finsider_Ignis",
+    "name": "Finsider Ignis",
+    "number": 88,
+    "elements": [
+      "water",
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "kindling": 2,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 75,
+    "attack": 90,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_StuffedShark_Fire_icon_normal.png"
+  },
+  {
+    "id": "petallia",
+    "iconName": "Petallia",
+    "name": "Petallia",
+    "number": 89,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 780,
+    "workSuitability": {
+      "gathering": 3,
+      "handiwork": 3,
+      "medicineProduction": 4,
+      "planting": 4,
+      "transporting": 2
+    },
+    "hp": 100,
+    "attack": 95,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlowerDoll_icon_normal.png"
+  },
+  {
+    "id": "petallia_ignis",
+    "iconName": "Petallia_Ignis",
+    "name": "Petallia Ignis",
+    "number": 89,
+    "elements": [
+      "grass",
+      "fire"
+    ],
+    "breedingPower": 780,
+    "workSuitability": {
+      "gathering": 3,
+      "handiwork": 3,
+      "kindling": 4,
+      "medicineProduction": 4,
+      "transporting": 2
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlowerDoll_Fire_icon_normal.png"
+  },
+  {
+    "id": "leafan",
+    "iconName": "Leafan",
+    "name": "Leafan",
+    "number": 90,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 780,
+    "workSuitability": {
+      "gathering": 3,
+      "handiwork": 3,
+      "planting": 3,
+      "transporting": 2
+    },
+    "hp": 100,
+    "attack": 115,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PandaGirl_icon_normal.png"
+  },
+  {
+    "id": "incineram",
+    "iconName": "Incineram",
+    "name": "Incineram",
+    "number": 91,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "breedingPower": 590,
+    "workSuitability": {
+      "handiwork": 2,
+      "kindling": 3,
+      "mining": 3,
+      "transporting": 2
+    },
+    "hp": 95,
+    "attack": 100,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Baphomet_icon_normal.png"
+  },
+  {
+    "id": "incineram_noct",
+    "iconName": "Incineram_Noct",
+    "name": "Incineram Noct",
+    "number": 91,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 580,
+    "workSuitability": {
+      "handiwork": 3,
+      "mining": 4,
+      "transporting": 3
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Baphomet_Dark_icon_normal.png"
+  },
+  {
+    "id": "dazzi",
+    "iconName": "Dazzi",
+    "name": "Dazzi",
+    "number": 92,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 1210,
+    "workSuitability": {
+      "generatingElectricity": 3,
+      "handiwork": 2,
+      "transporting": 2
+    },
+    "hp": 70,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RaijinDaughter_icon_normal.png"
+  },
+  {
+    "id": "dazzi_noct",
+    "iconName": "Dazzi_Noct",
+    "name": "Dazzi Noct",
+    "number": 92,
+    "elements": [
+      "dark",
+      "electric"
+    ],
+    "breedingPower": 1115,
+    "workSuitability": {
+      "generatingElectricity": 1,
+      "handiwork": 1,
+      "medicineProduction": 1,
+      "transporting": 2
+    },
+    "hp": 70,
+    "attack": 80,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RaijinDaughter_Water_icon_normal.png"
+  },
+  {
+    "id": "pyrin",
+    "iconName": "Pyrin",
+    "name": "Pyrin",
+    "number": 93,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 360,
+    "workSuitability": {
+      "lumbering": 2,
+      "kindling": 4
+    },
+    "hp": 100,
+    "attack": 95,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FireKirin_icon_normal.png"
+  },
+  {
+    "id": "pyrin_noct",
+    "iconName": "Pyrin_Noct",
+    "name": "Pyrin Noct",
+    "number": 93,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "breedingPower": 240,
+    "workSuitability": {
+      "lumbering": 3,
+      "kindling": 4
+    },
+    "hp": 100,
+    "attack": 95,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FireKirin_Dark_icon_normal.png"
+  },
+  {
+    "id": "relaxaurus",
+    "iconName": "Relaxaurus",
+    "name": "Relaxaurus",
+    "number": 94,
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "breedingPower": 280,
+    "workSuitability": {
+      "transporting": 3,
+      "watering": 3
+    },
+    "hp": 120,
+    "attack": 115,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LazyDragon_icon_normal.png"
+  },
+  {
+    "id": "relaxaurus_lux",
+    "iconName": "Relaxaurus_Lux",
+    "name": "Relaxaurus Lux",
+    "number": 94,
+    "elements": [
+      "dragon",
+      "electric"
+    ],
+    "breedingPower": 270,
+    "workSuitability": {
+      "generatingElectricity": 4,
+      "transporting": 3
+    },
+    "hp": 120,
+    "attack": 120,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LazyDragon_Electric_icon_normal.png"
+  },
+  {
+    "id": "foxcicle",
+    "iconName": "Foxcicle",
+    "name": "Foxcicle",
+    "number": 95,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 760,
+    "workSuitability": {
+      "cooling": 4,
+      "farming": 3
+    },
+    "hp": 90,
+    "attack": 95,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceFox_icon_normal.png"
+  },
+  {
+    "id": "beakon",
+    "iconName": "Beakon",
+    "name": "Beakon",
+    "number": 96,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 220,
+    "workSuitability": {
+      "gathering": 2,
+      "generatingElectricity": 4,
+      "transporting": 5
+    },
+    "hp": 105,
+    "attack": 115,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThunderBird_icon_normal.png"
+  },
+  {
+    "id": "beakon_cryst",
+    "iconName": "Beakon_Cryst",
+    "name": "Beakon Cryst",
+    "number": 96,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 580,
+    "workSuitability": {
+      "cooling": 5,
+      "gathering": 2,
+      "transporting": 5
+    },
+    "hp": 105,
+    "attack": 115,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThunderBird_Ice_icon_normal.png"
+  },
+  {
+    "id": "ghangler",
+    "iconName": "Ghangler",
+    "name": "Ghangler",
+    "number": 97,
+    "elements": [
+      "dark",
+      "water"
+    ],
+    "breedingPower": 525,
+    "workSuitability": {
+      "transporting": 2,
+      "watering": 5
+    },
+    "hp": 90,
+    "attack": 125,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostAnglerfish_icon_normal.png"
+  },
+  {
+    "id": "ghangler_ignis",
+    "iconName": "Ghangler_Ignis",
+    "name": "Ghangler Ignis",
+    "number": 97,
+    "elements": [
+      "fire",
+      "water"
+    ],
+    "breedingPower": 505,
+    "workSuitability": {
+      "kindling": 5,
+      "transporting": 2,
+      "watering": 5
+    },
+    "hp": 90,
+    "attack": 130,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostAnglerfish_Fire_icon_normal.png"
+  },
+  {
+    "id": "rayhound",
+    "iconName": "Rayhound",
+    "name": "Rayhound",
+    "number": 98,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 740,
+    "workSuitability": {
+      "generatingElectricity": 4
+    },
+    "hp": 90,
+    "attack": 100,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThunderDog_icon_normal.png"
+  },
+  {
+    "id": "rayhound_cryst",
+    "iconName": "Rayhound_Cryst",
+    "name": "Rayhound Cryst",
+    "number": 98,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 740,
+    "workSuitability": {
+      "cooling": 3
+    },
+    "hp": 90,
+    "attack": 105,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThunderDog_Ice_icon_normal.png"
+  },
+  {
+    "id": "menasting",
+    "iconName": "Menasting",
+    "name": "Menasting",
+    "number": 99,
+    "elements": [
+      "dark",
+      "ground"
+    ],
+    "breedingPower": 260,
+    "workSuitability": {
+      "lumbering": 3,
+      "mining": 5
+    },
+    "hp": 100,
+    "attack": 100,
+    "defense": 130,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkScorpion_icon_normal.png"
+  },
+  {
+    "id": "menasting_terra",
+    "iconName": "Menasting_Terra",
+    "name": "Menasting Terra",
+    "number": 99,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 250,
+    "workSuitability": {
+      "lumbering": 3,
+      "mining": 6
+    },
+    "hp": 100,
+    "attack": 105,
+    "defense": 130,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkScorpion_Ground_icon_normal.png"
+  },
+  {
+    "id": "needoll",
+    "iconName": "Needoll",
+    "name": "Needoll",
+    "number": 100,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 3,
+      "planting": 3,
+      "transporting": 1
+    },
+    "hp": 75,
+    "attack": 85,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CactusDoll_icon_normal.png"
+  },
+  {
+    "id": "needoll_noct",
+    "iconName": "Needoll_Noct",
+    "name": "Needoll Noct",
+    "number": 100,
+    "elements": [
+      "dark",
+      "grass"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 3,
+      "planting": 3,
+      "transporting": 1
+    },
+    "hp": 75,
+    "attack": 90,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CactusDoll_Dark_icon_normal.png"
+  },
+  {
+    "id": "reindrix",
+    "iconName": "Reindrix",
+    "name": "Reindrix",
+    "number": 101,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 880,
+    "workSuitability": {
+      "cooling": 3,
+      "lumbering": 3
+    },
+    "hp": 100,
+    "attack": 85,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceDeer_icon_normal.png"
+  },
+  {
+    "id": "mossanda",
+    "iconName": "Mossanda",
+    "name": "Mossanda",
+    "number": 102,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 430,
+    "workSuitability": {
+      "lumbering": 4,
+      "handiwork": 2,
+      "planting": 3,
+      "transporting": 4
+    },
+    "hp": 100,
+    "attack": 90,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassPanda_icon_normal.png"
+  },
+  {
+    "id": "mossanda_lux",
+    "iconName": "Mossanda_Lux",
+    "name": "Mossanda Lux",
+    "number": 102,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 390,
+    "workSuitability": {
+      "lumbering": 4,
+      "generatingElectricity": 4,
+      "handiwork": 3,
+      "transporting": 4
+    },
+    "hp": 100,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassPanda_Electric_icon_normal.png"
+  },
+  {
+    "id": "chillet",
+    "iconName": "Chillet",
+    "name": "Chillet",
+    "number": 103,
+    "elements": [
+      "ice",
+      "dragon"
+    ],
+    "breedingPower": 800,
+    "workSuitability": {
+      "cooling": 2,
+      "gathering": 1
+    },
+    "hp": 90,
+    "attack": 80,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WeaselDragon_icon_normal.png"
+  },
+  {
+    "id": "chillet_ignis",
+    "iconName": "Chillet_Ignis",
+    "name": "Chillet Ignis",
+    "number": 103,
+    "elements": [
+      "fire",
+      "dragon"
+    ],
+    "breedingPower": 790,
+    "workSuitability": {
+      "gathering": 3,
+      "kindling": 4
+    },
+    "hp": 90,
+    "attack": 85,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WeaselDragon_Fire_icon_normal.png"
+  },
+  {
+    "id": "ragnahawk",
+    "iconName": "Ragnahawk",
+    "name": "Ragnahawk",
+    "number": 104,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 380,
+    "workSuitability": {
+      "kindling": 4,
+      "transporting": 5
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RedArmorBird_icon_normal.png"
+  },
+  {
+    "id": "moldron",
+    "iconName": "Moldron",
+    "name": "Moldron",
+    "number": 105,
+    "elements": [
+      "fire",
+      "ground"
+    ],
+    "breedingPower": 920,
+    "workSuitability": {
+      "kindling": 5,
+      "mining": 5
+    },
+    "hp": 110,
+    "attack": 125,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_VolcanoDragon_icon_normal.png"
+  },
+  {
+    "id": "moldron_cryst",
+    "iconName": "Moldron_Cryst",
+    "name": "Moldron Cryst",
+    "number": 105,
+    "elements": [
+      "ice",
+      "ground"
+    ],
+    "breedingPower": 900,
+    "workSuitability": {
+      "cooling": 5,
+      "mining": 5
+    },
+    "hp": 110,
+    "attack": 125,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_VolcanoDragon_Ice_icon_normal.png"
+  },
+  {
+    "id": "palumba",
+    "iconName": "Palumba",
+    "name": "Palumba",
+    "number": 106,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 455,
+    "workSuitability": {
+      "gathering": 4,
+      "mining": 5,
+      "planting": 4
+    },
+    "hp": 105,
+    "attack": 110,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_TropicalOstrich_icon_normal.png"
+  },
+  {
+    "id": "digtoise",
+    "iconName": "Digtoise",
+    "name": "Digtoise",
+    "number": 107,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 850,
+    "workSuitability": {
+      "mining": 4
+    },
+    "hp": 80,
+    "attack": 95,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DrillGame_icon_normal.png"
+  },
+  {
+    "id": "broncherry",
+    "iconName": "Broncherry",
+    "name": "Broncherry",
+    "number": 108,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 860,
+    "workSuitability": {
+      "planting": 5
+    },
+    "hp": 120,
+    "attack": 90,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SakuraSaurus_icon_normal.png"
+  },
+  {
+    "id": "broncherry_aqua",
+    "iconName": "Broncherry_Aqua",
+    "name": "Broncherry Aqua",
+    "number": 108,
+    "elements": [
+      "grass",
+      "water"
+    ],
+    "breedingPower": 840,
+    "workSuitability": {
+      "watering": 5
+    },
+    "hp": 120,
+    "attack": 95,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SakuraSaurus_Water_icon_normal.png"
+  },
+  {
+    "id": "dumud",
+    "iconName": "Dumud",
+    "name": "Dumud",
+    "number": 109,
+    "elements": [
+      "ground",
+      "water"
+    ],
+    "breedingPower": 895,
+    "workSuitability": {
+      "farming": 1,
+      "mining": 2,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 100,
+    "attack": 70,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LazyCatfish_icon_normal.png"
+  },
+  {
+    "id": "dumud_gild",
+    "iconName": "Dumud_Gild",
+    "name": "Dumud Gild",
+    "number": 109,
+    "elements": [
+      "ground",
+      "water"
+    ],
+    "breedingPower": 855,
+    "workSuitability": {
+      "farming": 4,
+      "mining": 2,
+      "transporting": 1,
+      "watering": 2
+    },
+    "hp": 105,
+    "attack": 75,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LazyCatfish_Gold_icon_normal.png"
+  },
+  {
+    "id": "braloha",
+    "iconName": "Braloha",
+    "name": "Braloha",
+    "number": 110,
+    "elements": [
+      "grass",
+      "ground"
+    ],
+    "breedingPower": 1030,
+    "workSuitability": {
+      "gathering": 5,
+      "mining": 3,
+      "planting": 5
+    },
+    "hp": 130,
+    "attack": 95,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Plesiosaur_icon_normal.png"
+  },
+  {
+    "id": "kitsun",
+    "iconName": "Kitsun",
+    "name": "Kitsun",
+    "number": 111,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "kindling": 3
+    },
+    "hp": 100,
+    "attack": 115,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_AmaterasuWolf_icon_normal.png"
+  },
+  {
+    "id": "kitsun_noct",
+    "iconName": "Kitsun_Noct",
+    "name": "Kitsun Noct",
+    "number": 111,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "kindling": 4
+    },
+    "hp": 100,
+    "attack": 115,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_AmaterasuWolf_Dark_icon_normal.png"
+  },
+  {
+    "id": "blazehowl",
+    "iconName": "Blazehowl",
+    "name": "Blazehowl",
+    "number": 112,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 710,
+    "workSuitability": {
+      "lumbering": 3,
+      "kindling": 5
+    },
+    "hp": 105,
+    "attack": 110,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Manticore_icon_normal.png"
+  },
+  {
+    "id": "blazehowl_noct",
+    "iconName": "Blazehowl_Noct",
+    "name": "Blazehowl Noct",
+    "number": 112,
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "breedingPower": 670,
+    "workSuitability": {
+      "lumbering": 3,
+      "kindling": 5
+    },
+    "hp": 105,
+    "attack": 115,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Manticore_Dark_icon_normal.png"
+  },
+  {
+    "id": "warsect",
+    "iconName": "Warsect",
+    "name": "Warsect",
+    "number": 113,
+    "elements": [
+      "ground",
+      "grass"
+    ],
+    "breedingPower": 340,
+    "workSuitability": {
+      "lumbering": 4,
+      "handiwork": 3,
+      "planting": 3,
+      "transporting": 5
+    },
+    "hp": 120,
+    "attack": 100,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HerculesBeetle_icon_normal.png"
+  },
+  {
+    "id": "warsect_terra",
+    "iconName": "Warsect_Terra",
+    "name": "Warsect Terra",
+    "number": 113,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 275,
+    "workSuitability": {
+      "handiwork": 2,
+      "mining": 5,
+      "transporting": 5
+    },
+    "hp": 120,
+    "attack": 105,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HerculesBeetle_Ground_icon_normal.png"
+  },
+  {
+    "id": "frostplume",
+    "iconName": "Frostplume",
+    "name": "Frostplume",
+    "number": 114,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 655,
+    "workSuitability": {
+      "cooling": 4,
+      "gathering": 2
+    },
+    "hp": 110,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SnowPeafowl_icon_normal.png"
+  },
+  {
+    "id": "majex",
+    "iconName": "Majex",
+    "name": "Majex",
+    "number": 115,
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "breedingPower": 1180,
+    "workSuitability": {
+      "handiwork": 5,
+      "kindling": 4,
+      "medicineProduction": 3,
+      "transporting": 2
+    },
+    "hp": 110,
+    "attack": 115,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkFlameFox_icon_normal.png"
+  },
+  {
+    "id": "sibelyx",
+    "iconName": "Sibelyx",
+    "name": "Sibelyx",
+    "number": 116,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 450,
+    "workSuitability": {
+      "cooling": 3,
+      "farming": 3,
+      "medicineProduction": 3
+    },
+    "hp": 110,
+    "attack": 90,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteMoth_icon_normal.png"
+  },
+  {
+    "id": "sibelyx_primo",
+    "iconName": "Sibelyx_Primo",
+    "name": "Sibelyx Primo",
+    "number": 116,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 450,
+    "workSuitability": {
+      "farming": 4,
+      "medicineProduction": 3
+    },
+    "hp": 115,
+    "attack": 90,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteMoth_Neutral_icon_normal.png"
+  },
+  {
+    "id": "maraith",
+    "iconName": "Maraith",
+    "name": "Maraith",
+    "number": 117,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1150,
+    "workSuitability": {
+      "gathering": 4,
+      "mining": 4
+    },
+    "hp": 75,
+    "attack": 105,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostBeast_icon_normal.png"
+  },
+  {
+    "id": "shroomer",
+    "iconName": "Shroomer",
+    "name": "Shroomer",
+    "number": 118,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 720,
+    "workSuitability": {
+      "lumbering": 2,
+      "farming": 3,
+      "gathering": 3,
+      "handiwork": 2,
+      "planting": 3
+    },
+    "hp": 110,
+    "attack": 80,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MushroomDragon_icon_normal.png"
+  },
+  {
+    "id": "shroomer_noct",
+    "iconName": "Shroomer_Noct",
+    "name": "Shroomer Noct",
+    "number": 118,
+    "elements": [
+      "grass",
+      "dark"
+    ],
+    "breedingPower": 730,
+    "workSuitability": {
+      "lumbering": 2,
+      "gathering": 3,
+      "handiwork": 3,
+      "planting": 3
+    },
+    "hp": 110,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MushroomDragon_Dark_icon_normal.png"
+  },
+  {
+    "id": "icelyn",
+    "iconName": "Icelyn",
+    "name": "Icelyn",
+    "number": 119,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 605,
+    "workSuitability": {
+      "cooling": 5,
+      "handiwork": 5,
+      "medicineProduction": 4,
+      "transporting": 2
+    },
+    "hp": 95,
+    "attack": 115,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceWitch_icon_normal.png"
+  },
+  {
+    "id": "gildra",
+    "iconName": "Gildra",
+    "name": "Gildra",
+    "number": 120,
+    "elements": [
+      "dark",
+      "ground"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 5,
+      "medicineProduction": 4,
+      "transporting": 2
+    },
+    "hp": 105,
+    "attack": 120,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MummyPal_icon_normal.png"
+  },
+  {
+    "id": "jormuntide",
+    "iconName": "Jormuntide",
+    "name": "Jormuntide",
+    "number": 121,
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "breedingPower": 310,
+    "workSuitability": {
+      "watering": 7
+    },
+    "hp": 130,
+    "attack": 120,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Umihebi_icon_normal.png"
+  },
+  {
+    "id": "jormuntide_ignis",
+    "iconName": "Jormuntide_Ignis",
+    "name": "Jormuntide Ignis",
+    "number": 121,
+    "elements": [
+      "dragon",
+      "fire"
+    ],
+    "breedingPower": 315,
+    "workSuitability": {
+      "kindling": 7
+    },
+    "hp": 130,
+    "attack": 130,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Umihebi_Fire_icon_normal.png"
+  },
+  {
+    "id": "suzaku",
+    "iconName": "Suzaku",
+    "name": "Suzaku",
+    "number": 122,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 50,
+    "workSuitability": {
+      "kindling": 5
+    },
+    "hp": 120,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Suzaku_icon_normal.png"
+  },
+  {
+    "id": "suzaku_aqua",
+    "iconName": "Suzaku_Aqua",
+    "name": "Suzaku Aqua",
+    "number": 122,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 30,
+    "workSuitability": {
+      "watering": 6
+    },
+    "hp": 125,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Suzaku_Water_icon_normal.png"
+  },
+  {
+    "id": "dazemu",
+    "iconName": "Dazemu",
+    "name": "Dazemu",
+    "number": 123,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 675,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 95,
+    "attack": 90,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FeatherOstrich_icon_normal.png"
+  },
+  {
+    "id": "quivern",
+    "iconName": "Quivern",
+    "name": "Quivern",
+    "number": 124,
+    "elements": [
+      "dragon"
+    ],
+    "breedingPower": 350,
+    "workSuitability": {
+      "gathering": 3,
+      "handiwork": 2,
+      "mining": 4,
+      "transporting": 5
+    },
+    "hp": 105,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SkyDragon_icon_normal.png"
+  },
+  {
+    "id": "quivern_botan",
+    "iconName": "Quivern_Botan",
+    "name": "Quivern Botan",
+    "number": 124,
+    "elements": [
+      "dragon",
+      "grass"
+    ],
+    "breedingPower": 340,
+    "workSuitability": {
+      "gathering": 4,
+      "handiwork": 2,
+      "mining": 3,
+      "planting": 5,
+      "transporting": 4
+    },
+    "hp": 105,
+    "attack": 105,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SkyDragon_Grass_icon_normal.png"
+  },
+  {
+    "id": "lullu",
+    "iconName": "Lullu",
+    "name": "Lullu",
+    "number": 125,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 2,
+      "handiwork": 3,
+      "medicineProduction": 3,
+      "planting": 3
+    },
+    "hp": 90,
+    "attack": 90,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LeafPrincess_icon_normal.png"
+  },
+  {
+    "id": "kikit",
+    "iconName": "Kikit",
+    "name": "Kikit",
+    "number": 126,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1125,
+    "workSuitability": {
+      "mining": 1
+    },
+    "hp": 75,
+    "attack": 70,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SmallArmadillo_icon_normal.png"
+  },
+  {
+    "id": "yakumo",
+    "iconName": "Yakumo",
+    "name": "Yakumo",
+    "number": 127,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 85,
+    "attack": 85,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GuardianDog_icon_normal.png"
+  },
+  {
+    "id": "skutlass",
+    "iconName": "Skutlass",
+    "name": "Skutlass",
+    "number": 128,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 400,
+    "workSuitability": {
+      "lumbering": 4,
+      "gathering": 1,
+      "watering": 4
+    },
+    "hp": 70,
+    "attack": 100,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SwordCutlassfish_icon_normal.png"
+  },
+  {
+    "id": "skutlass_ignis",
+    "iconName": "Skutlass_Ignis",
+    "name": "Skutlass Ignis",
+    "number": 128,
+    "elements": [
+      "water",
+      "fire"
+    ],
+    "breedingPower": 400,
+    "workSuitability": {
+      "lumbering": 3,
+      "gathering": 2,
+      "kindling": 3,
+      "watering": 2
+    },
+    "hp": 70,
+    "attack": 105,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SwordCutlassfish_Fire_icon_normal.png"
+  },
+  {
+    "id": "reptyro",
+    "iconName": "Reptyro",
+    "name": "Reptyro",
+    "number": 129,
+    "elements": [
+      "fire",
+      "ground"
+    ],
+    "breedingPower": 320,
+    "workSuitability": {
+      "kindling": 5,
+      "mining": 5
+    },
+    "hp": 110,
+    "attack": 105,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_VolcanicMonster_icon_normal.png"
+  },
+  {
+    "id": "reptyro_cryst",
+    "iconName": "Reptyro_Cryst",
+    "name": "Reptyro Cryst",
+    "number": 129,
+    "elements": [
+      "ice",
+      "ground"
+    ],
+    "breedingPower": 230,
+    "workSuitability": {
+      "cooling": 5,
+      "mining": 5
+    },
+    "hp": 110,
+    "attack": 105,
+    "defense": 130,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_VolcanicMonster_Ice_icon_normal.png"
+  },
+  {
+    "id": "starryon",
+    "iconName": "Starryon",
+    "name": "Starryon",
+    "number": 130,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 365,
+    "workSuitability": {
+      "gathering": 5
+    },
+    "hp": 110,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NightBlueHorse_icon_normal.png"
+  },
+  {
+    "id": "starryon_primo",
+    "iconName": "Starryon_Primo",
+    "name": "Starryon Primo",
+    "number": 130,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 365,
+    "workSuitability": {
+      "gathering": 7
+    },
+    "hp": 110,
+    "attack": 105,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NightBlueHorse_Neutral_icon_normal.png"
+  },
+  {
+    "id": "pierdon",
+    "iconName": "Pierdon",
+    "name": "Pierdon",
+    "number": 131,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 780,
+    "workSuitability": {
+      "mining": 5
+    },
+    "hp": 100,
+    "attack": 105,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RockBeast_icon_normal.png"
+  },
+  {
+    "id": "pierdon_cryst",
+    "iconName": "Pierdon_Cryst",
+    "name": "Pierdon Cryst",
+    "number": 131,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 760,
+    "workSuitability": {
+      "cooling": 6,
+      "mining": 5
+    },
+    "hp": 100,
+    "attack": 110,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RockBeast_Ice_icon_normal.png"
+  },
+  {
+    "id": "cryolinx",
+    "iconName": "Cryolinx",
+    "name": "Cryolinx",
+    "number": 132,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 130,
+    "workSuitability": {
+      "cooling": 4,
+      "lumbering": 4,
+      "handiwork": 3,
+      "transporting": 4
+    },
+    "hp": 100,
+    "attack": 100,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteTiger_icon_normal.png"
+  },
+  {
+    "id": "cryolinx_terra",
+    "iconName": "Cryolinx_Terra",
+    "name": "Cryolinx Terra",
+    "number": 132,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 160,
+    "workSuitability": {
+      "lumbering": 6,
+      "handiwork": 2,
+      "mining": 5,
+      "transporting": 4
+    },
+    "hp": 100,
+    "attack": 105,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteTiger_Ground_icon_normal.png"
+  },
+  {
+    "id": "snugloo",
+    "iconName": "Snugloo",
+    "name": "Snugloo",
+    "number": 133,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 740,
+    "workSuitability": {
+      "cooling": 3,
+      "handiwork": 2,
+      "mining": 3,
+      "transporting": 2
+    },
+    "hp": 80,
+    "attack": 75,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SmallYeti_icon_normal.png"
+  },
+  {
+    "id": "wumpo",
+    "iconName": "Wumpo",
+    "name": "Wumpo",
+    "number": 134,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 460,
+    "workSuitability": {
+      "cooling": 5,
+      "lumbering": 5,
+      "handiwork": 3,
+      "transporting": 6
+    },
+    "hp": 140,
+    "attack": 80,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Yeti_icon_normal.png"
+  },
+  {
+    "id": "wumpo_botan",
+    "iconName": "Wumpo_Botan",
+    "name": "Wumpo Botan",
+    "number": 134,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 480,
+    "workSuitability": {
+      "lumbering": 5,
+      "handiwork": 3,
+      "planting": 3,
+      "transporting": 6
+    },
+    "hp": 140,
+    "attack": 80,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Yeti_Grass_icon_normal.png"
+  },
+  {
+    "id": "sootseer",
+    "iconName": "Sootseer",
+    "name": "Sootseer",
+    "number": 135,
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "farming": 2,
+      "gathering": 2,
+      "handiwork": 3,
+      "kindling": 3,
+      "mining": 3
+    },
+    "hp": 105,
+    "attack": 125,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CandleGhost_icon_normal.png"
+  },
+  {
+    "id": "carnibora",
+    "iconName": "Carnibora",
+    "name": "Carnibora",
+    "number": 136,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1700,
+    "workSuitability": {
+      "gathering": 4,
+      "handiwork": 4,
+      "planting": 6,
+      "transporting": 2
+    },
+    "hp": 85,
+    "attack": 90,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_VenusFlytrap_icon_normal.png"
+  },
+  {
+    "id": "blazamut",
+    "iconName": "Blazamut",
+    "name": "Blazamut",
+    "number": 137,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 10,
+    "workSuitability": {
+      "kindling": 6,
+      "mining": 7
+    },
+    "hp": 100,
+    "attack": 125,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingBahamut_icon_normal.png"
+  },
+  {
+    "id": "blazamut_ryu",
+    "iconName": "Blazamut_Ryu",
+    "name": "Blazamut Ryu",
+    "number": 137,
+    "elements": [
+      "dragon",
+      "fire"
+    ],
+    "breedingPower": 9,
+    "workSuitability": {
+      "kindling": 6,
+      "mining": 7
+    },
+    "hp": 105,
+    "attack": 130,
+    "defense": 125,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingBahamut_Dragon_icon_normal.png"
+  },
+  {
+    "id": "dualith",
+    "iconName": "Dualith",
+    "name": "Dualith",
+    "number": 138,
+    "elements": [
+      "ground",
+      "grass"
+    ],
+    "breedingPower": 275,
+    "workSuitability": {
+      "lumbering": 5,
+      "gathering": 3,
+      "mining": 6,
+      "planting": 3,
+      "transporting": 6
+    },
+    "hp": 110,
+    "attack": 105,
+    "defense": 125,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassGolem_icon_normal.png"
+  },
+  {
+    "id": "dualith_noct",
+    "iconName": "Dualith_Noct",
+    "name": "Dualith Noct",
+    "number": 138,
+    "elements": [
+      "ground",
+      "dark"
+    ],
+    "breedingPower": 275,
+    "workSuitability": {
+      "lumbering": 5,
+      "gathering": 3,
+      "mining": 6,
+      "planting": 3,
+      "transporting": 6
+    },
+    "hp": 110,
+    "attack": 110,
+    "defense": 125,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassGolem_Dark_icon_normal.png"
+  },
+  {
+    "id": "anubis",
+    "iconName": "Anubis",
+    "name": "Anubis",
+    "number": 139,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 570,
+    "workSuitability": {
+      "handiwork": 6,
+      "mining": 6,
+      "transporting": 4
+    },
+    "hp": 120,
+    "attack": 130,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Anubis_icon_normal.png"
+  },
+  {
+    "id": "sekhmet",
+    "iconName": "Sekhmet",
+    "name": "Sekhmet",
+    "number": 140,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 6,
+      "mining": 3,
+      "transporting": 2
+    },
+    "hp": 110,
+    "attack": 115,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Sekhmet_icon_normal.png"
+  },
+  {
+    "id": "prixter",
+    "iconName": "Prixter",
+    "name": "Prixter",
+    "number": 141,
+    "elements": [
+      "dark",
+      "ground"
+    ],
+    "breedingPower": 355,
+    "workSuitability": {
+      "lumbering": 4,
+      "gathering": 2,
+      "medicineProduction": 2
+    },
+    "hp": 90,
+    "attack": 110,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ScorpionMan_icon_normal.png"
+  },
+  {
+    "id": "prixter_lux",
+    "iconName": "Prixter_Lux",
+    "name": "Prixter Lux",
+    "number": 141,
+    "elements": [
+      "electric",
+      "ground"
+    ],
+    "breedingPower": 355,
+    "workSuitability": {
+      "lumbering": 4,
+      "gathering": 2,
+      "generatingElectricity": 3,
+      "medicineProduction": 2
+    },
+    "hp": 90,
+    "attack": 115,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ScorpionMan_Electric_icon_normal.png"
+  },
+  {
+    "id": "tetroise",
+    "iconName": "Tetroise",
+    "name": "Tetroise",
+    "number": 142,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 950,
+    "workSuitability": {
+      "mining": 4
+    },
+    "hp": 95,
+    "attack": 100,
+    "defense": 135,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CubeTurtle_icon_normal.png"
+  },
+  {
+    "id": "tetroise_primo",
+    "iconName": "Tetroise_Primo",
+    "name": "Tetroise Primo",
+    "number": 142,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 950,
+    "workSuitability": {
+      "mining": 6
+    },
+    "hp": 95,
+    "attack": 100,
+    "defense": 140,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CubeTurtle_Neutral_icon_normal.png"
+  },
+  {
+    "id": "nyafia",
+    "iconName": "Nyafia",
+    "name": "Nyafia",
+    "number": 143,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 645,
+    "workSuitability": {
+      "lumbering": 2,
+      "gathering": 4,
+      "handiwork": 4,
+      "transporting": 3
+    },
+    "hp": 110,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BadCatgirl_icon_normal.png"
+  },
+  {
+    "id": "mimog",
+    "iconName": "Mimog",
+    "name": "Mimog",
+    "number": 144,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1200,
+    "workSuitability": {
+      "gathering": 1,
+      "transporting": 2
+    },
+    "hp": 60,
+    "attack": 60,
+    "defense": 130,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MimicDog_icon_normal.png"
+  },
+  {
+    "id": "xenovader",
+    "iconName": "Xenovader",
+    "name": "Xenovader",
+    "number": 145,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 465,
+    "workSuitability": {
+      "lumbering": 3,
+      "transporting": 2
+    },
+    "hp": 90,
+    "attack": 125,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkAlien_icon_normal.png"
+  },
+  {
+    "id": "xenogard",
+    "iconName": "Xenogard",
+    "name": "Xenogard",
+    "number": 146,
+    "elements": [
+      "dragon"
+    ],
+    "breedingPower": 435,
+    "workSuitability": {
+      "mining": 4
+    },
+    "hp": 110,
+    "attack": 120,
+    "defense": 130,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteAlienDragon_icon_normal.png"
+  },
+  {
+    "id": "prunelia",
+    "iconName": "Prunelia",
+    "name": "Prunelia",
+    "number": 147,
+    "elements": [
+      "grass",
+      "dark"
+    ],
+    "breedingPower": 755,
+    "workSuitability": {
+      "gathering": 2,
+      "handiwork": 1,
+      "medicineProduction": 3,
+      "planting": 3,
+      "transporting": 1
+    },
+    "hp": 105,
+    "attack": 95,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueberryFairy_icon_normal.png"
+  },
+  {
+    "id": "nitemary",
+    "iconName": "Nitemary",
+    "name": "Nitemary",
+    "number": 148,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 705,
+    "workSuitability": {
+      "handiwork": 4,
+      "transporting": 2
+    },
+    "hp": 105,
+    "attack": 95,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostRabbit_icon_normal.png"
+  },
+  {
+    "id": "nitemary_botan",
+    "iconName": "Nitemary_Botan",
+    "name": "Nitemary Botan",
+    "number": 148,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 705,
+    "workSuitability": {
+      "handiwork": 4,
+      "planting": 3,
+      "transporting": 2
+    },
+    "hp": 110,
+    "attack": 95,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostRabbit_Grass_icon_normal.png"
+  },
+  {
+    "id": "smokie",
+    "iconName": "Smokie",
+    "name": "Smokie",
+    "number": 149,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1245,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 85,
+    "attack": 90,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlackPuppy_icon_normal.png"
+  },
+  {
+    "id": "smokie_cryst",
+    "iconName": "Smokie_Cryst",
+    "name": "Smokie Cryst",
+    "number": 149,
+    "elements": [
+      "dark",
+      "ice"
+    ],
+    "breedingPower": 1245,
+    "workSuitability": {
+      "cooling": 2,
+      "gathering": 2
+    },
+    "hp": 85,
+    "attack": 90,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlackPuppy_Ice_icon_normal.png"
+  },
+  {
+    "id": "omascul",
+    "iconName": "Omascul",
+    "name": "Omascul",
+    "number": 150,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 630,
+    "workSuitability": {
+      "gathering": 5
+    },
+    "hp": 95,
+    "attack": 105,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MysteryMask_icon_normal.png"
+  },
+  {
+    "id": "whalaska",
+    "iconName": "Whalaska",
+    "name": "Whalaska",
+    "number": 151,
+    "elements": [
+      "ice",
+      "water"
+    ],
+    "breedingPower": 445,
+    "workSuitability": {
+      "cooling": 6,
+      "watering": 5
+    },
+    "hp": 105,
+    "attack": 115,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceNarwhal_icon_normal.png"
+  },
+  {
+    "id": "whalaska_ignis",
+    "iconName": "Whalaska_Ignis",
+    "name": "Whalaska Ignis",
+    "number": 151,
+    "elements": [
+      "ice",
+      "fire"
+    ],
+    "breedingPower": 430,
+    "workSuitability": {
+      "cooling": 6,
+      "kindling": 5
+    },
+    "hp": 105,
+    "attack": 120,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceNarwhal_Fire_icon_normal.png"
+  },
+  {
+    "id": "verdash",
+    "iconName": "Verdash",
+    "name": "Verdash",
+    "number": 152,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 990,
+    "workSuitability": {
+      "lumbering": 3,
+      "gathering": 5,
+      "handiwork": 5,
+      "planting": 4,
+      "transporting": 3
+    },
+    "hp": 90,
+    "attack": 115,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrassRabbitMan_icon_normal.png"
+  },
+  {
+    "id": "splatterina",
+    "iconName": "Splatterina",
+    "name": "Splatterina",
+    "number": 153,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 725,
+    "workSuitability": {
+      "lumbering": 3,
+      "handiwork": 6,
+      "medicineProduction": 5,
+      "transporting": 2
+    },
+    "hp": 95,
+    "attack": 115,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GrimGirl_icon_normal.png"
+  },
+  {
+    "id": "gildane",
+    "iconName": "Gildane",
+    "name": "Gildane",
+    "number": 154,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 505,
+    "workSuitability": {
+      "gathering": 5
+    },
+    "hp": 120,
+    "attack": 110,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GoldenHorse_icon_normal.png"
+  },
+  {
+    "id": "dogen",
+    "iconName": "Dogen",
+    "name": "Dogen",
+    "number": 155,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 665,
+    "workSuitability": {
+      "lumbering": 3,
+      "gathering": 3,
+      "handiwork": 4,
+      "medicineProduction": 2,
+      "transporting": 3
+    },
+    "hp": 90,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SifuDog_icon_normal.png"
+  },
+  {
+    "id": "bulldosu",
+    "iconName": "Bulldosu",
+    "name": "Bulldosu",
+    "number": 156,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 1190,
+    "workSuitability": {
+      "mining": 4,
+      "transporting": 3
+    },
+    "hp": 115,
+    "attack": 95,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SumoDog_icon_normal.png"
+  },
+  {
+    "id": "celesdir",
+    "iconName": "Celesdir",
+    "name": "Celesdir",
+    "number": 157,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 815,
+    "workSuitability": {
+      "lumbering": 7,
+      "gathering": 4
+    },
+    "hp": 120,
+    "attack": 110,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteDeer_icon_normal.png"
+  },
+  {
+    "id": "celesdir_noct",
+    "iconName": "Celesdir_Noct",
+    "name": "Celesdir Noct",
+    "number": 157,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 815,
+    "workSuitability": {
+      "lumbering": 8,
+      "gathering": 4
+    },
+    "hp": 120,
+    "attack": 115,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteDeer_Dark_icon_normal.png"
+  },
+  {
+    "id": "astegon",
+    "iconName": "Astegon",
+    "name": "Astegon",
+    "number": 158,
+    "elements": [
+      "dragon",
+      "dark"
+    ],
+    "breedingPower": 150,
+    "workSuitability": {
+      "handiwork": 3,
+      "mining": 7
+    },
+    "hp": 100,
+    "attack": 125,
+    "defense": 125,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlackMetalDragon_icon_normal.png"
+  },
+  {
+    "id": "knocklem",
+    "iconName": "Knocklem",
+    "name": "Knocklem",
+    "number": 159,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 265,
+    "workSuitability": {
+      "gathering": 4,
+      "mining": 7,
+      "transporting": 7
+    },
+    "hp": 105,
+    "attack": 110,
+    "defense": 135,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WingGolem_icon_normal.png"
+  },
+  {
+    "id": "knocklem_ignis",
+    "iconName": "Knocklem_Ignis",
+    "name": "Knocklem Ignis",
+    "number": 159,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 265,
+    "workSuitability": {
+      "kindling": 5,
+      "mining": 7,
+      "transporting": 7
+    },
+    "hp": 105,
+    "attack": 115,
+    "defense": 135,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WingGolem_Fire_icon_normal.png"
+  },
+  {
+    "id": "silvegis",
+    "iconName": "Silvegis",
+    "name": "Silvegis",
+    "number": 160,
+    "elements": [
+      "dragon"
+    ],
+    "breedingPower": 215,
+    "workSuitability": {
+      "lumbering": 6
+    },
+    "hp": 120,
+    "attack": 110,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WhiteShieldDragon_icon_normal.png"
+  },
+  {
+    "id": "azurmane",
+    "iconName": "Azurmane",
+    "name": "Azurmane",
+    "number": 161,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 420,
+    "workSuitability": {
+      "generatingElectricity": 5
+    },
+    "hp": 130,
+    "attack": 120,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueThunderHorse_icon_normal.png"
+  },
+  {
+    "id": "valentail",
+    "iconName": "Valentail",
+    "name": "Valentail",
+    "number": 162,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 800,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 75,
+    "attack": 80,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LongCat_icon_normal.png"
+  },
+  {
+    "id": "snock",
+    "iconName": "Snock",
+    "name": "Snock",
+    "number": 163,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 450,
+    "workSuitability": {
+      "generatingElectricity": 4
+    },
+    "hp": 65,
+    "attack": 70,
+    "defense": 75,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecSnail_icon_normal.png"
+  },
+  {
+    "id": "snock_lux",
+    "iconName": "Snock_Lux",
+    "name": "Snock Lux",
+    "number": 163,
+    "elements": [
+      "electric",
+      "ground"
+    ],
+    "breedingPower": 450,
+    "workSuitability": {
+      "generatingElectricity": 4
+    },
+    "hp": 65,
+    "attack": 70,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecSnail_Ground_icon_normal.png"
+  },
+  {
+    "id": "souffline",
+    "iconName": "Souffline",
+    "name": "Souffline",
+    "number": 164,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 720,
+    "workSuitability": {
+      "planting": 2,
+      "transporting": 2
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DandelionGirl_icon_normal.png"
+  },
+  {
+    "id": "lapiron",
+    "iconName": "Lapiron",
+    "name": "Lapiron",
+    "number": 165,
+    "elements": [
+      "ground"
+    ],
+    "breedingPower": 760,
+    "workSuitability": {
+      "gathering": 4,
+      "handiwork": 3,
+      "mining": 2,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 75,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BrownRabbit_icon_normal.png"
+  },
+  {
+    "id": "hoodle",
+    "iconName": "Hoodle",
+    "name": "Hoodle",
+    "number": 166,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "hp": 70,
+    "attack": 85,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_HoodGhost_icon_normal.png"
+  },
+  {
+    "id": "slowatt",
+    "iconName": "Slowatt",
+    "name": "Slowatt",
+    "number": 167,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 1100,
+    "workSuitability": {
+      "generatingElectricity": 3
+    },
+    "hp": 80,
+    "attack": 75,
+    "defense": 70,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecLizard_icon_normal.png"
+  },
+  {
+    "id": "bakemi",
+    "iconName": "Bakemi",
+    "name": "Bakemi",
+    "number": 168,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1540,
+    "workSuitability": {
+      "handiwork": 3,
+      "medicineProduction": 4,
+      "transporting": 2
+    },
+    "hp": 70,
+    "attack": 85,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_OniGhostGirl_icon_normal.png"
+  },
+  {
+    "id": "solmora",
+    "iconName": "Solmora",
+    "name": "Solmora",
+    "number": 169,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 300,
+    "workSuitability": {
+      "watering": 4
+    },
+    "hp": 90,
+    "attack": 90,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingSunfish_icon_normal.png"
+  },
+  {
+    "id": "solmora_lux",
+    "iconName": "Solmora_Lux",
+    "name": "Solmora Lux",
+    "number": 169,
+    "elements": [
+      "water",
+      "electric"
+    ],
+    "breedingPower": 300,
+    "workSuitability": {
+      "generatingElectricity": 6,
+      "watering": 4
+    },
+    "hp": 90,
+    "attack": 95,
+    "defense": 85,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingSunfish_Thunder_icon_normal.png"
+  },
+  {
+    "id": "lapure",
+    "iconName": "Lapure",
+    "name": "Lapure",
+    "number": 170,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 5,
+      "handiwork": 6
+    },
+    "hp": 105,
+    "attack": 100,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SleeveRabbit_icon_normal.png"
+  },
+  {
+    "id": "eidrolon",
+    "iconName": "Eidrolon",
+    "name": "Eidrolon",
+    "number": 171,
+    "elements": [
+      "dragon",
+      "dark"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "transporting": 6
+    },
+    "hp": 115,
+    "attack": 125,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostDragon_icon_normal.png"
+  },
+  {
+    "id": "eidrolon_ignis",
+    "iconName": "Eidrolon_Ignis",
+    "name": "Eidrolon Ignis",
+    "number": 171,
+    "elements": [
+      "dragon",
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "kindling": 6,
+      "transporting": 6
+    },
+    "hp": 115,
+    "attack": 130,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_GhostDragon_Fire_icon_normal.png"
+  },
+  {
+    "id": "dynamoff",
+    "iconName": "Dynamoff",
+    "name": "Dynamoff",
+    "number": 172,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 3,
+      "generatingElectricity": 6,
+      "transporting": 3
+    },
+    "hp": 75,
+    "attack": 85,
+    "defense": 80,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThunderFluffyBird_icon_normal.png"
+  },
+  {
+    "id": "tropicaw",
+    "iconName": "Tropicaw",
+    "name": "Tropicaw",
+    "number": 173,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 520,
+    "workSuitability": {
+      "gathering": 5,
+      "planting": 5
+    },
+    "hp": 85,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_RedFlowerBird_icon_normal.png"
+  },
+  {
+    "id": "flaracle",
+    "iconName": "Flaracle",
+    "name": "Flaracle",
+    "number": 174,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 6,
+      "kindling": 7,
+      "transporting": 2
+    },
+    "hp": 110,
+    "attack": 125,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FoxExorcist_icon_normal.png"
+  },
+  {
+    "id": "ophydia",
+    "iconName": "Ophydia",
+    "name": "Ophydia",
+    "number": 175,
+    "elements": [
+      "grass",
+      "water"
+    ],
+    "breedingPower": 580,
+    "workSuitability": {
+      "planting": 7,
+      "watering": 5
+    },
+    "hp": 130,
+    "attack": 115,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LotusDragon_icon_normal.png"
+  },
+  {
+    "id": "dupin",
+    "iconName": "Dupin",
+    "name": "Dupin",
+    "number": 176,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 5,
+      "kindling": 7,
+      "medicineProduction": 4,
+      "transporting": 2
+    },
+    "hp": 100,
+    "attack": 110,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ClownRabbit_icon_normal.png"
+  },
+  {
+    "id": "roujay",
+    "iconName": "Roujay",
+    "name": "Roujay",
+    "number": 177,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 5,
+      "transporting": 5
+    },
+    "hp": 110,
+    "attack": 115,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThiefBird_icon_normal.png"
+  },
+  {
+    "id": "venusa",
+    "iconName": "Venusa",
+    "name": "Venusa",
+    "number": 178,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 280,
+    "workSuitability": {
+      "gathering": 6,
+      "handiwork": 6,
+      "medicineProduction": 5,
+      "transporting": 2
+    },
+    "hp": 80,
+    "attack": 85,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SnakeGirl_icon_normal.png"
+  },
+  {
+    "id": "mycora",
+    "iconName": "Mycora",
+    "name": "Mycora",
+    "number": 179,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 4,
+      "handiwork": 4,
+      "medicineProduction": 6,
+      "planting": 6
+    },
+    "hp": 105,
+    "attack": 95,
+    "defense": 90,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MushroomLady_icon_normal.png"
+  },
+  {
+    "id": "loomen",
+    "iconName": "Loomen",
+    "name": "Loomen",
+    "number": 180,
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "handiwork": 4,
+      "kindling": 4,
+      "medicineProduction": 4
+    },
+    "hp": 90,
+    "attack": 100,
+    "defense": 95,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LanternButler_icon_normal.png"
+  },
+  {
+    "id": "wistella",
+    "iconName": "Wistella",
+    "name": "Wistella",
+    "number": 181,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 400,
+    "workSuitability": {
+      "handiwork": 6,
+      "medicineProduction": 6,
+      "transporting": 1
+    },
+    "hp": 80,
+    "attack": 90,
+    "defense": 60,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MoonChild_icon_normal.png"
+  },
+  {
+    "id": "solenne",
+    "iconName": "Solenne",
+    "name": "Solenne",
+    "number": 182,
+    "elements": [
+      "dark",
+      "neutral"
+    ],
+    "breedingPower": 1000,
+    "workSuitability": {
+      "gathering": 4,
+      "handiwork": 8,
+      "transporting": 2
+    },
+    "hp": 110,
+    "attack": 115,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MonochromeQueen_icon_normal.png"
+  },
+  {
+    "id": "renjishi",
+    "iconName": "Renjishi",
+    "name": "Renjishi",
+    "number": 183,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 500,
+    "workSuitability": {
+      "gathering": 5,
+      "handiwork": 6,
+      "kindling": 8,
+      "transporting": 5
+    },
+    "hp": 105,
+    "attack": 120,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KabukiMan_icon_normal.png"
+  },
+  {
+    "id": "aegidron",
+    "iconName": "Aegidron",
+    "name": "Aegidron",
+    "number": 184,
+    "elements": [
+      "dragon",
+      "ground"
+    ],
+    "breedingPower": 30,
+    "workSuitability": {
+      "mining": 8
+    },
+    "hp": 105,
+    "attack": 125,
+    "defense": 140,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DomeArmorDragon_icon_normal.png"
+  },
+  {
+    "id": "grizzbolt",
+    "iconName": "Grizzbolt",
+    "name": "Grizzbolt",
+    "number": 185,
+    "elements": [
+      "electric"
+    ],
+    "breedingPower": 200,
+    "workSuitability": {
+      "generatingElectricity": 5,
+      "handiwork": 4,
+      "lumbering": 3,
+      "transporting": 5
+    },
+    "hp": 120,
+    "attack": 105,
+    "defense": 105,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ElecPanda_icon_normal.png"
+  },
+  {
+    "id": "lyleen",
+    "iconName": "Lyleen",
+    "name": "Lyleen",
+    "number": 186,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 250,
+    "workSuitability": {
+      "gathering": 6,
+      "handiwork": 5,
+      "medicineProduction": 5,
+      "planting": 7
+    },
+    "hp": 120,
+    "attack": 120,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LilyQueen_icon_normal.png"
+  },
+  {
+    "id": "lyleen_noct",
+    "iconName": "Lyleen_Noct",
+    "name": "Lyleen Noct",
+    "number": 186,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 210,
+    "workSuitability": {
+      "gathering": 6,
+      "handiwork": 5,
+      "medicineProduction": 7
+    },
+    "hp": 115,
+    "attack": 120,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LilyQueen_Dark_icon_normal.png"
+  },
+  {
+    "id": "orserk",
+    "iconName": "Orserk",
+    "name": "Orserk",
+    "number": 187,
+    "elements": [
+      "dragon",
+      "electric"
+    ],
+    "breedingPower": 140,
+    "workSuitability": {
+      "generatingElectricity": 8,
+      "handiwork": 3,
+      "transporting": 4
+    },
+    "hp": 120,
+    "attack": 130,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ThunderDragonMan_icon_normal.png"
+  },
+  {
+    "id": "faleris",
+    "iconName": "Faleris",
+    "name": "Faleris",
+    "number": 188,
+    "elements": [
+      "fire"
+    ],
+    "breedingPower": 370,
+    "workSuitability": {
+      "kindling": 6,
+      "transporting": 3
+    },
+    "hp": 105,
+    "attack": 110,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Horus_icon_normal.png"
+  },
+  {
+    "id": "faleris_aqua",
+    "iconName": "Faleris_Aqua",
+    "name": "Faleris Aqua",
+    "number": 188,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 245,
+    "workSuitability": {
+      "transporting": 5,
+      "watering": 6
+    },
+    "hp": 110,
+    "attack": 110,
+    "defense": 115,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Horus_Water_icon_normal.png"
+  },
+  {
+    "id": "shadowbeak",
+    "iconName": "Shadowbeak",
+    "name": "Shadowbeak",
+    "number": 189,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 60,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 120,
+    "attack": 120,
+    "defense": 140,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlackGriffon_icon_normal.png"
+  },
+  {
+    "id": "selyne",
+    "iconName": "Selyne",
+    "name": "Selyne",
+    "number": 190,
+    "elements": [
+      "dark",
+      "neutral"
+    ],
+    "breedingPower": 345,
+    "workSuitability": {
+      "handiwork": 7,
+      "medicineProduction": 6,
+      "transporting": 3
+    },
+    "hp": 130,
+    "attack": 115,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_MoonQueen_icon_normal.png"
+  },
+  {
+    "id": "bastigor",
+    "iconName": "Bastigor",
+    "name": "Bastigor",
+    "number": 191,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 50,
+    "workSuitability": {
+      "cooling": 8,
+      "lumbering": 6,
+      "mining": 5
+    },
+    "hp": 140,
+    "attack": 130,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SnowTigerBeastman_icon_normal.png"
+  },
+  {
+    "id": "shaolong",
+    "iconName": "Shaolong",
+    "name": "Shaolong",
+    "number": 192,
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "breedingPower": 430,
+    "workSuitability": {
+      "gathering": 5,
+      "watering": 8
+    },
+    "hp": 140,
+    "attack": 135,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlueSkyDragon_icon_normal.png"
+  },
+  {
+    "id": "silvance",
+    "iconName": "Silvance",
+    "name": "Silvance",
+    "number": 193,
+    "elements": [
+      "grass"
+    ],
+    "breedingPower": 380,
+    "workSuitability": {
+      "gathering": 4,
+      "handiwork": 6,
+      "medicineProduction": 8,
+      "planting": 6,
+      "transporting": 2
+    },
+    "hp": 140,
+    "attack": 120,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Mothman_icon_normal.png"
+  },
+  {
+    "id": "dandilord",
+    "iconName": "Dandilord",
+    "name": "Dandilord",
+    "number": 194,
+    "elements": [
+      "grass",
+      "dark"
+    ],
+    "breedingPower": 200,
+    "workSuitability": {
+      "gathering": 5,
+      "handiwork": 6,
+      "medicineProduction": 6,
+      "planting": 8,
+      "transporting": 3
+    },
+    "hp": 125,
+    "attack": 135,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlowerPrince_icon_normal.png"
+  },
+  {
+    "id": "bellanoir",
+    "iconName": "Bellanoir",
+    "name": "Bellanoir",
+    "number": 195,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1,
+    "workSuitability": {
+      "handiwork": 5,
+      "medicineProduction": 5,
+      "transporting": 4
+    },
+    "hp": 120,
+    "attack": 150,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NightLady_icon_normal.png"
+  },
+  {
+    "id": "bellanoir_libero",
+    "iconName": "Bellanoir_Libero",
+    "name": "Bellanoir Libero",
+    "number": 195,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 1,
+    "workSuitability": {
+      "handiwork": 6,
+      "medicineProduction": 7,
+      "transporting": 4
+    },
+    "hp": 120,
+    "attack": 150,
+    "defense": 100,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NightLady_Dark_icon_normal.png"
+  },
+  {
+    "id": "xenolord",
+    "iconName": "Xenolord",
+    "name": "Xenolord",
+    "number": 196,
+    "elements": [
+      "dark",
+      "dragon"
+    ],
+    "breedingPower": 265,
+    "workSuitability": {
+      "gathering": 2
+    },
+    "hp": 130,
+    "attack": 120,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DarkMechaDragon_icon_normal.png"
+  },
+  {
+    "id": "hartalis",
+    "iconName": "Hartalis",
+    "name": "Hartalis",
+    "number": 197,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 420,
+    "workSuitability": {
+      "gathering": 7,
+      "lumbering": 7
+    },
+    "hp": 135,
+    "attack": 130,
+    "defense": 110,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LegendDeer_icon_normal.png"
+  },
+  {
+    "id": "paladius",
+    "iconName": "Paladius",
+    "name": "Paladius",
+    "number": 198,
+    "elements": [
+      "neutral"
+    ],
+    "breedingPower": 80,
+    "workSuitability": {
+      "lumbering": 6,
+      "mining": 6
+    },
+    "hp": 130,
+    "attack": 120,
+    "defense": 145,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SaintCentaur_icon_normal.png"
+  },
+  {
+    "id": "necromus",
+    "iconName": "Necromus",
+    "name": "Necromus",
+    "number": 199,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 70,
+    "workSuitability": {
+      "lumbering": 6,
+      "mining": 6
+    },
+    "hp": 130,
+    "attack": 145,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BlackCentaur_icon_normal.png"
+  },
+  {
+    "id": "frostallion",
+    "iconName": "Frostallion",
+    "name": "Frostallion",
+    "number": 200,
+    "elements": [
+      "ice"
+    ],
+    "breedingPower": 120,
+    "workSuitability": {
+      "cooling": 7
+    },
+    "hp": 140,
+    "attack": 140,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceHorse_icon_normal.png"
+  },
+  {
+    "id": "frostallion_noct",
+    "iconName": "Frostallion_Noct",
+    "name": "Frostallion Noct",
+    "number": 200,
+    "elements": [
+      "dark"
+    ],
+    "breedingPower": 100,
+    "workSuitability": {
+      "gathering": 7
+    },
+    "hp": 140,
+    "attack": 140,
+    "defense": 135,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_IceHorse_Dark_icon_normal.png"
+  },
+  {
+    "id": "neptilius",
+    "iconName": "Neptilius",
+    "name": "Neptilius",
+    "number": 201,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 90,
+    "workSuitability": {
+      "watering": 7
+    },
+    "hp": 105,
+    "attack": 145,
+    "defense": 125,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PoseidonOrca_icon_normal.png"
+  },
+  {
+    "id": "jetragon",
+    "iconName": "Jetragon",
+    "name": "Jetragon",
+    "number": 202,
+    "elements": [
+      "dragon"
+    ],
+    "breedingPower": 90,
+    "workSuitability": {
+      "gathering": 8
+    },
+    "hp": 115,
+    "attack": 140,
+    "defense": 120,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_JetDragon_icon_normal.png"
+  },
+  {
+    "id": "panthalus",
+    "iconName": "Panthalus",
+    "name": "Panthalus",
+    "number": 203,
+    "elements": [
+      "water"
+    ],
+    "breedingPower": 380,
+    "workSuitability": {},
+    "hp": 180,
+    "attack": 120,
+    "defense": 200,
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingWhale_icon_normal.png"
+  }
+]

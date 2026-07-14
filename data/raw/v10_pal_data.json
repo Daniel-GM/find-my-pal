@@ -1,0 +1,1444 @@
+[
+  {
+    "name": "Pupperai",
+    "number": "013",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "gathering": 1,
+      "deforesting": 1,
+      "transporting": 1
+    },
+    "drops": [
+      "Bone"
+    ]
+  },
+  {
+    "name": "Clovee",
+    "number": "014",
+    "elements": [
+      "grass",
+      "neutral"
+    ],
+    "work": {
+      "planting": 1,
+      "gathering": 1
+    },
+    "drops": [
+      "Berry Seeds"
+    ]
+  },
+  {
+    "name": "Amione",
+    "number": "047",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 1,
+      "handiwork": 2,
+      "transporting": 1
+    },
+    "drops": [
+      "Aquatic Pal Fluids"
+    ]
+  },
+  {
+    "name": "Wispaw",
+    "number": "050",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 2,
+      "deforesting": 1,
+      "medicine production": 1,
+      "transporting": 1
+    },
+    "drops": [
+      "Small Pal Soul",
+      "Leather",
+      "World Tree Holy Water",
+      "Ground Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Elgrove",
+    "number": "081",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 2,
+      "deforesting": 3,
+      "mining": 2,
+      "transporting": 3
+    },
+    "drops": [
+      "Horn",
+      "Leather",
+      "World Tree Holy Water",
+      "Grass Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Leafan",
+    "number": "090",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "handiwork": 3,
+      "gathering": 3,
+      "transporting": 2
+    },
+    "drops": [
+      "Leather"
+    ]
+  },
+  {
+    "name": "Needoll",
+    "number": "100",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "transporting": 1
+    },
+    "drops": [
+      "Fiber"
+    ]
+  },
+  {
+    "name": "Moldron",
+    "number": "105",
+    "elements": [
+      "fire",
+      "earth"
+    ],
+    "work": {
+      "kindling": 5,
+      "mining": 5
+    },
+    "drops": [
+      "Flame Organ",
+      "Leather",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Majex",
+    "number": "115",
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "work": {
+      "kindling": 4,
+      "handiwork": 5,
+      "medicine production": 3,
+      "transporting": 2
+    },
+    "drops": [
+      "Leather",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Dark Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Gildra",
+    "number": "120",
+    "elements": [
+      "dark",
+      "earth"
+    ],
+    "work": {
+      "handiwork": 5,
+      "medicine production": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Cloth",
+      "Leather"
+    ]
+  },
+  {
+    "name": "Skutlass",
+    "number": "128",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 4,
+      "gathering": 1,
+      "deforesting": 4
+    },
+    "drops": [
+      "Skutlass Sashimi",
+      "Aquatic Pal Fluids"
+    ]
+  },
+  {
+    "name": "Pierdon",
+    "number": "131",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "mining": 5
+    },
+    "drops": [
+      "Ore",
+      "Coal",
+      "Sulfur"
+    ]
+  },
+  {
+    "name": "Snugloo",
+    "number": "133",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "handiwork": 2,
+      "mining": 3,
+      "cooling": 3,
+      "transporting": 2
+    },
+    "drops": [
+      "Leather",
+      "Wool",
+      "World Tree Holy Water",
+      "Ice Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Carnibora",
+    "number": "136",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 6,
+      "handiwork": 4,
+      "gathering": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Venom Gland",
+      "Fiber",
+      "World Tree Holy Water",
+      "Grass Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Dualith",
+    "number": "138",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "deforesting": 5,
+      "mining": 6,
+      "transporting": 6
+    },
+    "drops": [
+      "Beautiful Flower",
+      "Large Pal Soul",
+      "World Tree Holy Water",
+      "Ground Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Sekhmet",
+    "number": "140",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "handiwork": 6,
+      "mining": 3,
+      "transporting": 2
+    },
+    "drops": [
+      "Leather",
+      "Large Pal Soul",
+      "Ground Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Tetroise",
+    "number": "142",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "mining": 4
+    },
+    "drops": [
+      "Ruby",
+      "Large Pal Soul",
+      "Ground Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Bulldosu",
+    "number": "156",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "mining": 4,
+      "transporting": 3
+    },
+    "drops": [
+      "Bone",
+      "Fiber"
+    ]
+  },
+  {
+    "name": "Valentail",
+    "number": "162",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "gathering": 2
+    },
+    "drops": [
+      "Leather"
+    ]
+  },
+  {
+    "name": "Snock",
+    "number": "163",
+    "elements": [
+      "electricity"
+    ],
+    "work": {
+      "generating electricity": 4
+    },
+    "drops": [
+      "Electric Organ",
+      "Aquatic Pal Fluids"
+    ]
+  },
+  {
+    "name": "Souffline",
+    "number": "164",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 2,
+      "transporting": 2
+    },
+    "drops": [
+      "Wheat Seeds"
+    ]
+  },
+  {
+    "name": "Lapiron",
+    "number": "165",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "handiwork": 3,
+      "gathering": 4,
+      "mining": 2,
+      "transporting": 1
+    },
+    "drops": [
+      "Leather"
+    ]
+  },
+  {
+    "name": "Hoodle",
+    "number": "166",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 1,
+      "transporting": 1
+    },
+    "drops": [
+      "Small Pal Soul",
+      "Horn"
+    ]
+  },
+  {
+    "name": "Slowatt",
+    "number": "167",
+    "elements": [
+      "electricity"
+    ],
+    "work": {
+      "generating electricity": 3
+    },
+    "drops": [
+      "Aquatic Pal Fluids",
+      "Electric Organ"
+    ]
+  },
+  {
+    "name": "Bakemi",
+    "number": "168",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 3,
+      "medicine production": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Cloth",
+      "Horn",
+      "Small Pal Soul"
+    ]
+  },
+  {
+    "name": "Solmora",
+    "number": "169",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 4
+    },
+    "drops": [
+      "High Quality Pal Oil",
+      "Aquatic Pal Fluids"
+    ]
+  },
+  {
+    "name": "Lapure",
+    "number": "170",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "handiwork": 6,
+      "gathering": 5
+    },
+    "drops": [
+      "Leather"
+    ]
+  },
+  {
+    "name": "Eidrolon",
+    "number": "171",
+    "elements": [
+      "dragon",
+      "dark"
+    ],
+    "work": {
+      "transporting": 6
+    },
+    "drops": [
+      "Leather",
+      "High Quality Pal Oil",
+      "Dragon Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Dynamoff",
+    "number": "172",
+    "elements": [
+      "electricity"
+    ],
+    "work": {
+      "generating electricity": 6,
+      "gathering": 3,
+      "transporting": 3
+    },
+    "drops": [
+      "Electric Organ"
+    ]
+  },
+  {
+    "name": "Tropicaw",
+    "number": "173",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 5,
+      "gathering": 5
+    },
+    "drops": [
+      "Beautiful Flower",
+      "Fiber"
+    ]
+  },
+  {
+    "name": "Flaracle",
+    "number": "174",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 7,
+      "handiwork": 6,
+      "transporting": 2
+    },
+    "drops": [
+      "Leather",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Ophydia",
+    "number": "175",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 5,
+      "planting": 7
+    },
+    "drops": [
+      "High Quality Pal Oil",
+      "Large Pal Soul",
+      "Grass Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Dupin",
+    "number": "176",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 7,
+      "handiwork": 5,
+      "medicine production": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Leather",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Roujay",
+    "number": "177",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "gathering": 5,
+      "transporting": 5
+    },
+    "drops": [
+      "Leather",
+      "Ruby",
+      "World Tree Holy Water",
+      "Electric Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Venusa",
+    "number": "178",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 6,
+      "gathering": 6,
+      "medicine production": 5,
+      "transporting": 2
+    },
+    "drops": [
+      "Aquatic Pal Fluids",
+      "Venom Gland",
+      "World Tree Holy Water",
+      "Electric Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Mycora",
+    "number": "179",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 6,
+      "handiwork": 4,
+      "gathering": 4,
+      "medicine production": 6
+    },
+    "drops": [
+      "Mushroom",
+      "Mysterious Mushroom",
+      "World Tree Holy Water",
+      "Ground Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Loomen",
+    "number": "180",
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "work": {
+      "kindling": 4,
+      "handiwork": 4,
+      "medicine production": 4
+    },
+    "drops": [
+      "High Quality Pal Oil",
+      "Leather",
+      "Venom Gland",
+      "World Tree Holy Water",
+      "Dark Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Wistella",
+    "number": "181",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 6,
+      "medicine production": 6,
+      "transporting": 1
+    },
+    "drops": [
+      "Nightstar Sand",
+      "Small Pal Soul",
+      "World Tree Holy Water",
+      "Electric Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Solenne",
+    "number": "182",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 8,
+      "gathering": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Dark Fragment",
+      "High Quality Recovery Meds",
+      "World Tree Holy Water",
+      "Neutral Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Renjishi",
+    "number": "183",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 8,
+      "handiwork": 6,
+      "gathering": 5,
+      "transporting": 5
+    },
+    "drops": [
+      "Leather",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Aegidron",
+    "number": "184",
+    "elements": [
+      "dragon",
+      "earth"
+    ],
+    "work": {
+      "mining": 8
+    },
+    "drops": [
+      "Thermal Core",
+      "Giant Pal Soul",
+      "World Tree Holy Water",
+      "Dragon Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Shaolong",
+    "number": "192",
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "work": {
+      "watering": 8,
+      "gathering": 5
+    },
+    "drops": [
+      "Horn",
+      "Leather",
+      "Large Pal Soul",
+      "World Tree Holy Water",
+      "Electric Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Silvance",
+    "number": "193",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 6,
+      "handiwork": 6,
+      "gathering": 4,
+      "medicine production": 8,
+      "transporting": 2
+    },
+    "drops": [
+      "Giant Pal Soul",
+      "Ancient Civilization Core",
+      "World Tree Holy Water",
+      "Grass Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Dandilord",
+    "number": "194",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "planting": 8,
+      "handiwork": 6,
+      "gathering": 5,
+      "medicine production": 6,
+      "transporting": 3
+    },
+    "drops": [
+      "Giant Pal Soul",
+      "Ancient Civilization Core",
+      "Venom Gland",
+      "World Tree Holy Water",
+      "Grass Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Panthalus",
+    "number": "203",
+    "elements": [
+      "water"
+    ],
+    "work": {},
+    "drops": [
+      "Diamond",
+      "Giant Pal Soul"
+    ]
+  },
+  {
+    "name": "Astralym",
+    "number": "204",
+    "elements": [],
+    "work": {},
+    "drops": [
+      "Leather",
+      "High Quality Pal Oil"
+    ]
+  },
+  {
+    "name": "Tanzee Ignis",
+    "number": "023B",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 1,
+      "handiwork": 1,
+      "deforesting": 1,
+      "transporting": 1
+    },
+    "drops": [
+      "Mushroom",
+      "Flame Organ"
+    ]
+  },
+  {
+    "name": "Woolipop Terra",
+    "number": "039B",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "farming": 1
+    },
+    "drops": [
+      "Caramel Cotton Candy",
+      "Wool"
+    ]
+  },
+  {
+    "name": "Gloopie Primo",
+    "number": "048B",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 2,
+      "handiwork": 2,
+      "transporting": 2
+    },
+    "drops": [
+      "Aquatic Pal Fluids",
+      "Gloopie Tentacle"
+    ]
+  },
+  {
+    "name": "Univolt Cryst",
+    "number": "054B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "deforesting": 3,
+      "cooling": 6
+    },
+    "drops": [
+      "Leather",
+      "Horn",
+      "Ice Organ",
+      "World Tree Holy Water",
+      "Ice Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Elgrove Cryst",
+    "number": "081B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "deforesting": 3,
+      "mining": 3,
+      "cooling": 5,
+      "transporting": 3
+    },
+    "drops": [
+      "Horn",
+      "Leather",
+      "Ice Organ",
+      "World Tree Holy Water",
+      "Ice Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Petallia Ignis",
+    "number": "089B",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 4,
+      "handiwork": 3,
+      "gathering": 3,
+      "medicine production": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Beakon Cryst",
+    "number": "096B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "gathering": 2,
+      "cooling": 5,
+      "transporting": 5
+    },
+    "drops": [
+      "Ice Organ",
+      "World Tree Holy Water",
+      "Water Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Rayhound Cryst",
+    "number": "098B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "cooling": 3
+    },
+    "drops": [
+      "Ice Organ",
+      "World Tree Holy Water",
+      "Water Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Needoll Noct",
+    "number": "100B",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "transporting": 1
+    },
+    "drops": [
+      "Fiber",
+      "Venom Gland"
+    ]
+  },
+  {
+    "name": "Moldron Cryst",
+    "number": "105B",
+    "elements": [
+      "ice",
+      "earth"
+    ],
+    "work": {
+      "mining": 5,
+      "cooling": 5
+    },
+    "drops": [
+      "Ice Organ",
+      "Leather"
+    ]
+  },
+  {
+    "name": "Sibelyx Primo",
+    "number": "116B",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "medicine production": 3,
+      "farming": 4
+    },
+    "drops": [
+      "High Quality Cloth",
+      "High Quality Pal Oil",
+      "World Tree Holy Water",
+      "Neutral Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Skutlass Ignis",
+    "number": "128B",
+    "elements": [
+      "water",
+      "fire"
+    ],
+    "work": {
+      "kindling": 3,
+      "watering": 2,
+      "gathering": 2,
+      "deforesting": 3
+    },
+    "drops": [
+      "Skutlass Sashimi",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Water Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Starryon Primo",
+    "number": "130B",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "gathering": 7
+    },
+    "drops": [
+      "Leather",
+      "Nightstar Sand",
+      "World Tree Holy Water",
+      "Neutral Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Pierdon Cryst",
+    "number": "131B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "mining": 5,
+      "cooling": 6
+    },
+    "drops": [
+      "Soralite",
+      "Ice Organ",
+      "Pure Quartz",
+      "World Tree Holy Water",
+      "Ice Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Dualith Noct",
+    "number": "138B",
+    "elements": [
+      "earth",
+      "dark"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "deforesting": 5,
+      "mining": 6,
+      "transporting": 6
+    },
+    "drops": [
+      "Mysterious Mushroom",
+      "Large Pal Soul",
+      "World Tree Holy Water",
+      "Dark Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Prixter Lux",
+    "number": "141B",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "generating electricity": 3,
+      "gathering": 2,
+      "deforesting": 4,
+      "medicine production": 2
+    },
+    "drops": [
+      "Electric Organ"
+    ]
+  },
+  {
+    "name": "Tetroise Primo",
+    "number": "142B",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "mining": 6
+    },
+    "drops": [
+      "Emerald",
+      "Large Pal Soul",
+      "World Tree Holy Water",
+      "Neutral Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Nitemary Botan",
+    "number": "148B",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "handiwork": 4,
+      "transporting": 2
+    },
+    "drops": [
+      "Medium Pal Soul",
+      "World Tree Holy Water",
+      "Grass Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Smokie Cryst",
+    "number": "149B",
+    "elements": [
+      "dark",
+      "ice"
+    ],
+    "work": {
+      "gathering": 2,
+      "cooling": 2
+    },
+    "drops": [
+      "Ice Organ",
+      "Medium Pal Soul",
+      "World Tree Holy Water",
+      "Dark Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Celesdir Noct",
+    "number": "157B",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "gathering": 4,
+      "deforesting": 8
+    },
+    "drops": [
+      "Leather",
+      "Horn",
+      "Dark Fragment",
+      "World Tree Holy Water",
+      "Dark Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Knocklem Ignis",
+    "number": "159B",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 5,
+      "mining": 7,
+      "transporting": 7
+    },
+    "drops": [
+      "Ore",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Snock Lux",
+    "number": "163B",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "generating electricity": 4
+    },
+    "drops": [
+      "Electric Organ",
+      "High Quality Pal Oil",
+      "World Tree Holy Water",
+      "Electric Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Solmora Lux",
+    "number": "169B",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 4,
+      "generating electricity": 6
+    },
+    "drops": [
+      "High Quality Pal Oil",
+      "Electric Organ",
+      "World Tree Holy Water",
+      "Electric Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Eidrolon Ignis",
+    "number": "171B",
+    "elements": [
+      "dragon",
+      "fire"
+    ],
+    "work": {
+      "kindling": 6,
+      "transporting": 6
+    },
+    "drops": [
+      "Leather",
+      "High Quality Pal Oil",
+      "Flame Organ",
+      "World Tree Holy Water",
+      "Dragon Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Incineram Noct",
+    "number": "091B",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 3,
+      "mining": 4,
+      "transporting": 3
+    },
+    "drops": [
+      "Horn",
+      "Leather"
+    ]
+  },
+  {
+    "name": "Pyrin Noct",
+    "number": "093B",
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "work": {
+      "kindling": 4,
+      "deforesting": 3
+    },
+    "drops": [
+      "Flame Organ",
+      "Leather",
+      "Fire Radiant Gem",
+      "Decayed Ancient Relic",
+      "Dormant Ancient Relic",
+      "Gorgeous Ancient Relic",
+      "Glowing Ancient Relic",
+      "Glistening Ancient Relic"
+    ]
+  },
+  {
+    "name": "Warsect Terra",
+    "number": "113B",
+    "elements": [
+      "earth"
+    ],
+    "work": {
+      "handiwork": 2,
+      "mining": 5,
+      "transporting": 5
+    },
+    "drops": [
+      "Honey"
+    ]
+  }
+]

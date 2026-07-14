@@ -1,0 +1,1034 @@
+[
+  {
+    "palName": "Anubis",
+    "skillName": "Guardian of the Desert",
+    "description": "When fighting together, applies Ground damage to the player's attacks. Sometimes dodges attacks with a high speed sidestep while in battle.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Arsox",
+    "skillName": "Warm Body",
+    "description": "Can be ridden. Keeps the rider warm in cold environments.",
+    "category": "temperature"
+  },
+  {
+    "palName": "Astegon",
+    "skillName": "Black Anklyosaur",
+    "description": "Can be ridden as a flying mount. Increases damage dealt to ore while mounted.",
+    "category": "mining"
+  },
+  {
+    "palName": "Azurmane",
+    "skillName": "Plasma Dash",
+    "description": "Can be ridden. Also allows dashing in the air and moving at high speed.",
+    "category": "mount"
+  },
+  {
+    "palName": "Azurobe",
+    "skillName": "Waterwing Dance",
+    "description": "Can be ridden to travel on water. Applies Water damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Bastigor",
+    "skillName": "Blizzard Crash",
+    "description": "Can be ridden. While mounted, delivers crushing blows with an Ice-forged hammer.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Beakon",
+    "skillName": "Thunderous",
+    "description": "Can be ridden as a flying mount. Applies Electric damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Beegarde",
+    "skillName": "Worker Bee",
+    "description": "Sometimes drops Honey when assigned to Ranch. While in team, Elizabee's stats will be increased.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Blazamut",
+    "skillName": "Magma Kaiser",
+    "description": "Can be ridden. Enhances Fire attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Blazehowl",
+    "skillName": "Hellflame Lion",
+    "description": "Can be ridden. While fighting together, Grass Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Blazehowl Noct",
+    "skillName": "Darkflame Lion",
+    "description": "Can be ridden. While fighting together, Neutral Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Bristla",
+    "skillName": "Princess Gaze",
+    "description": "While in team, increases attack power of Grass Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Broncherry",
+    "skillName": "Overaffectionate",
+    "description": "Can be ridden. While in team, Broncherry helps carry supplies, increasing the player's max carrying capacity.",
+    "category": "carrying"
+  },
+  {
+    "palName": "Broncherry Aqua",
+    "skillName": "Overaffectionate",
+    "description": "Can be ridden. While in team, Broncherry Aqua helps carry supplies, increasing the player's max carrying capacity.",
+    "category": "carrying"
+  },
+  {
+    "palName": "Bushi",
+    "skillName": "Brandish Blade",
+    "description": "When activated, attacks targeted enemy with a powerful Iaigiri.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Bushi Noct",
+    "skillName": "Flash Blade",
+    "description": "When activated, attacks targeted enemy with a powerful slash.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Caprity",
+    "skillName": "Berry Picker",
+    "description": "Sometimes drops Red Berries from its back when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Caprity Noct",
+    "skillName": "Venom Picker",
+    "description": "Sometimes drops Venom Gland from its back when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Cattiva",
+    "skillName": "Cat Helper",
+    "description": "While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity by 50-200. (Does not stack)",
+    "category": "carrying"
+  },
+  {
+    "palName": "Cawgnito",
+    "skillName": "Telepeck",
+    "description": "When activated, attacks targeted enemy with a powerful Phantom Peck.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Celaray",
+    "skillName": "Zephyr Glider",
+    "description": "While in team, can be summoned and used instead of a glider. Allows you to move quickly for long periods of time while gliding with this Pal.",
+    "category": "glider"
+  },
+  {
+    "palName": "Celaray Lux",
+    "skillName": "Jolt Glider",
+    "description": "While in team, modifies the performance of the equipped glider. Prevents fall damage and extends the duration of high-speed gliding.",
+    "category": "glider"
+  },
+  {
+    "palName": "Celesdir",
+    "skillName": "Blessing of Purification",
+    "description": "Can be ridden. Increases the player's auto recovery speed while mounted.",
+    "category": "healing"
+  },
+  {
+    "palName": "Chikipi",
+    "skillName": "Egg Layer",
+    "description": "Sometimes lays an Egg when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Chillet",
+    "skillName": "Wriggling Weasel",
+    "description": "Can be ridden. Applies Dragon damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Cinnamoth",
+    "skillName": "Mysterious Scales",
+    "description": "When activated, attacks targeted enemy with Poison Fog.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Clovee",
+    "skillName": "Happy Clover",
+    "description": "While at a base, increases the Gathering Work Suitability Level for all other Base Pals by +1. (Does not stack)",
+    "category": "work_speed"
+  },
+  {
+    "palName": "Cremis",
+    "skillName": "Fluffy Wool",
+    "description": "While in team, increases attack power of Neutral Pals by 15-30%. Sometimes drops Wool when assigned to Ranch.",
+    "category": "damage"
+  },
+  {
+    "palName": "Croajiro",
+    "skillName": "Leap Stance",
+    "description": "When activated, channels its loyalty and puffs up its abdomen to store energy. Climbing on top will propel the player high into the air. While airborne before landing, the player's Attack is increased by 50-86%.",
+    "category": "damage"
+  },
+  {
+    "palName": "Croajiro Noct",
+    "skillName": "Shadow Stance",
+    "description": "When activated, channels its loyalty and puffs up its abdomen to store energy. Climbing on top will propel the player high into the air. While in team, improves player's and Pals' Dark damage to enemy weak points by 25-40%.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Cryolinx",
+    "skillName": "Dragon Hunter",
+    "description": "While fighting together, Dragon Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Cryolinx Terra",
+    "skillName": "Electro Hunter",
+    "description": "While fighting together, Electric Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Daedream",
+    "skillName": "Dream Chaser",
+    "description": "While in team, appears near the player. Follows up player attacks with magic bullets.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Dazemu",
+    "skillName": "Sand Sprint",
+    "description": "Can be ridden. Runs faster over sand.",
+    "category": "speed"
+  },
+  {
+    "palName": "Dazzi",
+    "skillName": "Lady of Lightning",
+    "description": "While in team, appears near the player. Follows up player attacks with lightning bolts.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Dazzi Noct",
+    "skillName": "Lady of Dark Lightning",
+    "description": "While in team, appears near the player. Follows up player attacks with dark lightning bolts.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Depresso",
+    "skillName": "Caffeine Inoculation",
+    "description": "When activated, chugs an entire energy drink, increasing its Movement Speed and Work Speed by 100-900%. Sometimes drops Venom Gland when assigned to Ranch.",
+    "category": "speed"
+  },
+  {
+    "palName": "Digtoise",
+    "skillName": "Drill Crusher",
+    "description": "When activated, performs Shell Spin, follows the player while spinning, and mines ores efficiently.",
+    "category": "mining"
+  },
+  {
+    "palName": "Dinossom",
+    "skillName": "Fragrant Dragon",
+    "description": "Can be ridden. Enhances Grass attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Dinossom Lux",
+    "skillName": "Thunder Dragon",
+    "description": "Can be ridden. Enhances Electric attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Direhowl",
+    "skillName": "Direhowl Rider",
+    "description": "Can be ridden. Moves slightly faster than most mounts.",
+    "category": "mount"
+  },
+  {
+    "palName": "Dogen",
+    "skillName": "Homeward Prayer",
+    "description": "When activated, moves to the closest base. Cannot be used within dungeons, etc.",
+    "category": "utility"
+  },
+  {
+    "palName": "Dumud",
+    "skillName": "Soil Improver",
+    "description": "While in team, increases attack power of Ground Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Eikthyrdeer",
+    "skillName": "Guardian of the Forest",
+    "description": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees.",
+    "category": "logging"
+  },
+  {
+    "palName": "Eikthyrdeer Terra",
+    "skillName": "Guardian of the Golden Forest",
+    "description": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees.",
+    "category": "logging"
+  },
+  {
+    "palName": "Elizabee",
+    "skillName": "Queen Bee Command",
+    "description": "While fighting together, stats will increase the more Beegarde are in your team.",
+    "category": "damage"
+  },
+  {
+    "palName": "Elphidran",
+    "skillName": "Amicable Holy Dragon",
+    "description": "Can be ridden as a flying mount. While fighting together, Dark Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Elphidran Aqua",
+    "skillName": "Amicable Water Dragon",
+    "description": "Can be ridden as a flying mount. While fighting together, Fire Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Faleris",
+    "skillName": "Scorching Predator",
+    "description": "Can be ridden as a flying mount. While fighting together, Ice Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Faleris Aqua",
+    "skillName": "Tidal Predator",
+    "description": "Can be ridden as a flying mount. While fighting together, Fire Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Felbat",
+    "skillName": "Life Steal",
+    "description": "While fighting together, grants the player and Felbat the life steal effect which absorbs some of the received damage and restores HP.",
+    "category": "healing"
+  },
+  {
+    "palName": "Fenglope",
+    "skillName": "Wind and Clouds",
+    "description": "Can be ridden. Can double jump while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Fenglope Lux",
+    "skillName": "Stormcloud",
+    "description": "Can be ridden. Can double jump while mounted. While fighting together, Water Pals drop more items when defeated.",
+    "category": "mount"
+  },
+  {
+    "palName": "Flambelle",
+    "skillName": "Magma Tears",
+    "description": "Sometimes produces Flame Organ when assigned to Ranch. While in party, recovers Health of the player and Party Pals by 0.1-0.5% per second outside of combat.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Flopie",
+    "skillName": "Helper Bunny",
+    "description": "While in team, appears near the player. Automatically picks up nearby items.",
+    "category": "utility"
+  },
+  {
+    "palName": "Foxcicle",
+    "skillName": "Aurora Guide",
+    "description": "While in team, increases attack power of Ice Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Foxparks",
+    "skillName": "Huggy Fire",
+    "description": "When activated, equips to the player and transforms into a flamethrower.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Foxparks Cryst",
+    "skillName": "Huggy Frost",
+    "description": "When activated, equips to the player and attacks using frigid air.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Frostallion",
+    "skillName": "Ice Steed",
+    "description": "Can be ridden as a flying mount. Changes the player's attack type to Ice and enhances Ice attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Frostallion Noct",
+    "skillName": "Black Steed",
+    "description": "Can be ridden as a flying mount. Changes the player's attack type to Dark and enhances Dark attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Fuack",
+    "skillName": "Surfing Slam",
+    "description": "When activated, Fuack body surfs towards an enemy and slams into them.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Fuack Ignis",
+    "skillName": "Fire Tackle",
+    "description": "When activated, Fuack Ignis fire surfs towards an enemy and slams into them.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Fuddler",
+    "skillName": "Ore Detector",
+    "description": "When activated, generates subtle vibrations to detect nearby ore.",
+    "category": "utility"
+  },
+  {
+    "palName": "Galeclaw",
+    "skillName": "Galeclaw Rider",
+    "description": "While in team, can be summoned and used instead of a glider. Allows you to fire a gun while gliding with this Pal.",
+    "category": "glider"
+  },
+  {
+    "palName": "Gobfin",
+    "skillName": "Angler's Secret",
+    "description": "While in team, increases attack power of Water Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Gobfin Ignis",
+    "skillName": "Angler's Flame",
+    "description": "While in team, increases attack power of Fire Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Gorirat",
+    "skillName": "Full-power Gorilla",
+    "description": "When activated, unleashes a primal fury that increases its own attack power.",
+    "category": "damage"
+  },
+  {
+    "palName": "Gorirat Terra",
+    "skillName": "Bulk-up Gorilla",
+    "description": "When activated, its muscles swell, increasing attack power and defense.",
+    "category": "defense"
+  },
+  {
+    "palName": "Gumoss",
+    "skillName": "Logging Assistance",
+    "description": "While in team, improves logging efficiency by 30-50% and reduces weight of all types of wood by 40-60%.",
+    "category": "logging"
+  },
+  {
+    "palName": "Gumoss Terra",
+    "skillName": "Ore-loving Beast",
+    "description": "While in team, improves mining efficiency by 30-50%.",
+    "category": "mining"
+  },
+  {
+    "palName": "Hangyu",
+    "skillName": "Flying Trapeze",
+    "description": "While in team, can be summoned and used instead of a glider. Carries the player up high while gliding.",
+    "category": "glider"
+  },
+  {
+    "palName": "Hangyu Cryst",
+    "skillName": "Winter Trapeze",
+    "description": "While in team, can be summoned and used instead of a glider. Carries the player up high while gliding.",
+    "category": "glider"
+  },
+  {
+    "palName": "Helzephyr",
+    "skillName": "Wings of Death",
+    "description": "Can be ridden as a flying mount. Applies Dark damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Helzephyr Lux",
+    "skillName": "Wings of Thunder",
+    "description": "Can be ridden as a flying mount. Changes the player's attack type to Electric while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Herbil",
+    "skillName": "Herbil Pulse",
+    "description": "While in party, Herbil uses its healing powers to restore 30-60% of the player's Max Health when incapacitated.",
+    "category": "healing"
+  },
+  {
+    "palName": "Hoocrates",
+    "skillName": "Dark Knowledge",
+    "description": "While in team, increases attack power of Dark Pals by 15-30%.",
+    "category": "damage"
+  },
+  {
+    "palName": "Incineram",
+    "skillName": "Flameclaw Hunter",
+    "description": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Incineram Noct",
+    "skillName": "Darkclaw Hunter",
+    "description": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Jetragon",
+    "skillName": "Aerial Missile",
+    "description": "Can be ridden as a flying mount. Can rapidly fire missiles while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Jolthog",
+    "skillName": "Jolt Bomb",
+    "description": "When activated, equips Jolthog to the player to be thrown at an enemy, causing an Electric explosion upon impact.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Jolthog Cryst",
+    "skillName": "Cold Bomb",
+    "description": "When activated, equips Jolthog Cryst to the player to be thrown at an enemy, causing an Ice explosion upon impact.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Katress",
+    "skillName": "Grimoire Collector",
+    "description": "While fighting together, Neutral Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Kelpsea Ignis",
+    "skillName": "Lava Spout",
+    "description": "While in team, increases attack power of Fire Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Kelpsie",
+    "skillName": "Aqua Spout",
+    "description": "While in team, increases attack power of Water Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Kingpaca",
+    "skillName": "King of Muscles",
+    "description": "Can be ridden. While in team, Kingpaca helps carry supplies, increasing the player's max carrying capacity. Defense and Movement Speed increase for each Melpaca in party.",
+    "category": "carrying"
+  },
+  {
+    "palName": "Kingpaca Cryst",
+    "skillName": "Coldhearted King",
+    "description": "Can be ridden. This Pal's Defense and Movement Speed increase for each Melpaca in party.",
+    "category": "carrying"
+  },
+  {
+    "palName": "Kitsun",
+    "skillName": "Clear Mind",
+    "description": "Can be ridden. Unaffected by the cold or heat while riding this Pal.",
+    "category": "temperature"
+  },
+  {
+    "palName": "Kitsun Noct",
+    "skillName": "Fogged Mind",
+    "description": "Can be ridden. Changes the player's attack type to Dark while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Knocklem",
+    "skillName": "Steel Guardian Mode",
+    "description": "When activated, a steel resolve increases Knocklem's Attack and Defense for a limited time.",
+    "category": "defense"
+  },
+  {
+    "palName": "Lamball",
+    "skillName": "Fluffy Shield",
+    "description": "When activated, equips to the player and becomes a shield. Sometimes drops Wool when assigned to Ranch.",
+    "category": "defense"
+  },
+  {
+    "palName": "Leezpunk",
+    "skillName": "Sixth Sense",
+    "description": "When activated, utilizes its sixth sense to detect nearby dungeons.",
+    "category": "utility"
+  },
+  {
+    "palName": "Leezpunk Ignis",
+    "skillName": "Sixth Sense",
+    "description": "When activated, utilizes its sixth sense to detect nearby dungeons.",
+    "category": "utility"
+  },
+  {
+    "palName": "Lifmunk",
+    "skillName": "Lifmunk Recoil",
+    "description": "When activated, leaps onto the player's head and uses a submachine gun to follow up player attacks.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Loupmoon",
+    "skillName": "Claws Glistening in the Dark",
+    "description": "When activated, attacks targeted enemy with a powerful Jumping Claw.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Loupmoon Cryst",
+    "skillName": "Frozen Gleam Strike",
+    "description": "When activated, attacks targeted enemy with a powerful ice claw.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Lovander",
+    "skillName": "Heart Drain",
+    "description": "While fighting together, grants the player and Lovander the life steal effect which absorbs some of the received damage and restores HP.",
+    "category": "healing"
+  },
+  {
+    "palName": "Lunaris",
+    "skillName": "Antigravity",
+    "description": "While in team, Lunaris manipulates gravity, increasing the player's max carrying capacity.",
+    "category": "carrying"
+  },
+  {
+    "palName": "Lyleen",
+    "skillName": "Harvest Goddess",
+    "description": "When activated, the queen's soothing graces greatly restore the player's HP.",
+    "category": "healing"
+  },
+  {
+    "palName": "Lyleen Noct",
+    "skillName": "Goddess of the Tranquil Light",
+    "description": "When activated, the queen's soothing graces greatly restore the player's HP.",
+    "category": "healing"
+  },
+  {
+    "palName": "Mammorest",
+    "skillName": "Gaia Crusher",
+    "description": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted.",
+    "category": "logging"
+  },
+  {
+    "palName": "Mammorest Cryst",
+    "skillName": "Ice Crusher",
+    "description": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted.",
+    "category": "logging"
+  },
+  {
+    "palName": "Maraith",
+    "skillName": "Messenger of Death",
+    "description": "Can be ridden. Applies Dark damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Mau",
+    "skillName": "Gold Digger",
+    "description": "Sometimes digs up Gold Coin when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Mau Cryst",
+    "skillName": "Gold Digger",
+    "description": "Sometimes digs up Gold Coin when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Melpaca",
+    "skillName": "Pacapaca Wool",
+    "description": "Can be ridden. Sometimes drops Wool when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Menasting",
+    "skillName": "Steel Scorpion",
+    "description": "When fighting together, increases the player's defense and Electric Pals drop more items when defeated.",
+    "category": "defense"
+  },
+  {
+    "palName": "Menasting Terra",
+    "skillName": "Steel Scorpion",
+    "description": "While fighting together, increases the player's defense and Electric Pals drop more items when defeated.",
+    "category": "defense"
+  },
+  {
+    "palName": "Mossanda",
+    "skillName": "Grenadier Panda",
+    "description": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Mossanda Lux",
+    "skillName": "Grenadier Panda",
+    "description": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Mozzarina",
+    "skillName": "Milk Maker",
+    "description": "Sometimes produces Milk when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Necromus",
+    "skillName": "Dark Knight of the Abyss",
+    "description": "Can be ridden. Can double jump while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Nitemary",
+    "skillName": "Soul Collector",
+    "description": "While fighting together, Pals drop more Pal Souls when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Nitewing",
+    "skillName": "Travel Companion",
+    "description": "Can be ridden as a flying mount.",
+    "category": "mount"
+  },
+  {
+    "palName": "Nox",
+    "skillName": "Kuudere",
+    "description": "When activated, detects the location of nearby Pal Effigies. When fighting together, applies Dark damage to the player's attacks.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Nyafia",
+    "skillName": "Shot-Nyan Mode",
+    "description": "When activated, Nyafia will fire a shotgun at nearby enemies for a limited time.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Omascul",
+    "skillName": "Masquerade Dance",
+    "description": "While in team, the Pals in the team gain more experience points.",
+    "category": "experience"
+  },
+  {
+    "palName": "Orserk",
+    "skillName": "Ferocious Thunder Dragon",
+    "description": "While fighting together, Water Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Paladius",
+    "skillName": "Holy Knight of the Firmament",
+    "description": "Can be ridden. Can triple jump while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Pengullet",
+    "skillName": "Pengullet Launcher",
+    "description": "When activated, the player equips a Rocket Launcher to fire Pengullet as ammunition. Pengullet explodes on impact and is incapacitated.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Pengullet Lux",
+    "skillName": "Pengullet Lux Launcher",
+    "description": "When activated, the player equips Pengullet Lux to fire Rocket Launcher as ammunition. Pengullet Lux explodes on impact and is incapacitated.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Penking",
+    "skillName": "Brave Sailor",
+    "description": "While in party, Fire Pals drop 40-80% more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Penking Lux",
+    "skillName": "Unyielding Storm Commander",
+    "description": "While in party, improves player's and Pals' Water damage to enemy weak points by 25-40%.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Petallia",
+    "skillName": "Blessing of the Flower Spirit",
+    "description": "When activated, the spirit of flowers greatly restores the player's HP.",
+    "category": "healing"
+  },
+  {
+    "palName": "Pupperai",
+    "skillName": "Best Boy",
+    "description": "While in party, increases the player's melee weapon damage by 10-35%.",
+    "category": "melee_damage"
+  },
+  {
+    "palName": "Pyrin",
+    "skillName": "Red Hare",
+    "description": "Can be ridden. Applies Fire damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Pyrin Noct",
+    "skillName": "Black Hare",
+    "description": "Can be ridden. Applies Dark damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Ragnahawk",
+    "skillName": "Flame Wing",
+    "description": "Can be ridden as a flying mount. Applies Fire damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Rayhound",
+    "skillName": "Jumping Force",
+    "description": "Can be ridden. Can double jump while mounted.",
+    "category": "mount"
+  },
+  {
+    "palName": "Reindrix",
+    "skillName": "Cool Body",
+    "description": "Can be ridden. Keeps the rider cool in hot environments.",
+    "category": "temperature"
+  },
+  {
+    "palName": "Reptyro",
+    "skillName": "Ore-loving Beast",
+    "description": "Can be ridden. Improves efficiency of mining ores while mounted.",
+    "category": "mining"
+  },
+  {
+    "palName": "Reptyro Cryst",
+    "skillName": "Ice-Loving Beast",
+    "description": "Can be ridden. Improves efficiency of mining ores while mounted.",
+    "category": "mining"
+  },
+  {
+    "palName": "Ribbuny",
+    "skillName": "Skilled Fingers",
+    "description": "While in team, increases attack power of Neutral Pals. While at a base, increases work efficiency if working at Weapon Workbench.",
+    "category": "damage"
+  },
+  {
+    "palName": "Ribbuny Botan",
+    "skillName": "Grass Weaver",
+    "description": "While in team, increases Attack of Grass Pals. While at a base, increases work efficiency when working at Weapon Workbench and related facilities.",
+    "category": "damage"
+  },
+  {
+    "palName": "Robinquill",
+    "skillName": "Hawk Eye",
+    "description": "While fighting together, allows you to deal more damage to weak points.",
+    "category": "damage"
+  },
+  {
+    "palName": "Robinquill Terra",
+    "skillName": "Hawk Eye",
+    "description": "While fighting together, allows you to deal more damage to weak points.",
+    "category": "damage"
+  },
+  {
+    "palName": "Rooby",
+    "skillName": "Tiny Spark",
+    "description": "While in team, increases Defense of Fire Pals by 15-30%. Sometimes drops Flame Organ when assigned to Ranch.",
+    "category": "defense"
+  },
+  {
+    "palName": "Rushoar",
+    "skillName": "Hard Head",
+    "description": "Can be ridden. Increases efficiency of destroying boulders while mounted.",
+    "category": "mining"
+  },
+  {
+    "palName": "Selyne",
+    "skillName": "Celestial Darkness",
+    "description": "Can be ridden as a flying mount. Enhances Neutral and Dark attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Shadowbeak",
+    "skillName": "Modified DNA",
+    "description": "Can be ridden as a flying mount. Enhances Dark attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Shroomer",
+    "skillName": "Swooshy Spores",
+    "description": "Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases.",
+    "category": "sanity"
+  },
+  {
+    "palName": "Sibelyx",
+    "skillName": "Silk Maker",
+    "description": "When activated, attacks targeted enemy with a powerful Blizzard Spike. Sometimes produces High Quality Cloth when assigned to Ranch.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Silvegis",
+    "skillName": "Aegis Shield",
+    "description": "Can be ridden. Increases the duration of the shield when using Aegis Charge while mounted.",
+    "category": "defense"
+  },
+  {
+    "palName": "Smokie",
+    "skillName": "Dig, Dog! Dig!",
+    "description": "When activated, uses its sharp sense of smell to detect nearby Chromite. While fighting together, a large amount of Chromite is obtained.",
+    "category": "utility"
+  },
+  {
+    "palName": "Sootseer",
+    "skillName": "Grave Robber",
+    "description": "Sometimes digs up Bone when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Sparkit",
+    "skillName": "Static Electricity",
+    "description": "While in team, increases attack power of Electric Pals.",
+    "category": "damage"
+  },
+  {
+    "palName": "Splatterina",
+    "skillName": "Blade of Uncontrolled Passion",
+    "description": "While in possession, the amount of items obtained from using the Meat Cleaver increases.",
+    "category": "loot"
+  },
+  {
+    "palName": "Starryon",
+    "skillName": "Night Dancer",
+    "description": "Can be ridden. Increases movement speed while mounted at night.",
+    "category": "speed"
+  },
+  {
+    "palName": "Surfent",
+    "skillName": "Swift Swimmer",
+    "description": "Can be ridden to travel on water. While mounted, prevents stamina depletion while moving over water.",
+    "category": "mount"
+  },
+  {
+    "palName": "Surfent Terra",
+    "skillName": "Sand Swimmer",
+    "description": "Can be ridden.",
+    "category": "mount"
+  },
+  {
+    "palName": "Suzaku",
+    "skillName": "Wings of Flame",
+    "description": "Can be ridden as a flying mount. Enhances Fire attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Suzaku Aqua",
+    "skillName": "Wings of Water",
+    "description": "Can be ridden as a flying mount. Enhances Water attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Swee",
+    "skillName": "Fluffy",
+    "description": "While in team, Sweepa's stats will be increased.",
+    "category": "damage"
+  },
+  {
+    "palName": "Sweepa",
+    "skillName": "King of Fluff",
+    "description": "Can be ridden. While fighting together, stats will increase the more Swee are in your team.",
+    "category": "damage"
+  },
+  {
+    "palName": "Tanzee",
+    "skillName": "Cheery Rifle",
+    "description": "When activated, Tanzee will mercilessly fire an assault rifle at nearby enemies for a limited time.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Tanzee Ignis",
+    "skillName": "Chipper Chimp Gunfire",
+    "description": "When activated, Tanzee Ignis will mercilessly fire a Fire assault rifle at nearby enemies for a limited time.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Tarantriss",
+    "skillName": "Tarantriss' Web",
+    "description": "Can be ridden. Can double jump while mounted. Additionally, can shoot spider silk to grapple and move at fast speed.",
+    "category": "mount"
+  },
+  {
+    "palName": "Teafant",
+    "skillName": "Soothing Shower",
+    "description": "When activated, spouts mysterious water that soothes wounds and restores the player's HP. While in party, restores 20-40% of the player's Health when Health falls below 30%.",
+    "category": "healing"
+  },
+  {
+    "palName": "Tocotoco",
+    "skillName": "Eggbomb Launcher",
+    "description": "When activated, equips to the player and transforms into an egg launcher.",
+    "category": "active_attack"
+  },
+  {
+    "palName": "Tombat",
+    "skillName": "Ultrasonic Sensor",
+    "description": "When activated, uses ultrasonic waves to detect the location of nearby Pals.",
+    "category": "utility"
+  },
+  {
+    "palName": "Umbraon",
+    "skillName": "Shadow Stalker",
+    "description": "While fighting together, applies Dark damage to the player's attacks.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Univolt",
+    "skillName": "Swift Deity",
+    "description": "Can be ridden. Applies Electric damage to the player's attacks while mounted.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Vaelet",
+    "skillName": "Purification of Gaia",
+    "description": "While fighting together, Ground Pals drop more items when defeated.",
+    "category": "loot"
+  },
+  {
+    "palName": "Vanwyrm",
+    "skillName": "Aerial Marauder",
+    "description": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted.",
+    "category": "damage"
+  },
+  {
+    "palName": "Vanwyrm Cryst",
+    "skillName": "Aerial Marauder",
+    "description": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted.",
+    "category": "damage"
+  },
+  {
+    "palName": "Verdash",
+    "skillName": "Grassland Speedster",
+    "description": "When fighting together, increases player's movement speed and applies Grass damage to the player's attacks.",
+    "category": "speed"
+  },
+  {
+    "palName": "Vixy",
+    "skillName": "Dig Here!",
+    "description": "Sometimes digs up items from the ground when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Warsect",
+    "skillName": "Hard Armor",
+    "description": "When fighting together, increases player's defense and applies Fire damage to the player's attacks.",
+    "category": "defense"
+  },
+  {
+    "palName": "Warsect Terra",
+    "skillName": "Fortified Shell",
+    "description": "While fighting together, increases the player's defense and reduces damage received from Fire.",
+    "category": "defense"
+  },
+  {
+    "palName": "Wixen",
+    "skillName": "Lord Fox",
+    "description": "When fighting together, applies Fire damage to the player's attacks.",
+    "category": "elemental_damage"
+  },
+  {
+    "palName": "Woolipop",
+    "skillName": "Candy Pop",
+    "description": "Sometimes drops Cotton Candy when assigned to Ranch.",
+    "category": "ranch"
+  },
+  {
+    "palName": "Wumpo",
+    "skillName": "Guardian of the Snowy Mountain",
+    "description": "Can be ridden. While in team, Wumpo helps carry supplies, increasing the player's max carrying capacity.",
+    "category": "carrying"
+  },
+  {
+    "palName": "Wumpo Botan",
+    "skillName": "Guardian of the Grassy Fields",
+    "description": "Can be ridden. While in team, Wumpo Botan helps carry supplies, increasing the player's max carrying capacity.",
+    "category": "carrying"
+  }
+]

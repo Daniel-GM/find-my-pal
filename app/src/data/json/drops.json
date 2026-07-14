@@ -1,0 +1,2002 @@
+{
+  "Anubis": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 3,
+      "max": 5
+    },
+    {
+      "itemId": "PalUpgradeStone3",
+      "itemName": "Large Pal Soul",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "TechnologyBook_G2",
+      "itemName": "Innovative Technical Manual",
+      "rate": 5,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Arsox": [
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Astegon": [
+    {
+      "itemId": "StealIngot",
+      "itemName": "Pal Metal Ingot",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Quartz",
+      "itemName": "Pure Quartz",
+      "rate": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "Azurobe": [
+    {
+      "itemId": "Cloth",
+      "itemName": "Cloth",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    }
+  ],
+  "Beakon": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Beegarde": [
+    {
+      "itemId": "Honey",
+      "itemName": "Honey",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Blazamut": [
+    {
+      "itemId": "Coal",
+      "itemName": "Coal",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    },
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    }
+  ],
+  "Blazehowl": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "Bristla": [
+    {
+      "itemId": "WheatSeeds",
+      "itemName": "Wheat Seeds",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "LettuceSeeds",
+      "itemName": "Lettuce Seeds",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Broncherry": [
+    {
+      "itemId": "Meat_SakuraSaurus",
+      "itemName": "Broncherry Meat",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "TomatoSeeds",
+      "itemName": "Tomato Seeds",
+      "rate": 50,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Bushi": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "CopperIngot",
+      "itemName": "Ingot",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Caprity": [
+    {
+      "itemId": "Meat_BerryGoat",
+      "itemName": "Caprity Meat",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "Berries",
+      "itemName": "Red Berries",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    },
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Cattiva": [
+    {
+      "itemId": "Berries",
+      "itemName": "Red Berries",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Cawgnito": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    },
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "PalUpgradeStone",
+      "itemName": "Small Pal Soul",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Celaray": [
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Chikipi": [
+    {
+      "itemId": "Egg",
+      "itemName": "Egg",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Meat_ChickenPal",
+      "itemName": "Chikipi Poultry",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Chillet": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Cinnamoth": [
+    {
+      "itemId": "Honey",
+      "itemName": "Honey",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "LettuceSeeds",
+      "itemName": "Lettuce Seeds",
+      "rate": 20,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "WheatSeeds",
+      "itemName": "Wheat Seeds",
+      "rate": 20,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Cremis": [
+    {
+      "itemId": "Wool",
+      "itemName": "Wool",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Croajiro": [
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Cloth",
+      "itemName": "Cloth",
+      "rate": 25,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Cryolinx": [
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    }
+  ],
+  "Daedream": [
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalUpgradeStone",
+      "itemName": "Small Pal Soul",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Dazemu": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Dazzi": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalItem_RaijinDaughter",
+      "itemName": "Dazzi Cloud",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Depresso": [
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Digtoise": [
+    {
+      "itemId": "CopperOre",
+      "itemName": "Ore",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Dinossom": [
+    {
+      "itemId": "WheatSeeds",
+      "itemName": "Wheat Seeds",
+      "rate": 50,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Direhowl": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Ruby",
+      "itemName": "Ruby",
+      "rate": 3,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 3,
+      "min": 10,
+      "max": 20
+    }
+  ],
+  "Dogen": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Dumud": [
+    {
+      "itemId": "Meat_LazyCatfish",
+      "itemName": "Raw Dumud",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Eikthyrdeer": [
+    {
+      "itemId": "Meat_Deer",
+      "itemName": "Eikthyrdeer Venison",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    }
+  ],
+  "Elizabee": [
+    {
+      "itemId": "Honey",
+      "itemName": "Honey",
+      "rate": 100,
+      "min": 5,
+      "max": 5
+    },
+    {
+      "itemId": "Spear_QueenBee",
+      "itemName": "Elizabee's Staff",
+      "rate": 3,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Elphidran": [
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Faleris": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 4
+    }
+  ],
+  "Felbat": [
+    {
+      "itemId": "Cloth",
+      "itemName": "Cloth",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "PalUpgradeStone",
+      "itemName": "Small Pal Soul",
+      "rate": 3,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Fenglope": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 3,
+      "max": 3
+    },
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    }
+  ],
+  "Flambelle": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Flopie": [
+    {
+      "itemId": "Herbs",
+      "itemName": "Low Grade Medical Supplies",
+      "rate": 20,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "WheatSeeds",
+      "itemName": "Wheat Seeds",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Foxcicle": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Foxparks": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Frostallion": [
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    },
+    {
+      "itemId": "Diamond",
+      "itemName": "Diamond",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Fuack": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Fuddler": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Galeclaw": [
+    {
+      "itemId": "Meat_Eagle",
+      "itemName": "Galeclaw Poultry",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Gobfin": [
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Gorirat": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Grintale": [
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    }
+  ],
+  "Grizzbolt": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Gumoss": [
+    {
+      "itemId": "BerrySeeds",
+      "itemName": "Berry Seeds",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalItem_PlantSlime",
+      "itemName": "Gumoss Leaf",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Hangyu": [
+    {
+      "itemId": "Fiber",
+      "itemName": "Fiber",
+      "rate": 100,
+      "min": 5,
+      "max": 10
+    }
+  ],
+  "Helzephyr": [
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    },
+    {
+      "itemId": "PalUpgradeStone2",
+      "itemName": "Medium Pal Soul",
+      "rate": 3,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Hoocrates": [
+    {
+      "itemId": "Fiber",
+      "itemName": "Fiber",
+      "rate": 100,
+      "min": 5,
+      "max": 10
+    },
+    {
+      "itemId": "TechnologyBook_G1",
+      "itemName": "High Grade Technical Manual",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Incineram": [
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Jetragon": [
+    {
+      "itemId": "Quartz",
+      "itemName": "Pure Quartz",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    },
+    {
+      "itemId": "Polymer",
+      "itemName": "Polymer",
+      "rate": 100,
+      "min": 5,
+      "max": 5
+    },
+    {
+      "itemId": "CarbonFiber",
+      "itemName": "Carbon Fiber",
+      "rate": 100,
+      "min": 5,
+      "max": 5
+    },
+    {
+      "itemId": "Diamond",
+      "itemName": "Diamond",
+      "rate": 30,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Jolthog": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Jormuntide": [
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    }
+  ],
+  "Katress": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "PalItem_CatMage",
+      "itemName": "Katress Hair",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "TechnologyBook_G1",
+      "itemName": "High Grade Technical Manual",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Kelpsea": [
+    {
+      "itemId": "Meat_Kelpie",
+      "itemName": "Raw Kelpsea",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Kikit": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 60,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "CrudeOil",
+      "itemName": "Crude Oil",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Killamari": [
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    },
+    {
+      "itemId": "PalItem_NegativeOctopus",
+      "itemName": "Killamari Tentacle",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Kingpaca": [
+    {
+      "itemId": "Wool",
+      "itemName": "Wool",
+      "rate": 100,
+      "min": 5,
+      "max": 5
+    }
+  ],
+  "Kitsun": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Knocklem": [
+    {
+      "itemId": "CopperOre",
+      "itemName": "Ore",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Lamball": [
+    {
+      "itemId": "Wool",
+      "itemName": "Wool",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    },
+    {
+      "itemId": "Meat_SheepBall",
+      "itemName": "Lamball Mutton",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Leezpunk": [
+    {
+      "itemId": "TreasureBoxKey01",
+      "itemName": "Copper Key",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "TreasureBoxKey02",
+      "itemName": "Silver Key",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalItem_LizardMan",
+      "itemName": "Leezpunk Crest",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Lifmunk": [
+    {
+      "itemId": "BerrySeeds",
+      "itemName": "Berry Seeds",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Herbs",
+      "itemName": "Low Grade Medical Supplies",
+      "rate": 20,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Loupmoon": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Lovander": [
+    {
+      "itemId": "Mushroom",
+      "itemName": "Mushroom",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    },
+    {
+      "itemId": "Cake",
+      "itemName": "Cake",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Opium",
+      "itemName": "Suspicious Juice",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Narcotic",
+      "itemName": "Strange Juice",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "StatusPointResetSan",
+      "itemName": "Memory Wiping Medicine",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Lullu": [
+    {
+      "itemId": "Poppy",
+      "itemName": "Beautiful Flower",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Berries",
+      "itemName": "Red Berries",
+      "rate": 60,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Lunaris": [
+    {
+      "itemId": "Pal_crystal_S",
+      "itemName": "Paldium Fragment",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Lyleen": [
+    {
+      "itemId": "Herbs",
+      "itemName": "Low Grade Medical Supplies",
+      "rate": 100,
+      "min": 3,
+      "max": 3
+    },
+    {
+      "itemId": "Poppy",
+      "itemName": "Beautiful Flower",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "TechnologyBook_G2",
+      "itemName": "Innovative Technical Manual",
+      "rate": 10,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Mammorest": [
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 5,
+      "max": 10
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 5,
+      "max": 10
+    },
+    {
+      "itemId": "Meat_GrassMammoth",
+      "itemName": "Mammorest Meat",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    }
+  ],
+  "Maraith": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "PalUpgradeStone",
+      "itemName": "Small Pal Soul",
+      "rate": 15,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "CrudeOil",
+      "itemName": "Crude Oil",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Mau": [
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 50,
+      "min": 100,
+      "max": 200
+    }
+  ],
+  "Melpaca": [
+    {
+      "itemId": "Wool",
+      "itemName": "Wool",
+      "rate": 100,
+      "min": 2,
+      "max": 5
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Menasting": [
+    {
+      "itemId": "Coal",
+      "itemName": "Coal",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    },
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 5,
+      "max": 10
+    }
+  ],
+  "Mimog": [
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 100,
+      "min": 1000,
+      "max": 2000
+    },
+    {
+      "itemId": "DogCoin",
+      "itemName": "Dog Coin",
+      "rate": 100,
+      "min": 14,
+      "max": 21
+    },
+    {
+      "itemId": "ExpBoost_04",
+      "itemName": "Training Manual (XL)",
+      "rate": 20,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 100,
+      "min": 1500,
+      "max": 2500
+    },
+    {
+      "itemId": "DogCoin",
+      "itemName": "Dog Coin",
+      "rate": 100,
+      "min": 14,
+      "max": 21
+    },
+    {
+      "itemId": "ExpBoost_04",
+      "itemName": "Training Manual (XL)",
+      "rate": 30,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 100,
+      "min": 2000,
+      "max": 2500
+    },
+    {
+      "itemId": "DogCoin",
+      "itemName": "Dog Coin",
+      "rate": 100,
+      "min": 20,
+      "max": 25
+    },
+    {
+      "itemId": "ExpBoost_04",
+      "itemName": "Training Manual (XL)",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 100,
+      "min": 2500,
+      "max": 3000
+    },
+    {
+      "itemId": "DogCoin",
+      "itemName": "Dog Coin",
+      "rate": 100,
+      "min": 22,
+      "max": 27
+    },
+    {
+      "itemId": "ExpBoost_04",
+      "itemName": "Training Manual (XL)",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 100,
+      "min": 3000,
+      "max": 3500
+    },
+    {
+      "itemId": "DogCoin",
+      "itemName": "Dog Coin",
+      "rate": 100,
+      "min": 25,
+      "max": 30
+    },
+    {
+      "itemId": "ExpBoost_04",
+      "itemName": "Training Manual (XL)",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 100,
+      "min": 4000,
+      "max": 5000
+    },
+    {
+      "itemId": "DogCoin",
+      "itemName": "Dog Coin",
+      "rate": 100,
+      "min": 31,
+      "max": 33
+    },
+    {
+      "itemId": "ExpBoost_04",
+      "itemName": "Training Manual (XL)",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Mossanda": [
+    {
+      "itemId": "Mushroom",
+      "itemName": "Mushroom",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "TomatoSeeds",
+      "itemName": "Tomato Seeds",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Mozzarina": [
+    {
+      "itemId": "Meat_CowPal",
+      "itemName": "Mozzarina Meat",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Milk",
+      "itemName": "Milk",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Necromus": [
+    {
+      "itemId": "StealIngot",
+      "itemName": "Pal Metal Ingot",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    },
+    {
+      "itemId": "PalUpgradeStone3",
+      "itemName": "Large Pal Soul",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Nitewing": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    }
+  ],
+  "Nox": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalUpgradeStone",
+      "itemName": "Small Pal Soul",
+      "rate": 40,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Orserk": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Paladius": [
+    {
+      "itemId": "StealIngot",
+      "itemName": "Pal Metal Ingot",
+      "rate": 100,
+      "min": 10,
+      "max": 10
+    },
+    {
+      "itemId": "Diamond",
+      "itemName": "Diamond",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Pengullet": [
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Penking": [
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 3
+    },
+    {
+      "itemId": "PalItem_CaptainPenguin",
+      "itemName": "Penking Plume",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Petallia": [
+    {
+      "itemId": "Poppy",
+      "itemName": "Beautiful Flower",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Prixter": [
+    {
+      "itemId": "Venom",
+      "itemName": "Venom Gland",
+      "rate": 100,
+      "min": 4,
+      "max": 5
+    }
+  ],
+  "Pyrin": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 4,
+      "max": 5
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Quivern": [
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 3,
+      "max": 3
+    }
+  ],
+  "Ragnahawk": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 5,
+      "max": 7
+    }
+  ],
+  "Rayhound": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Reindrix": [
+    {
+      "itemId": "Meat_IceDeer",
+      "itemName": "Reindrix Venison",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Relaxaurus": [
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 1,
+      "max": 4
+    },
+    {
+      "itemId": "Ruby",
+      "itemName": "Ruby",
+      "rate": 5,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Reptyro": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 5,
+      "max": 7
+    }
+  ],
+  "Ribbuny": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Poppy",
+      "itemName": "Beautiful Flower",
+      "rate": 5,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalItem_PinkRabbit",
+      "itemName": "Ribbuny Ribbon",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Robinquill": [
+    {
+      "itemId": "WheatSeeds",
+      "itemName": "Wheat Seeds",
+      "rate": 50,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Arrow",
+      "itemName": "Arrow",
+      "rate": 100,
+      "min": 2,
+      "max": 4
+    }
+  ],
+  "Rooby": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Rushoar": [
+    {
+      "itemId": "Meat_Boar",
+      "itemName": "Rushoar Pork",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Selyne": [
+    {
+      "itemId": "Cloth",
+      "itemName": "Cloth",
+      "rate": 60,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Sapphire",
+      "itemName": "Sapphire",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "PalItem_ToSell_04",
+      "itemName": "Precious Claw",
+      "rate": 30,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Shadowbeak": [
+    {
+      "itemId": "StealIngot",
+      "itemName": "Pal Metal Ingot",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "CarbonFiber",
+      "itemName": "Carbon Fiber",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "TechnologyBook_G2",
+      "itemName": "Innovative Technical Manual",
+      "rate": 10,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Shroomer": [
+    {
+      "itemId": "Mushroom",
+      "itemName": "Mushroom",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Berries",
+      "itemName": "Red Berries",
+      "rate": 60,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Sibelyx": [
+    {
+      "itemId": "Cloth2",
+      "itemName": "High Quality Cloth",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "Sootseer": [
+    {
+      "itemId": "PalUpgradeStone2",
+      "itemName": "Medium Pal Soul",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "CrudeOil",
+      "itemName": "Crude Oil",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Sparkit": [
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Surfent": [
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "Suzaku": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 5,
+      "max": 10
+    }
+  ],
+  "Swee": [
+    {
+      "itemId": "Wool",
+      "itemName": "Wool",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalItem_MopBaby",
+      "itemName": "Swee Hair",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Sweepa": [
+    {
+      "itemId": "Wool",
+      "itemName": "Wool",
+      "rate": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "Tanzee": [
+    {
+      "itemId": "Mushroom",
+      "itemName": "Mushroom",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Teafant": [
+    {
+      "itemId": "PalFluid",
+      "itemName": "Pal Fluids",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Tocotoco": [
+    {
+      "itemId": "Gunpowder2",
+      "itemName": "Gunpowder",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "PalItem_ColorfulBird",
+      "itemName": "Tocotoco Feather",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Tombat": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "PalUpgradeStone",
+      "itemName": "Small Pal Soul",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Univolt": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "ElectricOrgan",
+      "itemName": "Electric Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Horn",
+      "itemName": "Horn",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Vaelet": [
+    {
+      "itemId": "Herbs",
+      "itemName": "Low Grade Medical Supplies",
+      "rate": 100,
+      "min": 2,
+      "max": 2
+    },
+    {
+      "itemId": "TomatoSeeds",
+      "itemName": "Tomato Seeds",
+      "rate": 50,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Vanwyrm": [
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Ruby",
+      "itemName": "Ruby",
+      "rate": 1,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Money",
+      "itemName": "Gold Coin",
+      "rate": 10,
+      "min": 10,
+      "max": 40
+    }
+  ],
+  "Verdash": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Vixy": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "itemId": "Bone",
+      "itemName": "Bone",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Warsect": [
+    {
+      "itemId": "Honey",
+      "itemName": "Honey",
+      "rate": 100,
+      "min": 3,
+      "max": 4
+    }
+  ],
+  "Wixen": [
+    {
+      "itemId": "FireOrgan",
+      "itemName": "Flame Organ",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "TechnologyBook_G1",
+      "itemName": "High Grade Technical Manual",
+      "rate": 1,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Woolipop": [
+    {
+      "itemId": "Sweet",
+      "itemName": "Cotton Candy",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    },
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Wumpo": [
+    {
+      "itemId": "IceOrgan",
+      "itemName": "Ice Organ",
+      "rate": 100,
+      "min": 2,
+      "max": 3
+    },
+    {
+      "itemId": "Poppy",
+      "itemName": "Beautiful Flower",
+      "rate": 20,
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "Xenogard": [
+    {
+      "itemId": "MeteorDrop",
+      "itemName": "Meteorite Fragment",
+      "rate": 100,
+      "min": 5,
+      "max": 12
+    },
+    {
+      "itemId": "PalOil",
+      "itemName": "High Quality Pal Oil",
+      "rate": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "Xenovader": [
+    {
+      "itemId": "MeteorDrop",
+      "itemName": "Meteorite Fragment",
+      "rate": 100,
+      "min": 3,
+      "max": 10
+    }
+  ],
+  "Yakumo": [
+    {
+      "itemId": "Leather",
+      "itemName": "Leather",
+      "rate": 100,
+      "min": 1,
+      "max": 2
+    }
+  ]
+}

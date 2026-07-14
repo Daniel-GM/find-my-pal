@@ -1,0 +1,576 @@
+{
+  "Green Slime": {
+    "number": null,
+    "elements": [
+      "Leaf"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_icon_normal.png"
+  },
+  "Blue Slime": {
+    "number": null,
+    "elements": [
+      "Water"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Blue_icon_normal.png"
+  },
+  "Red Slime": {
+    "number": null,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Red_icon_normal.png"
+  },
+  "Purple Slime": {
+    "number": null,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Purple_icon_normal.png"
+  },
+  "Illuminant Slime": {
+    "number": null,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Pink_icon_normal.png"
+  },
+  "Rainbow Slime": {
+    "number": null,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster001_Rainbow_icon_normal.png"
+  },
+  "Enchanted Sword": {
+    "number": null,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Deforesting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster002_icon_normal.png"
+  },
+  "Cave Bat": {
+    "number": null,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster003_icon_normal.png"
+  },
+  "Illuminant Bat": {
+    "number": null,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaMonster003_Purple_icon_normal.png"
+  },
+  "Eye of Cthulhu": {
+    "number": null,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Transporting": 4
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaBoss001_icon_normal.png"
+  },
+  "Demon Eye": {
+    "number": null,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_YakushimaBoss001_Small_icon_normal.png"
+  },
+  "Lamball": {
+    "number": 1,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Handiwork": 1,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SheepBall_icon_normal.png"
+  },
+  "Cattiva": {
+    "number": 2,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Mining": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PinkCat_icon_normal.png"
+  },
+  "Chikipi": {
+    "number": 3,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Gathering": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_ChickenPal_icon_normal.png"
+  },
+  "Lifmunk": {
+    "number": 4,
+    "elements": [
+      "Leaf"
+    ],
+    "workSuitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Deforesting": 1,
+      "Medicine Production": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Carbunclo_icon_normal.png"
+  },
+  "Fuack": {
+    "number": 5,
+    "elements": [
+      "Water"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BluePlatypus_icon_normal.png"
+  },
+  "Fuack Ignis": {
+    "number": null,
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "workSuitability": {
+      "Kindling": 2,
+      "Watering": 2,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_BluePlatypus_Fire_icon_normal.png"
+  },
+  "Vixy": {
+    "number": 6,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Gathering": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CuteFox_icon_normal.png"
+  },
+  "Celaray": {
+    "number": 7,
+    "elements": [
+      "Water"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlyingManta_icon_normal.png"
+  },
+  "Celaray Lux": {
+    "number": null,
+    "elements": [
+      "Water",
+      "Electricity"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Generating Electricity": 2,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlyingManta_Thunder_icon_normal.png"
+  },
+  "Cremis": {
+    "number": 8,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Gathering": 1,
+      "Farming": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WoolFox_icon_normal.png"
+  },
+  "Croajiro": {
+    "number": 9,
+    "elements": [
+      "Water"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KendoFrog_icon_normal.png"
+  },
+  "Croajiro Noct": {
+    "number": null,
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Handiwork": 2,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KendoFrog_Dark_icon_normal.png"
+  },
+  "Herbil": {
+    "number": 10,
+    "elements": [
+      "Leaf",
+      "Normal"
+    ],
+    "workSuitability": {
+      "Planting": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LeafMomonga_icon_normal.png"
+  },
+  "Teafant": {
+    "number": 11,
+    "elements": [
+      "Water"
+    ],
+    "workSuitability": {
+      "Watering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Ganesha_icon_normal.png"
+  },
+  "Gumoss": {
+    "number": 12,
+    "elements": [
+      "Leaf",
+      "Earth"
+    ],
+    "workSuitability": {
+      "Planting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_PlantSlime_icon_normal.png"
+  },
+  "Pupperai": {
+    "number": 13,
+    "elements": [
+      "Earth"
+    ],
+    "workSuitability": {
+      "Gathering": 1,
+      "Deforesting": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_SamuraiDog_icon_normal.png"
+  },
+  "Clovee": {
+    "number": 14,
+    "elements": [
+      "Leaf",
+      "Normal"
+    ],
+    "workSuitability": {
+      "Planting": 1,
+      "Gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CloverFairy_icon_normal.png"
+  },
+  "Jolthog": {
+    "number": 15,
+    "elements": [
+      "Electricity"
+    ],
+    "workSuitability": {
+      "Generating Electricity": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Hedgehog_icon_normal.png"
+  },
+  "Jolthog Cryst": {
+    "number": null,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitability": {
+      "Cooling": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Hedgehog_Ice_icon_normal.png"
+  },
+  "Depresso": {
+    "number": 16,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Handiwork": 1,
+      "Mining": 1,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NegativeKoala_icon_normal.png"
+  },
+  "Pengullet": {
+    "number": 17,
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Cooling": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Penguin_icon_normal.png"
+  },
+  "Pengullet Lux": {
+    "number": null,
+    "elements": [
+      "Water",
+      "Electricity"
+    ],
+    "workSuitability": {
+      "Watering": 1,
+      "Generating Electricity": 2,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Penguin_Electric_icon_normal.png"
+  },
+  "Penking": {
+    "number": 18,
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "workSuitability": {
+      "Watering": 2,
+      "Handiwork": 2,
+      "Mining": 3,
+      "Cooling": 2,
+      "Transporting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CaptainPenguin_icon_normal.png"
+  },
+  "Penking Lux": {
+    "number": null,
+    "elements": [
+      "Water",
+      "Electricity"
+    ],
+    "workSuitability": {
+      "Watering": 2,
+      "Generating Electricity": 3,
+      "Handiwork": 2,
+      "Mining": 3,
+      "Transporting": 3
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_CaptainPenguin_Black_icon_normal.png"
+  },
+  "Hoocrates": {
+    "number": 19,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_WizardOwl_icon_normal.png"
+  },
+  "Melpaca": {
+    "number": 20,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Farming": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Alpaca_icon_normal.png"
+  },
+  "Kingpaca": {
+    "number": 21,
+    "elements": [
+      "Normal"
+    ],
+    "workSuitability": {
+      "Gathering": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingAlpaca_icon_normal.png"
+  },
+  "Kingpaca Cryst": {
+    "number": null,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitability": {
+      "Gathering": 2,
+      "Cooling": 4
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_KingAlpaca_Ice_icon_normal.png"
+  },
+  "Daedream": {
+    "number": 22,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_DreamDemon_icon_normal.png"
+  },
+  "Tanzee": {
+    "number": 23,
+    "elements": [
+      "Leaf"
+    ],
+    "workSuitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Deforesting": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Monkey_icon_normal.png"
+  },
+  "Tanzee Ignis": {
+    "number": null,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitability": {
+      "Kindling": 1,
+      "Handiwork": 1,
+      "Deforesting": 1,
+      "Transporting": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Monkey_Fire_icon_normal.png"
+  },
+  "Nox": {
+    "number": 24,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Gathering": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_NightFox_icon_normal.png"
+  },
+  "Flambelle": {
+    "number": 25,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitability": {
+      "Kindling": 1,
+      "Handiwork": 1,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_LavaGirl_icon_normal.png"
+  },
+  "Rooby": {
+    "number": 26,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitability": {
+      "Kindling": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_FlameBambi_icon_normal.png"
+  },
+  "Mau": {
+    "number": 27,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitability": {
+      "Gathering": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Bastet_icon_normal.png"
+  },
+  "Mau Cryst": {
+    "number": null,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitability": {
+      "Cooling": 1,
+      "Farming": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Bastet_Ice_icon_normal.png"
+  },
+  "Rushoar": {
+    "number": 28,
+    "elements": [
+      "Earth"
+    ],
+    "workSuitability": {
+      "Mining": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Boar_icon_normal.png"
+  },
+  "Foxparks": {
+    "number": 29,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitability": {
+      "Kindling": 1
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kitsunebi_icon_normal.png"
+  },
+  "Foxparks Cryst": {
+    "number": null,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitability": {
+      "Cooling": 2
+    },
+    "iconUrl": "https://palworld.gg/_ipx/q_80&s_130x130/images/full_palicon/T_Kitsunebi_Ice_icon_normal.png"
+  }
+}

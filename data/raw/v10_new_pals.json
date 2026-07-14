@@ -1,0 +1,884 @@
+[
+  {
+    "name": "Gumoss Flower",
+    "number": "12B",
+    "elements": [
+      "grass",
+      "ground"
+    ],
+    "work": {
+      "planting": 1
+    }
+  },
+  {
+    "name": "Pupperai",
+    "number": "13",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "gathering": 1,
+      "lumbering": 1,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Clovee",
+    "number": "14",
+    "elements": [
+      "grass",
+      "neutral"
+    ],
+    "work": {
+      "planting": 1,
+      "gathering": 1
+    }
+  },
+  {
+    "name": "Tanzee Ignis",
+    "number": "23B",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 1,
+      "handiwork": 1,
+      "lumbering": 1,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Woolipop Terra",
+    "number": "39B",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "farming": 1
+    }
+  },
+  {
+    "name": "Amione",
+    "number": "47",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 1,
+      "handiwork": 2,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Gloopie Primo",
+    "number": "48B",
+    "elements": [
+      "water",
+      "neutral"
+    ],
+    "work": {
+      "watering": 2,
+      "handiwork": 2,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Wispaw",
+    "number": "50",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 2,
+      "lumbering": 1,
+      "medicine_production": 1,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Univolt Cryst",
+    "number": "54B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "lumbering": 3,
+      "cooling": 6
+    }
+  },
+  {
+    "name": "Elgrove",
+    "number": "81",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 2,
+      "lumbering": 3,
+      "mining": 2,
+      "transporting": 3
+    }
+  },
+  {
+    "name": "Elgrove Cryst",
+    "number": "81B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "lumbering": 3,
+      "mining": 3,
+      "cooling": 5,
+      "transporting": 3
+    }
+  },
+  {
+    "name": "Petallia Ignis",
+    "number": "89B",
+    "elements": [
+      "grass",
+      "fire"
+    ],
+    "work": {
+      "kindling": 4,
+      "handiwork": 3,
+      "gathering": 3,
+      "medicine_production": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Leafan",
+    "number": "90",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "handiwork": 3,
+      "gathering": 3,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Incineram Noct",
+    "number": "91B",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 3,
+      "mining": 4,
+      "transporting": 3
+    }
+  },
+  {
+    "name": "Pyrin Noct",
+    "number": "93B",
+    "elements": [
+      "fire",
+      "dark"
+    ],
+    "work": {
+      "kindling": 4,
+      "lumbering": 3
+    }
+  },
+  {
+    "name": "Beakon Cryst",
+    "number": "96B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "gathering": 2,
+      "cooling": 5,
+      "transporting": 5
+    }
+  },
+  {
+    "name": "Rayhound Cryst",
+    "number": "98B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "cooling": 3
+    }
+  },
+  {
+    "name": "Needoll",
+    "number": "100",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Needoll Noct",
+    "number": "100B",
+    "elements": [
+      "dark",
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Moldron",
+    "number": "105",
+    "elements": [
+      "fire",
+      "ground"
+    ],
+    "work": {
+      "kindling": 5,
+      "mining": 5
+    }
+  },
+  {
+    "name": "Moldron Cryst",
+    "number": "105B",
+    "elements": [
+      "ice",
+      "ground"
+    ],
+    "work": {
+      "mining": 5,
+      "cooling": 5
+    }
+  },
+  {
+    "name": "Warsect Terra",
+    "number": "113B",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "handiwork": 2,
+      "mining": 5,
+      "transporting": 5
+    }
+  },
+  {
+    "name": "Majex",
+    "number": "115",
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "work": {
+      "kindling": 4,
+      "handiwork": 5,
+      "medicine_production": 3,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Sibelyx Primo",
+    "number": "116B",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "medicine_production": 3,
+      "farming": 4
+    }
+  },
+  {
+    "name": "Gildra",
+    "number": "120",
+    "elements": [
+      "dark",
+      "ground"
+    ],
+    "work": {
+      "handiwork": 5,
+      "medicine_production": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Skutlass",
+    "number": "128",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 4,
+      "gathering": 1,
+      "lumbering": 4
+    }
+  },
+  {
+    "name": "Skutlass Ignis",
+    "number": "128B",
+    "elements": [
+      "water",
+      "fire"
+    ],
+    "work": {
+      "kindling": 3,
+      "watering": 2,
+      "gathering": 2,
+      "lumbering": 3
+    }
+  },
+  {
+    "name": "Starryon Primo",
+    "number": "130B",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "gathering": 7
+    }
+  },
+  {
+    "name": "Pierdon",
+    "number": "131",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "mining": 5
+    }
+  },
+  {
+    "name": "Pierdon Cryst",
+    "number": "131B",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "mining": 5,
+      "cooling": 6
+    }
+  },
+  {
+    "name": "Snugloo",
+    "number": "133",
+    "elements": [
+      "ice"
+    ],
+    "work": {
+      "handiwork": 2,
+      "mining": 3,
+      "cooling": 3,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Carnibora",
+    "number": "136",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 6,
+      "handiwork": 4,
+      "gathering": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Dualith",
+    "number": "138",
+    "elements": [
+      "ground",
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "lumbering": 5,
+      "mining": 6,
+      "transporting": 6
+    }
+  },
+  {
+    "name": "Dualith Noct",
+    "number": "138B",
+    "elements": [
+      "ground",
+      "dark"
+    ],
+    "work": {
+      "planting": 3,
+      "gathering": 3,
+      "lumbering": 5,
+      "mining": 6,
+      "transporting": 6
+    }
+  },
+  {
+    "name": "Sekhmet",
+    "number": "140",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "handiwork": 6,
+      "mining": 3,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Prixter Lux",
+    "number": "141B",
+    "elements": [
+      "electric",
+      "ground"
+    ],
+    "work": {
+      "generating_electricity": 3,
+      "gathering": 2,
+      "lumbering": 4,
+      "medicine_production": 2
+    }
+  },
+  {
+    "name": "Tetroise",
+    "number": "142",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "mining": 4
+    }
+  },
+  {
+    "name": "Tetroise Primo",
+    "number": "142B",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "mining": 6
+    }
+  },
+  {
+    "name": "Nitemary Botan",
+    "number": "148B",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 3,
+      "handiwork": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Smokie Cryst",
+    "number": "149B",
+    "elements": [
+      "dark",
+      "ice"
+    ],
+    "work": {
+      "gathering": 2,
+      "cooling": 2
+    }
+  },
+  {
+    "name": "Bulldosu",
+    "number": "156",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "mining": 4,
+      "transporting": 3
+    }
+  },
+  {
+    "name": "Celesdir Noct",
+    "number": "157B",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "gathering": 4,
+      "lumbering": 8
+    }
+  },
+  {
+    "name": "Knocklem Ignis",
+    "number": "159B",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 5,
+      "mining": 7,
+      "transporting": 7
+    }
+  },
+  {
+    "name": "Valentail",
+    "number": "162",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "gathering": 2
+    }
+  },
+  {
+    "name": "Snock",
+    "number": "163",
+    "elements": [
+      "electric"
+    ],
+    "work": {
+      "generating_electricity": 4
+    }
+  },
+  {
+    "name": "Snock Lux",
+    "number": "163B",
+    "elements": [
+      "electric",
+      "ground"
+    ],
+    "work": {
+      "generating_electricity": 4
+    }
+  },
+  {
+    "name": "Souffline",
+    "number": "164",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 2,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Lapiron",
+    "number": "165",
+    "elements": [
+      "ground"
+    ],
+    "work": {
+      "handiwork": 3,
+      "gathering": 4,
+      "mining": 2,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Hoodle",
+    "number": "166",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 1,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Slowatt",
+    "number": "167",
+    "elements": [
+      "electric"
+    ],
+    "work": {
+      "generating_electricity": 3
+    }
+  },
+  {
+    "name": "Bakemi",
+    "number": "168",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 3,
+      "medicine_production": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Solmora",
+    "number": "169",
+    "elements": [
+      "water"
+    ],
+    "work": {
+      "watering": 4
+    }
+  },
+  {
+    "name": "Solmora Lux",
+    "number": "169B",
+    "elements": [
+      "water",
+      "electric"
+    ],
+    "work": {
+      "watering": 4,
+      "generating_electricity": 6
+    }
+  },
+  {
+    "name": "Lapure",
+    "number": "170",
+    "elements": [
+      "neutral"
+    ],
+    "work": {
+      "handiwork": 6,
+      "gathering": 5
+    }
+  },
+  {
+    "name": "Eidrolon",
+    "number": "171",
+    "elements": [
+      "dragon",
+      "dark"
+    ],
+    "work": {
+      "transporting": 6
+    }
+  },
+  {
+    "name": "Eidrolon Ignis",
+    "number": "171B",
+    "elements": [
+      "dragon",
+      "fire"
+    ],
+    "work": {
+      "kindling": 6,
+      "transporting": 6
+    }
+  },
+  {
+    "name": "Dynamoff",
+    "number": "172",
+    "elements": [
+      "electric"
+    ],
+    "work": {
+      "generating_electricity": 6,
+      "gathering": 3,
+      "transporting": 3
+    }
+  },
+  {
+    "name": "Tropicaw",
+    "number": "173",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 5,
+      "gathering": 5
+    }
+  },
+  {
+    "name": "Flaracle",
+    "number": "174",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 7,
+      "handiwork": 6,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Ophydia",
+    "number": "175",
+    "elements": [
+      "grass",
+      "water"
+    ],
+    "work": {
+      "watering": 5,
+      "planting": 7
+    }
+  },
+  {
+    "name": "Dupin",
+    "number": "176",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 7,
+      "handiwork": 5,
+      "medicine_production": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Roujay",
+    "number": "177",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "gathering": 5,
+      "transporting": 5
+    }
+  },
+  {
+    "name": "Venusa",
+    "number": "178",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 6,
+      "gathering": 6,
+      "medicine_production": 5,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Mycora",
+    "number": "179",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 6,
+      "handiwork": 4,
+      "gathering": 4,
+      "medicine_production": 6
+    }
+  },
+  {
+    "name": "Loomen",
+    "number": "180",
+    "elements": [
+      "dark",
+      "fire"
+    ],
+    "work": {
+      "kindling": 4,
+      "handiwork": 4,
+      "medicine_production": 4
+    }
+  },
+  {
+    "name": "Wistella",
+    "number": "181",
+    "elements": [
+      "dark"
+    ],
+    "work": {
+      "handiwork": 6,
+      "medicine_production": 6,
+      "transporting": 1
+    }
+  },
+  {
+    "name": "Solenne",
+    "number": "182",
+    "elements": [
+      "dark",
+      "neutral"
+    ],
+    "work": {
+      "handiwork": 8,
+      "gathering": 4,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Renjishi",
+    "number": "183",
+    "elements": [
+      "fire"
+    ],
+    "work": {
+      "kindling": 8,
+      "handiwork": 6,
+      "gathering": 5,
+      "transporting": 5
+    }
+  },
+  {
+    "name": "Aegidron",
+    "number": "184",
+    "elements": [
+      "dragon",
+      "ground"
+    ],
+    "work": {
+      "mining": 8
+    }
+  },
+  {
+    "name": "Shaolong",
+    "number": "192",
+    "elements": [
+      "dragon",
+      "water"
+    ],
+    "work": {
+      "watering": 8,
+      "gathering": 5
+    }
+  },
+  {
+    "name": "Silvance",
+    "number": "193",
+    "elements": [
+      "grass"
+    ],
+    "work": {
+      "planting": 6,
+      "handiwork": 6,
+      "gathering": 4,
+      "medicine_production": 8,
+      "transporting": 2
+    }
+  },
+  {
+    "name": "Dandilord",
+    "number": "194",
+    "elements": [
+      "grass",
+      "dark"
+    ],
+    "work": {
+      "planting": 8,
+      "handiwork": 6,
+      "gathering": 5,
+      "medicine_production": 6,
+      "transporting": 3
+    }
+  },
+  {
+    "name": "Panthalus",
+    "number": "203",
+    "elements": [
+      "water"
+    ],
+    "work": {}
+  },
+  {
+    "name": "Astralym",
+    "number": "204",
+    "elements": [],
+    "work": {}
+  }
+]

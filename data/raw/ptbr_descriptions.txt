@@ -1,0 +1,520 @@
+aegidron|Dragão-Fortaleza Indestrutível|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano sofrido por você e pelo Pal devido a ataques explosivos é reduzido em 60~80%, sendo anulada a condição Atordoamento. (Efeito não acumulável)
+amione|Poder dos Gêmeos Mágicos|Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Rega dos outros Pals na base. (Efeito não acumulável)
+anubis|Deus Guardião do Deserto|Quando ativado, Anubis compartilha sua força e altera os ataques do jogador para o elementoTerra, aumentando o poder de ataque em 30~50%.
+Durante a batalha, às vezes se esquiva de ataques com um passo rápido.
+arsox|Corpo Caloroso|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, aplica +2 à resistência ao frio do seu personagem. (Efeito não acumulável)
+astegon|Dragão da Carapaça Negra|Você pode montar nas suas costas para voar.
+Enquanto monta, o dano causado contra minérios aumenta em 1100~3300%, ao passo que a quantidade obtida de Minério Metálico aumenta em 150~300%.
+astralym|-|As aptidões deste Pal ainda estão sendo investigadas.
+azurmane|Corrida de Plasma|Você pode montar nas suas costas para se locomover.
+Também é possível correr em pleno ar para se mover em alta velocidade.
+azurobe|Dança Alada de Água|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoÁgua e seu poder de ataque aumenta em 5~20%.
+azurobe-cryst|Dança Alada de Gelo|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoGelo e seu poder de ataque aumenta em 5~20%.
+bakemi|Finada Distribuidora de Sorrisos|Enquanto este Pal estiver com você, ao atacar inimigos na condição Veneno, diminui o poder de ataque deles em 40~80%. (Efeito não acumulável)
+bastigor|Esmagamento de Nevasca|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode atacar agitando um martelo de elementoGelo.
+beakon|Relâmpago Celeste|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoElétrico e seu poder de ataque aumenta em 5~20%.
+A velocidade de movimento deste Pal aumenta em 5~25% para cada Pal do elementoElétrico (exceto por Beakon) que estiver no grupo.
+beakon-cryst|Granizo dos Céus|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoGelo e seu poder de ataque aumenta em 5~20%.
+A velocidade de movimento deste Pal aumenta em 5~25% para cada Pal do elementoGelo (exceto por Beakon Cryst) que estiver no grupo.
+beegarde|Abelha Operária|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Mel.
+Enquanto este Pal estiver com você, aumenta o poder de ataque da Elizabee.
+bellanoir|Pupilas de Pesadelo|Quando ativado, ataca o inimigo na sua mira com um Raio de Pesadelo.
+A potência do Raio de Pesadelo usado por este Pal é fortalecida em 1.1~2.5x.
+bellanoir-libero|Olhar de Pesadelo|Quando ativado, ataca o inimigo na sua mira com sua Florescência de Pesadelo.
+A potência da Florescência de Pesadelo usada por este Pal é fortalecida em 1.1~2.5x.
+blazamut|Imperador do Magma|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o poder de ataque e a defesa do Pal lutando ao seu lado aumentam em 5~10% a cada inimigo derrotado.
+Esse aumento dura 20 s e pode ocorrer até 5 vezes. (Efeito não acumulável)
+blazamut-ryu|Kaiser Dracônico|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano causado por você e pelo Pal ao atingir um ponto fraco com o elementoDracônico aumenta em 25~40%. (Efeito não acumulável)
+blazehowl|Leão da Chama Infernal|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoGrama aumenta em 40~80%. (Efeito não acumulável)
+blazehowl-noct|Leão da Chama Negra|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoNão elemental aumenta em 40~80%. (Efeito não acumulável)
+braloha|Clima Caloroso|Você pode montar nas suas costas para se locomover.
+Enquanto estiver na base, a velocidade de produção de ovos de Pals colocados em uma Fazenda de Acasalamento aumenta em 20~50%. (Efeito não acumulável)
+bristla|Olhar de Princesa|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoGrama em 15~30%. (Efeito não acumulável)
+broncherry|Dragão da Primeira Paixão em Flor|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, ao coletar um ovo de Pal, haverá 35~45% de chance de ele ser um ovo de Pal Alfa. (Efeito não acumulável)
+broncherry-aqua|Dragão da Castidade em Flor|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, ao coletar um ovo de Pal, haverá 45~55% de chance de ele ser um ovo de Pal Alfa. (Efeito não acumulável)
+bulldosu|Grandeza Campeã|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano do elementoElétrico sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Eletrificação. (Efeito não acumulável)
+bushi|Lampejo de Raio Púrpura|Quando ativado, ataca o inimigo na sua mira com um Iai-kiri.
+A potência do Iai-kiri usado por este Pal é fortalecida em 1.1~2.5x.
+bushi-noct|Lampejo de Raio Púrpura Secreto|Quando ativado, ataca o inimigo na sua mira com um Iai-kiri.
+A potência do Iai-kiri usado por este Pal é fortalecida em 1.1~2.5x.
+Enquanto este Pal estiver com você, o dano da arma de curto alcance do seu personagem aumenta em 30~65%, mas apenas fora de batalhas. (Efeito não acumulável)
+caprity|Coleta de Frutinhas|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Frutinha Vermelha de suas costas.
+Enquanto este Pal estiver com você, recupera em 100~200 a fartura do Pal com mais fome uma vez a cada cinco minutos. (Efeito não acumulável)
+caprity-noct|Beliscada da Glândula de Veneno|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Glândula de Veneno de suas costas.
+Enquanto este Pal estiver com você, recupera em 100~200 a fartura do Pal com mais fome uma vez a cada cinco minutos. (Efeito não acumulável)
+carnibora|Grande Língua Capturadora|Enquanto este Pal estiver com você, quando você rolar ou der um passo de esquiva, a Carnibora gera um redemoinho que causa dano nos inimigos que o tocarem (Grama / Potência: 40~80). (Efeito não acumulável)
+cattiva|Quem Não Tem Cão|Enquanto estiver com você, o Cattiva carrega sua bagagem, aumentando sua capacidade de carga em 100~200. (Efeito não acumulável)
+cawgnito|Ave Mística do Céu Noturno|Quando ativado, habilita visão noturna para poder enxergar até em lugares escuros.
+O efeito é anulado se ativado novamente.
+Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá escavar Osso do solo.
+celaray|Planador das Brisas|Enquanto este Pal estiver com você, modifica as propriedades do planador equipado, anulando seu dano por queda.
+Você poderá se deslocar rapidamente planando por um longo período de tempo.
+celaray-lux|Planador Eletrizado|Enquanto este Pal estiver com você, modifica as propriedades do planador equipado, anulando seu dano por queda.
+Você poderá se deslocar rapidamente planando por um longo período de tempo.
+celesdir|Bênção da Purificação|Você pode montar nas suas costas para se locomover.
+O poder de ataque e a velocidade de movimento deste Pal aumentam em 2~6% por cada Pal do elementoNão elemental (exceto por Celesdir) que estiver no grupo.
+Enquanto este Pal estiver com você, cura o PV do seu personagem e dos Pals no grupo em 0.15~0.75% a cada segundo fora de batalhas. (Efeito não acumulável)
+celesdir-noct|Bênção do Caos|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o PV do Pal lutando ao seu lado diminui gradualmente, mas, em compensação, o poder de ataque do Pal aumenta em 40~80%. (Efeito não acumulável)
+chikipi|Produção de Ovo|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá gerar Ovo.
+chillet|Doninha Serpeante|Você pode montar nas suas costas para se locomover.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoDracônico e seu poder de ataque aumenta em 5~20%.
+chillet-ignis|Doninha Crepitante|Você pode montar nas suas costas para se locomover.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoFogo e seu poder de ataque aumenta em 5~20%.
+cinnamoth|Escamas Enigmáticas|Quando ativado, ataca o inimigo na sua mira com Névoa de Veneno.
+Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Fazenda dos outros Pals na base. (Efeito não acumulável)
+clovee|Trevo da Felicidade|Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Coleta dos outros Pals na base. (Efeito não acumulável)
+cremis|Lã Fofinha|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoNão elemental em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Lã.
+croajiro|Salto Total|Quando ativado, Croajiro usa sua lealdade e seu abdômen inflado para concentrar as forças. Suba nele para pular mais alto.
+Seu poder de ataque aumenta em 50~86% até aterrissar novamente.
+croajiro-noct|Discrição Total|Quando ativado, Croajiro Noct usa sua lealdade e seu abdômen inflado para concentrar suas forças.
+Suba nele para pular mais alto.
+Enquanto este Pal estiver com você, o dano causado por você e pelos Pals ao atingir um ponto fraco com o elementoEscuridão aumenta em 25~40%. (Efeito não acumulável)
+cryolinx|Caçador de Dragões|Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoDracônico aumenta em 40~80%. (Efeito não acumulável)
+cryolinx-terra|Braço Esmigalhador|Enquanto este Pal estiver com você, quando um ataque atingir um ponto fraco, a potência do próximo ataque a também atingir um ponto fraco aumenta em 30~60%. (Efeito não acumulável)
+daedream|Perseguidor da Cor dos Sonhos|Enquanto este Pal estiver com você, ele aparece nas proximidades
+e lança projéteis mágicos do elementoEscuridão contra adversários.
+Esses ataques adicionais não são capazes de finalizar o inimigo.
+dandilord|Guardião da Neblina|Quando ativado, é aplicado 2~6 da condição negativa Veneno aos ataques do seu personagem.
+Enquanto este Pal estiver com você, anula a condição Veneno para você e seus Pals, além de anular o gás venenoso na área da Árvore Mundial. (Efeito não acumulável)
+dazemu|Corrida de Areia|Você pode montar nas suas costas para se locomover.
+Enquanto estiver sobre a areia, a velocidade de movimento aumenta em 50~100%.
+dazzi|Filha do Trovão|Enquanto este Pal estiver com você, ele aparece nas proximidades
+e lança relâmpagos do elementoElétrico contra adversários.
+Esses ataques adicionais não são capazes de finalizar o inimigo.
+dazzi-noct|Filha do Trovão Negro|Enquanto este Pal estiver com você, ele aparece nas proximidades
+e lança relâmpagos do elementoEscuridão contra adversários.
+Esses ataques adicionais não são capazes de finalizar o inimigo.
+depresso|Injeção de Cafeína|Quando ativado, o Depresso bebe um energético em um único gole e aumenta sua velocidade de movimento e de trabalho em 100~900%.
+Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Glândula de Veneno.
+digtoise|Broca Esmagadora|Quando ativado, entra no estado de Giro de Casco e segue você enquanto gira,
+aumentando a eficiência de quebra de minérios em 800~2000%.
+dinossom|Dragão do Aroma Floral|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, a defesa de Pals do elementoDracônico aumenta em 15~30%. (Efeito não acumulável)
+dinossom-lux|Dragão de Flores Elétricas|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, a defesa de Pals do elementoElétrico aumenta em 15~30%. (Efeito não acumulável)
+direhowl|Montaria Uivante|Você pode montar nas suas costas para se locomover.
+É conhecido por ter uma velocidade de movimento um pouco maior durante a montaria.
+dogen|Prece do Regresso|Quando ativado, permite deslocar-se para a base mais próxima.
+Não pode ser usado dentro de dungeons.
+dualith|Laser da Floresta|Você pode montar nas suas costas para se locomover.
+Quando ativado, dispara um poderoso laser de elementoGrama pela direita do Dualith.
+dualith-noct|Laser da Corrupção|Você pode montar nas suas costas para se locomover.
+Quando ativado, dispara um poderoso laser de elementoEscuridão pela direita do Dualith Noct.
+dumud|Melhoria do Solo|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoTerra em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Óleo de Pal Requintado.
+dumud-gild|Colheita de Ouro|Enquanto este Pal estiver com você, aumenta a quantidade de Moeda de Ouro deixado pelos inimigos derrotados em 100~200%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Óleo de Pal Requintado ou, mais raramente, Moeda de Ouro.
+dupin|Espetáculo de Truques Dupin|Enquanto estiver com você, o Dupin causa uma rajada explosiva ao redor do seu personagem quando seu PV for reduzido a 50% ou menos (Fogo / Potência: 100~200 / Queimadura Valor acumulado: 777).
+Também aumenta o ataque do seu personagem em 30~50% quando seu PV for reduzido a 50% ou menos. (Efeito não acumulável)
+dynamoff|Incubação com Massagem Elétrica|Você pode montar nas suas costas para voar.
+Enquanto estiver na base, a velocidade de incubação de ovos aumenta em 20~40%. (Efeito não acumulável)
+eidrolon|Dragão Alado da Liberdade|Você pode montar nas suas costas para voar.
+O poder de ataque e a velocidade de movimento deste Pal aumentam em 2~6% por cada Pal do elementoDracônico ouEscuridão (exceto por Eidrolon) que estiver no grupo.
+eidrolon-ignis|Dragão Alado da Ira|Você pode montar nas suas costas para voar.
+O poder de ataque e a velocidade de movimento deste Pal aumentam em 2~6% por cada Pal do elementoDracônico ouFogo (exceto por Eidrolon Ignis) que estiver no grupo.
+eikthyrdeer|Protetor da Floresta|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo e a taxa de corte de árvores aumenta em 220~500%.
+eikthyrdeer-terra|Protetor da Floresta Dourada|Você pode montar nas suas costas para se locomover. Enquanto monta, você pode dar um pulo duplo.
+Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Cortar árvores dos outros Pals na base. (Efeito não acumulável)
+elgrove|Ameaça da Mãe Natureza|Quando ativado, Elgrove compartilha sua força e altera os ataques do jogador para o elementoGrama, aumentando o poder de ataque em 30~50%.
+elgrove-cryst|Ameaça da Eterna Terra Regelante|Enquanto este Pal estiver com você, quando seu personagem atacar um inimigo na condição Encharcamento, ele sofrerá imediatamente a condição Congelamento.
+elizabee|Liderança da Abelha Rainha|O poder de ataque deste Pal aumenta em 12~24% por cada Beegarde que estiver no grupo.
+elphidran|Gentil Dragão Sagrado|Você pode montar nas suas costas para voar.
+Quando estiver no ar, aumenta sua velocidade de movimento.
+Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoEscuridão aumenta em 40~80%. (Efeito não acumulável)
+elphidran-aqua|Gentil Dragão da Água|Você pode montar nas suas costas para voar.
+Quando estiver no ar, aumenta sua velocidade de movimento.
+Enquanto este Pal estiver com você, o dano do elementoFogo sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Queimadura. (Efeito não acumulável)
+espada-encantada|Encanto|Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoEscuridão aumenta em 40~80%. (Efeito não acumulável)
+faleris|Predador Escaldante|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoGelo aumenta em 40~80%. (Efeito não acumulável)
+faleris-aqua|Predador das Marés|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoFogo aumenta em 40~80%. (Efeito não acumulável)
+felbat|Roubo de Vida|Enquanto vocês lutarem juntos, é adicionado um efeito de roubo de vida a você e ao Felbat, absorvendo 5~9% do dano causado e restaurando PV.
+fenglope|Nuvem de Ventania|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo.
+fenglope-lux|Nuvem Relampejante|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo.
+Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoÁgua aumenta em 40~80%. (Efeito não acumulável)
+finsider|Gatilho de Água|Quando ativado, Finsider compartilha sua força e altera os ataques do jogador para o elementoÁgua, aumentando o poder de ataque em 30~50%.
+finsider-ignis|Câmara Incandescente|Enquanto estiver com você, o Finsider Ignis carrega sua bagagem e diminui o peso das armas no seu inventário em 60~100%.
+Além disso, o dano causado por você e pelos Pals ao atingir um ponto fraco com o elementoFogo aumenta em 25~40%. (Efeito não acumulável)
+flambelle|Lágrimas de Magma|Enquanto este Pal estiver com você, cura o PV do seu personagem e dos Pals no grupo em  0.1~0.5% a cada segundo fora de batalhas. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Órgão de Ignição.
+flaracle|Futuro Ardente|Enquanto este Pal estiver com você, quando um ataque do seu personagem atingir um inimigo com a condição Queimadura, faz com que o alvo exploda, causando dano adicional equivalente a 40~60% do dano causado por você. (Efeito não acumulável)
+flopie|Coelho Ajudante|Enquanto este Pal estiver com você, ele aparece nas proximidades
+e coleta os itens ao redor automaticamente.
+foxcicle|Guia da Aurora Polar|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoGelo em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Órgão de Congelamento.
+foxparks|Abraço de Fogo|Quando ativado, este Pal se converte num lança-chamas que você pode equipar.
+foxparks-cryst|Abraço de Geada|Quando ativado, você pode equipar este Pal para atacar expelindo um ar gelado.
+frostallion|Cavalo do Céu Congelado|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoGelo, seu poder de ataque aumenta em 10~40% e é aplicado 2~6 da condição negativa Congelamento aos seus ataques.
+frostallion-noct|Cavalo do Céu Negro|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoEscuridão, seu poder de ataque aumenta em 10~40% e é aplicado Escuridão da condição negativa 2~6 aos seus ataques.
+frostplume|Pavão Pavoroso|Enquanto estiver com você, o ar gelado do Frostplume melhora a concentração do seu personagem, aumentando a velocidade de recarga em 20~50%. (Efeito não acumulável)
+fuack|Empurrão Surfante|Quando ativado, Fuack se lança contra o inimigo usando o corpo para surfar.
+fuack-ignis|Empurrão de Fogo|Quando ativado, Fuack Ignis se lança contra o inimigo enquanto surfa no fogo.
+fuddler|Torcida Escavadora|Enquanto este Pal estiver com você, o dano causado pelo seu personagem ao garimpar aumenta em 30~60%, ao passo que o peso de Pedra diminui em 80~100%. (Efeito não acumulável)
+galeclaw|Montaria Galeclaw|Enquanto este Pal estiver com você, as propriedades do planador equipado são modificadas.
+O planador aumenta de velocidade, e torna-se possível usar a mão direita para disparar uma arma.
+geleia-azul|Corpo de Geleia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode saltar alto.
+geleia-do-arco-íris|Corpo de Geleia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode saltar alto.
+geleia-luminosa|Corpo de Geleia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode saltar alto.
+geleia-roxa|Corpo de Geleia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode saltar alto.
+geleia-verde|Corpo de Geleia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode saltar alto.
+geleia-vermelha|Corpo de Geleia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode saltar alto.
+ghangler|Líder da Escuridão Noturna|Você pode montar nas suas costas para se locomover sobre a água.
+A velocidade de movimento deste Pal aumenta em 5~25% por cada Pal do elementoEscuridão ouÁgua (exceto por Ghangler) que estiver no grupo.
+ghangler-ignis|Mestre-Cuca da Zona Abissal|Você pode montar nas suas costas para se locomover sobre a água.
+A velocidade de movimento deste Pal aumenta em 5~25% por cada Pal do elementoFogo ouÁgua (exceto por Ghangler Ignis) que estiver no grupo.
+gildane|Proteção da Nuvem de Poeira|Você pode montar nas suas costas para se locomover.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoTerra e seu poder de ataque aumenta em 5~20%.
+gildra|Ressurreição|Enquanto vocês lutarem juntos, se o Gildra for incapacitado, a fartura do Gildra será zerada e em troca ele será revivido.
+gloopie|Princesa Pegajosa|Enquanto este Pal estiver com você, atenua a redução do medidor de captura no minijogo de pesca em 12~35% caso a barra não esteja sobre o peixe. (Efeito não acumulável)
+gloopie-primo|Princesa Mordiscadora|Enquanto este Pal estiver com você, aumenta a defesa de Pals do elementoÁgua em 15~30%. (Efeito não acumulável)
+gobfin|Tubarão Genioso|Quando ativado, ataca o inimigo na sua mira com um Tiro Aquático.
+A potência do Tiro Aquático usado por este Pal é fortalecida em 1.1~2.5x.
+Enquanto este Pal estiver com você, o poder de ataque do seu personagem aumenta em 10~20%.
+gobfin-ignis|Tubarão Genioso|Quando ativado, ataca o inimigo na sua mira com Fogo Fendido.
+A potência do Fogo Fendido usado por este Pal é fortalecida em 1.1~2.5x.
+Enquanto este Pal estiver com você, o poder de ataque do seu personagem aumenta em 10~20%.
+gorirat|Modo Gorila Total|Quando ativado, o Gorirat libera sua força selvagem e aumenta seu poder de ataque em 75~300% por tempo limitado.
+gorirat-terra|Braço Gorila Total|Enquanto este Pal estiver com você, a velocidade de escalada do seu personagem aumenta em 50~100%. (Efeito não acumulável)
+grintale|Olho de Gato Ofuscante|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, ao coletar um ovo de Pal, você tem 50~75% de chance de obter um ovo adicional. (Efeito não acumulável)
+grizzbolt|Tanque Pesado Amarelo|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode disparar continuamente com uma minigun.
+gumoss|Torcida para Lenhador|Enquanto este Pal estiver com você, o dano causado pelo seu personagem ao cortar árvores aumenta em 30~50%, ao passo que o peso de todo tipo de madeira diminui em 40~60%. (Efeito não acumulável)
+hangyu|Balanço no Céu|
+hangyu-cryst|Balanço no Céu Invernal|
+hartalis|Barreira Sacra|Você pode montar nas suas costas para se locomover.
+Enquanto monta, pode gerar uma barreira que protege contra todo tipo de ataque.
+Além disso, você também pode dar um pulo triplo enquanto monta.
+helzephyr|Asas do Outro Mundo|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoEscuridão e seu poder de ataque aumenta em 5~20%.
+helzephyr-lux|Asas Trovejantes|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoElétrico e seu poder de ataque aumenta em 5~20%.
+herbil|Pulso Herbil|Enquanto este Pal estiver com você, em caso de incapacitação, o poder curativo do Herbil fará com que você reviva com 30~60% de PV máximo.
+hoocrates|Sabedoria da Escuridão|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoEscuridão em 15~30%. (Efeito não acumulável)
+hoodle|Aquele que Espreita no Vazio|Enquanto este Pal estiver com você, o dano causado pelo seu personagem aumenta em 50~100% contra inimigos que não estejam em batalha. (Efeito não acumulável)
+icelyn|Ar Gélido de Bruxa|Quando ativado, Icelyn compartilha sua força e altera os ataques do jogador para o elementoGelo, aumentando o poder de ataque em 30~50%.
+incineram|Caçador das Garras de Fogo|Quando ativado, ataca o inimigo na sua mira com suaGarra do Fogo Infernal.
+A potência da Garra do Fogo Infernal usada por este Pal é fortalecida em 1.1~2.5x.
+incineram-noct|Caçador das Garras Negras|Quando ativado, ataca o inimigo na sua mira com sua Garra Pesadelo.
+A potência da Garra Pesadelo usada por este Pal é fortalecida em 1.1~2.5x.
+jelliette|Gotas de Jelliette|Enquanto este Pal estiver com você, a quantidade de itens obtidos na pesca aumenta em 55~95%. (Efeito não acumulável)
+Além disso, enquanto Jelliette e Jellroy estiverem na base, aumenta a velocidade de trabalho de rega de Jelliette em 50~120%. (Efeito não acumulável)
+jellroy|Gotas de Jellroy|Enquanto este Pal estiver com você, a quantidade de itens obtidos na recuperação aumenta em 55~95%. (Efeito não acumulável)
+Além disso, enquanto Jelliette e Jellroy estiverem na base, aumenta a velocidade de trabalho de rega de Jellroy em 50~120%. (Efeito não acumulável)
+jetragon|Míssil Aéreo|Você pode montar nas suas costas para voar.
+Enquanto monta, você pode disparar continuamente com um lança-mísseis.
+jolthog|Bomba Eletrizante|Quando ativado, o Jolthog acopla-se à sua mão para ser lançado contra o inimigo, causando uma explosão de elementoElétrico ao entrar em contato com ele.
+jolthog-cryst|Bomba Sólida|Quando ativado, o Jolthog Cryst acopla-se à sua mão para ser lançado contra o inimigo, causando uma explosão de elementoGelo ao entrar em contato com ele.
+jormuntide|Dragão Marinho da Tormenta|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto este Pal estiver com você, o dano causado por você e pelos Pals em inimigos com a condição Encharcamento aumenta em 50~65%. (Efeito não acumulável)
+jormuntide-ignis|Dragão Lávico da Tormenta|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto este Pal estiver com você, o dano por lava é anulado, enquanto o dano causado por você e pelos Pals em inimigos com a condição Queimadura aumenta em 50~65%. (Efeito não acumulável)
+katress|Magia Negra Peculiar|Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoNão elemental aumenta em 40~80%.
+Além disso, ao lançar uma esfera de Pal, há 10~50% de chance de não consumir suas esferas. (Efeito não acumulável)
+katress-ignis|Magia Negra Fervorosa|Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Acender fogo dos outros Pals na base. (Efeito não acumulável)
+kelpsea|Jorro de Água|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoÁgua em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Muco de Pal Aquático.
+kelpsea-ignis|Jorro de Lava|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoFogo em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Órgão de Ignição.
+kikit|Bola Rolando na Areia|Enquanto este Pal estiver com você, aumenta a defesa de Pals do elementoTerra em 15~30%. (Efeito não acumulável)
+killamari|Lula Frita|Enquanto este Pal estiver com você, as propriedades do planador equipado são modificadas.
+Você poderá planar com leveza por um longo período de tempo.
+killamari-primo|Sonhos em Polvorosa|Enquanto este Pal estiver com você, as propriedades do planador equipado são modificadas.
+Você poderá planar com leveza por um longo período de tempo.
+kingpaca|Rei Vigoroso|Você pode montar nas suas costas para se locomover.
+A defesa e velocidade de movimento deste Pal aumentam em 5~14% por cada Melpaca que estiver no grupo.
+kingpaca-cryst|Rei Frio|Você pode montar nas suas costas para se locomover.
+A defesa e velocidade de movimento deste Pal aumentam em 5~14% por cada Melpaca que estiver no grupo.
+kitsun|Lobo do Sol|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano do elementoGelo sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Congelamento. (Efeito não acumulável)
+kitsun-noct|Lobo Soturno|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano do elementoEscuridão sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Escuridão. (Efeito não acumulável)
+knocklem|Modo Guardião de Aço|Quando ativado, uma determinação de aço faz aumentar o poder de ataque do Knocklem em 50~200% e a defesa em 50~200% por tempo limitado.
+knocklem-ignis|Modo Guardião de Sangue e Ferro|Quando ativado, uma determinação de aço faz aumentar o poder de ataque do Knocklem Ignis em 60~210% e a defesa em 60~210% por tempo limitado.
+lamball|Escudo Almofadado|Quando ativado, este Pal se converte num escudo que você pode equipar.
+Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Lã.
+lapiron|Amigo da Terra|Enquanto este Pal estiver com você, você recebe um aumento de defesa de 50~65% enquanto corre. (Efeito não acumulável)
+lapure|Torcida de Manga Longa|Enquanto este Pal estiver com você, diminui o tempo de recarga de habilidades de companheiro dos outros Pals no grupo em 10~50%. (Efeito não acumulável)
+leafan|Treino de Abnegação|O poder de ataque e a defesa deste Pal aumentam em 2~6% por cada Pal do elementoGrama (exceto por Leafan) que estiver no grupo.
+leezpunk|Invisibilidade|Quando ativado, por {ActiveSkillOverWriteEffectTime} s, você e Leezpunk se tornam invisíveis, deixando de serem vistos pelos inimigos.
+leezpunk-ignis|Invisibilidade|Quando ativado, por {ActiveSkillOverWriteEffectTime} s, você e Leezpunk Ignis se tornam invisíveis, deixando de serem vistos pelos inimigos.
+lifmunk|Coice de Lifmunk|Quando ativado, este Pal sobe na sua cabeça e complementa seus ataques com tiros de submetralhadora.
+loomen|Encanto do Lampião|Enquanto este Pal estiver com você, as flechas disparadas pelo seu personagem explodirão ao impacto, causando dano adicional equivalente a 15~30% do dano causado por você. (Efeito não acumulável)
+loupmoon|Garras que Reluzem no Escuro|Quando ativado, ataca o inimigo na sua mira com um Salto de Garra.
+A potência do Salto de Garra usado por este Pal é fortalecida em 1.1~2.5x.
+Enquanto este Pal estiver com você, a velocidade de ataque da arma de curto alcance do seu personagem aumenta em 15~30%. (Efeito não acumulável)
+loupmoon-cryst|Garras de Fio Congelante|Quando ativado, ataca o inimigo na sua mira com sua Garra de Neve.
+A potência da Garra de Neve usada por este Pal é fortalecida em 1.1~2.5x.
+Enquanto este Pal estiver com você, a velocidade de ataque da arma de curto alcance do seu personagem aumenta em 15~30%. (Efeito não acumulável)
+lovander|Drenagem de Coração|Enquanto vocês lutarem juntos, é adicionado um efeito de roubo de vida a você e à Lovander, absorvendo 5~9% do dano causado e restaurando PV.
+lullu|Impulso Floral|Enquanto estiver na base, a Lullu enche as lavouras de vida e aumenta a velocidade de crescimento de plantações em 50~70%.
+lunaris|Antigravidade|Enquanto este Pal estiver com você, faz com que as esferas persigam o alvo e aumenta sua capacidade de carga em 300~600. (Efeito não acumulável)
+lyleen|Deusa da Fertilidade|Quando ativado, cura seu PV e o dos Pals no grupo em 80~90% com o poder restaurador das rainhas.
+lyleen-noct|Deusa da Luz Tênue|Quando ativado, cura seu PV e o dos Pals no grupo em 85~95% com o poder restaurador das rainhas.
+majex|Feitiço Secreto da Raposa Negra|Enquanto este Pal estiver com você, quando um ataque do seu personagem atingir um inimigo com a condição Queimadura, gera chamas ao redor do alvo que causam dano contínuo nos inimigos que a tocarem, equivalente a 15~30% do dano causado por você. (Efeito não acumulável)
+mammorest|Esmagador Gaia|Você pode montar nas suas costas para se locomover.
+Enquanto monta, a taxa de corte de árvores aumenta em 220~500% e a de quebra de minérios em 500~2000%.
+mammorest-cryst|Esmagador de Gelo|Você pode montar nas suas costas para se locomover.
+Enquanto monta, a taxa de corte de árvores aumenta em 220~500% e a de quebra de minérios em 500~2000%.
+maraith|Enviado do Além|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, diminui em 30~60% o tempo de recarga de habilidades ativas de todos os Pals no grupo ao derrotar um inimigo. (Efeito não acumulável)
+mau|Pérolas aos Porcos|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá escavar Moeda de Ouro do solo.
+mau-cryst|Congelado de Surpresa|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Iceorgan.
+melpaca|Lãpaca|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, aumenta a defesa e velocidade de movimento do Kingpaca.
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Lã.
+menasting|Escorpião de Aço|Enquanto este Pal estiver com você, a defesa do seu personagem aumenta em 5~10% e a quantidade de itens obtidos ao derrotar um Pal do elementoElétrico aumenta em 40~80%. (Efeito não acumulável)
+menasting-terra|Escorpião Dourado|Enquanto este Pal estiver com você, a defesa do seu personagem aumenta em 5~10% e a quantidade de itens obtidos ao derrotar um Pal do elementoElétrico aumenta em 40~80%. (Efeito não acumulável)
+mimog|Arromba-portas|Enquanto vocês lutarem juntos, o poder do Mimog possibilitará abrir baús sem usar chave nenhuma.
+moldron|Sobrecarga de Magma|Você pode montar nas suas costas para se locomover.
+O poder de ataque deste Pal aumenta em 4~8% por cada Pal do elementoFogo ouTerra (exceto por Moldron) que estiver no grupo.
+moldron-cryst|Sobrecarga de Gelo|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano causado por você e pelo Pal ao atingir um ponto fraco com o elementoGelo aumenta em 25~40%. (Efeito não acumulável)
+morcego-de-caverna|Suporte Morcego|Enquanto este Pal estiver com você, ele aparece nas proximidades
+e coleta os itens ao redor automaticamente.
+morcego-luminoso|Suporte Morcego|Enquanto este Pal estiver com você, ele aparece nas proximidades
+e coleta os itens ao redor automaticamente.
+mossanda|Panda Granadeiro|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode disparar continuamente com um lança-granadas.
+mossanda-lux|Panda Granadeiro|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode disparar continuamente com um lança-granadas.
+mozzarina|Produção de Leite|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá produzir Leite.
+muffly|Ave Fofa e Rechonchuda|Enquanto este Pal estiver com você, aumenta a chance de captura de Pals na condição Congelamento. (Efeito não acumulável)
+munchill|Boia-Fria|Enquanto este Pal estiver com você, o peso de alimentos e pratos diminui em 30~60% e, além do efeito de preservação de alimentos conferido por Pals do elementoGelo, diminui ainda mais a velocidade de putrefação em -80~-30%. (Efeito não acumulável)
+mycora|Esporo Encantador|Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Manipulação dos outros Pals na base. (Efeito não acumulável)
+necromus|Cavaleiro Negro do Abismo|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo. Quando [Lampejo da Lança Dupla] é ativado, um Paladius que estiver no seu grupo aparece para atacar junto.
+needoll|Um Abraço, Por Favor|Enquanto este Pal estiver com você, o dano causado por você e pelos Pals em inimigos com a condição Prisão de vinhas aumenta em 50~65%. (Efeito não acumulável)
+needoll-noct|Muitos Abraços|Enquanto este Pal estiver com você, é aplicado 2~6 da condição negativa Prisão de vinhas aos ataques do seu personagem. (Efeito não acumulável)
+neptilius|Conquistador do Alto-Mar|Enquanto vocês lutarem juntos, complementa seus ataques com uma lança do elementoÁgua.
+Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto monta, você é capaz de saltar alto sobre a água.
+nitemary|Coelho Espectral Ladrão de Almas|Enquanto este Pal estiver com você, a quantidade de almas obtidas ao derrotar um Pal aumenta em 100~200%. (Efeito não acumulável)
+nitemary-botan|Coelho Espectral Aprisionador de Almas|Enquanto este Pal estiver com você, aumenta a defesa de Pals do elementoGrama em 15~30%. (Efeito não acumulável)
+nitewing|Companheiro de Viagem|Você pode montar nas suas costas para voar.
+nox|Impassível|Quando ativado, detecta a localização de estátuas de Pal nas proximidades.
+nyafia|Modo de Tiro Felino|Quando ativado, a Nyafia usa uma espingarda para disparar indiscriminadamente contra os inimigos próximos por tempo limitado.
+Enquanto ela estiver com você, o dano causado com uma espingarda pelo seu personagem aumenta em 10~35%. (Efeito não acumulável)
+olho-de-cthulhu|Investida dos Olhos de Cthulhu|Quando ativado, ataca o inimigo na sua mira com uma investida de Olho de Cthulhu.
+olho-demoníaco|Visão Demoníaca|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoEscuridão em 15~30%. (Efeito não acumulável)
+omascul|Baile Mascarado|Enquanto este Pal estiver com você, aumenta a experiência obtida pelos Pals no grupo em 40~80%. (Efeito não acumulável)
+ophydia|Névoa Gloriosa|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, é aplicado 2~6 da condição negativa Encharcamento aos ataques do seu personagem. (Efeito não acumulável)
+orserk|Dragão Relâmpago Feroz|Enquanto este Pal estiver com você, o poder de ataque e a defesa do Pal lutando ao seu lado aumentam em 1~5% ao atingir o inimigo com um projétil.
+Esse aumento dura 5 s e pode ocorrer até 30 vezes. (Efeito não acumulável)
+paladius|Santo Cavaleiro Alado|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo triplo. Quando Lampejo da Lança Única é ativado, um Necromus que estiver no seu grupo aparece para atacar junto.
+palumba|Passo de Samba|Você pode montar nas suas costas para se locomover.
+Enquanto estiver sobre a grama, a velocidade de movimento aumenta em 155~240%.
+panthalus|Protetor do Eco|Você pode montar nas suas costas para voar.
+É possível chamar apenas um espécime deste Pal para dentro da base.
+Enquanto estiver na base, permanece rondando os ares e bombardeando invasores de uma grande altitude.
+pengullet|Lança-Pengullets|Quando ativado, você equipa um Lança-Foguetes que dispara o Pengullet como um projétil.
+O Pengullet explode ao fazer contato com o alvo e fica incapacitado.
+pengullet-lux|Lança-Pengullets Lux|Quando ativado, você equipa um Lança-Foguetes que dispara o Pengullet Lux como um projétil.
+O Pengullet Lux explode ao fazer contato com o alvo e fica incapacitado.
+penking|Valente Guerreiro do Mar|Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoFogo aumenta em 40~80%. (Efeito não acumulável)
+penking-lux|Almirante Elétrico Imbatível|Enquanto este Pal estiver com você, o dano causado por você e pelo Pal ao atingir um ponto fraco com o elementoÁgua aumenta em 25~40%. (Efeito não acumulável)
+petallia|Bênção do Espírito da Flor|Quando ativado, cura seu PV em 75~85% com o poder restaurador das flores.
+Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Plantio dos outros Pals na base. (Efeito não acumulável)
+petallia-ignis|Ardor do Espírito da Flor|Quando ativado, cura seu PV em 80~90% com o poder restaurador das flores.
+Enquanto este Pal estiver com você, o dano do elementoGrama sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Prisão de vinhas. (Efeito não acumulável)
+pierdon|Pedra do Poder|Enquanto este Pal estiver com você, o dano causado por você e pelos Pals em inimigos com a condição Enlameadura aumenta em 50~65%. (Efeito não acumulável)
+pierdon-cryst|Cristal do Poder|Enquanto este Pal estiver com você, o dano do elementoDracônico sofrido por você e pelo Pal é reduzido em 15~30%. (Efeito não acumulável)
+polapup|Deslizador da Montanha Nevada|Você pode montar nas suas costas para se locomover.
+Enquanto estiver sobre a neve, a velocidade de movimento aumenta em 80~160%.
+Além disso, consegue deslizar ladeira abaixo com grande ímpeto.
+polapup-terra|Escorregador da Montanha Nevada|Você pode montar nas suas costas para se locomover.
+Enquanto estiver sobre a neve, a velocidade de movimento aumenta em 80~160%.
+Além disso, consegue deslizar ladeira abaixo com grande ímpeto.
+Embora a velocidade inicial seja lenta, a velocidade máxima é bem alta.
+prixter|Escorpião sem Peçonha|Enquanto este Pal estiver com você, o dano causado por você e pelos Pals em inimigos com a condição Veneno aumenta em 50~65%. (Efeito não acumulável)
+prixter-lux|Escorpião de Baixa Frequência|Quando ativado, Prixter Lux compartilha sua força e altera os ataques do jogador para o elementoElétrico, aumentando o poder de ataque em 30~50%.
+prunelia|Prece da Farta Colheita|Enquanto estiver na base, a prece oferecida pela Prunelia aumenta a quantidade de colheita em plantações em 18~35%.
+puffolt|Intensificador de Estalidos|Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Geração de energia dos outros Pals na base. (Efeito não acumulável)
+pupperai|Suporte Tenaz|Enquanto este Pal estiver com você, o dano causado com armas de curto alcance do seu personagem aumenta em 10~35%. (Efeito não acumulável)
+pyrin|Lebre Vermelha|Você pode montar nas suas costas para se locomover.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoFogo e seu poder de ataque aumenta em 5~20%.
+pyrin-noct|Lebre Negra|Você pode montar nas suas costas para se locomover.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoEscuridão e seu poder de ataque aumenta em 5~20%.
+quivern|Afeto do Dragão Celeste|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, o poder de ataque de Pals do elementoDracônico aumenta em 15~30%. (Efeito não acumulável)
+quivern-botan|Afeto do Dragão de Grama|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoGrama e seu poder de ataque aumenta em 5~20%.
+ragnahawk|Asas de Chamas|Você pode montar nas suas costas para voar.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoFogo e seu poder de ataque aumenta em 5~20%.
+rayhound|Cão do Trovão|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo.
+A velocidade de movimento deste Pal aumenta em 5~25% por cada Pal do elementoElétrico (exceto por Rayhound) que estiver no grupo.
+rayhound-cryst|Cão da Nevasca|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo.
+Enquanto este Pal estiver com você, a defesa de Pals do elementoGelo aumenta em 15~30%. (Efeito não acumulável)
+reindrix|Corpo Refrescante|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, aplica +2 à resistência ao calor do seu personagem. (Efeito não acumulável)
+relaxaurus|Míssil Faminto|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode disparar continuamente com um lança-mísseis.
+relaxaurus-lux|Festa de Mísseis|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode disparar continuamente com um lança-mísseis.
+renjishi|Grande Tumulto|Enquanto este Pal estiver com você, é aplicado 2~6 da condição negativa Queimadura aos ataques do seu personagem. (Efeito não acumulável)
+reptyro|Besta que Cobiça Minérios|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o peso de todo tipo de minério diminui em 30~60%. (Efeito não acumulável)
+reptyro-cryst|Besta que Cobiça o Gelo|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o peso de todo tipo de minério diminui em 35~65%. (Efeito não acumulável)
+ribbuny|Princesa Coelha Sorridente|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoNão elemental em 15~30%. (Efeito não acumulável)
+Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Trabalho manual dos outros Pals na base. (Efeito não acumulável)
+ribbuny-botan|Coelho de Grama Destrambelhado|Enquanto este Pal estiver com você, o dano causado por você e pelo Pal ao atingir um ponto fraco com o elementoGrama aumenta em 25~40%. (Efeito não acumulável)
+Quando Ribbuny Botan trabalha em uma oficina ou fábrica de armas, a eficiência de trabalho aumenta em 200~400%.
+robinquill|Mestre Puxa-Corda|Enquanto este Pal estiver com você, o dano causado com arco e flecha pelo seu personagem aumenta em 10~35%. (Efeito não acumulável)
+robinquill-terra|Mestre Solta-Corda|Enquanto este Pal estiver com você, a velocidade de carga das flechas do seu personagem acelera em 15~30%. (Efeito não acumulável)
+rooby|Pequena Centelha|Enquanto este Pal estiver com você, aumenta a defesa de Pals do elementoFogo em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Órgão de Ignição.
+roujay|Ave Mítica Espreitando nas Sombras|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, o dano causado por você e pelos Pals em inimigos com a condição Escuridão aumenta em 50~65%. (Efeito não acumulável)
+rushoar|Cabeça de Pedra|Você pode montar nas suas costas para se locomover.
+Enquanto monta, a taxa de quebra de rochas aumenta em 500~2000%.
+sekhmet|Imperatriz do Deserto|Enquanto estiver na base, a velocidade de trabalho dos Anubis na base aumenta em 20~40%. (Efeito não acumulável)
+Quando Sekhmet trabalha em uma bancada ou em uma fábrica de armas, sua eficiência de trabalho aumenta em 30~60%.
+selyne|Escuridão Celestial|Você pode montar na lua em suas costas para voar.
+Enquanto monta, ataques dos elementosNão elemental eEscuridão são fortalecidos em 15~30%.
+shadowbeak|Modificação Genética|Você pode montar nas suas costas para voar.
+Enquanto monta, ataques do elementoEscuridão são fortalecidos em 15~30%.
+Quando estiver no ar, aumenta também sua velocidade de movimento.
+shaolong|Regente Celeste|Você pode montar nas suas costas para voar.
+O poder de ataque deste Pal aumenta em 4~8% por cada Pal do elementoDracônico (exceto por Shaolong) que estiver no grupo.
+shroomer|Esporos Impetuosos|Você pode montar nas suas costas para se locomover.
+Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Cogumelo ou Cogumelo de Caverna.
+shroomer-noct|Esporos Volumosos|Você pode montar nas suas costas para se locomover.
+Enquanto estiver na base, os esporos fantásticos do Shroomer Noct tornam 10~15% mais difícil diminuir a SAN dos Pals na base.
+sibelyx|Casulo de Seda Enigmático|Quando ativado, ataca o inimigo na sua mira com um Aguilhão de Nevasca.
+A potência do Aguilhão de Nevasca usado por este Pal é fortalecida em 1.1~2.5x.
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá produzir Pano Requintado.
+sibelyx-primo|Casulo de Ouro Enigmático|Enquanto este Pal estiver com você, aumenta a defesa de Pals do elementoNão elemental em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá produzir Pano Requintado.
+silvance|Guardião dos Esporos|Enquanto este Pal estiver com você, quando um ataque do seu personagem atingir um inimigo com a condição Prisão de vinhas, faz com que o alvo exploda, causando dano adicional equivalente a 40~60% do dano causado por você. (Efeito não acumulável)
+Além disso, anula os esporos explosivos da Árvore Mundial para você e para os Pals.
+silvegis|Escudo de Égide|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, diminui em 30~60% o tempo até o escudo começar a se restaurar e em 65~80% a quantidade de dano sofrida pelo escudo. (Efeito não acumulável)
+skutlass|Dilacerador|Quando ativado, o Skutlass se torna sua katana (Ataque: 2600~3900).
+Caso não retorne logo ao seu corpo, o Skutlass acabará incapacitado.
+Usar o iai-kiri também o deixa incapacitado.
+skutlass-ignis|Incinerador|Quando ativado, o Skutlass Ignis se torna sua katana (Ataque: 2900~4200).
+Caso não retorne logo ao seu corpo, o Skutlass Ignis acabará incapacitado.
+Usar o iai-kiri também o deixa incapacitado.
+slowatt|Relaxamento Ativado|Enquanto este Pal estiver com você, quando um ataque do seu personagem atingir um inimigo com a condição Eletrificação, gera uma descarga elétrica a partir do alvo, causando dano nos inimigos ao redor equivalente a 40~60% do dano causado por você. (Efeito não acumulável)
+smokie|Smokie Fiel|Quando ativado, usa o faro apurado para detectar a localização de Cromita nas proximidades.
+Enquanto vocês lutarem juntos, a quantidade de Cromita obtido aumenta em 100~200%.
+smokie-cryst|Smokie Cryst Fiel|Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Refrigeração dos outros Pals na base. (Efeito não acumulável)
+snock|Bateria Ressoante|Enquanto este Pal estiver com você, é aplicado 2~6 da condição negativa Eletrificação aos ataques do seu personagem. (Efeito não acumulável)
+snock-lux|Concha Ribombante|Enquanto este Pal estiver com você, o dano do elementoÁgua sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Encharcamento. (Efeito não acumulável)
+snugloo|Olhos Ocultos|Enquanto este Pal estiver com você, é mais difícil que inimigos percebam sua presença. (Efeito não acumulável)
+solenne|Princesa Circunspecta e Imaculada|Enquanto este Pal estiver com você, aumenta o poder de ataque do seu personagem em 30~80% quando os Pals no grupo forem todos de espécies diferentes. (Efeito não acumulável)
+solmora|Molídeo Carismático|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto este Pal estiver com você, torna-se mais fácil pescar Pals habilidosos. (Efeito não acumulável)
+solmora-lux|Molídeo Plasmático|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoElétrico e seu poder de ataque aumenta em 5~20%.
+Além disso, enquanto este Pal estiver com você, torna-se mais fácil pescar Pals habilidosos. (Efeito não acumulável)
+sootseer|Ladrão de Tumbas|Enquanto este Pal estiver com você, o dano do elementoNão elemental sofrido por você e pelo Pal é reduzido em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá escavar Osso do solo.
+souffline|Fada de Felpas|Enquanto este Pal estiver com você, aumenta a chance de captura de Pals na condição Prisão de vinhas. (Efeito não acumulável)
+sparkit|Eletricidade Estática|Enquanto este Pal estiver com você, aumenta o poder de ataque de Pals do elementoElétrico em 15~30%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair Órgão Elétrico.
+splatterina|Lâmina do Arrebatamento|Enquanto este Pal estiver com você, a quantidade de itens obtidos ao abater um Pal com Cutelo aumenta em 100~200%. (Efeito não acumulável)
+starryon|Dançarino da Noite|Você pode montar nas suas costas para se locomover e, enquanto monta, aumenta sua capacidade de pulo.
+Durante a noite, a velocidade de movimento deste Pal aumenta em 50~100%.
+starryon-primo|Dançarino da Luz|Você pode montar nas suas costas para se locomover e, enquanto monta, aumenta sua capacidade de pulo.
+A velocidade de movimento deste Pal aumenta em 5~25% por cada Pal do elementoNão elemental (exceto por Starryon Primo) que estiver no grupo.
+surfent|Nadadora das Águas|Você pode montar nas suas costas para se locomover sobre a água.
+Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Couro.
+surfent-terra|Nadadora das Areias|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, é aplicado 2~6 da condição negativa Enlameadura aos ataques do seu personagem. (Efeito não acumulável)
+suzaku|Asas de Fogo|Você pode montar nas suas costas para voar.
+A velocidade de movimento deste Pal aumenta em 5~25% por cada Pal do elementoFogo (exceto por Suzaku) que estiver no grupo.
+suzaku-aqua|Asas de Água|Você pode montar nas suas costas para voar.
+A velocidade de movimento deste Pal aumenta em 5~25% por cada Pal do elementoÁgua (exceto por Suzaku Aqua) que estiver no grupo.
+swee|Fofa Fofura|Enquanto este Pal estiver com você, aumenta a defesa e o poder de ataque do Sweepa.
+sweepa|Rei da Fofura|Você pode montar nas suas costas para se locomover.
+A defesa e poder de ataque deste Pal aumentam em 12~24% por cada Swee que estiver no grupo.
+tanzee|Fuzil Serelepe|Quando ativado, o Tanzee ataca os inimigos próximos com um fuzil de assalto por tempo limitado.
+tanzee-ignis|Tiroteio Animado|Quando ativado, o Tanzee Ignis ataca os inimigos próximos com um fuzil de assalto do elementoFogo por tempo limitado.
+tarantriss|Onda Tarantriss|Você pode montar nas suas costas para se locomover.
+Enquanto monta, você pode dar um pulo duplo.
+Também é possível disparar uma teia de aranha na direção da mira para se mover em alta velocidade como se usasse um arpéu.
+teafant|Chuva Curativa|Enquanto este Pal estiver com você, cura o PV do seu personagem em 20~40% quando seu PV for reduzido para 30% ou menos. (Efeito não acumulável)
+* Requer um tempo de recarga de 120 s para ser ativado novamente.
+tetroise|Tartaruga Antiga Empilha-Pedras|Você pode montar nas suas costas para se locomover.
+Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Garimpo dos outros Pals na base. (Efeito não acumulável)
+tetroise-primo|Tartaruga Antiga Caça-Pedras|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o consumo de durabilidade de armas e armaduras diminui em 80~100%. (Efeito não acumulável)
+tocotoco|Lançador de Ovos-Bomba|Quando ativado, este Pal se converte num lançador de ovos explosivos que você pode equipar.
+tombat|Sentido de Gato Mágico|Quando ativado, é capaz de detectar a localização de dungeons, baús do tesouro e sucata nas proximidades usando ondas ultrassônicas.
+tropicaw|Dança das Flores|Enquanto este Pal estiver com você, quando você rolar ou der um passo de esquiva, estende o tempo de invencibilidade em 15~30%. (Efeito não acumulável)
+turtacle|Bagageiro Pontiagudo|Enquanto este Pal estiver com você, o peso de Minério Metálico diminui em 80~100%. (Efeito não acumulável)
+turtacle-terra|Bagageiro Cintilante|Enquanto este Pal estiver com você, diminui o peso de Enxofre e Carvão Mineral em 80~100%. Além disso, o dano causado por você e pelos Pals ao atingir um ponto fraco com o elementoTerra aumenta em 25~40%. (Efeito não acumulável)
+univolt|Vendaval Relâmpago|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano causado por você e pelo Pal ao atingir um ponto fraco com o elementoElétrico aumenta em 25~40%. (Efeito não acumulável)
+univolt-cryst|Caos de Flores no Vento Gélido|Você pode montar nas suas costas para se locomover.
+Enquanto monta, os ataques do seu personagem são alterados para o elementoGelo e seu poder de ataque aumenta em 5~20%.
+vaelet|Purificação da Terra|Enquanto este Pal estiver com você, a quantidade de itens obtidos ao derrotar um Pal do elementoTerra aumenta em 40~80%. (Efeito não acumulável)
+Se você colocá-lo em uma Fazenda de Criação, às vezes ele poderá deixar cair sementes diversas.
+valentail|Gato Espichado|Enquanto este Pal estiver com você, diminui o peso do seu personagem, possibilitando pular ou cair com leveza. (Efeito não acumulável)
+vanwyrm|Atacante dos Céus|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, o dano causado por seu personagem ao atingir o ponto fraco do inimigo aumenta em 20~40%. (Efeito não acumulável)
+vanwyrm-cryst|Atacante dos Céus|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, o dano causado por seu personagem ao atingir o ponto fraco do inimigo aumenta em 30~50%. (Efeito não acumulável)
+venusa|Sabedoria da Serpente|Enquanto este Pal estiver com você, é aplicado 2~6 da condição negativa Escuridão aos ataques do seu personagem. (Efeito não acumulável)
+verdash|Acrobata das Pradarias|Enquanto este Pal estiver com você, confere um adicional de +1 de pulo e +1 de corrida no ar. (Efeito não acumulável)
+vixy|Raposinha Cave Aqui|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá escavar itens do solo.
+warsect|Carapaça Negra Dualista|Enquanto este Pal estiver com você, caso seu personagem atinja cinco golpes de curta distância dentro de 5~9 s, ele gera uma barreira ao seu redor. (Efeito não acumulável)
+warsect-terra|Carapaça Dourada Dualista|Enquanto este Pal estiver com você, caso seu personagem atinja cinco golpes de curta distância dentro de 5~9 s, ele gera uma barreira ao seu redor. (Efeito não acumulável)
+whalaska|Baleia Refrescante|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto este Pal estiver com você, o minijogo de pesca inicia com o medidor de captura aumentado em 5~14% e, enquanto a barra estiver sobre o peixe, a taxa de aumento do medidor é elevada em 5~14%. (Efeito não acumulável)
+whalaska-ignis|Baleia Calorosa|Você pode montar nas suas costas para se locomover sobre a água.
+Enquanto este Pal estiver com você, o minijogo de pesca inicia com o medidor de captura aumentado em 7~17% e, enquanto a barra estiver sobre o peixe, a taxa de aumento do medidor é elevada em 7~17%. (Efeito não acumulável)
+wispaw|Encosto Felino|Enquanto este Pal estiver com você, aumenta a chance de captura quando for ativado o bônus pelas costas. (Efeito não acumulável)
+wistella|Energia Escura Latente|Enquanto este Pal estiver com você, aumenta a defesa de Pals do elementoEscuridão em 15~30%. (Efeito não acumulável)
+wixen|Venerável Raposa|Quando ativado, Wixen compartilha sua força e altera os ataques do jogador para o elementoFogo, aumentando o poder de ataque em 30~50%.
+wixen-noct|Venerável Raposa Negra|Quando ativado, Wixen Noct compartilha sua força e altera os ataques do jogador para o elementoEscuridão, aumentando o poder de ataque em 30~50%.
+woolipop|Estouro de Doçura|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Algodão-Doce.
+Enquanto estiver na base, a redução de Fartura dos Pals na base diminui em -20~-10%. (Efeito não acumulável)
+woolipop-terra|Algodão-Amargo|Se você colocar este Pal em uma Fazenda de Criação, às vezes ele poderá deixar cair Algodão-Doce de Caramelo.
+Enquanto estiver na base, a redução de Fartura dos Pals na base diminui em -25~-15%. (Efeito não acumulável)
+wumpo|Colosso da Montanha Nevada|Você pode montar nas suas costas para se locomover.
+Enquanto estiver na base, aplica +1 ao nível de aptidão para trabalho de Transporte dos outros Pals na base. (Efeito não acumulável)
+wumpo-botan|Colosso das Terras Meridionais|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano do elementoTerra sofrido por você e pelo Pal é reduzido em 15~30%, sendo anulada a condição Enlameadura. (Efeito não acumulável)
+xenogard|Intruso Desconhecido|Você pode montar nas suas costas para se locomover.
+Enquanto este Pal estiver com você, o dano causado com armas de energia do seu personagem aumenta em 10~35%. (Efeito não acumulável)
+xenolord|Asas de Meteoro|Você pode montar nas suas costas para voar.
+Enquanto este Pal estiver com você, o dano de habilidades de companheiro de Pals armados aumenta em 20~50%. (Efeito não acumulável)
+xenovader|Invasor Desconhecido|Enquanto este Pal estiver com você, o dano causado pelo último projétil no carregador de uma arma automática aumenta em 100~160%. (Efeito não acumulável)
+yakumo|Atração de Iguais|Você pode montar nas suas costas para se locomover.
+Enquanto vocês lutarem juntos, aumenta em 15~30% a chance de encontrar Pals com a mesma habilidade passiva deste Pal.
+* Exceto por algumas habilidades passivas.

@@ -1,0 +1,264 @@
+Aegidron|30
+Amione|2520
+Anubis|570
+Arsox|790
+Astegon|150
+Astralym|10
+Azurmane|420
+Azurobe|500
+Azurobe Cryst|480
+Bakemi|1540
+Bastigor|50
+Beakon|220
+Beakon Cryst|580
+Beegarde|1070
+Bellanoir|1
+Bellanoir Libero|1
+Blazamut|10
+Blazamut Ryu|9
+Blazehowl|710
+Blazehowl Noct|670
+Blue Slime|1490
+Braloha|1030
+Bristla|2690
+Broncherry|860
+Broncherry Aqua|840
+Bulldosu|1190
+Bushi|640
+Bushi Noct|650
+Caprity|930
+Caprity Noct|855
+Carnibora|1700
+Cattiva|1460
+Cave Bat|1340
+Cawgnito|1080
+Celaray|870
+Celaray Lux|830
+Celesdir|815
+Celesdir Noct|815
+Chikipi|1500
+Chillet|800
+Chillet Ignis|790
+Cinnamoth|490
+Clovee|1460
+Cremis|1455
+Croajiro|795
+Croajiro Noct|765
+Cryolinx|130
+Cryolinx Terra|160
+Daedream|1230
+Dandilord|200
+Dazemu|675
+Dazzi|1210
+Dazzi Noct|1115
+Demon Eye|1390
+Depresso|1380
+Digtoise|850
+Dinossom|820
+Dinossom Lux|810
+Direhowl|1060
+Dogen|665
+Dualith|275
+Dualith Noct|275
+Dumud|895
+Dumud Gild|855
+Eikthyrdeer|920
+Eikthyrdeer Terra|900
+Elizabee|330
+Elphidran|540
+Elphidran Aqua|530
+Enchanted Sword|1380
+Eye of Cthulhu|1380
+Faleris|370
+Faleris Aqua|245
+Felbat|1010
+Fenglope|980
+Fenglope Lux|835
+Flambelle|1405
+Foxcicle|760
+Foxparks|1400
+Foxparks Cryst|1305
+Frostallion|120
+Frostallion Noct|100
+Frostplume|655
+Fuack|1330
+Fuack Ignis|1290
+Fuddler|1220
+Galeclaw|1030
+Ghangler|525
+Ghangler Ignis|505
+Gildane|505
+Gloopie|1195
+Gobfin|1090
+Gobfin Ignis|1100
+Gorirat|1040
+Gorirat Terra|1030
+Green Slime|1430
+Grintale|510
+Grizzbolt|200
+Gumoss|1240
+Hangyu|1420
+Hangyu Cryst|1422
+Hartalis|420
+Helzephyr|190
+Helzephyr Lux|180
+Herbil|1445
+Hoocrates|1390
+Ice Kingpaca|470
+Icelyn|605
+Illuminant Bat|1250
+Illuminant Slime|1500
+Incineram|590
+Incineram Noct|580
+Jelliette|1385
+Jellroy|1395
+Jetragon|90
+Jolthog|1370
+Jolthog Cryst|1360
+Jormuntide|310
+Jormuntide Ignis|315
+Katress|700
+Katress Ignis|690
+Kikit|1125
+Killamari|1290
+Killamari Primo|1250
+Kingpaca|470
+Kingpaca Cryst|440
+Knocklem|265
+Knocklem Ignis|265
+Lamball|1470
+Lapiron|760
+Leafan|780
+Leezpunk|1120
+Leezpunk Ignis|1140
+Lifmunk|1430
+Loupmoon|950
+Loupmoon Cryst|805
+Lovander|940
+Lunaris|1110
+Lyleen|250
+Lyleen Noct|210
+Majex|1180
+Mammorest|300
+Mammorest Cryst|290
+Maraith|1150
+Mau|1480
+Mau Cryst|1440
+Melpaca|890
+Menasting|260
+Menasting Terra|250
+Mimog|1200
+Moldron|920
+Moldron Cryst|900
+Mossanda|430
+Mossanda Lux|390
+Mozzarina|910
+Munchill|1335
+Necromus|70
+Neptilius|90
+Nitemary|705
+Nitemary Botan|705
+Nox|1180
+Nyafia|645
+Omascul|630
+Ophydia|580
+Orserk|140
+Paladius|80
+Palumba|455
+Panthalus|380
+Pengullet|1350
+Pengullet Lux|1310
+Penking|520
+Penking Lux|490
+Petallia|780
+Petallia Ignis|780
+Pierdon|780
+Pierdon Cryst|760
+Polapup|745
+Polapup Terra|745
+Prixter|355
+Prixter Lux|355
+Prunelia|755
+Pupperai|1450
+Purple Slime|1390
+Pyrin|360
+Pyrin Noct|240
+Quivern|350
+Quivern Botan|340
+Ragnahawk|380
+Rainbow Slime|1320
+Rayhound|740
+Rayhound Cryst|740
+Red Slime|1405
+Reindrix|880
+Relaxaurus|280
+Relaxaurus Lux|270
+Renjishi|500
+Reptyro|320
+Reptyro Cryst|230
+Ribbuny Botan|1205
+Robinquill|1020
+Robinquill Terra|1000
+Rooby|1155
+Rushoar|1130
+Selyne|345
+Shadowbeak|60
+Shaolong|430
+Shroomer|720
+Shroomer Noct|730
+Sibelyx|450
+Sibelyx Primo|450
+Silvance|380
+Silvegis|215
+Skutlass|400
+Skutlass Ignis|400
+Slowatt|1100
+Smokie|1245
+Smokie Cryst|1245
+Snock|450
+Snock Lux|450
+Snugloo|740
+Solmora|300
+Solmora Lux|300
+Souffline|720
+Splatterina|725
+Starryon|365
+Starryon Primo|365
+Surfent|560
+Surfent Terra|550
+Suzaku|50
+Suzaku Aqua|30
+Swee|1300
+Sweepa|410
+Tanzee|1250
+Tanzee Ignis|1250
+Tarantriss|825
+Teafant|1490
+Tetroise|950
+Tetroise Primo|950
+Tropicaw|520
+Turtacle|1105
+Turtacle Terra|1065
+Univolt|680
+Vaelet|1050
+Valentail|800
+Vanwyrm|660
+Vanwyrm Cryst|620
+Venusa|280
+Verdash|990
+Vixy|1450
+Warsect|340
+Warsect Terra|275
+Whalaska|445
+Whalaska Ignis|430
+Wispaw|1410
+Wistella|400
+Wixen|1160
+Wixen Noct|1150
+Woolipop|1190
+Woolipop Terra|1190
+Wumpo|460
+Wumpo Botan|480
+Xenogard|435
+Xenolord|265
+Xenovader|465
