@@ -12,7 +12,7 @@ export function EntityIcon({
 }) {
   const [failed, setFailed] = useState(false);
   const iconKey = entity.iconName || entity.id;
-  const src = getGameEntityImageUrl(iconKey);
+  const src = entity.iconUrl ?? getGameEntityImageUrl(iconKey);
 
   if (failed) {
     const Icon = entity.kind === 'structure' ? Factory : Package;

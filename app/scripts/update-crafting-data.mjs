@@ -4,6 +4,7 @@
  * Usage:
  *   node scripts/update-crafting-data.mjs
  *   node scripts/update-crafting-data.mjs path/to/raw-catalog.json
+ *   node scripts/update-crafting-data.mjs --fetch-buildings
  *
  * Without an input path, validates the committed catalog and prints counts.
  * With an input path, validates/normalizes it and writes app/src/data/json/crafting.json.
@@ -15,10 +16,14 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchPaldbBuildings, mergeBuildingsIntoCatalog } from './paldb-buildings.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const catalogPath = resolve(__dirname, '../src/data/json/crafting.json');
-const inputPath = process.argv[2] ? resolve(process.cwd(), process.argv[2]) : catalogPath;
+const args = process.argv.slice(2);
+const inputArg = args.find((arg) => !arg.startsWith('--'));
+const inputPath = inputArg ? resolve(process.cwd(), inputArg) : catalogPath;
+const fetchBuildings = args.includes('--fetch-buildings');
 
 function isPositiveInteger(value) {
   return typeof value === 'number' && Number.isInteger(value) && value > 0;
@@ -98,7 +103,12 @@ function normalize(catalog) {
   };
 }
 
-const raw = JSON.parse(readFileSync(inputPath, 'utf8'));
+let raw = JSON.parse(readFileSync(inputPath, 'utf8'));
+if (fetchBuildings) {
+  const fetched = await fetchPaldbBuildings();
+  console.log(`fetchedBuildings=${fetched.english.length}`);
+  raw = mergeBuildingsIntoCatalog(raw, fetched);
+}
 const normalized = normalize(raw);
 const issues = validate(normalized);
 
@@ -115,7 +125,7 @@ console.log(`selectable=${selectable}`);
 console.log(`gameVersion=${normalized.gameVersion}`);
 console.log(`sources=${normalized.sources.length}`);
 
-if (inputPath !== catalogPath || process.argv.includes('--write')) {
+if (fetchBuildings || inputPath !== catalogPath || args.includes('--write')) {
   writeFileSync(catalogPath, `${JSON.stringify(normalized, null, 2)}\n`, 'utf8');
   console.log(`Wrote ${catalogPath}`);
 } else {
