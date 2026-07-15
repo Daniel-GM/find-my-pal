@@ -12,7 +12,6 @@ import {
   Search,
   X,
   Wrench,
-  Globe,
   Factory,
 } from 'lucide-react';
 import type { AppState, View } from '@/hooks/useAppState';
@@ -20,9 +19,55 @@ import { PALS, ELEMENTS } from '@/data/pals';
 import type { PalElement } from '@/data/pals';
 import { getElementColor } from '@/lib/elements';
 import { getElementIconUrl } from '@/lib/images';
-import type { TranslationKey } from '@/i18n/types';
+import type { Locale, TranslationKey } from '@/i18n/types';
 import PalImage from '@/components/PalImage';
 import { useTranslation } from '@/i18n';
+
+function LanguageFlag({ locale }: { locale: Locale }) {
+  if (locale === 'pt-BR') {
+    return (
+      <svg
+        width={16}
+        height={16}
+        viewBox="0 0 16 16"
+        aria-hidden
+        className="shrink-0 rounded-sm overflow-hidden"
+      >
+        <rect width="16" height="16" fill="#009C3B" />
+        <polygon points="8,2.5 13.5,8 8,13.5 2.5,8" fill="#FFDF00" />
+        <circle cx="8" cy="8" r="3" fill="#002776" />
+        <path
+          d="M5.2 8.4c1.6-1.1 3.9-1.1 5.6 0"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="0.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
+
+  return (
+    <svg
+      width={16}
+      height={16}
+      viewBox="0 0 16 16"
+      aria-hidden
+      className="shrink-0 rounded-sm overflow-hidden"
+    >
+      <rect width="16" height="16" fill="#B22234" />
+      {[2.15, 4.3, 6.45, 8.6, 10.75, 12.9].map((y) => (
+        <rect key={y} y={y} width="16" height="1.05" fill="#fff" />
+      ))}
+      <rect width="7.2" height="8.6" fill="#3C3B6E" />
+      {[1.2, 2.8, 4.4, 6].map((x) =>
+        [1.4, 3.2, 5, 6.8].map((y) => (
+          <circle key={`${x}-${y}`} cx={x} cy={y} r="0.45" fill="#fff" />
+        )),
+      )}
+    </svg>
+  );
+}
 
 function useNavItems(): { view: View; labelKey: string; icon: typeof GitBranch }[] {
   const { t } = useTranslation();
@@ -188,7 +233,7 @@ export default function Navbar({ appState }: NavbarProps) {
             color: 'var(--text-secondary)',
           }}
         >
-          <Globe size={16} />
+          <LanguageFlag locale={locale} />
           <span className="text-[13px] font-medium">
             {locale === 'pt-BR' ? t('lang.pt-BR') : t('lang.en')}
           </span>
