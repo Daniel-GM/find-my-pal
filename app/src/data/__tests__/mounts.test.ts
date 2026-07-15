@@ -22,8 +22,11 @@ describe('mounts data', () => {
   });
 
   it('defines level ranges', () => {
-    expect(LEVEL_RANGES.length).toBeGreaterThan(0);
-    expect(LEVEL_RANGES[0].min).toBe(1);
-    expect(LEVEL_RANGES[LEVEL_RANGES.length - 1].max).toBe(100);
+    expect(LEVEL_RANGES).toEqual([
+      { min: 11, max: 20, label: 'Early Game', color: '#22c55e' },
+      { min: 21, max: 40, label: 'Mid Game', color: '#3b82f6' },
+      { min: 41, max: 60, label: 'Late Game', color: '#a855f7' },
+      { min: 61, max: 80, label: 'End Game', color: '#f59e0b' },
+    ]);
   });
 });
