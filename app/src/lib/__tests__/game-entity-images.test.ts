@@ -39,11 +39,22 @@ describe('game entity images', () => {
     ).toBe('https://palpedia.azrocdn.com/items/T_itemicon_Material_Wood_WorldTree.png');
   });
 
-  it('does not rewrite unrelated image URLs', () => {
+  it('derives Palpedia fallbacks from PalDB building icons', () => {
     expect(
       getPalpediaImageFallbackUrl(
         'https://cdn.paldb.cc/image/Pal/Texture/BuildObject/PNG/T_icon_buildObject_WorkBench.webp',
       ),
+    ).toBe('https://palpedia.azrocdn.com/buildings/T_icon_buildObject_WorkBench.png');
+    expect(
+      getPalpediaImageFallbackUrl(
+        'https://cdn.paldb.cc/image/Pal/Texture/BuildObject/PNG/T_icon_buildObject_Ancient_Fence.webp',
+      ),
+    ).toBe('https://palpedia.azrocdn.com/buildings/T_icon_buildObject_Ancient_Fence.png');
+  });
+
+  it('does not rewrite unrelated image URLs', () => {
+    expect(
+      getPalpediaImageFallbackUrl('https://cdn.paldb.cc/image/Pal/Texture/UI/Main_Menu/T_icon_unknown.webp'),
     ).toBeUndefined();
     expect(getPalpediaImageFallbackUrl('not a URL')).toBeUndefined();
   });

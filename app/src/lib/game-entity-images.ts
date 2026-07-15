@@ -142,12 +142,17 @@ export function getPalpediaImageFallbackUrl(iconUrl?: string): string | undefine
   if (!iconUrl) return undefined;
   try {
     const url = new URL(iconUrl);
-    const prefix = '/image/Others/InventoryItemIcon/Texture/';
-    if (url.hostname !== 'cdn.paldb.cc' || !url.pathname.startsWith(prefix)) {
-      return undefined;
-    }
-    const filename = url.pathname.slice(prefix.length).replace(/\.webp$/i, '.png');
-    return `${CDN}/items/${filename}`;
+    if (url.hostname !== 'cdn.paldb.cc') return undefined;
+
+    const mappings = [
+      { prefix: '/image/Others/InventoryItemIcon/Texture/', directory: 'items' },
+      { prefix: '/image/Pal/Texture/BuildObject/PNG/', directory: 'buildings' },
+    ];
+    const mapping = mappings.find(({ prefix }) => url.pathname.startsWith(prefix));
+    if (!mapping) return undefined;
+
+    const filename = url.pathname.slice(mapping.prefix.length).replace(/\.webp$/i, '.png');
+    return `${CDN}/${mapping.directory}/${filename}`;
   } catch {
     return undefined;
   }
