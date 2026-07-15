@@ -181,6 +181,7 @@ export const ptBR: Translations = {
   'mounts.fastestSprint': 'Sprint Mais Rapido',
   'mounts.avgRunSpeed': 'Vel. Corrida Média',
   'mounts.avgStamina': 'Estamina Média',
+  'mounts.minimumSprintSpeed': 'Velocidade Mínima de Sprint',
 
   // Pals Directory
   'pals.title': 'Diretório de Pals',

@@ -182,6 +182,7 @@ export type TranslationKey =
   | 'mounts.fastestSprint'
   | 'mounts.avgRunSpeed'
   | 'mounts.avgStamina'
+  | 'mounts.minimumSprintSpeed'
 
   // Pals Directory
   | 'pals.title'

@@ -23,9 +23,8 @@ export function getMountsByType(type: MountType): MountInfo[] {
 }
 
 export const LEVEL_RANGES = [
-  { min: 1, max: 10, label: 'Early Game', color: '#22c55e' },
-  { min: 11, max: 20, label: 'Mid Game', color: '#3b82f6' },
-  { min: 21, max: 30, label: 'Late Game', color: '#a855f7' },
-  { min: 31, max: 40, label: 'End Game', color: '#f59e0b' },
-  { min: 41, max: 100, label: 'Post Game', color: '#ef4444' },
+  { min: 11, max: 20, label: 'Early Game', color: '#22c55e' },
+  { min: 21, max: 40, label: 'Mid Game', color: '#3b82f6' },
+  { min: 41, max: 60, label: 'Late Game', color: '#a855f7' },
+  { min: 61, max: 80, label: 'End Game', color: '#f59e0b' },
 ];
