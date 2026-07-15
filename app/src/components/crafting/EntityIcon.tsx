@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { Factory, Package } from 'lucide-react';
-import { getGameEntityImageUrl } from '@/lib/game-entity-images';
+import {
+  getGameEntityImageUrl,
+  getPalpediaImageFallbackUrl,
+} from '@/lib/game-entity-images';
 import type { CraftingEntity } from '@/data/crafting';
 
 export function EntityIcon({
@@ -10,11 +13,16 @@ export function EntityIcon({
   entity: CraftingEntity;
   size?: number;
 }) {
-  const [failed, setFailed] = useState(false);
+  const [failedSources, setFailedSources] = useState<Set<string>>(() => new Set());
   const iconKey = entity.iconName || entity.id;
-  const src = entity.iconUrl ?? getGameEntityImageUrl(iconKey);
+  const sources = [
+    entity.iconUrl,
+    getPalpediaImageFallbackUrl(entity.iconUrl),
+    getGameEntityImageUrl(iconKey),
+  ].filter((source, index, all): source is string => Boolean(source) && all.indexOf(source) === index);
+  const src = sources.find((source) => !failedSources.has(source));
 
-  if (failed) {
+  if (!src) {
     const Icon = entity.kind === 'structure' ? Factory : Package;
     return (
       <span
@@ -42,7 +50,9 @@ export function EntityIcon({
       height={size}
       className="object-contain shrink-0"
       loading="lazy"
-      onError={() => setFailed(true)}
+      onError={() => {
+        setFailedSources((previous) => new Set(previous).add(src));
+      }}
     />
   );
 }

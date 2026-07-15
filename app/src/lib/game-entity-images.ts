@@ -133,6 +133,26 @@ export function getGameEntityImageUrl(iconNameOrId: string): string {
   return `${CDN}/items/T_itemicon_Material_${iconNameOrId}.png`;
 }
 
+/**
+ * PalDB and Palpedia mirror the same inventory icon filenames in different
+ * formats. This provides a second CDN candidate when a PalDB asset is missing
+ * or rejects hotlinking.
+ */
+export function getPalpediaImageFallbackUrl(iconUrl?: string): string | undefined {
+  if (!iconUrl) return undefined;
+  try {
+    const url = new URL(iconUrl);
+    const prefix = '/image/Others/InventoryItemIcon/Texture/';
+    if (url.hostname !== 'cdn.paldb.cc' || !url.pathname.startsWith(prefix)) {
+      return undefined;
+    }
+    const filename = url.pathname.slice(prefix.length).replace(/\.webp$/i, '.png');
+    return `${CDN}/items/${filename}`;
+  } catch {
+    return undefined;
+  }
+}
+
 /** Boss Drops-compatible alias. */
 export function getItemImageUrl(itemId: string): string {
   return getGameEntityImageUrl(itemId);
