@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",
-    "update:crafting": "node scripts/update-crafting-data.mjs"
+    "update:crafting": "node scripts/update-crafting-data.mjs",
+    "update:buildings": "node scripts/update-crafting-data.mjs --fetch-buildings"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

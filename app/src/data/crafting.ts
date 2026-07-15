@@ -9,9 +9,11 @@ export interface CraftingEntityNames {
 
 export interface CraftingEntity {
   id: string;
+  sourceId?: string;
   kind: CraftingEntityKind;
   names: CraftingEntityNames;
   iconName?: string;
+  iconUrl?: string;
   selectable: boolean;
 }
 

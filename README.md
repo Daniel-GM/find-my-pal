@@ -64,6 +64,7 @@ npm run lint      # ESLint
 npm run test      # Vitest em modo watch
 npm run test:run  # Vitest uma única vez
 npm run update:crafting  # valida/normaliza o catálogo de craft
+npm run update:buildings # busca todos os prédios e receitas de construção no PalDB
 ```
 
 ## Testes
@@ -107,3 +108,12 @@ node scripts/update-crafting-data.mjs ../.memory/scratch/crafting-raw.json
 ```
 
 O script valida IDs, referências, quantidades positivas, defaults e entidades selecionáveis; em seguida escreve o JSON normalizado.
+
+Para atualizar todas as construções diretamente das dez categorias do PalDB em inglês e português:
+
+```bash
+cd app
+npm run update:buildings
+```
+
+O inglês é a fonte de completude. Quando uma construção ainda não existe no índice em português, o importador mantém o nome em inglês, informa os IDs sem tradução e continua sem remover a construção do catálogo.

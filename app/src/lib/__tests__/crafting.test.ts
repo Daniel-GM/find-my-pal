@@ -75,6 +75,14 @@ describe('crafting catalog', () => {
     expect(selectable.length).toBeGreaterThanOrEqual(20);
   });
 
+  it('contains the complete PalDB construction catalog', () => {
+    const structures = CRAFTING_CATALOG.entities.filter((entity) => entity.kind === 'structure');
+    expect(structures.length).toBeGreaterThanOrEqual(490);
+    expect(structures.every((entity) => entity.selectable)).toBe(true);
+    expect(structures.every((entity) => entity.sourceId && entity.iconUrl)).toBe(true);
+    expect(CRAFTING_CATALOG.sources.filter((source) => /PalDB (EN|PT) .* buildings/.test(source.name))).toHaveLength(20);
+  });
+
   it('includes golden Gigantic Furnace direct recipe quantities', () => {
     const recipe = getDefaultRecipe('GiganticFurnace');
     expect(recipe).toBeDefined();
