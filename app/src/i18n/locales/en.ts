@@ -181,6 +181,7 @@ export const en: Translations = {
   'mounts.fastestSprint': 'Fastest Sprint',
   'mounts.avgRunSpeed': 'Avg Run Speed',
   'mounts.avgStamina': 'Avg Stamina',
+  'mounts.minimumSprintSpeed': 'Minimum Sprint Speed',
 
   // Pals Directory
   'pals.title': 'Pals Directory',

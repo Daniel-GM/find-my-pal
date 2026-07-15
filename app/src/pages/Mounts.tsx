@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Mountain, Plane, Droplets, TrendingUp, Zap, Gauge, Battery } from 'lucide-react';
 import { getMountsByType, LEVEL_RANGES } from '@/data/mounts';
-import type { MountType, MountInfo } from '@/data/mounts';
+import type { MountInfo } from '@/data/mounts';
 import { getElementIconUrl } from '@/lib/images';
 import { useTranslation } from '@/i18n';
 import PalImage from '@/components/PalImage';
@@ -149,9 +149,7 @@ function LevelSection({
   );
 }
 
-function MountProgression({ type }: { type: MountType }) {
-  const mounts = useMemo(() => getMountsByType(type), [type]);
-
+function MountProgression({ mounts }: { mounts: MountInfo[] }) {
   const levelGroups = useMemo(() => {
     return LEVEL_RANGES.map((range) => ({
       ...range,
@@ -183,10 +181,22 @@ function MountProgression({ type }: { type: MountType }) {
 export default function Mounts() {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<'ground' | 'flying' | 'water'>('flying');
+  const [minimumSprintSpeed, setMinimumSprintSpeed] = useState('');
 
-  const groundCount = useMemo(() => getMountsByType('ground').length, []);
-  const flyingCount = useMemo(() => getMountsByType('flying').length, []);
-  const waterCount = useMemo(() => getMountsByType('water').length, []);
+  const speedThreshold = Number(minimumSprintSpeed) || 0;
+  const mountsByType = useMemo(() => {
+    const isVisibleMount = (mount: MountInfo) => (
+      mount.sprintSpeed >= speedThreshold
+      && LEVEL_RANGES.some((range) => mount.saddleLevel >= range.min && mount.saddleLevel <= range.max)
+    );
+
+    return {
+      ground: getMountsByType('ground').filter(isVisibleMount),
+      flying: getMountsByType('flying').filter(isVisibleMount),
+      water: getMountsByType('water').filter(isVisibleMount),
+    };
+  }, [speedThreshold]);
+  const mounts = mountsByType[activeTab];
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
@@ -227,7 +237,7 @@ export default function Mounts() {
           }}
         >
           <Plane size={16} />
-          {t('mounts.flying')} ({flyingCount})
+          {t('mounts.flying')} ({mountsByType.flying.length})
         </button>
         <button
           onClick={() => setActiveTab('water')}
@@ -241,7 +251,7 @@ export default function Mounts() {
           }}
         >
           <Droplets size={16} />
-          {t('mounts.water')} ({waterCount})
+          {t('mounts.water')} ({mountsByType.water.length})
         </button>
         <button
           onClick={() => setActiveTab('ground')}
@@ -255,8 +265,42 @@ export default function Mounts() {
           }}
         >
           <Mountain size={16} />
-          {t('mounts.terrestrial')} ({groundCount})
+          {t('mounts.terrestrial')} ({mountsByType.ground.length})
         </button>
+      </motion.div>
+
+      {/* Filters */}
+      <motion.div
+        initial={{ opacity: 0, y: -8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.25, delay: 0.15 }}
+        className="mb-6 w-full md:w-[calc(50%-6px)]"
+      >
+        <label className="block text-[12px] font-medium" style={{ color: 'var(--text-secondary)' }}>
+          {t('mounts.minimumSprintSpeed')}
+          <div className="relative mt-1">
+            <Zap
+              size={15}
+              className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
+              style={{ color: 'var(--accent-amber)' }}
+            />
+            <input
+              type="number"
+              min={0}
+              step={1}
+              inputMode="numeric"
+              value={minimumSprintSpeed}
+              onChange={(event) => setMinimumSprintSpeed(event.target.value)}
+              className="w-full py-2.5 pl-9 pr-3 text-[13px] outline-none"
+              style={{
+                backgroundColor: 'var(--bg-surface)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: 10,
+                color: 'var(--text-primary)',
+              }}
+            />
+          </div>
+        </label>
       </motion.div>
 
       {/* Stats Bar */}
@@ -267,7 +311,6 @@ export default function Mounts() {
         className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6"
       >
         {(() => {
-          const mounts = getMountsByType(activeTab);
           const fastest = [...mounts].sort((a, b) => b.sprintSpeed - a.sprintSpeed)[0];
           const avgStamina = mounts.length > 0 ? Math.round(mounts.reduce((s, m) => s + m.stamina, 0) / mounts.length) : 0;
           return (
@@ -288,7 +331,26 @@ export default function Mounts() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <MountProgression type={activeTab} />
+        {mounts.length > 0 ? (
+          <MountProgression mounts={mounts} />
+        ) : (
+          <div
+            className="flex flex-col items-center justify-center text-center py-16 px-6"
+            style={{
+              border: '1px dashed var(--border-subtle)',
+              borderRadius: 12,
+              backgroundColor: 'var(--bg-surface)',
+            }}
+          >
+            <Gauge size={32} style={{ color: 'var(--text-muted)' }} className="mb-3" />
+            <p className="text-[15px] font-semibold" style={{ color: 'var(--text-primary)' }}>
+              {t('mounts.noMounts')}
+            </p>
+            <p className="text-[13px] mt-1" style={{ color: 'var(--text-muted)' }}>
+              {t('mounts.noMountsDesc')}
+            </p>
+          </div>
+        )}
       </motion.div>
     </div>
   );
