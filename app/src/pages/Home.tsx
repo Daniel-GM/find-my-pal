@@ -1,15 +1,18 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
+  Baby,
   ChevronDown,
   LayoutGrid,
   List,
+  Users,
 } from 'lucide-react';
 import type { AppState } from '@/hooks/useAppState';
 import { PALS } from '@/data/pals';
 import { getPalImageUrl } from '@/lib/images';
 import {
   findParentCombinations,
+  findPartnerCombinations,
   sortCombinations,
 } from '@/lib/breeding';
 import type { BreedingCombination, SortOption } from '@/lib/breeding';
@@ -38,6 +41,7 @@ export default function Home({ appState }: HomeProps) {
 
   const [sortOption, setSortOption] = useState<SortOption>('power-asc');
   const [layoutMode, setLayoutMode] = useState<'grid' | 'list'>('grid');
+  const [searchMode, setSearchMode] = useState<'child' | 'parent'>('child');
   const [showSaveDialog, setShowSaveDialog] = useState(false);
   const [saveCombo, setSaveCombo] = useState<BreedingCombination | null>(null);
   const [showCreatePackage, setShowCreatePackage] = useState(false);
@@ -56,12 +60,14 @@ export default function Home({ appState }: HomeProps) {
 
   const allCombinations = useMemo(() => {
     if (!selectedPal) return [];
-    return findParentCombinations(selectedPal);
-  }, [selectedPal]);
+    return searchMode === 'parent'
+      ? findPartnerCombinations(selectedPal)
+      : findParentCombinations(selectedPal);
+  }, [selectedPal, searchMode]);
 
   const sortedCombinations = useMemo(
-    () => sortCombinations(allCombinations, sortOption),
-    [allCombinations, sortOption],
+    () => sortCombinations(allCombinations, sortOption, searchMode === 'parent'),
+    [allCombinations, sortOption, searchMode],
   );
 
   // Improvement 2: Filtered combinations
@@ -169,13 +175,48 @@ export default function Home({ appState }: HomeProps) {
             style={{ color: 'var(--text-secondary)' }}
           >
             {selectedPal
-              ? `${filteredCombinations.length} possible parent combinations`
-              : 'Select a Pal to see all possible parent combinations'}
+              ? searchMode === 'parent'
+                ? `${filteredCombinations.length} possible partners`
+                : `${filteredCombinations.length} possible parent combinations`
+              : searchMode === 'parent'
+                ? 'Select a Pal to see all possible partners and results'
+                : 'Select a Pal to see all possible parent combinations'}
           </p>
         </div>
 
-        {selectedPal && (
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
+          {/* Search Mode Toggle */}
+          <div className="flex items-center" style={{ borderRadius: 8, border: '1px solid var(--border-subtle)', overflow: 'hidden' }}>
+            <button
+              onClick={() => setSearchMode('child')}
+              className="flex items-center gap-1.5 px-2.5 transition-all duration-150 text-[12px] font-medium"
+              style={{
+                height: 34,
+                backgroundColor: searchMode === 'child' ? 'var(--bg-hover)' : 'transparent',
+                color: searchMode === 'child' ? 'var(--text-primary)' : 'var(--text-muted)',
+              }}
+              title="Search by child: find all parent combinations"
+            >
+              <Baby size={16} />
+              By Child
+            </button>
+            <button
+              onClick={() => setSearchMode('parent')}
+              className="flex items-center gap-1.5 px-2.5 transition-all duration-150 text-[12px] font-medium"
+              style={{
+                height: 34,
+                backgroundColor: searchMode === 'parent' ? 'var(--bg-hover)' : 'transparent',
+                color: searchMode === 'parent' ? 'var(--text-primary)' : 'var(--text-muted)',
+              }}
+              title="Search by parent: find all partners and results"
+            >
+              <Users size={16} />
+              By Parent
+            </button>
+          </div>
+
+          {selectedPal && (
+            <div className="flex items-center gap-2">
             {/* Sort Dropdown */}
             <div className="relative">
               <select
@@ -231,12 +272,13 @@ export default function Home({ appState }: HomeProps) {
             </div>
           </div>
         )}
+        </div>
       </div>
 
       {/* Content */}
       <AnimatePresence mode="wait">
         {!selectedPal ? (
-          <EmptyState key="empty" />
+          <EmptyState key="empty" mode={searchMode} />
         ) : (
           <motion.div
             key={selectedPal.id}
@@ -249,6 +291,8 @@ export default function Home({ appState }: HomeProps) {
               pal={selectedPal}
               combinationCount={filteredCombinations.length}
               onChangePal={() => selectPal(null)}
+              label={searchMode === 'parent' ? 'Selected Parent' : 'Target Pal'}
+              countLabel={searchMode === 'parent' ? 'Partners' : 'Combinations'}
             />
 
             {/* Summary Bar */}
@@ -263,7 +307,10 @@ export default function Home({ appState }: HomeProps) {
                 className="text-[13px] font-medium"
                 style={{ color: 'var(--text-secondary)' }}
               >
-                {filteredCombinations.length} possible combinations found
+                {filteredCombinations.length}{' '}
+                {searchMode === 'parent'
+                  ? 'possible partners found'
+                  : 'possible combinations found'}
               </span>
               <div className="flex items-center gap-2">
                 {/* Improvement 2: Parent Filter */}
@@ -368,6 +415,7 @@ export default function Home({ appState }: HomeProps) {
                     isCompleted={isCompleted(combo.id)}
                     onSave={handleSave}
                     onComplete={handleComplete}
+                    showResult={searchMode === 'parent'}
                   />
                 ))}
               </AnimatePresence>
@@ -379,7 +427,9 @@ export default function Home({ appState }: HomeProps) {
                 style={{ color: 'var(--text-secondary)' }}
               >
                 <p className="text-[14px]">
-                  No breeding combinations found for this Pal.
+                  {searchMode === 'parent'
+                    ? 'No partners found for this Pal.'
+                    : 'No breeding combinations found for this Pal.'}
                 </p>
               </div>
             )}

@@ -15,6 +15,7 @@ interface CombinationCardProps {
   isCompleted: boolean;
   onSave: (combo: BreedingCombination) => void;
   onComplete: (combo: BreedingCombination) => void;
+  showResult?: boolean;
 }
 
 export function CombinationCard({
@@ -24,7 +25,11 @@ export function CombinationCard({
   isCompleted,
   onSave,
   onComplete,
+  showResult = false,
 }: CombinationCardProps) {
+  const leftPal = showResult ? combo.parentB : combo.parentA;
+  const rightPal = showResult ? combo.baby : combo.parentB;
+  const dividerSymbol = showResult ? '=' : '+';
   return (
     <motion.div
       layout
@@ -95,66 +100,66 @@ export function CombinationCard({
         </motion.button>
       </div>
 
-      {/* Row 2: Parents side by side, 50% each */}
+      {/* Row 2: Pals side by side, 50% each */}
       <div className="flex items-start gap-3">
-        {/* Parent A - 50% */}
+        {/* Left Pal - 50% */}
         <div className="flex flex-col items-center gap-1.5 flex-1 min-w-0">
-          <PalIconImg pal={combo.parentA} size="md" />
+          <PalIconImg pal={leftPal} size="md" />
           <span
             className="text-[13px] font-semibold truncate w-full text-center"
             style={{ color: 'var(--text-primary)' }}
           >
-            {combo.parentA.name}
+            {leftPal.name}
           </span>
           <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>
-            {combo.parentA.number === 0
+            {leftPal.number === 0
               ? '???'
-              : `#${String(combo.parentA.number).padStart(3, '0')}`}
+              : `#${String(leftPal.number).padStart(3, '0')}`}
           </span>
           <div className="flex flex-wrap justify-center gap-1">
-            {combo.parentA.elements.map((el: PalElement) => (
+            {leftPal.elements.map((el: PalElement) => (
               <ElementBadge key={el} element={el} />
             ))}
           </div>
           <span style={{ color: 'var(--text-secondary)', fontSize: 11 }}>
-            BP: {combo.parentA.breedingPower}
+            BP: {leftPal.breedingPower}
           </span>
           <div className="flex justify-center">
-            <WorkSuitabilityGrid pal={combo.parentA} />
+            <WorkSuitabilityGrid pal={leftPal} />
           </div>
         </div>
 
-        {/* Plus Divider */}
+        {/* Divider */}
         <div className="flex flex-col items-center justify-center shrink-0 self-stretch">
           <div style={{ width: 1, flex: 1, backgroundColor: 'var(--border-subtle)' }} />
-          <span className="text-[16px] font-light my-2" style={{ color: 'var(--text-muted)' }}>+</span>
+          <span className="text-[16px] font-light my-2" style={{ color: 'var(--text-muted)' }}>{dividerSymbol}</span>
           <div style={{ width: 1, flex: 1, backgroundColor: 'var(--border-subtle)' }} />
         </div>
 
-        {/* Parent B - 50% */}
+        {/* Right Pal - 50% */}
         <div className="flex flex-col items-center gap-1.5 flex-1 min-w-0">
-          <PalIconImg pal={combo.parentB} size="md" />
+          <PalIconImg pal={rightPal} size="md" />
           <span
             className="text-[13px] font-semibold truncate w-full text-center"
             style={{ color: 'var(--text-primary)' }}
           >
-            {combo.parentB.name}
+            {rightPal.name}
           </span>
           <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>
-            {combo.parentB.number === 0
+            {rightPal.number === 0
               ? '???'
-              : `#${String(combo.parentB.number).padStart(3, '0')}`}
+              : `#${String(rightPal.number).padStart(3, '0')}`}
           </span>
           <div className="flex flex-wrap justify-center gap-1">
-            {combo.parentB.elements.map((el: PalElement) => (
+            {rightPal.elements.map((el: PalElement) => (
               <ElementBadge key={el} element={el} />
             ))}
           </div>
           <span style={{ color: 'var(--text-secondary)', fontSize: 11 }}>
-            BP: {combo.parentB.breedingPower}
+            BP: {rightPal.breedingPower}
           </span>
           <div className="flex justify-center">
-            <WorkSuitabilityGrid pal={combo.parentB} />
+            <WorkSuitabilityGrid pal={rightPal} />
           </div>
         </div>
       </div>

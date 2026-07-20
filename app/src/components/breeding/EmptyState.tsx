@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion';
 import { GitBranch } from 'lucide-react';
 
-export function EmptyState() {
+interface EmptyStateProps {
+  mode?: 'child' | 'parent';
+}
+
+export function EmptyState({ mode = 'child' }: EmptyStateProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -38,8 +42,9 @@ export function EmptyState() {
           maxWidth: 400,
         }}
       >
-        Choose a Pal from the sidebar to see all possible parent breeding
-        combinations.
+        {mode === 'parent'
+          ? 'Choose a Pal from the sidebar to see all possible partners and their breeding results.'
+          : 'Choose a Pal from the sidebar to see all possible parent breeding combinations.'}
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 12 }}

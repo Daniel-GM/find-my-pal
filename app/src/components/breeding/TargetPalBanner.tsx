@@ -9,9 +9,17 @@ interface TargetPalBannerProps {
   pal: Pal;
   combinationCount: number;
   onChangePal: () => void;
+  label?: string;
+  countLabel?: string;
 }
 
-export function TargetPalBanner({ pal, combinationCount, onChangePal }: TargetPalBannerProps) {
+export function TargetPalBanner({
+  pal,
+  combinationCount,
+  onChangePal,
+  label = 'Target Pal',
+  countLabel = 'Combinations',
+}: TargetPalBannerProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -16 }}
@@ -49,7 +57,7 @@ export function TargetPalBanner({ pal, combinationCount, onChangePal }: TargetPa
               letterSpacing: '0.08em',
             }}
           >
-            Target Pal
+            {label}
           </span>
           <h2
             className="text-[24px] font-bold leading-tight mt-0.5"
@@ -110,7 +118,7 @@ export function TargetPalBanner({ pal, combinationCount, onChangePal }: TargetPa
               className="text-[11px]"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Combinations
+              {countLabel}
             </div>
           </div>
         </div>
