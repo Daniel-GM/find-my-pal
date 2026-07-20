@@ -31,6 +31,30 @@ export function findParentCombinations(targetPal: Pal): BreedingCombination[] {
   return combinations;
 }
 
+export function findPartnerCombinations(parentPal: Pal): BreedingCombination[] {
+  const combinations: BreedingCombination[] = [];
+  const seen = new Set<string>();
+
+  for (const [babyName, pairs] of Object.entries(BREED_DATA)) {
+    for (const [p1Name, p2Name] of pairs) {
+      if (p1Name !== parentPal.name && p2Name !== parentPal.name) continue;
+
+      const partnerName = p1Name === parentPal.name ? p2Name : p1Name;
+      const baby = findPalByName(babyName);
+      const partner = findPalByName(partnerName);
+      if (!baby || !partner) continue;
+
+      const comboId = `${parentPal.id}+${partner.id}=${baby.id}`;
+      if (!seen.has(comboId)) {
+        seen.add(comboId);
+        combinations.push({ id: comboId, parentA: parentPal, parentB: partner, baby });
+      }
+    }
+  }
+
+  return combinations;
+}
+
 export function generateComboId(parentA: Pal, parentB: Pal, baby: Pal): string {
   return `${parentA.id}+${parentB.id}=${baby.id}`;
 }
@@ -40,6 +64,7 @@ export type SortOption = 'power-asc' | 'power-desc' | 'alphabetical' | 'element'
 export function sortCombinations(
   combinations: BreedingCombination[],
   sort: SortOption,
+  byBaby = false,
 ): BreedingCombination[] {
   const sorted = [...combinations];
   switch (sort) {
@@ -59,15 +84,15 @@ export function sortCombinations(
       break;
     case 'alphabetical':
       sorted.sort((a, b) => {
-        const nameA = `${a.parentA.name}${a.parentB.name}`;
-        const nameB = `${b.parentA.name}${b.parentB.name}`;
+        const nameA = byBaby ? a.baby.name : `${a.parentA.name}${a.parentB.name}`;
+        const nameB = byBaby ? b.baby.name : `${b.parentA.name}${b.parentB.name}`;
         return String(nameA).localeCompare(String(nameB));
       });
       break;
     case 'element':
       sorted.sort((a, b) => {
-        const elemA = (a.parentA.elements[0] as string | undefined) ?? '';
-        const elemB = (b.parentA.elements[0] as string | undefined) ?? '';
+        const elemA = (byBaby ? a.baby.elements[0] : a.parentA.elements[0]) as string | undefined ?? '';
+        const elemB = (byBaby ? b.baby.elements[0] : b.parentA.elements[0]) as string | undefined ?? '';
         return elemA.localeCompare(elemB);
       });
       break;

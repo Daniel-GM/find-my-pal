@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { findParentCombinations, generateComboId, sortCombinations } from '@/lib/breeding';
+import { findParentCombinations, findPartnerCombinations, generateComboId, sortCombinations } from '@/lib/breeding';
 import { PALS, findPalByName } from '@/data/pals';
 
 describe('breeding', () => {
@@ -22,6 +22,31 @@ describe('breeding', () => {
   it('returns an empty array when no breeding data exists', () => {
     const fakePal = { ...PALS[0], name: 'UnknownPalXYZ' };
     expect(findParentCombinations(fakePal)).toEqual([]);
+  });
+
+  describe('findPartnerCombinations', () => {
+    it('finds partner combinations where the pal is a parent', () => {
+      expect(lamball).toBeDefined();
+      const combos = findPartnerCombinations(lamball!);
+      expect(combos.length).toBeGreaterThan(0);
+      for (const combo of combos) {
+        expect(combo.parentA.name).toBe('Lamball');
+        expect(combo.parentB).toBeDefined();
+        expect(combo.baby).toBeDefined();
+        expect(combo.id).toBe(generateComboId(combo.parentA, combo.parentB, combo.baby));
+      }
+    });
+
+    it('returns no duplicate combo ids', () => {
+      const combos = findPartnerCombinations(lamball!);
+      const ids = combos.map((c) => c.id);
+      expect(new Set(ids).size).toBe(ids.length);
+    });
+
+    it('returns an empty array when the pal is never a parent', () => {
+      const fakePal = { ...PALS[0], name: 'UnknownPalXYZ' };
+      expect(findPartnerCombinations(fakePal)).toEqual([]);
+    });
   });
 
   it('generates consistent combo ids', () => {
@@ -68,6 +93,24 @@ describe('breeding', () => {
       const combos = findParentCombinations(lamball!);
       const sorted = sortCombinations(combos, 'element');
       const elements = sorted.map((c) => (c.parentA.elements[0] as string | undefined) ?? '');
+      const expected = [...elements].sort((a, b) => a.localeCompare(b));
+      expect(elements).toEqual(expected);
+    });
+
+    it('sorts alphabetically by baby when byBaby is true', () => {
+      expect(lamball).toBeDefined();
+      const combos = findPartnerCombinations(lamball!);
+      const sorted = sortCombinations(combos, 'alphabetical', true);
+      const names = sorted.map((c) => c.baby.name);
+      const expected = [...names].sort((a, b) => String(a).localeCompare(String(b)));
+      expect(names).toEqual(expected);
+    });
+
+    it('sorts by baby primary element when byBaby is true', () => {
+      expect(lamball).toBeDefined();
+      const combos = findPartnerCombinations(lamball!);
+      const sorted = sortCombinations(combos, 'element', true);
+      const elements = sorted.map((c) => (c.baby.elements[0] as string | undefined) ?? '');
       const expected = [...elements].sort((a, b) => a.localeCompare(b));
       expect(elements).toEqual(expected);
     });
