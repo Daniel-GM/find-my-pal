@@ -35,9 +35,9 @@ export function CombinationCard({
       layout
       initial={{ opacity: 0, y: 16, scale: 0.97 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, x: -20 }}
+      exit={{ opacity: 0, x: -20, transition: { delay: 0, duration: 0.15 } }}
       transition={{
-        delay: index * 0.03,
+        delay: Math.min(index, 15) * 0.03,
         duration: 0.25,
         ease: EASE_BEZIER,
       }}

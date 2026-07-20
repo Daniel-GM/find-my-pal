@@ -281,7 +281,7 @@ export default function Home({ appState }: HomeProps) {
           <EmptyState key="empty" mode={searchMode} />
         ) : (
           <motion.div
-            key={selectedPal.id}
+            key={`${selectedPal.id}-${searchMode}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
