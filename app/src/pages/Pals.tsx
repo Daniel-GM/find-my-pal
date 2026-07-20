@@ -246,13 +246,20 @@ export default function PalsPage() {
               }}>{t('pals.anyWork')}</button>
             {ALL_WORK_TYPES.map((wt) => (
               <button key={wt} onClick={() => setWorkFilter(wt === workFilter ? null : wt)}
-                className="text-[10px] font-semibold uppercase transition-all duration-150"
+                className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase transition-all duration-150"
                 style={{
                   padding: '3px 8px', borderRadius: 9999,
                   backgroundColor: workFilter === wt ? 'rgba(34,197,94,0.12)' : 'var(--bg-surface)',
                   color: workFilter === wt ? '#22c55e' : 'var(--text-secondary)',
                   border: `1px solid ${workFilter === wt ? '#22c55e' : 'var(--border-subtle)'}`,
                 }}>
+                <img
+                  src={getWorkSkillIconUrl(wt)}
+                  alt=""
+                  className="w-3.5 h-3.5 object-contain shrink-0"
+                  loading="lazy"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                />
                 {t(`work.${wt}` as const)}
               </button>
             ))}
