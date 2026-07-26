@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { GitBranch } from 'lucide-react';
+import { useTranslation } from '@/i18n';
 
 interface EmptyStateProps {
   mode?: 'child' | 'parent';
 }
 
 export function EmptyState({ mode = 'child' }: EmptyStateProps) {
+  const { t } = useTranslation();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -30,7 +32,7 @@ export function EmptyState({ mode = 'child' }: EmptyStateProps) {
         className="text-[22px] font-bold text-center mt-6"
         style={{ color: 'var(--text-primary)' }}
       >
-        Select a Pal to Begin
+        {t('breeding.selectPal')}
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 12 }}
@@ -43,8 +45,8 @@ export function EmptyState({ mode = 'child' }: EmptyStateProps) {
         }}
       >
         {mode === 'parent'
-          ? 'Choose a Pal from the sidebar to see all possible partners and their breeding results.'
-          : 'Choose a Pal from the sidebar to see all possible parent breeding combinations.'}
+          ? t('breeding.selectPalDescParent')
+          : t('breeding.selectPalDesc')}
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 12 }}
@@ -53,7 +55,7 @@ export function EmptyState({ mode = 'child' }: EmptyStateProps) {
         className="text-[13px] text-center mt-4"
         style={{ color: 'var(--text-muted)' }}
       >
-        You can search by name, number, or filter by element type.
+        {t('breeding.searchHint')}
       </motion.p>
     </motion.div>
   );

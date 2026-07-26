@@ -9,6 +9,8 @@ const EASE_BEZIER = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number]
 interface SaveDialogProps {
   isOpen: boolean;
   combo: BreedingCombination | null;
+  /** Optional summary line for multi-combo saves (e.g. a whole tree); replaces the A + B = baby line */
+  summary?: string;
   showCreate: boolean;
   packages: PackageType[];
   newPackageName: string;
@@ -25,6 +27,7 @@ interface SaveDialogProps {
 export function SaveDialog({
   isOpen,
   combo,
+  summary,
   showCreate,
   packages,
   newPackageName,
@@ -41,7 +44,7 @@ export function SaveDialog({
 
   return (
     <AnimatePresence>
-      {isOpen && combo && (
+      {isOpen && (combo || summary) && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -77,21 +80,33 @@ export function SaveDialog({
                 : 'Save Combination'}
             </h3>
 
-            <p
-              className="text-[14px] mb-4"
-              style={{ color: 'var(--text-secondary)' }}
-            >
-              Saving:{" "}
-              <strong style={{ color: 'var(--text-primary)' }}>
-                {combo.parentA.name}
-              </strong>{" "}+
-              <strong style={{ color: 'var(--text-primary)' }}>
-                {combo.parentB.name}
-              </strong>{" "}={" "}
-              <strong style={{ color: 'var(--accent-violet)' }}>
-                {combo.baby.name}
-              </strong>
-            </p>
+            {summary ? (
+              <p
+                className="text-[14px] mb-4"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                {t('breeding.savingColon')}{" "}
+                <strong style={{ color: 'var(--text-primary)' }}>{summary}</strong>
+              </p>
+            ) : (
+              combo && (
+                <p
+                  className="text-[14px] mb-4"
+                  style={{ color: 'var(--text-secondary)' }}
+                >
+                  {t('breeding.savingColon')}{" "}
+                  <strong style={{ color: 'var(--text-primary)' }}>
+                    {combo.parentA.name}
+                  </strong>{" "}+
+                  <strong style={{ color: 'var(--text-primary)' }}>
+                    {combo.parentB.name}
+                  </strong>{" "}={" "}
+                  <strong style={{ color: 'var(--accent-violet)' }}>
+                    {combo.baby.name}
+                  </strong>
+                </p>
+              )
+            )}
 
             {showCreate || packages.length === 0 ? (
               <div className="flex flex-col gap-4">

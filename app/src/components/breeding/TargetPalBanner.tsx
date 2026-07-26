@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
+import { useTranslation } from '@/i18n';
 import type { Pal } from '@/data/pals';
 import { PalIconImg } from './PalIconImg';
 import { ElementBadge } from './ElementBadge';
@@ -17,9 +18,12 @@ export function TargetPalBanner({
   pal,
   combinationCount,
   onChangePal,
-  label = 'Target Pal',
-  countLabel = 'Combinations',
+  label,
+  countLabel,
 }: TargetPalBannerProps) {
+  const { t } = useTranslation();
+  const resolvedLabel = label ?? t('breeding.targetPal');
+  const resolvedCountLabel = countLabel ?? t('breeding.combinations');
   return (
     <motion.div
       initial={{ opacity: 0, y: -16 }}
@@ -44,7 +48,7 @@ export function TargetPalBanner({
             style={{ color: 'var(--text-muted)' }}
           >
             <ArrowLeft size={12} />
-            Change Pal
+            {t('app.changePal')}
           </button>
           <PalIconImg pal={pal} size="lg" borderColor="var(--accent-violet)" />
         </div>
@@ -57,7 +61,7 @@ export function TargetPalBanner({
               letterSpacing: '0.08em',
             }}
           >
-            {label}
+            {resolvedLabel}
           </span>
           <h2
             className="text-[24px] font-bold leading-tight mt-0.5"
@@ -84,7 +88,7 @@ export function TargetPalBanner({
             className="text-[10px] font-semibold uppercase mb-1.5"
             style={{ color: 'var(--text-muted)', letterSpacing: '0.06em' }}
           >
-            Work Suitability
+            {t('breeding.workSuitability')}
           </span>
           <WorkSuitabilityGrid pal={pal} />
         </div>
@@ -101,7 +105,7 @@ export function TargetPalBanner({
               className="text-[11px]"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Breeding Power
+              {t('breeding.breedingPower')}
             </div>
           </div>
           <div className="text-center">
@@ -118,7 +122,7 @@ export function TargetPalBanner({
               className="text-[11px]"
               style={{ color: 'var(--text-secondary)' }}
             >
-              {countLabel}
+              {resolvedCountLabel}
             </div>
           </div>
         </div>

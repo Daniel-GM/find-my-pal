@@ -3,10 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Baby,
   ChevronDown,
+  GitBranch,
   LayoutGrid,
   List,
   Users,
 } from 'lucide-react';
+import { useTranslation } from '@/i18n';
 import type { AppState } from '@/hooks/useAppState';
 import { PALS } from '@/data/pals';
 import { getPalImageUrl } from '@/lib/images';
@@ -22,6 +24,7 @@ import {
   CombinationCard,
   SaveDialog,
   ParentFilterDialog,
+  BreedingTreeView,
 } from '@/components/breeding';
 
 interface HomeProps {
@@ -29,17 +32,19 @@ interface HomeProps {
 }
 
 export default function Home({ appState }: HomeProps) {
+  const { t } = useTranslation();
   const {
     selectedPalId,
     selectPal,
     isInPackage,
     addToPackage,
     addPackage,
+    searchMode,
+    setSearchMode,
   } = appState;
 
   const [sortOption, setSortOption] = useState<SortOption>('power-asc');
   const [layoutMode, setLayoutMode] = useState<'grid' | 'list'>('grid');
-  const [searchMode, setSearchMode] = useState<'child' | 'parent'>('child');
   const [showSaveDialog, setShowSaveDialog] = useState(false);
   const [saveCombo, setSaveCombo] = useState<BreedingCombination | null>(null);
   const [showCreatePackage, setShowCreatePackage] = useState(false);
@@ -165,11 +170,13 @@ export default function Home({ appState }: HomeProps) {
           >
             {selectedPal
               ? searchMode === 'parent'
-                ? `${filteredCombinations.length} possible partners`
-                : `${filteredCombinations.length} possible parent combinations`
+                ? t('breeding.possiblePartnersFound', { count: filteredCombinations.length })
+                : searchMode === 'tree'
+                  ? t('breeding.tree.clickToChange')
+                  : t('breeding.combinationCount', { count: filteredCombinations.length })
               : searchMode === 'parent'
-                ? 'Select a Pal to see all possible partners and results'
-                : 'Select a Pal to see all possible parent combinations'}
+                ? t('breeding.selectPalDescParent')
+                : t('breeding.selectPalDesc')}
           </p>
         </div>
 
@@ -184,10 +191,10 @@ export default function Home({ appState }: HomeProps) {
                 backgroundColor: searchMode === 'child' ? 'var(--bg-hover)' : 'transparent',
                 color: searchMode === 'child' ? 'var(--text-primary)' : 'var(--text-muted)',
               }}
-              title="Search by child: find all parent combinations"
+              title={t('breeding.selectPalDesc')}
             >
               <Baby size={16} />
-              By Child
+              {t('breeding.byChild')}
             </button>
             <button
               onClick={() => setSearchMode('parent')}
@@ -197,20 +204,42 @@ export default function Home({ appState }: HomeProps) {
                 backgroundColor: searchMode === 'parent' ? 'var(--bg-hover)' : 'transparent',
                 color: searchMode === 'parent' ? 'var(--text-primary)' : 'var(--text-muted)',
               }}
-              title="Search by parent: find all partners and results"
+              title={t('breeding.selectPalDescParent')}
             >
               <Users size={16} />
-              By Parent
+              {t('breeding.byParent')}
+            </button>
+            <button
+              onClick={() => setSearchMode('tree')}
+              className="flex items-center gap-1.5 px-2.5 transition-all duration-150 text-[12px] font-medium"
+              style={{
+                height: 34,
+                backgroundColor: searchMode === 'tree' ? 'var(--bg-hover)' : 'transparent',
+                color: searchMode === 'tree' ? 'var(--text-primary)' : 'var(--text-muted)',
+              }}
+              title={t('breeding.tree.clickToChange')}
+            >
+              <GitBranch size={16} />
+              {t('breeding.tree.mode')}
             </button>
           </div>
 
           {selectedPal && (
-            <div className="flex items-center gap-2">
+            <div
+              className="flex items-center gap-2"
+              style={{
+                opacity: searchMode === 'tree' ? 0.35 : 1,
+                pointerEvents: searchMode === 'tree' ? 'none' : 'auto',
+                transition: 'opacity 150ms',
+              }}
+              aria-hidden={searchMode === 'tree'}
+            >
             {/* Sort Dropdown */}
             <div className="relative">
               <select
                 value={sortOption}
                 onChange={(e) => setSortOption(e.target.value as SortOption)}
+                disabled={searchMode === 'tree'}
                 className="appearance-none cursor-pointer text-[13px] font-medium pr-8 pl-3 transition-all duration-150 outline-none"
                 style={{
                   height: 34,
@@ -220,10 +249,10 @@ export default function Home({ appState }: HomeProps) {
                   color: 'var(--text-primary)',
                 }}
               >
-                <option value="power-asc">BP: Low to High</option>
-                <option value="power-desc">BP: High to Low</option>
-                <option value="alphabetical">Alphabetical</option>
-                <option value="element">By Element</option>
+                <option value="power-asc">{t('breeding.bpLowToHigh')}</option>
+                <option value="power-desc">{t('breeding.bpHighToLow')}</option>
+                <option value="alphabetical">{t('breeding.alphabetical')}</option>
+                <option value="element">{t('breeding.byElement')}</option>
               </select>
               <ChevronDown
                 size={14}
@@ -267,7 +296,7 @@ export default function Home({ appState }: HomeProps) {
       {/* Content */}
       <AnimatePresence mode="wait">
         {!selectedPal ? (
-          <EmptyState key="empty" mode={searchMode} />
+          <EmptyState key="empty" mode={searchMode === 'parent' ? 'parent' : 'child'} />
         ) : (
           <motion.div
             key={`${selectedPal.id}-${searchMode}`}
@@ -280,10 +309,14 @@ export default function Home({ appState }: HomeProps) {
               pal={selectedPal}
               combinationCount={filteredCombinations.length}
               onChangePal={() => selectPal(null)}
-              label={searchMode === 'parent' ? 'Selected Parent' : 'Target Pal'}
-              countLabel={searchMode === 'parent' ? 'Partners' : 'Combinations'}
+              label={searchMode === 'parent' ? t('breeding.selectedParent') : t('breeding.targetPal')}
+              countLabel={searchMode === 'parent' ? t('breeding.partners') : t('breeding.combinations')}
             />
 
+            {searchMode === 'tree' ? (
+              <BreedingTreeView key={selectedPal.id} targetPal={selectedPal} appState={appState} />
+            ) : (
+              <>
             {/* Summary Bar */}
             <div
               className="flex items-center justify-between"
@@ -296,10 +329,9 @@ export default function Home({ appState }: HomeProps) {
                 className="text-[13px] font-medium"
                 style={{ color: 'var(--text-secondary)' }}
               >
-                {filteredCombinations.length}{' '}
                 {searchMode === 'parent'
-                  ? 'possible partners found'
-                  : 'possible combinations found'}
+                  ? t('breeding.possiblePartnersFound', { count: filteredCombinations.length })
+                  : t('breeding.possibleCombinationsFound', { count: filteredCombinations.length })}
               </span>
               <div className="flex items-center gap-2">
                 {/* Improvement 2: Parent Filter */}
@@ -343,7 +375,7 @@ export default function Home({ appState }: HomeProps) {
                         border: '1px solid var(--border-subtle)',
                       }}
                     >
-                      Filter by Parent
+                      {t('breeding.filterByParent')}
                     </button>
                   )}
                 </div>
@@ -372,10 +404,10 @@ export default function Home({ appState }: HomeProps) {
                       }}
                     >
                       {opt === 'power-asc'
-                        ? 'Easiest'
+                        ? t('breeding.easiest')
                         : opt === 'power-desc'
-                          ? 'Hardest'
-                          : 'By Element'}
+                          ? t('breeding.hardest')
+                          : t('breeding.byElement')}
                     </button>
                   ),
                 )}
@@ -415,10 +447,12 @@ export default function Home({ appState }: HomeProps) {
               >
                 <p className="text-[14px]">
                   {searchMode === 'parent'
-                    ? 'No partners found for this Pal.'
-                    : 'No breeding combinations found for this Pal.'}
+                    ? t('breeding.noPartnersFound')
+                    : t('breeding.noCombinationsFound')}
                 </p>
               </div>
+            )}
+              </>
             )}
           </motion.div>
         )}

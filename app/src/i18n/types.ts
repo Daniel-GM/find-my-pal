@@ -111,6 +111,30 @@ export type TranslationKey =
   | 'breeding.createAndSave'
   | 'breeding.noCombinationsFound'
   | 'breeding.combinationCount'
+  | 'breeding.byChild'
+  | 'breeding.byParent'
+  | 'breeding.easiest'
+  | 'breeding.hardest'
+  | 'breeding.partners'
+  | 'breeding.possiblePartnersFound'
+  | 'breeding.selectPalDescParent'
+  | 'breeding.noPartnersFound'
+  | 'breeding.selectedParent'
+
+  // Breeding Tree (recursive view)
+  | 'breeding.tree.mode'
+  | 'breeding.tree.depth'
+  | 'breeding.tree.saveTree'
+  | 'breeding.tree.steps'
+  | 'breeding.tree.changeParents'
+  | 'breeding.tree.expand'
+  | 'breeding.tree.cycle'
+  | 'breeding.tree.basePal'
+  | 'breeding.tree.empty'
+  | 'breeding.tree.pickCombination'
+  | 'breeding.tree.summary'
+  | 'breeding.tree.clickToChange'
+  | 'breeding.tree.defaultPackageName'
 
   // Packages
   | 'packages.title'
@@ -142,6 +166,7 @@ export type TranslationKey =
   | 'packages.completedFilter'
   | 'packages.reorderMode'
   | 'packages.doneReordering'
+  | 'packages.viewTree'
 
   // Team Builder
   | 'team.title'

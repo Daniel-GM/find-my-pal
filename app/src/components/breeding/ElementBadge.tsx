@@ -1,5 +1,7 @@
 import { getElementColor, getElementBg } from '@/lib/elements';
 import { getElementIconUrl } from '@/lib/images';
+import { useTranslation } from '@/i18n';
+import type { TranslationKey } from '@/i18n/types';
 import type { PalElement } from '@/data/pals';
 
 interface ElementBadgeProps {
@@ -7,6 +9,7 @@ interface ElementBadgeProps {
 }
 
 export function ElementBadge({ element }: ElementBadgeProps) {
+  const { t } = useTranslation();
   return (
     <span
       className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.04em]"
@@ -15,6 +18,7 @@ export function ElementBadge({ element }: ElementBadgeProps) {
         borderRadius: 9999,
         backgroundColor: getElementBg(element),
         color: getElementColor(element),
+        whiteSpace: 'nowrap',
       }}
     >
       <img
@@ -26,7 +30,7 @@ export function ElementBadge({ element }: ElementBadgeProps) {
           (e.target as HTMLImageElement).style.display = 'none';
         }}
       />
-      {element}
+      {t(`element.${element}` as TranslationKey)}
     </span>
   );
 }

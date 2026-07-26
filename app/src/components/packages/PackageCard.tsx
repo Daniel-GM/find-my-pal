@@ -1,4 +1,4 @@
-import { Package, Calendar, Trash2, Pencil } from 'lucide-react';
+import { Package, Calendar, Trash2, Pencil, GitBranch } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n';
 import { PALS } from '@/data/pals';
@@ -10,6 +10,7 @@ interface PackageCardProps {
   onDelete: (id: string) => void;
   onClick: () => void;
   onEdit: (pkg: PkgType) => void;
+  onViewTree?: (pkg: PkgType) => void;
 }
 
 function getBabyFromCombinationId(comboId: string) {
@@ -24,6 +25,7 @@ export default function PackageCard({
   onDelete,
   onClick,
   onEdit,
+  onViewTree,
 }: PackageCardProps) {
   const { t } = useTranslation();
   const completedCount = pkg.completedCombinationIds.length;
@@ -81,6 +83,21 @@ export default function PackageCard({
           </div>
         </div>
         <span onClick={(e) => e.stopPropagation()} className="flex items-center gap-1">
+          {pkg.treeTargetPalId && onViewTree && (
+            <button
+              onClick={() => onViewTree(pkg)}
+              className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110"
+              style={{
+                width: 32,
+                height: 32,
+                backgroundColor: 'var(--accent-violet)',
+                color: '#FFFFFF',
+              }}
+              title={t('packages.viewTree')}
+            >
+              <GitBranch size={14} />
+            </button>
+          )}
           <button
             onClick={() => onEdit(pkg)}
             className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110"

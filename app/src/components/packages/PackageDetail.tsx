@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Package, X, Check, ChevronUp, ChevronDown, Pencil } from 'lucide-react';
+import { Package, X, Check, ChevronUp, ChevronDown, Pencil, GitBranch } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/i18n';
 import { PALS } from '@/data/pals';
@@ -38,6 +38,14 @@ export default function PackageDetail({
   const [isEditing, setIsEditing] = useState(false);
   const [editName, setEditName] = useState(pkg.name);
   const [editDesc, setEditDesc] = useState(pkg.description || '');
+
+  const handleViewTree = () => {
+    if (!pkg.treeTargetPalId) return;
+    appState.setSearchMode('tree');
+    appState.selectPal(pkg.treeTargetPalId);
+    appState.setView('breeding');
+    onClose();
+  };
 
   return (
     <motion.div
@@ -143,6 +151,22 @@ export default function PackageDetail({
                   >
                     <Pencil size={13} />
                   </button>
+                  {pkg.treeTargetPalId && (
+                    <button
+                      onClick={handleViewTree}
+                      className="flex items-center gap-1.5 rounded transition-all duration-150 hover:scale-105 text-[12px] font-medium"
+                      style={{
+                        height: 28,
+                        padding: '0 10px',
+                        backgroundColor: 'var(--accent-violet)',
+                        color: '#FFFFFF',
+                      }}
+                      title={t('packages.viewTree')}
+                    >
+                      <GitBranch size={13} />
+                      {t('packages.viewTree')}
+                    </button>
+                  )}
                 </div>
                 {pkg.description && (
                   <p className="text-[13px] mt-1" style={{ color: 'var(--text-secondary)' }}>

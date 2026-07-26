@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 
 export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting';
 
+export type SearchMode = 'child' | 'parent' | 'tree';
+
 export interface Package {
   id: string;
   name: string;
@@ -10,6 +12,8 @@ export interface Package {
   updatedAt: string;
   combinationIds: string[];
   completedCombinationIds: string[];
+  /** Set when the package was created from a breeding tree — enables "View Tree" */
+  treeTargetPalId?: string;
 }
 
 export interface TeamSlot {
@@ -58,6 +62,7 @@ interface PersistedState {
   theme: 'dark' | 'light';
   lastSelectedPalId: string | null;
   currentView: View;
+  breedingSearchMode: SearchMode;
 }
 
 const STORAGE_KEY = 'palworld-breeding-manager';
@@ -75,6 +80,12 @@ const VALID_VIEWS: View[] = [
 
 function isValidView(value: unknown): value is View {
   return typeof value === 'string' && (VALID_VIEWS as string[]).includes(value);
+}
+
+const VALID_SEARCH_MODES: SearchMode[] = ['child', 'parent', 'tree'];
+
+function isValidSearchMode(value: unknown): value is SearchMode {
+  return typeof value === 'string' && (VALID_SEARCH_MODES as string[]).includes(value);
 }
 
 function loadState(): PersistedState {
@@ -105,6 +116,9 @@ function loadState(): PersistedState {
         theme: parsed.theme || 'dark',
         lastSelectedPalId: parsed.lastSelectedPalId || null,
         currentView: isValidView(parsed.currentView) ? parsed.currentView : 'breeding',
+        breedingSearchMode: isValidSearchMode(parsed.breedingSearchMode)
+          ? parsed.breedingSearchMode
+          : 'child',
       };
     }
   } catch {
@@ -117,6 +131,7 @@ function loadState(): PersistedState {
     theme: 'dark',
     lastSelectedPalId: null,
     currentView: 'breeding',
+    breedingSearchMode: 'child',
   };
 }
 
@@ -135,9 +150,11 @@ export interface AppState {
   teams: Team[];
   activeTeamId: string | null;
   theme: 'dark' | 'light';
+  searchMode: SearchMode;
 
   setView: (view: View) => void;
   selectPal: (palId: string | null) => void;
+  setSearchMode: (mode: SearchMode) => void;
   toggleTheme: () => void;
   addPackage: (pkg: Omit<Package, 'id' | 'createdAt' | 'updatedAt' | 'completedCombinationIds'>) => string;
   deletePackage: (id: string) => void;
@@ -186,6 +203,10 @@ export function useAppState(): AppState {
 
   const selectPal = useCallback((palId: string | null) => {
     setState((s) => ({ ...s, lastSelectedPalId: palId }));
+  }, []);
+
+  const setSearchMode = useCallback((mode: SearchMode) => {
+    setState((s) => ({ ...s, breedingSearchMode: mode }));
   }, []);
 
   const toggleTheme = useCallback(() => {
@@ -490,8 +511,10 @@ export function useAppState(): AppState {
     teams: state.teams,
     activeTeamId: state.activeTeamId,
     theme: state.theme,
+    searchMode: state.breedingSearchMode,
     setView,
     selectPal,
+    setSearchMode,
     toggleTheme,
     addPackage,
     deletePackage,

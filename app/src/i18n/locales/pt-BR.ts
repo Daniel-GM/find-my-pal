@@ -110,6 +110,30 @@ export const ptBR: Translations = {
   'breeding.createAndSave': 'Criar e Salvar',
   'breeding.noCombinationsFound': 'Nenhuma combinação de reprodução encontrada para este Pal.',
   'breeding.combinationCount': '{count} combinações de pais possíveis',
+  'breeding.byChild': 'Por Filho',
+  'breeding.byParent': 'Por Pai',
+  'breeding.easiest': 'Mais Fácil',
+  'breeding.hardest': 'Mais Difícil',
+  'breeding.partners': 'Parceiros',
+  'breeding.possiblePartnersFound': '{count} parceiros possíveis encontrados',
+  'breeding.selectPalDescParent': 'Escolha um Pal na barra lateral para ver todos os parceiros possíveis e seus resultados de cria.',
+  'breeding.noPartnersFound': 'Nenhum parceiro encontrado para este Pal.',
+  'breeding.selectedParent': 'Pai Selecionado',
+
+  // Breeding Tree (recursive view)
+  'breeding.tree.mode': 'Árvore',
+  'breeding.tree.depth': 'Profundidade',
+  'breeding.tree.saveTree': 'Salvar Árvore',
+  'breeding.tree.steps': '{count} passos de cria',
+  'breeding.tree.changeParents': 'Trocar pais',
+  'breeding.tree.expand': 'Expandir',
+  'breeding.tree.cycle': 'Ciclo',
+  'breeding.tree.basePal': 'Pal base',
+  'breeding.tree.empty': 'Este Pal não pode ser obtido por cria.',
+  'breeding.tree.pickCombination': 'Escolher combinação para {pal}',
+  'breeding.tree.summary': 'Árvore: {count} combinações até {pal}',
+  'breeding.tree.clickToChange': 'Clique em um pal para trocar os pais',
+  'breeding.tree.defaultPackageName': 'Árvore: {pal}',
 
   // Packages
   'packages.title': 'Pacotes de Cria',
@@ -141,7 +165,9 @@ export const ptBR: Translations = {
   'packages.completedFilter': 'Filtro',
   'packages.reorderMode': 'Reordenar',
   'packages.doneReordering': 'Pronto',
+  'packages.viewTree': 'Ver Árvore',
 
+  // Completed
   // Team Builder
   'team.title': 'Montar Time',
   'team.subtitle': 'Monte seu time de 5 pals com passivas e estrelas, e equipe seu personagem.',

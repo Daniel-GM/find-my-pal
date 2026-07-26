@@ -8,6 +8,7 @@ import {
   InlinePackageEditor,
 } from '@/components/packages';
 import type { AppState } from '@/hooks/useAppState';
+import type { Package as PkgType } from '@/hooks/useAppState';
 
 interface PackagesProps {
   appState: AppState;
@@ -33,6 +34,13 @@ export default function Packages({ appState }: PackagesProps) {
     setName('');
     setDesc('');
     setShowCreate(false);
+  };
+
+  const handleViewTree = (pkg: PkgType) => {
+    if (!pkg.treeTargetPalId) return;
+    appState.setSearchMode('tree');
+    appState.selectPal(pkg.treeTargetPalId);
+    appState.setView('breeding');
   };
 
   return (
@@ -212,6 +220,7 @@ export default function Packages({ appState }: PackagesProps) {
                     onDelete={deletePackage}
                     onClick={() => setViewingPackageId(pkg.id)}
                     onEdit={() => setEditingPackageId(pkg.id)}
+                    onViewTree={handleViewTree}
                   />
                 )
               ))}

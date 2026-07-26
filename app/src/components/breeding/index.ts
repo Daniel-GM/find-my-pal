@@ -6,3 +6,5 @@ export { TargetPalBanner } from './TargetPalBanner';
 export { CombinationCard } from './CombinationCard';
 export { SaveDialog } from './SaveDialog';
 export { ParentFilterDialog } from './ParentFilterDialog';
+export { BreedingTreeView } from './tree/BreedingTreeView';
+export { ComboPickerDialog } from './tree/ComboPickerDialog';

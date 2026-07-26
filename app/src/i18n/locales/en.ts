@@ -110,6 +110,30 @@ export const en: Translations = {
   'breeding.createAndSave': 'Create & Save',
   'breeding.noCombinationsFound': 'No breeding combinations found for this Pal.',
   'breeding.combinationCount': '{count} possible parent combinations',
+  'breeding.byChild': 'By Child',
+  'breeding.byParent': 'By Parent',
+  'breeding.easiest': 'Easiest',
+  'breeding.hardest': 'Hardest',
+  'breeding.partners': 'Partners',
+  'breeding.possiblePartnersFound': '{count} possible partners found',
+  'breeding.selectPalDescParent': 'Choose a Pal from the sidebar to see all possible partners and their breeding results.',
+  'breeding.noPartnersFound': 'No partners found for this Pal.',
+  'breeding.selectedParent': 'Selected Parent',
+
+  // Breeding Tree (recursive view)
+  'breeding.tree.mode': 'Tree',
+  'breeding.tree.depth': 'Depth',
+  'breeding.tree.saveTree': 'Save Tree',
+  'breeding.tree.steps': '{count} breeding steps',
+  'breeding.tree.changeParents': 'Change parents',
+  'breeding.tree.expand': 'Expand',
+  'breeding.tree.cycle': 'Cycle',
+  'breeding.tree.basePal': 'Base pal',
+  'breeding.tree.empty': 'This Pal cannot be obtained through breeding.',
+  'breeding.tree.pickCombination': 'Choose combination for {pal}',
+  'breeding.tree.summary': 'Tree: {count} combinations to {pal}',
+  'breeding.tree.clickToChange': 'Click a pal to change its parents',
+  'breeding.tree.defaultPackageName': 'Tree: {pal}',
 
   // Packages
   'packages.title': 'Breeding Packages',
@@ -141,7 +165,9 @@ export const en: Translations = {
   'packages.completedFilter': 'Filter',
   'packages.reorderMode': 'Reorder',
   'packages.doneReordering': 'Done',
+  'packages.viewTree': 'View Tree',
 
+  // Completed
   // Team Builder
   'team.title': 'Team Builder',
   'team.subtitle': 'Build your 5-pal team with passives and stars, and gear up your character.',
