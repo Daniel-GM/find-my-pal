@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import type { BreedingCombination } from '@/lib/breeding';
 
-export type View = 'breeding' | 'packages' | 'completed' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting';
+export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting';
 
 export interface Package {
   id: string;
@@ -13,17 +12,49 @@ export interface Package {
   completedCombinationIds: string[];
 }
 
-export interface CompletedEntry {
-  combinationId: string;
-  parentAId: string;
-  parentBId: string;
-  babyId: string;
-  completedAt: string;
+export interface TeamSlot {
+  palId: string | null;
+  passiveIds: string[];
+  /** Pal condensation level, 0-4 */
+  stars: number;
+}
+
+export interface PlayerGear {
+  armorId: string | null;
+  helmetId: string | null;
+  accessoryIds: string[];
+  weaponIds: string[];
+  foodIds: string[];
+}
+
+export interface Team {
+  id: string;
+  name: string;
+  createdAt: string;
+  updatedAt: string;
+  /** Always 5 slots */
+  slots: TeamSlot[];
+  player: PlayerGear;
+}
+
+export const TEAM_SIZE = 5;
+export const MAX_SLOT_PASSIVES = 4;
+export const MAX_PLAYER_ACCESSORIES = 4;
+export const MAX_PLAYER_WEAPONS = 6;
+export const MAX_PLAYER_FOODS = 3;
+
+function emptySlot(): TeamSlot {
+  return { palId: null, passiveIds: [], stars: 0 };
+}
+
+function emptyPlayerGear(): PlayerGear {
+  return { armorId: null, helmetId: null, accessoryIds: [], weaponIds: [], foodIds: [] };
 }
 
 interface PersistedState {
   packages: Package[];
-  completed: CompletedEntry[];
+  teams: Team[];
+  activeTeamId: string | null;
   theme: 'dark' | 'light';
   lastSelectedPalId: string | null;
   currentView: View;
@@ -34,7 +65,7 @@ const STORAGE_KEY = 'palworld-breeding-manager';
 const VALID_VIEWS: View[] = [
   'breeding',
   'packages',
-  'completed',
+  'team',
   'mounts',
   'pals',
   'bossdrops',
@@ -56,7 +87,21 @@ function loadState(): PersistedState {
           ...p,
           completedCombinationIds: p.completedCombinationIds || [],
         })),
-        completed: parsed.completed || [],
+        teams: (parsed.teams || []).map((t: Team) => {
+          // migrate legacy player gear shape ({ weaponId } -> { weaponIds }, + helmetId)
+          const legacy = (t.player || {}) as PlayerGear & { weaponId?: string | null };
+          return {
+            ...t,
+            player: {
+              armorId: legacy.armorId ?? null,
+              helmetId: legacy.helmetId ?? null,
+              accessoryIds: legacy.accessoryIds ?? [],
+              weaponIds: legacy.weaponIds ?? (legacy.weaponId ? [legacy.weaponId] : []),
+              foodIds: legacy.foodIds ?? [],
+            },
+          };
+        }),
+        activeTeamId: parsed.activeTeamId || null,
         theme: parsed.theme || 'dark',
         lastSelectedPalId: parsed.lastSelectedPalId || null,
         currentView: isValidView(parsed.currentView) ? parsed.currentView : 'breeding',
@@ -67,7 +112,8 @@ function loadState(): PersistedState {
   }
   return {
     packages: [],
-    completed: [],
+    teams: [],
+    activeTeamId: null,
     theme: 'dark',
     lastSelectedPalId: null,
     currentView: 'breeding',
@@ -86,7 +132,8 @@ export interface AppState {
   currentView: View;
   selectedPalId: string | null;
   packages: Package[];
-  completed: CompletedEntry[];
+  teams: Team[];
+  activeTeamId: string | null;
   theme: 'dark' | 'light';
 
   setView: (view: View) => void;
@@ -96,14 +143,22 @@ export interface AppState {
   deletePackage: (id: string) => void;
   addToPackage: (packageId: string, combinationId: string) => void;
   removeFromPackage: (packageId: string, combinationId: string) => void;
-  markCompleted: (combination: BreedingCombination) => void;
-  unmarkCompleted: (combinationId: string) => void;
-  isCompleted: (combinationId: string) => boolean;
   isInPackage: (combinationId: string) => boolean;
   toggleCompleteInPackage: (packageId: string, combinationId: string) => void;
   moveCombinationUp: (packageId: string, combinationId: string) => void;
   moveCombinationDown: (packageId: string, combinationId: string) => void;
   editPackage: (id: string, name: string, description?: string) => void;
+  addTeam: (name: string) => string;
+  deleteTeam: (id: string) => void;
+  renameTeam: (id: string, name: string) => void;
+  setActiveTeam: (id: string) => void;
+  setSlotPal: (teamId: string, slotIndex: number, palId: string | null) => void;
+  setSlotStars: (teamId: string, slotIndex: number, stars: number) => void;
+  toggleSlotPassive: (teamId: string, slotIndex: number, passiveId: string) => void;
+  setPlayerGearItem: (teamId: string, slot: 'armorId' | 'helmetId', gearId: string | null) => void;
+  togglePlayerWeapon: (teamId: string, gearId: string) => void;
+  togglePlayerAccessory: (teamId: string, gearId: string) => void;
+  togglePlayerFood: (teamId: string, gearId: string) => void;
 }
 
 export function useAppState(): AppState {
@@ -198,32 +253,169 @@ export function useAppState(): AppState {
     [],
   );
 
-  const markCompleted = useCallback((combination: BreedingCombination) => {
-    const entry: CompletedEntry = {
-      combinationId: combination.id,
-      parentAId: combination.parentA.id,
-      parentBId: combination.parentB.id,
-      babyId: combination.baby.id,
-      completedAt: new Date().toISOString(),
-    };
+  const addTeam = useCallback((name: string): string => {
+    const id = `team-${Date.now()}-${crypto.randomUUID()}`;
+    const now = new Date().toISOString();
     setState((s) => ({
       ...s,
-      completed: [...s.completed, entry],
+      teams: [
+        ...s.teams,
+        {
+          id,
+          name,
+          createdAt: now,
+          updatedAt: now,
+          slots: Array.from({ length: TEAM_SIZE }, emptySlot),
+          player: emptyPlayerGear(),
+        },
+      ],
+      activeTeamId: id,
+    }));
+    return id;
+  }, []);
+
+  const deleteTeam = useCallback((id: string) => {
+    setState((s) => {
+      const teams = s.teams.filter((t) => t.id !== id);
+      return {
+        ...s,
+        teams,
+        activeTeamId:
+          s.activeTeamId === id ? (teams[0]?.id ?? null) : s.activeTeamId,
+      };
+    });
+  }, []);
+
+  const renameTeam = useCallback((id: string, name: string) => {
+    setState((s) => ({
+      ...s,
+      teams: s.teams.map((t) =>
+        t.id === id ? { ...t, name, updatedAt: new Date().toISOString() } : t,
+      ),
     }));
   }, []);
 
-  const unmarkCompleted = useCallback((combinationId: string) => {
-    setState((s) => ({
-      ...s,
-      completed: s.completed.filter((c) => c.combinationId !== combinationId),
-    }));
+  const setActiveTeam = useCallback((id: string) => {
+    setState((s) => ({ ...s, activeTeamId: id }));
   }, []);
 
-  const isCompleted = useCallback(
-    (combinationId: string) => {
-      return state.completed.some((c) => c.combinationId === combinationId);
+  const updateTeam = useCallback(
+    (teamId: string, updater: (team: Team) => Team) => {
+      setState((s) => ({
+        ...s,
+        teams: s.teams.map((t) =>
+          t.id === teamId
+            ? { ...updater(t), updatedAt: new Date().toISOString() }
+            : t,
+        ),
+      }));
     },
-    [state.completed],
+    [],
+  );
+
+  const setSlotPal = useCallback(
+    (teamId: string, slotIndex: number, palId: string | null) => {
+      updateTeam(teamId, (t) => ({
+        ...t,
+        slots: t.slots.map((slot, i) =>
+          i === slotIndex
+            ? palId
+              ? { ...slot, palId }
+              : emptySlot()
+            : slot,
+        ),
+      }));
+    },
+    [updateTeam],
+  );
+
+  const setSlotStars = useCallback(
+    (teamId: string, slotIndex: number, stars: number) => {
+      updateTeam(teamId, (t) => ({
+        ...t,
+        slots: t.slots.map((slot, i) =>
+          i === slotIndex
+            ? { ...slot, stars: Math.max(0, Math.min(4, stars)) }
+            : slot,
+        ),
+      }));
+    },
+    [updateTeam],
+  );
+
+  const toggleSlotPassive = useCallback(
+    (teamId: string, slotIndex: number, passiveId: string) => {
+      updateTeam(teamId, (t) => ({
+        ...t,
+        slots: t.slots.map((slot, i) => {
+          if (i !== slotIndex) return slot;
+          if (slot.passiveIds.includes(passiveId)) {
+            return {
+              ...slot,
+              passiveIds: slot.passiveIds.filter((id) => id !== passiveId),
+            };
+          }
+          if (slot.passiveIds.length >= MAX_SLOT_PASSIVES) return slot;
+          return { ...slot, passiveIds: [...slot.passiveIds, passiveId] };
+        }),
+      }));
+    },
+    [updateTeam],
+  );
+
+  const setPlayerGearItem = useCallback(
+    (teamId: string, slot: 'armorId' | 'helmetId', gearId: string | null) => {
+      updateTeam(teamId, (t) => ({
+        ...t,
+        player: { ...t.player, [slot]: gearId },
+      }));
+    },
+    [updateTeam],
+  );
+
+  const togglePlayerWeapon = useCallback(
+    (teamId: string, gearId: string) => {
+      updateTeam(teamId, (t) => {
+        const current = t.player.weaponIds;
+        const weaponIds = current.includes(gearId)
+          ? current.filter((id) => id !== gearId)
+          : current.length >= MAX_PLAYER_WEAPONS
+            ? current
+            : [...current, gearId];
+        return { ...t, player: { ...t.player, weaponIds } };
+      });
+    },
+    [updateTeam],
+  );
+
+  const togglePlayerAccessory = useCallback(
+    (teamId: string, gearId: string) => {
+      updateTeam(teamId, (t) => {
+        const current = t.player.accessoryIds;
+        const accessoryIds = current.includes(gearId)
+          ? current.filter((id) => id !== gearId)
+          : current.length >= MAX_PLAYER_ACCESSORIES
+            ? current
+            : [...current, gearId];
+        return { ...t, player: { ...t.player, accessoryIds } };
+      });
+    },
+    [updateTeam],
+  );
+
+  const togglePlayerFood = useCallback(
+    (teamId: string, gearId: string) => {
+      updateTeam(teamId, (t) => {
+        const current = t.player.foodIds;
+        const foodIds = current.includes(gearId)
+          ? current.filter((id) => id !== gearId)
+          : current.length >= MAX_PLAYER_FOODS
+            ? current
+            : [...current, gearId];
+        return { ...t, player: { ...t.player, foodIds } };
+      });
+    },
+    [updateTeam],
   );
 
   const isInPackage = useCallback(
@@ -295,7 +487,8 @@ export function useAppState(): AppState {
     currentView: state.currentView,
     selectedPalId: state.lastSelectedPalId,
     packages: state.packages,
-    completed: state.completed,
+    teams: state.teams,
+    activeTeamId: state.activeTeamId,
     theme: state.theme,
     setView,
     selectPal,
@@ -304,13 +497,21 @@ export function useAppState(): AppState {
     deletePackage,
     addToPackage,
     removeFromPackage,
-    markCompleted,
-    unmarkCompleted,
-    isCompleted,
     isInPackage,
     toggleCompleteInPackage,
     moveCombinationUp,
     moveCombinationDown,
     editPackage,
+    addTeam,
+    deleteTeam,
+    renameTeam,
+    setActiveTeam,
+    setSlotPal,
+    setSlotStars,
+    toggleSlotPassive,
+    setPlayerGearItem,
+    togglePlayerWeapon,
+    togglePlayerAccessory,
+    togglePlayerFood,
   };
 }

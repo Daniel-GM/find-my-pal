@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Bookmark, Check } from 'lucide-react';
+import { Bookmark } from 'lucide-react';
 import type { PalElement } from '@/data/pals';
 import type { BreedingCombination } from '@/lib/breeding';
 import { PalIconImg } from './PalIconImg';
@@ -12,9 +12,7 @@ interface CombinationCardProps {
   combo: BreedingCombination;
   index: number;
   isSaved: boolean;
-  isCompleted: boolean;
   onSave: (combo: BreedingCombination) => void;
-  onComplete: (combo: BreedingCombination) => void;
   showResult?: boolean;
 }
 
@@ -22,9 +20,7 @@ export function CombinationCard({
   combo,
   index,
   isSaved,
-  isCompleted,
   onSave,
-  onComplete,
   showResult = false,
 }: CombinationCardProps) {
   const leftPal = showResult ? combo.parentB : combo.parentA;
@@ -78,24 +74,6 @@ export function CombinationCard({
             size={14}
             color={isSaved ? '#FFFFFF' : 'var(--text-secondary)'}
             fill={isSaved ? '#FFFFFF' : 'none'}
-          />
-        </motion.button>
-        <motion.button
-          whileTap={{ scale: 1.2 }}
-          onClick={() => onComplete(combo)}
-          className="flex items-center justify-center rounded-full transition-all duration-150"
-          style={{
-            width: 30,
-            height: 30,
-            backgroundColor: isCompleted
-              ? 'var(--accent-emerald)'
-              : 'var(--bg-hover)',
-          }}
-          title="Mark as completed"
-        >
-          <Check
-            size={14}
-            color={isCompleted ? '#FFFFFF' : 'var(--text-secondary)'}
           />
         </motion.button>
       </div>

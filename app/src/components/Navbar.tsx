@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   GitBranch,
   Package,
-  CheckCircle2,
+  Swords,
   TrendingUp,
   Users,
   Crown,
@@ -74,7 +74,7 @@ function useNavItems(): { view: View; labelKey: string; icon: typeof GitBranch }
   return [
     { view: 'breeding', labelKey: t('nav.breeding'), icon: GitBranch },
     { view: 'packages', labelKey: t('nav.packages'), icon: Package },
-    { view: 'completed', labelKey: t('nav.completed'), icon: CheckCircle2 },
+    { view: 'team', labelKey: t('nav.team'), icon: Swords },
     { view: 'mounts', labelKey: t('nav.mounts'), icon: TrendingUp },
     { view: 'pals', labelKey: t('nav.pals'), icon: Users },
     { view: 'bossdrops', labelKey: t('nav.bossDrops'), icon: Crown },

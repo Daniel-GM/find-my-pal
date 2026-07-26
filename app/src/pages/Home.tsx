@@ -32,9 +32,7 @@ export default function Home({ appState }: HomeProps) {
   const {
     selectedPalId,
     selectPal,
-    isCompleted,
     isInPackage,
-    markCompleted,
     addToPackage,
     addPackage,
   } = appState;
@@ -91,15 +89,6 @@ export default function Home({ appState }: HomeProps) {
       }
     },
     [appState.packages.length],
-  );
-
-  const handleComplete = useCallback(
-    (combo: BreedingCombination) => {
-      if (!isCompleted(combo.id)) {
-        markCompleted(combo);
-      }
-    },
-    [isCompleted, markCompleted],
   );
 
   const handleCreateAndSave = useCallback(() => {
@@ -412,9 +401,7 @@ export default function Home({ appState }: HomeProps) {
                     combo={combo}
                     index={i}
                     isSaved={isInPackage(combo.id)}
-                    isCompleted={isCompleted(combo.id)}
                     onSave={handleSave}
-                    onComplete={handleComplete}
                     showResult={searchMode === 'parent'}
                   />
                 ))}
