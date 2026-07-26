@@ -9,6 +9,11 @@ export default defineConfig({
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,
+    watch: {
+      // OneDrive-synced folders miss native file events on Windows;
+      // polling keeps HMR reliable here.
+      usePolling: true,
+    },
   },
   resolve: {
     alias: {
