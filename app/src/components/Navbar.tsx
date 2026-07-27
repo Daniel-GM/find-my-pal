@@ -137,10 +137,15 @@ export default function Navbar({ appState }: NavbarProps) {
         style={{ borderBottom: '1px solid var(--border-subtle)' }}
       >
         <div
-          className="flex items-center justify-center w-8 h-8 rounded-lg"
-          style={{ backgroundColor: 'var(--accent-violet)' }}
+          className="flex items-center justify-center w-8 h-8 rounded-lg overflow-hidden"
+          style={{ backgroundColor: 'var(--bg-surface)' }}
         >
-          <GitBranch size={18} color="#FFFFFF" />
+          <img
+            src="/favicon.png"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-contain"
+          />
         </div>
         <h1
           className="text-[18px] font-bold leading-tight tracking-[-0.02em]"
