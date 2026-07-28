@@ -1,10 +1,12 @@
 // Regenerates app/src/data/json/passives.json and app/src/data/json/gear.json
 // from PalDB HTML snapshots. By default reads the local copies in
-// .memory/scratch/; pass --fetch to download fresh copies from paldb.cc first.
+// .memory/scratch/; pass --fetch to download fresh copies from paldb.cc first,
+// or --fetch-images to refresh any missing local gear icons.
 //
-//   node app/scripts/update-team-data.mjs [--fetch]
+//   node app/scripts/update-team-data.mjs [--fetch] [--fetch-images]
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { access, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -13,6 +15,8 @@ const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..
 const SNAPSHOT_DIR = path.join(REPO_ROOT, '.memory', 'scratch');
 const PASSIVES_OUT = path.join(REPO_ROOT, 'app', 'src', 'data', 'json', 'passives.json');
 const GEAR_OUT = path.join(REPO_ROOT, 'app', 'src', 'data', 'json', 'gear.json');
+const GEAR_ASSET_DIR = path.join(REPO_ROOT, 'app', 'public', 'assets', 'gear');
+const GEAR_ASSET_WEB_ROOT = '/assets/gear';
 
 const PASSIVE_PAGE = 'Passive_Skills';
 const GEAR_PAGES = [
@@ -58,6 +62,71 @@ async function fetchText(url, attempts = 3) {
     }
   }
   throw new Error(`Failed to fetch ${url}: ${lastError?.message ?? String(lastError)}`);
+}
+
+async function fetchBytes(url, attempts = 3) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+          referer: `${PALDB_ORIGIN}/`,
+          'user-agent': 'Mozilla/5.0 find-my-pal team data updater/1.0',
+        },
+      });
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      return Buffer.from(await response.arrayBuffer());
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+    }
+  }
+  throw new Error(`Failed to fetch ${url}: ${lastError?.message ?? String(lastError)}`);
+}
+
+function gearIconAsset(remoteUrl) {
+  const parsedUrl = new URL(remoteUrl);
+  const extension = path.extname(parsedUrl.pathname) || '.webp';
+  const basename = path.basename(parsedUrl.pathname, extension)
+    .replace(/[^a-zA-Z0-9_-]+/g, '-')
+    .toLowerCase();
+  const digest = createHash('sha1').update(remoteUrl).digest('hex').slice(0, 10);
+  const filename = `${basename}-${digest}${extension}`;
+  return {
+    filename,
+    filePath: path.join(GEAR_ASSET_DIR, filename),
+    webPath: `${GEAR_ASSET_WEB_ROOT}/${filename}`,
+  };
+}
+
+async function syncGearIcons(remoteUrls, { shouldDownload, log }) {
+  const uniqueUrls = [...new Set(remoteUrls)];
+  await mkdir(GEAR_ASSET_DIR, { recursive: true });
+
+  let downloaded = 0;
+  let alreadyPresent = 0;
+  const queue = [...uniqueUrls];
+  const workers = Array.from({ length: 8 }, async () => {
+    while (queue.length) {
+      const remoteUrl = queue.shift();
+      const asset = gearIconAsset(remoteUrl);
+      try {
+        await access(asset.filePath);
+        alreadyPresent += 1;
+        continue;
+      } catch {
+        // Download below when explicitly requested.
+      }
+      if (!shouldDownload) {
+        throw new Error(`Missing local gear icon ${asset.filePath}; rerun with --fetch-images`);
+      }
+      await writeFile(asset.filePath, await fetchBytes(remoteUrl));
+      downloaded += 1;
+    }
+  });
+  await Promise.all(workers);
+  log(`Gear icons: ${uniqueUrls.length} local assets (${downloaded} downloaded, ${alreadyPresent} already present)`);
 }
 
 async function loadPage(page, locale, { fetch: shouldFetch, log }) {
@@ -114,14 +183,13 @@ const PASSIVE_MARKER = '<div class="col"><div class="border bg-dark">';
 // PalDB shows placeholder junk ("pt-BR_Text" / "en Text") for unlocalized items.
 const PLACEHOLDER_NAME = /(?:^|\b)(?:en|pt-br)_text\b/i;
 
-// PalDB display ranks mostly follow the in-game tier (rank1->1, rank2->2,
-// rank>=3->3, negatives->-1), but Runner is shown as rank3 while its in-game
-// icon is the same 2-arrow tier as Musclehead (paldb rank2). Override per the
-// post-1.0 tier list at https://palworld.fandom.com/wiki/Passive_Skills .
-const PASSIVE_TIER_OVERRIDES = new Map([['runner', 2]]);
-
-// Ground-truth style exceptions to the rank-based derivation below.
-const PASSIVE_STYLE_OVERRIDES = new Map([['swift', 'blue']]);
+// PalDB exposes the rank used by the game's passive arrow image. Runner and
+// Swift are displayed one rank above their in-game arrow, so keep these two
+// verified exceptions explicit.
+const PASSIVE_RANK_OVERRIDES = new Map([
+  ['runner', 2],
+  ['swift', 3],
+]);
 
 // The PT passive page has a different card structure than EN (no item links,
 // no locale-independent id), and the card order differs between locales, so PT
@@ -191,13 +259,29 @@ function passiveSignatureLines(inner) {
 }
 
 export function parsePassivePage(html) {
+  // The document also embeds the 298-entry generic "Passive Skills" tab, which
+  // contains armor, accessory and internal stat modifiers. Team building must
+  // only import the selected "Pal Passive Skills /114" tab.
+  const activeTab = /<div id="[^"]+" class="tab-pane fade show active">/i.exec(html);
+  if (!activeTab) {
+    throw new Error('Pal Passive Skills section not found in PalDB page');
+  }
+  const sectionStart = activeTab.index;
+  const nextTab = /<div id="[^"]+" class="tab-pane fade">/i.exec(
+    html.slice(sectionStart + activeTab[0].length),
+  );
+  if (!nextTab) {
+    throw new Error('End of Pal Passive Skills section not found in PalDB page');
+  }
+  const sectionEnd = sectionStart + activeTab[0].length + nextTab.index;
+  const section = html.slice(sectionStart, sectionEnd);
   const passives = [];
-  for (const chunk of html.split(PASSIVE_MARKER).slice(1)) {
+  for (const chunk of section.split(PASSIVE_MARKER).slice(1)) {
     const nameMatch = chunk.match(/<div class="passive-rank(-?\d+) ps-2 py-1">([\s\S]*?)<\/div>/i);
     if (!nameMatch) continue;
     const rank = Number(nameMatch[1]);
     const name = textContent(nameMatch[2]);
-    const tier = PASSIVE_TIER_OVERRIDES.get(snakeCase(name)) ?? (rank < 0 ? -1 : Math.min(rank, 3));
+    const tier = PASSIVE_RANK_OVERRIDES.get(snakeCase(name)) ?? rank;
     const bodyMatch = chunk.match(/<div class="p-2"(?: style="position: relative")?>/i);
     let effect = '';
     let signatureLines = [];
@@ -209,25 +293,11 @@ export function parsePassivePage(html) {
         signatureLines = passiveSignatureLines(effectDiv);
       }
     }
-    // Effect target badges live in the arrow tooltip (stat lines) and, for the
-    // markup effect variant, inline in the effect block.
-    const tooltipMatch = chunk.match(/data-bs-title="([\s\S]*?)"\s*\/>/i);
-    const badgeSource = `${tooltipMatch ? decodeHtml(tooltipMatch[1]) : ''} ${effectDiv ?? ''}`;
-    const targets = new Set([...badgeSource.matchAll(/\((To[A-Za-z]+|None)\)/g)].map((badge) => badge[1]));
-    // Chip coloring like the game: negatives gray, paldb rank4/5 specials
-    // rainbow, player/party buffs (ToTrainer) gold, everything else blue.
-    // rank4/5 cards never carry ToTrainer badges, so the order is safe.
-    // Swift is banner rank4 on paldb but is a regular gold-chevron passive
-    // in game — the ground-truth examples override the rank4 rule for it.
-    const style = PASSIVE_STYLE_OVERRIDES.get(snakeCase(name)) ?? (tier === -1 ? 'gray'
-      : rank >= 4 ? 'rainbow'
-      : targets.has('ToTrainer') ? 'gold'
-      : 'blue');
     const weight = chunk.match(/Weight (\d+)/)?.[1] ?? '?';
     const pals = [...chunk.matchAll(/<a[^>]*href="([^"]+)"[^>]*><img[^>]*class="size32 rounded-circle/g)]
       .map((palMatch) => palMatch[1]).sort().join('|');
     const sig = `${rank}|${weight}|${signatureLines.join(';')}|${pals}`;
-    passives.push({ name, tier, style, effect, sig });
+    passives.push({ name, tier, effect, sig });
   }
   return passives;
 }
@@ -267,6 +337,25 @@ export function matchPassiveLocales(english, portuguese) {
 
 const GEAR_MARKER = '<div class="col"><div class="card itemPopup">';
 const HELMET_PATTERN = /helmet|helm\b|head\d+|hat|cap\b|hood|crown|hair band|beret|mask/i;
+// PalDB's category pages include unfinished/internal records alongside items
+// players can actually equip. These entries either use raw localization keys,
+// placeholder descriptions ("en Text"), unrelated icons, or are explicitly WIP.
+const INTERNAL_GEAR_SLUGS = new Set([
+  'Axe4',
+  'CaptureRope',
+  'PenguinLauncher',
+  'ThrowStone',
+  'RecurveBow',
+  'AirGrapplingGun',
+  'Ballistic_Shield',
+  'ClawsPendant',
+  'FangNecklace',
+  'Night_Vision_Goggles',
+]);
+const PT_GEAR_NAME_OVERRIDES = new Map([
+  ['Gatling_Gun', 'Metralhadora Gatling'],
+  ['Quadruple_Air_Dash_Boots', 'Botas de Corrida Aérea Quádrupla'],
+]);
 
 export function parseGearPage(html) {
   const items = [];
@@ -282,7 +371,11 @@ export function parseGearPage(html) {
     );
     const rarityMatch = chunk.match(/<div class="hover_banner banner_rarity(\d)"/i);
     items.push({
-      key: sourceId ?? slug, // href slugs are locale-independent; sourceId is not always present
+      // The slug is stable between locales even when PalDB replaces data-hover
+      // with a locale-specific cache URL. sourceId therefore cannot be the
+      // primary translation key.
+      key: slug,
+      slug,
       sourceId,
       name: textContent(nameMatch[3]),
       iconUrl: iconMatch?.[1],
@@ -291,6 +384,15 @@ export function parseGearPage(html) {
     });
   }
   return items;
+}
+
+function matchGearLocale(item, localizedItems) {
+  if (item.sourceId) {
+    const bySourceId = localizedItems.find((candidate) => candidate.sourceId === item.sourceId);
+    if (bySourceId) return bySourceId;
+  }
+  const sameSlug = localizedItems.filter((candidate) => candidate.slug === item.slug);
+  return sameSlug.find((candidate) => candidate.rarity === item.rarity) ?? sameSlug[0];
 }
 
 // --- Output -----------------------------------------------------------------
@@ -322,6 +424,7 @@ function formatArray(entries) {
 }
 
 const shouldFetch = process.argv.includes('--fetch');
+const shouldFetchImages = shouldFetch || process.argv.includes('--fetch-images');
 const log = console.log;
 
 const pages = {};
@@ -351,7 +454,6 @@ for (const en of passivesEn) {
   passives.push({
     id,
     tier: en.tier,
-    style: en.style,
     names: { en: en.name, 'pt-BR': pt?.name || en.name },
     effects: { en: en.effect || pt?.effect || '', 'pt-BR': pt?.effect || en.effect || '' },
   });
@@ -359,7 +461,7 @@ for (const en of passivesEn) {
 log(`Passives with a PT translation: ${passivePtCoverage}/${passives.length} (rest fall back to EN)`);
 
 // Gear: dedupe by EN name (PalDB lists schematic rarity variants); PT matched
-// by sourceId, falling back to the locale-independent href slug.
+// by the locale-independent href slug.
 // Unlocalized/unused items show placeholder junk or raw item keys
 // ("Launcher_Meat", "PalDopingShot_3") instead of a display name.
 const seenGearNames = new Set();
@@ -369,9 +471,12 @@ const skipped = [];
 for (const { page, kind } of GEAR_PAGES) {
   const enItems = parseGearPage(pages[`${page}_en`]);
   const ptItems = parseGearPage(pages[`${page}_pt`]);
-  const ptByKey = new Map(ptItems.map((item) => [item.key, item]));
   log(`${page} cards: EN ${enItems.length}, PT ${ptItems.length}`);
   for (const en of enItems) {
+    if (INTERNAL_GEAR_SLUGS.has(en.slug)) {
+      skipped.push(`${page}: "${en.name}" (${en.sourceId ?? en.slug}) — internal/WIP record, not player gear`);
+      continue;
+    }
     if (/^NPC_/i.test(en.name)) {
       skipped.push(`${page}: "${en.name}" (${en.sourceId ?? en.key}) — internal NPC item, not player gear`);
       continue;
@@ -391,9 +496,12 @@ for (const { page, kind } of GEAR_PAGES) {
       continue;
     }
     seenGearIds.add(id);
-    const pt = ptByKey.get(en.key);
+    const pt = matchGearLocale(en, ptItems);
     // A placeholder/raw PT name means paldb has no translation — fall back to EN.
-    const ptName = pt?.name && !PLACEHOLDER_NAME.test(pt.name) && !pt.name.includes('_') ? pt.name : undefined;
+    const translatedPtName = pt?.name && !PLACEHOLDER_NAME.test(pt.name) && !pt.name.includes('_')
+      ? pt.name
+      : undefined;
+    const ptName = PT_GEAR_NAME_OVERRIDES.get(en.slug) ?? translatedPtName;
     const resolvedKind = kind === 'armor' && (HELMET_PATTERN.test(en.sourceId ?? '') || HELMET_PATTERN.test(en.name))
       ? 'helmet'
       : kind;
@@ -402,12 +510,18 @@ for (const { page, kind } of GEAR_PAGES) {
       kind: resolvedKind,
       names: { en: en.name, 'pt-BR': ptName || en.name },
       ...(en.effect || pt?.effect ? { effects: { en: en.effect || pt.effect, 'pt-BR': pt?.effect || en.effect } } : {}),
-      ...(en.iconUrl ? { iconUrl: en.iconUrl } : {}),
-      ...(en.sourceId ? { sourceId: en.sourceId } : {}),
+      ...(en.iconUrl || pt?.iconUrl ? { iconUrl: en.iconUrl || pt.iconUrl } : {}),
+      ...(en.sourceId || pt?.sourceId ? { sourceId: en.sourceId || pt.sourceId } : {}),
       // rarity of the kept (first/base) occurrence; omitted when unmarked — the app defaults to 0
       ...(en.rarity !== undefined ? { rarity: en.rarity } : {}),
     });
   }
+}
+
+const remoteGearIconUrls = gear.map((item) => item.iconUrl).filter(Boolean);
+await syncGearIcons(remoteGearIconUrls, { shouldDownload: shouldFetchImages, log });
+for (const item of gear) {
+  if (item.iconUrl) item.iconUrl = gearIconAsset(item.iconUrl).webPath;
 }
 
 // --- Quality checks ---------------------------------------------------------
@@ -424,10 +538,42 @@ for (const item of gear) {
   rarityCounts[item.kind] ??= {};
   rarityCounts[item.kind][rarity] = (rarityCounts[item.kind][rarity] ?? 0) + 1;
 }
+for (const slug of INTERNAL_GEAR_SLUGS) {
+  const leaked = gear.find((item) => item.sourceId === slug || item.id === snakeCase(slug));
+  if (leaked) failures.push(`internal/WIP gear leaked into catalog: ${leaked.id}`);
+}
+for (const item of gear) {
+  if (!item.iconUrl) failures.push(`${item.kind} ${item.id} is missing its icon`);
+  else if (!item.iconUrl.startsWith(`${GEAR_ASSET_WEB_ROOT}/`)) {
+    failures.push(`${item.kind} ${item.id} still uses a remote icon: ${item.iconUrl}`);
+  }
+}
+const attackPendant = gear.find((item) => item.id === 'attack_pendant');
+if (!attackPendant) failures.push('missing accessory: Attack Pendant');
+else {
+  if (attackPendant.kind !== 'accessory') failures.push(`attack_pendant kind ${attackPendant.kind}, expected accessory`);
+  if (attackPendant.names['pt-BR'] !== 'Pingente de Ataque') {
+    failures.push(`attack_pendant has incorrect pt-BR name: "${attackPendant.names['pt-BR']}"`);
+  }
+  if (!attackPendant.iconUrl) failures.push('attack_pendant is missing its icon');
+}
 
-const expectedTiers = { nimble: 1, runner: 2, swift: 3, legend: 3, artisan: 3 };
+const expectedTiers = {
+  nimble: 1,
+  runner: 2,
+  swift: 3,
+  artisan: 3,
+  legend: 4,
+  demon_s_hand: 5,
+  mercy_hit: -1,
+  bottomless_stomach: -2,
+  slacker: -3,
+};
 const requiredPassives = ['Legend', 'Lucky', 'Swift', 'Artisan', 'Ferocious', 'Musclehead', 'Burly Body', 'Coward', 'Pacifist', 'Slacker'];
 const passiveByName = new Map(passives.map((p) => [p.names.en, p]));
+if (passives.length !== 114) {
+  failures.push(`expected exactly 114 Pal passives, imported ${passives.length}`);
+}
 for (const name of requiredPassives) {
   if (!passiveByName.has(name)) failures.push(`missing passive: ${name}`);
 }
@@ -443,32 +589,26 @@ for (const entry of [...passives, ...gear]) {
   }
   if (passives.includes(entry) && (!entry.effects.en || !entry.effects['pt-BR'])) failures.push(`passive ${entry.id} missing an effect`);
 }
+for (const passive of passives) {
+  if (![-3, -2, -1, 1, 2, 3, 4, 5].includes(passive.tier)) {
+    failures.push(`passive ${passive.id} has invalid rank ${passive.tier}`);
+  }
+  if (/\b(?:Attack|Defense|Health|Damage Reduction|Resistance|Enhancement|Speedy Worker) .*\bLv\.\s*\d/i.test(passive.names.en)) {
+    failures.push(`passive ${passive.id} looks like an internal equipment modifier: "${passive.names.en}"`);
+  }
+}
 for (const item of gear) {
   if (item.names.en.includes('_') || item.names['pt-BR'].includes('_')) {
     failures.push(`gear ${item.id} has a raw internal name: "${item.names.en}" / "${item.names['pt-BR']}"`);
   }
 }
-const expectedStyles = {
-  vanguard: 'gold', stronghold_strategist: 'gold', motivational_leader: 'gold',
-  mine_foreman: 'gold', logging_foreman: 'gold',
-  legend: 'rainbow', demon_s_hand: 'rainbow',
-  coward: 'gray',
-  brave: 'blue', artisan: 'blue', swift: 'blue',
-};
-for (const [id, style] of Object.entries(expectedStyles)) {
-  const passive = passives.find((p) => p.id === id);
-  if (!passive) failures.push(`missing passive id: ${id}`);
-  else if (passive.style !== style) failures.push(`passive ${id} style ${passive.style}, expected ${style}`);
-}
-const styleCounts = {};
-for (const passive of passives) styleCounts[passive.style] = (styleCounts[passive.style] ?? 0) + 1;
 for (const id of ['refined_metal_helm', 'witch_hat', 'feathered_hair_band', 'metal_helm']) {
   const item = gear.find((g) => g.id === id);
   if (!item) failures.push(`missing gear id: ${id}`);
   else if (item.kind !== 'helmet') failures.push(`gear ${id} kind ${item.kind}, expected helmet`);
 }
 
-log(`\nPassives: ${passives.length} total, by tier: ${JSON.stringify(tierCounts)}, by style: ${JSON.stringify(styleCounts)}`);
+log(`\nPassives: ${passives.length} total, by rank: ${JSON.stringify(tierCounts)}`);
 log(`Gear: ${gear.length} total, by kind: ${JSON.stringify(kindCounts)}`);
 log(`Gear rarity distribution by kind (rarity: count):`);
 for (const [kind, counts] of Object.entries(rarityCounts)) {

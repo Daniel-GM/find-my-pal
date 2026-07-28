@@ -12,7 +12,9 @@
     "test:run": "vitest run",
     "update:crafting": "node scripts/update-crafting-data.mjs",
     "update:buildings": "node scripts/update-crafting-data.mjs --fetch-buildings",
-    "update:team-data": "node scripts/update-team-data.mjs"
+    "update:team-data": "node scripts/update-team-data.mjs",
+    "update:skills": "node scripts/update-skills-data.mjs",
+    "update:pals": "node scripts/update-pals-directory.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

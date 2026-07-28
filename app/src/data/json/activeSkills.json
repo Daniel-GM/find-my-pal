@@ -1,0 +1,5357 @@
+[
+  {
+    "id": "poison_fog",
+    "sourceId": "PoisonFog",
+    "slug": "Poison_Fog",
+    "names": {
+      "en": "Poison Fog",
+      "pt-BR": "Névoa de Veneno"
+    },
+    "descriptions": {
+      "en": "Generates a fog of poison in front, causing the opponent to become poisoned.",
+      "pt-BR": "Cria uma neblina tóxica à sua frente que deixa o adversário envenenado."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 0,
+    "exclusive": false
+  },
+  {
+    "id": "poison_shot",
+    "sourceId": "PoisonShot",
+    "slug": "Poison_Blast",
+    "names": {
+      "en": "Poison Blast",
+      "pt-BR": "Disparo de Veneno"
+    },
+    "descriptions": {
+      "en": "Hurls poison sludge at an enemy.",
+      "pt-BR": "Dispara lodo contendo um poder venenoso na direção do inimigo."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 30,
+    "exclusive": false
+  },
+  {
+    "id": "gravity_shot",
+    "sourceId": "GravityShot",
+    "slug": "Dark_Shot",
+    "names": {
+      "en": "Dark Shot",
+      "pt-BR": "Tiro Sombrio"
+    },
+    "descriptions": {
+      "en": "Fires a dark energy projectile that accelerates over time.",
+      "pt-BR": "Dispara um tiro de energia sombria que acelera até atingir o alvo."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_amaterasu_wolf_dark_bite_v2",
+    "sourceId": "Unique_AmaterasuWolf_Dark_BiteV2",
+    "slug": "Double_Fang_%28Dark%29",
+    "names": {
+      "en": "Double Fang (Dark)",
+      "pt-BR": "Presas Duplas (Escuridão)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_black_puppy_bite_v2",
+    "sourceId": "Unique_BlackPuppy_BiteV2",
+    "slug": "Double_Fang_%28Dark%29",
+    "names": {
+      "en": "Double Fang (Dark)",
+      "pt-BR": "Presas Duplas (Escuridão)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "dark_ball",
+    "sourceId": "DarkBall",
+    "slug": "Dark_Ball",
+    "names": {
+      "en": "Dark Ball",
+      "pt-BR": "Esfera Negra"
+    },
+    "descriptions": {
+      "en": "Unleashes a sphere of darkness that slowly tracks down an enemy.",
+      "pt-BR": "Dispara uma bola de escuridão que persegue o inimigo lentamente."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_monster001_slime_press_dark",
+    "sourceId": "Unique_YakushimaMonster001_SlimePress_Dark",
+    "slug": "Slime_Press_%28Dark%29",
+    "names": {
+      "en": "Slime Press (Dark)",
+      "pt-BR": "Prensa de Geleia (Escuridão)"
+    },
+    "descriptions": {
+      "en": "Purple Slime's exclusive skill. Leaps toward the enemy and delivers an attack.",
+      "pt-BR": "Habilidade exclusiva de Geleia roxa. Salta contra o inimigo para atacá-lo."
+    },
+    "element": "dark",
+    "cooldown": 1,
+    "power": 50,
+    "exclusive": true
+  },
+  {
+    "id": "unique_amaterasu_wolf_dark_bite",
+    "sourceId": "Unique_AmaterasuWolf_Dark_Bite",
+    "slug": "Fierce_Fang_%28Dark%29",
+    "names": {
+      "en": "Fierce Fang (Dark)",
+      "pt-BR": "Presas Selvagens (Escuridão)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_black_puppy_bite",
+    "sourceId": "Unique_BlackPuppy_Bite",
+    "slug": "Fierce_Fang_%28Dark%29",
+    "names": {
+      "en": "Fierce Fang (Dark)",
+      "pt-BR": "Presas Selvagens (Escuridão)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "dark",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "dark_pulse",
+    "sourceId": "DarkPulse",
+    "slug": "Umbral_Surge",
+    "names": {
+      "en": "Umbral Surge",
+      "pt-BR": "Espalhamento de Escuridão"
+    },
+    "descriptions": {
+      "en": "Fires high-speed dark orbs in a fan shape, spreading as they travel.",
+      "pt-BR": "Dispara uma rápida bola de escuridão que se espalha em forma de leque."
+    },
+    "element": "dark",
+    "cooldown": 4,
+    "power": 60,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_boss001_small_demon_eye_charge",
+    "sourceId": "Unique_YakushimaBoss001_Small_DemonEyeCharge",
+    "slug": "Ocular_Rush",
+    "names": {
+      "en": "Ocular Rush",
+      "pt-BR": "Acometida Ocular"
+    },
+    "descriptions": {
+      "en": "Demon Eye's exclusive skill. Charges at the enemy, bouncing off the ground or walls on impact.",
+      "pt-BR": "Habilidade exclusiva de Olho Demoníaco. Avança na direção do inimigo. Ricocheteia quando atinge o solo ou uma parede."
+    },
+    "element": "dark",
+    "cooldown": 1,
+    "power": 60,
+    "exclusive": true
+  },
+  {
+    "id": "unique_dark_crow_tele_poke",
+    "sourceId": "Unique_DarkCrow_TelePoke",
+    "slug": "Phantom_Peck",
+    "names": {
+      "en": "Phantom Peck",
+      "pt-BR": "Assalto Fantasma"
+    },
+    "descriptions": {
+      "en": "Cawgnito's exclusive skill. Teleports next to an enemy before attacking with its beak.",
+      "pt-BR": "Habilidade exclusiva de Cawgnito. Ele ataca com bicadas após se teletransportar até o inimigo."
+    },
+    "element": "dark",
+    "cooldown": 4,
+    "power": 70,
+    "exclusive": true
+  },
+  {
+    "id": "dark_canon",
+    "sourceId": "DarkCanon",
+    "slug": "Dark_Cannon",
+    "names": {
+      "en": "Dark Cannon",
+      "pt-BR": "Canhão Negro"
+    },
+    "descriptions": {
+      "en": "Hurls an energy ball imbued with dark energy at an enemy.",
+      "pt-BR": "Dispara um projétil de energia contendo força de escuridão em alta velocidade na direção do inimigo."
+    },
+    "element": "dark",
+    "cooldown": 4,
+    "power": 70,
+    "exclusive": false
+  },
+  {
+    "id": "dark_wave",
+    "sourceId": "DarkWave",
+    "slug": "Shadow_Burst",
+    "names": {
+      "en": "Shadow Burst",
+      "pt-BR": "Estouro de Sombras"
+    },
+    "descriptions": {
+      "en": "Quickly discharges dark energy, damaging those around it.",
+      "pt-BR": "Libera uma força de escuridão rapidamente para causar um choque nos arredores."
+    },
+    "element": "dark",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_werewolf_scratch",
+    "sourceId": "Unique_Werewolf_Scratch",
+    "slug": "Jumping_Claw",
+    "names": {
+      "en": "Jumping Claw",
+      "pt-BR": "Salto de Garra"
+    },
+    "descriptions": {
+      "en": "Loupmoon's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with dark energy.",
+      "pt-BR": "Habilidade exclusiva de Loupmoon. Ele salta para a frente e dá dois arranhões velozes, um ataque lancinante que contém a força da escuridão."
+    },
+    "element": "dark",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "dark_arrow",
+    "sourceId": "DarkArrow",
+    "slug": "Dark_Arrow",
+    "names": {
+      "en": "Dark Arrow",
+      "pt-BR": "Flecha Negra"
+    },
+    "descriptions": {
+      "en": "Fires off dark energy that homes in on an enemy.",
+      "pt-BR": "Dispara de forma contínua e em alta velocidade várias flechas que perseguem o inimigo com a força da escuridão."
+    },
+    "element": "dark",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "bubble_shower",
+    "sourceId": "BubbleShower",
+    "slug": "Poison_Shower",
+    "names": {
+      "en": "Poison Shower",
+      "pt-BR": "Chuva de Veneno"
+    },
+    "descriptions": {
+      "en": "Focuses energy into the body and scatters poison orbs in all directions.",
+      "pt-BR": "Concentra a própria força e faz voarem bolas de veneno em todas as direções."
+    },
+    "element": "dark",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "ghost_flame",
+    "sourceId": "GhostFlame",
+    "slug": "Spirit_Flame",
+    "names": {
+      "en": "Spirit Flame",
+      "pt-BR": "Chama de Espíritos"
+    },
+    "descriptions": {
+      "en": "Fires three balls of malice that relentlessly pursue an enemy.",
+      "pt-BR": "Dispara três rancores que perseguem o inimigo de forma obstinada."
+    },
+    "element": "dark",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "unique_amaterasu_wolf_dark_dark_charge",
+    "sourceId": "Unique_AmaterasuWolf_Dark_DarkCharge",
+    "slug": "Daring_Shadowstorm",
+    "names": {
+      "en": "Daring Shadowstorm",
+      "pt-BR": "Trovão das Montanhas Ardentes"
+    },
+    "descriptions": {
+      "en": "Kitsun Noct's exclusive skill. Charges forward with great speed while enveloped in intense purple flames.",
+      "pt-BR": "Habilidade exclusiva de Kitsun Noct. Ele envolve o corpo inteiro com uma chama roxa e investe com grande ímpeto."
+    },
+    "element": "dark",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_purple_spider_spider_raid",
+    "sourceId": "Unique_PurpleSpider_SpiderRaid",
+    "slug": "Webstrike_Impact",
+    "names": {
+      "en": "Webstrike Impact",
+      "pt-BR": "Assalto Aranha"
+    },
+    "descriptions": {
+      "en": "Tarantriss's exclusive skill. Spits out a ball of thread, entangling the target it hits. Then, rushes at full speed to the trapped target and delivers three slashing strikes to finish it off.",
+      "pt-BR": "Habilidade exclusiva de Tarantriss. Cospe uma bola de teia que captura sua presa. Em seguida corre a toda velocidade para cima da vítima e a rasga três vezes para acabar com seu sofrimento."
+    },
+    "element": "dark",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_fire_kirin_dark_dark_tossin",
+    "sourceId": "Unique_FireKirin_Dark_DarkTossin",
+    "slug": "Dark_Charge",
+    "names": {
+      "en": "Dark Charge",
+      "pt-BR": "Investida Negra"
+    },
+    "descriptions": {
+      "en": "Pyrin Noct's exclusive skill. Charges forward while engulfed in a veil of dark flames. Flames continue to burn in its path.",
+      "pt-BR": "Habilidade exclusiva de Pyrin Noct. Ele investe com o corpo envolto em chamas negras, incendiando tudo em seu trajeto."
+    },
+    "element": "dark",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "shadow_ball",
+    "sourceId": "ShadowBall",
+    "slug": "Nightmare_Ball",
+    "names": {
+      "en": "Nightmare Ball",
+      "pt-BR": "Bola de Pesadelos"
+    },
+    "descriptions": {
+      "en": "Creates a giant ball of darkness and hurls it at an enemy.",
+      "pt-BR": "Cria uma grande bola de escuridão e a dispara em alta velocidade na direção do inimigo."
+    },
+    "element": "dark",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_ghost_beast_tossin",
+    "sourceId": "Unique_GhostBeast_Tossin",
+    "slug": "Spirit_Dash",
+    "names": {
+      "en": "Spirit Dash",
+      "pt-BR": "Corrida de Espíritos"
+    },
+    "descriptions": {
+      "en": "Maraith's exclusive skill. While running slowly, it continuously launches flickering fireballs toward the enemy.",
+      "pt-BR": "Habilidade exclusiva de Maraith. Corre sem pressa enquanto vai fazendo voarem bolas de fogo tremulantes contra o inimigo."
+    },
+    "element": "dark",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_yakushima_eye_tossin",
+    "sourceId": "Unique_Yakushima_EyeTossin",
+    "slug": "Lock-On_Lunge",
+    "names": {
+      "en": "Lock-On Lunge",
+      "pt-BR": "Acometida de Olhar Fixo"
+    },
+    "descriptions": {
+      "en": "Eye of Cthulhu's exclusive skill. Repeatedly charges at the enemy.",
+      "pt-BR": "Habilidade exclusiva de Olho de Cthulhu. Avança várias vezes contra o inimigo."
+    },
+    "element": "dark",
+    "cooldown": 15,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_yakushima_summon_servant",
+    "sourceId": "Unique_Yakushima_SummonServant",
+    "slug": "Servant_Call",
+    "names": {
+      "en": "Servant Call",
+      "pt-BR": "Chamar Servos"
+    },
+    "descriptions": {
+      "en": "Eye of Cthulhu's exclusive skill. Summons four Servants that charge at enemies to deal damage. Servants disappear after taking damage or after a short time.",
+      "pt-BR": "Habilidade exclusiva de Olho de Cthulhu. Chama quatro servos que seguem na direção do inimigo e se chocam contra ele para causar dano. Os servos desaparecem ao serem atacados ou após um certo tempo."
+    },
+    "element": "dark",
+    "cooldown": 10,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_dark_alien_jump_scractch",
+    "sourceId": "Unique_DarkAlien_JumpScractch",
+    "slug": "Evil_Slash",
+    "names": {
+      "en": "Evil Slash",
+      "pt-BR": "Garra Maligna"
+    },
+    "descriptions": {
+      "en": "Xenovader's exclusive skill. Swiftly pounces and slashes with its left hand.",
+      "pt-BR": "Habilidade exclusiva de Xenovader. Salta rapidamente e dilacera o inimigo com a mão esquerda."
+    },
+    "element": "dark",
+    "cooldown": 16,
+    "power": 350,
+    "exclusive": true
+  },
+  {
+    "id": "unique_scorpion_man_uppercut",
+    "sourceId": "Unique_ScorpionMan_Uppercut",
+    "slug": "Upper_Smash",
+    "names": {
+      "en": "Upper Smash",
+      "pt-BR": "Colisão de Gancho"
+    },
+    "descriptions": {
+      "en": "Prixter's exclusive skill. Closes the distance to the enemy at high speed, then swings its pincers upward with full force.",
+      "pt-BR": "Habilidade exclusiva de Prixter. Encurta rapidamente a distância até o inimigo e desfere um golpe sem piedade com suas pinças."
+    },
+    "element": "dark",
+    "cooldown": 16,
+    "power": 350,
+    "exclusive": true
+  },
+  {
+    "id": "unique_black_griffon_tackle_laser",
+    "sourceId": "Unique_BlackGriffon_TackleLaser",
+    "slug": "Divine_Disaster",
+    "names": {
+      "en": "Divine Disaster",
+      "pt-BR": "Divino Desastre"
+    },
+    "descriptions": {
+      "en": "Charges forward, generating orbs of light that automatically target enemies and unleash a barrage of lasers.",
+      "pt-BR": "Habilidade exclusiva de Shadowbeak. Ele emite uma esfera de luz enquanto dá uma arremetida. A esfera persegue o inimigo automaticamente e emite inúmeros lasers."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "apocalypse",
+    "sourceId": "Apocalypse",
+    "slug": "Apocalypse",
+    "names": {
+      "en": "Apocalypse",
+      "pt-BR": "Apocalipse"
+    },
+    "descriptions": {
+      "en": "Generates several dark vortexes around the enemy.",
+      "pt-BR": "Cria vários redemoinhos de escuridão ao redor do inimigo."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "unique_mystery_mask_life_steal",
+    "sourceId": "Unique_MysteryMask_LifeSteal",
+    "slug": "Soul_Drain",
+    "names": {
+      "en": "Soul Drain",
+      "pt-BR": "Roubo de Alma"
+    },
+    "descriptions": {
+      "en": "Omasculs exclusive skill. Suddenly appears near the enemy, firmly restraining them with its arms, and absorbs the HP of the restrained enemy.",
+      "pt-BR": "Habilidade exclusiva de Omascul. Surge de repente perto do inimigo e o aprisiona firmemente com ambos os braços, drenando o PV da vítima imobilizada."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "unique_baphomet_dark_dark_kite",
+    "sourceId": "Unique_Baphomet_Dark_DarkKite",
+    "slug": "Nightmare_Claw",
+    "names": {
+      "en": "Nightmare Claw",
+      "pt-BR": "Garra Pesadelo"
+    },
+    "descriptions": {
+      "en": "Incineram Noct's exclusive skill. Draws near enemies using its left dark claw to slash them into the air before cutting them down with its right dark claw.",
+      "pt-BR": "Habilidade exclusiva de Incineram Noct. Ele se aproxima e lança o inimigo para cima com um corte da garra escura esquerda, logo saltando para derrubá-lo rapidamente com a garra escura direita."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "dark_laser",
+    "sourceId": "DarkLaser",
+    "slug": "Dark_Laser",
+    "names": {
+      "en": "Dark Laser",
+      "pt-BR": "Laser Negro"
+    },
+    "descriptions": {
+      "en": "Charges dark energy before blasting enemies with a powerful beam.",
+      "pt-BR": "Carrega a energia das trevas para disparar um raio poderoso contra o inimigo."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "unique_night_lady_flame_nightmare",
+    "sourceId": "Unique_NightLady_FlameNightmare",
+    "slug": "Flame_Waltz",
+    "names": {
+      "en": "Flame Waltz",
+      "pt-BR": "Valsa de Chamas"
+    },
+    "descriptions": {
+      "en": "Bellanoir Libero's exclusive skill. With a graceful dance, conjuries expanding rings of fire, then unleashes eerie flames that seek the enemies.",
+      "pt-BR": "Habilidade exclusiva de Bellanoir Libero. Enquanto dança lentamente, emite um anel de fogo que se espalha pelos arredores. Dispara ainda uma chama fantástica que persegue os inimigos."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "unique_night_blue_horse_tossin",
+    "sourceId": "Unique_NightBlueHorse_Tossin",
+    "slug": "Spectral_Steed",
+    "names": {
+      "en": "Spectral Steed",
+      "pt-BR": "Galope do Cavalo Soturno"
+    },
+    "descriptions": {
+      "en": "Starryon's exclusive skill. Cloaks the body in flickering flames and charges toward the enemy.",
+      "pt-BR": "Habilidade exclusiva de Starryon. Avança em grande velocidade contra o inimigo enquanto envolto em chamas tremulantes."
+    },
+    "element": "dark",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "unique_dark_mecha_dragon_convergent_beam",
+    "sourceId": "Unique_DarkMechaDragon_ConvergentBeam",
+    "slug": "Astral_Ray",
+    "names": {
+      "en": "Astral Ray",
+      "pt-BR": "Raio Astral"
+    },
+    "descriptions": {
+      "en": "Xenolord's exclusive skill. Concentrates energy filled with darkness and releases it all at once in a straight line.",
+      "pt-BR": "Habilidade exclusiva de Xenolord. Concentra energia repleta de escuridão e a dispara de uma só vez em linha reta."
+    },
+    "element": "dark",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grim_girl_brutal_machete",
+    "sourceId": "Unique_GrimGirl_BrutalMachete",
+    "slug": "Grudge_Barrage",
+    "names": {
+      "en": "Grudge Barrage",
+      "pt-BR": "Combo de Rancor"
+    },
+    "descriptions": {
+      "en": "Splatterina's exclusive skill. Teleports instantly and launches a slash. It then teleports above the enemy, drives its weapon into them, and unleashes a wave of dark energy.",
+      "pt-BR": "Habilidade exclusiva de Splatterina. Teleporta-se e lança um ataque cortante para então teleportar-se novamente sobre o inimigo e fincar sua arma, gerando uma onda de escuridão."
+    },
+    "element": "dark",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_monochrome_queen_ballet_jump",
+    "sourceId": "Unique_MonochromeQueen_BalletJump",
+    "slug": "Black_Quilled_Ballet",
+    "names": {
+      "en": "Black Quilled Ballet",
+      "pt-BR": "Dança de Plumas Negras"
+    },
+    "descriptions": {
+      "en": "Solenne's exclusive skill. Jumps diagonally and throws sharp black feathers at enemies.",
+      "pt-BR": "Habilidade exclusiva de Solenne. Dá um salto na diagonal e lança penas negras afiadas."
+    },
+    "element": "dark",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_mummy_pal_mummy_attack",
+    "sourceId": "Unique_MummyPal_MummyAttack",
+    "slug": "Mummy_Rush",
+    "names": {
+      "en": "Mummy Rush",
+      "pt-BR": "Arranque da Múmia"
+    },
+    "descriptions": {
+      "en": "Gildra's exclusive skill. Extends bandages from its hands to deliver a series of attacks.",
+      "pt-BR": "Habilidade exclusiva de Gildra. Estende faixas de suas mãos para atacar de forma contínua."
+    },
+    "element": "dark",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_night_blue_horse_death_step",
+    "sourceId": "Unique_NightBlueHorse_DeathStep",
+    "slug": "Lethal_Step",
+    "names": {
+      "en": "Lethal Step",
+      "pt-BR": "Passo Letal"
+    },
+    "descriptions": {
+      "en": "Starryon's exclusive skill. Confuses enemies with flickering steps and launches slashing attack with its sharp horn.",
+      "pt-BR": "Habilidade exclusiva de Starryon. Faz pouco do inimigo com um passo vacilante e então lança um ataque cortante com seu chifre afiado."
+    },
+    "element": "dark",
+    "cooldown": 24,
+    "power": 550,
+    "exclusive": true
+  },
+  {
+    "id": "dark_legion",
+    "sourceId": "DarkLegion",
+    "slug": "Dark_Whisp",
+    "names": {
+      "en": "Dark Whisp",
+      "pt-BR": "Fogo-Fátuo Negro"
+    },
+    "descriptions": {
+      "en": "Fires a menacing ball of dark energy that pursues enemies.",
+      "pt-BR": "Dispara várias bolas de escuridão que perseguem o inimigo."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_night_lady_warp_beam",
+    "sourceId": "Unique_NightLady_WarpBeam",
+    "slug": "Nightmare_Bloom",
+    "names": {
+      "en": "Nightmare Bloom",
+      "pt-BR": "Florescência de Pesadelo"
+    },
+    "descriptions": {
+      "en": "Bellanoir Libero's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams. The beams spread like a beautiful flower in bloom.",
+      "pt-BR": "Habilidade exclusiva de Bellanoir Libero. Desaparece de súbito e libera incontáveis raios de luz no instante que volta a surgir. Os raios se espalham como uma flor que desabrocha."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_night_lady_warp_beam_straight",
+    "sourceId": "Unique_NightLady_WarpBeam_Straight",
+    "slug": "Nightmare_Ray",
+    "names": {
+      "en": "Nightmare Ray",
+      "pt-BR": "Raio de Pesadelo"
+    },
+    "descriptions": {
+      "en": "Bellanoir's exclusive skill. Disappears suddenly, then reappears while firing a barrage of beams.",
+      "pt-BR": "Habilidade exclusiva de Bellanoir. Desaparece de súbito e libera incontáveis raios de luz no instante que volta a surgir."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_black_griffon_tackle_laser2",
+    "sourceId": "Unique_BlackGriffon_TackleLaser2",
+    "slug": "Divine_Disaster_II",
+    "names": {
+      "en": "Divine Disaster II",
+      "pt-BR": "Divino Desastre II"
+    },
+    "descriptions": {
+      "en": "Shadowbeak's exclusive skill. As it charges forward, emits countless blue rays that automatically locate and pursue the enemy.",
+      "pt-BR": "Habilidade exclusiva de Shadowbeak. Avança emitindo inúmeros raios de luz azul de seu halo. Os feixes luminosos detectam e perseguem o inimigo automaticamente."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_snake_girl_snake_shot",
+    "sourceId": "Unique_SnakeGirl_SnakeShot",
+    "slug": "Poison_Scatter",
+    "names": {
+      "en": "Poison Scatter",
+      "pt-BR": "Dispersão de Peçonha"
+    },
+    "descriptions": {
+      "en": "Venusa's exclusive skill. The snakes on her head spit toxic globs in a wide arc. The poisonous pool left at the impact point inflicts Poison on anyone who touches it.",
+      "pt-BR": "Habilidade exclusiva de Venusa. As serpentes em sua cabeça cospem esferas peçonhentas que voam em uma parábola. O pântano de peçonha que se estende pelo local de impacto envenena aqueles que o tocarem."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_lantern_butler_lantern_flame",
+    "sourceId": "Unique_LanternButler_LanternFlame",
+    "slug": "Lantern_Flame",
+    "names": {
+      "en": "Lantern Flame",
+      "pt-BR": "Chama de Lampião"
+    },
+    "descriptions": {
+      "en": "Loomen's exclusive skill. Raises a lantern and summons multiple spirits that relentlessly pursue enemies.",
+      "pt-BR": "Habilidade exclusiva de Loomen. Ergue o lampião e invoca espíritos de rancor que perseguem o inimigo de forma obstinada."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 650,
+    "exclusive": true
+  },
+  {
+    "id": "unique_black_centaur_two_spear_rushes",
+    "sourceId": "Unique_BlackCentaur_TwoSpearRushes",
+    "slug": "Twin_Spears",
+    "names": {
+      "en": "Twin Spears",
+      "pt-BR": "Lampejo da Lança Dupla"
+    },
+    "descriptions": {
+      "en": "Necromus' exclusive skill. Clads its twin spears with vicious whirlwinds and charges forward, thrusting them one after the other.",
+      "pt-BR": "Habilidade exclusiva de Necromus. Ele investe contra o inimigo com uma lança em cada mão, ambas envoltas em um redemoinho."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_ice_horse_dark_dark_blade_attack",
+    "sourceId": "Unique_IceHorse_Dark_DarkBladeAttack",
+    "slug": "Dark_Wing",
+    "names": {
+      "en": "Dark Wing",
+      "pt-BR": "Asas Negras"
+    },
+    "descriptions": {
+      "en": "Frostallion Noct's exclusive skill. Dashes forward while concentrating dark energy around its wings, using them to slash enemies, then converting that energy into homing shots",
+      "pt-BR": "Habilidade exclusiva de Frostallion Noct. Cobre as asas de energia escura e as usa para dilacerar o inimigo enquanto passa por ele a galope. Por fim, a energia escura se transforma num projétil perseguidor."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grass_golem_dark_dark_arm_cannon",
+    "sourceId": "Unique_GrassGolem_Dark_DarkArmCannon",
+    "slug": "Dark_Root",
+    "names": {
+      "en": "Dark Root",
+      "pt-BR": "Raiz Escura"
+    },
+    "descriptions": {
+      "en": "Dualith Nocts exclusive skill. Fires a Dark-elemental energy projectile from its arm. Upon impact, the blast transforms into persistent roots that track and pierce the enemy from below.",
+      "pt-BR": "Habilidade exclusiva de Dualith Noct. Dispara um projétil de energia de escuridão pelo braço. Após o impacto, o projétil se converte numa raiz que persegue o inimigo e o perfura por baixo."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_white_deer_dark_dark_pillar",
+    "sourceId": "Unique_WhiteDeer_Dark_DarkPillar",
+    "slug": "Dark_Nova",
+    "names": {
+      "en": "Dark Nova",
+      "pt-BR": "Nova Escura"
+    },
+    "descriptions": {
+      "en": "Celesdir Noct's exclusive skill. After igniting a burst of darkness across a vast area ahead, it strides forward, generating pillars of darkness around itself.",
+      "pt-BR": "Habilidade exclusiva de Celesdir Noct. Depois de causar uma explosão de escuridão em uma grande área à sua frente, gera pilares de escuridão ao seu redor enquanto caminha."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_flower_prince_poison_gas_tackle",
+    "sourceId": "Unique_FlowerPrince_PoisonGasTackle",
+    "slug": "Poison_Promenade",
+    "names": {
+      "en": "Poison Promenade",
+      "pt-BR": "Passeio Venenoso"
+    },
+    "descriptions": {
+      "en": "Dandilord's exclusive skill. Charges forward while sliding along the ground, spraying corrosive mist. The mist remains in the area for a limited time.",
+      "pt-BR": "Habilidade exclusiva de Dandilord. Libera uma névoa corrosiva enquanto avança como que deslizando pelo chão. A névoa corrosiva permanece no local por tempo limitado."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_flower_prince_poison_gas_dance",
+    "sourceId": "Unique_FlowerPrince_PoisonGasDance",
+    "slug": "Toxic_Dance",
+    "names": {
+      "en": "Toxic Dance",
+      "pt-BR": "Dança Venenosa"
+    },
+    "descriptions": {
+      "en": "Dandilord's exclusive skill. Performs a dance while releasing corrosive mist. The mist remains in the area for a limited time.",
+      "pt-BR": "Habilidade exclusiva de Dandilord. Libera uma névoa corrosiva enquanto dança. A névoa corrosiva liberada permanece no local por tempo limitado."
+    },
+    "element": "dark",
+    "cooldown": 30,
+    "power": 800,
+    "exclusive": true
+  },
+  {
+    "id": "dragon_canon",
+    "sourceId": "DragonCanon",
+    "slug": "Dragon_Cannon",
+    "names": {
+      "en": "Dragon Cannon",
+      "pt-BR": "Canhão de Dragão"
+    },
+    "descriptions": {
+      "en": "Hurls an energy ball imbued with draconic energy at an enemy.",
+      "pt-BR": "Dispara um projétil de energia contendo força dracônica na direção do inimigo."
+    },
+    "element": "dragon",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "dragon_wave",
+    "sourceId": "DragonWave",
+    "slug": "Dragon_Burst",
+    "names": {
+      "en": "Dragon Burst",
+      "pt-BR": "Estouro de Dragão"
+    },
+    "descriptions": {
+      "en": "Quickly discharges draconic energy, damaging those around it.",
+      "pt-BR": "Libera força dracônica rapidamente para causar um choque nos arredores."
+    },
+    "element": "dragon",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_weasel_dragon_flying_tackle",
+    "sourceId": "Unique_WeaselDragon_FlyingTackle",
+    "slug": "Rocket_Slam",
+    "names": {
+      "en": "Rocket Slam",
+      "pt-BR": "Empurrão Foguete"
+    },
+    "descriptions": {
+      "en": "Chillet's exclusive skill. Gathers a bit of strength and leaps forward. Always shuts its eyes tight in fear when landing.",
+      "pt-BR": "Habilidade exclusiva de Chillet e subespécies. Ele salta para a frente depois de concentrar um pouco de energia. Como tem muito medo, parece que sempre fecha os olhos no momento da aterrissagem."
+    },
+    "element": "dragon",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "unique_fairy_dragon_fairy_tornado",
+    "sourceId": "Unique_FairyDragon_FairyTornado",
+    "slug": "Mystic_Whirlwind",
+    "names": {
+      "en": "Mystic Whirlwind",
+      "pt-BR": "Furacão Místico"
+    },
+    "descriptions": {
+      "en": "Elphidran's exclusive skill. Generates twin whirlwinds imbued with a mysterious power that pursues enemies.",
+      "pt-BR": "Habilidade exclusiva de Elphidran e subespécies. Ele dispara dois redemoinhos carregados com uma força misteriosa para perseguir os inimigos."
+    },
+    "element": "dragon",
+    "cooldown": 8,
+    "power": 150,
+    "exclusive": true
+  },
+  {
+    "id": "dragon_breath",
+    "sourceId": "DragonBreath",
+    "slug": "Dragon_Breath",
+    "names": {
+      "en": "Dragon Breath",
+      "pt-BR": "Sopro de Dragão"
+    },
+    "descriptions": {
+      "en": "Exhales breath imbued with draconic energy, dealing continuous damage to those in front of it.",
+      "pt-BR": "Dispara uma baforada contendo força dracônica para a frente, causando dano contínuo."
+    },
+    "element": "dragon",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "commet",
+    "sourceId": "Commet",
+    "slug": "Comet_Strike",
+    "names": {
+      "en": "Comet Strike",
+      "pt-BR": "Cometa"
+    },
+    "descriptions": {
+      "en": "Drops a meteorite straight down, generating a shock wave around the impact area.",
+      "pt-BR": "Faz cair um meteorito verticalmente, gerando uma onda de choque nos arredores."
+    },
+    "element": "dragon",
+    "cooldown": 8,
+    "power": 180,
+    "exclusive": false
+  },
+  {
+    "id": "blast_canon",
+    "sourceId": "BlastCanon",
+    "slug": "Blast_Cannon",
+    "names": {
+      "en": "Blast Cannon",
+      "pt-BR": "Canhão de Rajada"
+    },
+    "descriptions": {
+      "en": "Fires an energy bullet imbued with dragon power at the enemy's location. Upon impact, the bullet shatters and creates a frontal long-range explosion.",
+      "pt-BR": "Dispara um projétil de energia contendo força dracônica no local do inimigo. O projétil se expande ao fazer contato com o alvo, causando uma explosão em grande área à frente."
+    },
+    "element": "dragon",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "beam_slicer",
+    "sourceId": "BeamSlicer",
+    "slug": "Beam_Slicer",
+    "names": {
+      "en": "Beam Slicer",
+      "pt-BR": "Raio Fatiador"
+    },
+    "descriptions": {
+      "en": "Mows down the area in front with a beam imbued with dragon power. The area struck by the beam will also explode after a short delay.",
+      "pt-BR": "Devasta a área em frente com raios de luz que concentram poder dracônico. O local devastado explode momentos depois."
+    },
+    "element": "dragon",
+    "cooldown": 16,
+    "power": 350,
+    "exclusive": false
+  },
+  {
+    "id": "charge_canon",
+    "sourceId": "ChargeCanon",
+    "slug": "Charge_Cannon",
+    "names": {
+      "en": "Charge Cannon",
+      "pt-BR": "Canhão Carregado"
+    },
+    "descriptions": {
+      "en": "Fires an energy orb infused with draconic power at the enemy. The orb causes a wide-area explosion upon impact.",
+      "pt-BR": "Dispara um projétil de energia com força dracônica acumulada na direção do inimigo. O projétil causa uma explosão em grande área ao fazer contato."
+    },
+    "element": "dragon",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "unique_dark_mecha_dragon_set_funnel",
+    "sourceId": "Unique_DarkMechaDragon_SetFunnel",
+    "slug": "Satellite_Bit",
+    "names": {
+      "en": "Satellite Bit",
+      "pt-BR": "Peças Satélite"
+    },
+    "descriptions": {
+      "en": "Xenolord's exclusive skill. Generates four satellite-like wings with auto-attack functionality. These wings will automatically track and attack the enemy when the next attack is launched.",
+      "pt-BR": "Habilidade exclusiva de Xenolord. Cria quatro asas satélite com capacidade de ataque automático. No momento de executar o próximo golpe, as asas perseguem o inimigo de modo autônomo para atingi-lo."
+    },
+    "element": "dragon",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "three_commet",
+    "sourceId": "ThreeCommet",
+    "slug": "Comet_Barrage",
+    "names": {
+      "en": "Comet Barrage",
+      "pt-BR": "Queda de Cometa"
+    },
+    "descriptions": {
+      "en": "Drops meteorites one after another, generating shock waves around the impact areas.",
+      "pt-BR": "Faz caírem meteoritos em sequência, gerando uma onda de choque nos arredores."
+    },
+    "element": "dragon",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "unique_black_metal_dragon_fire_punch",
+    "sourceId": "Unique_BlackMetalDragon_FirePunch",
+    "slug": "Firefist_Breathstorm",
+    "names": {
+      "en": "Firefist Breathstorm",
+      "pt-BR": "Baforada com Soco"
+    },
+    "descriptions": {
+      "en": "Astegon's exclusive skill. After throwing two punches forward, it exhales a dragon breath downward.",
+      "pt-BR": "Habilidade exclusiva de Astegon. Depois de desferir dois socos à sua frente, volta-se para baixo e emite uma baforada dracônica."
+    },
+    "element": "dragon",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "unique_dark_mecha_dragon_beam_slash",
+    "sourceId": "Unique_DarkMechaDragon_BeamSlash",
+    "slug": "Beam_Slash",
+    "names": {
+      "en": "Beam Slash",
+      "pt-BR": "Corte de Raio"
+    },
+    "descriptions": {
+      "en": "Xenolord's exclusive skill. Generates a high-output beam sword with the right hand and delivers two powerful slashes while moving at high speed.",
+      "pt-BR": "Habilidade exclusiva de Xenolord. Cria uma espada de elevada potência com a mão direita e se desloca em alta velocidade enquanto realiza dois cortes."
+    },
+    "element": "dragon",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "unique_ghost_dragon_tail_slash",
+    "sourceId": "Unique_GhostDragon_TailSlash",
+    "slug": "Tail_Slash",
+    "names": {
+      "en": "Tail Slash",
+      "pt-BR": "Corte de Cauda"
+    },
+    "descriptions": {
+      "en": "Eidrolon's exclusive skill. Closes in on the enemy at high speed to deliver a cleaving swipe with its tail.",
+      "pt-BR": "Habilidade exclusiva de espécies de Eidrolon. Aproxima-se em alta velocidade do inimigo e ataca como se o cortasse com a cauda."
+    },
+    "element": "dragon",
+    "cooldown": 24,
+    "power": 550,
+    "exclusive": true
+  },
+  {
+    "id": "dragon_meteor",
+    "sourceId": "DragonMeteor",
+    "slug": "Dragon_Meteor",
+    "names": {
+      "en": "Dragon Meteor",
+      "pt-BR": "Meteoro de Dragão"
+    },
+    "descriptions": {
+      "en": "Summons numerous small meteorites and launches them at an enemy.",
+      "pt-BR": "Invoca um grande número de pequenos meteoritos para dispará-los contra o inimigo."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_dark_mecha_dragon_warp_comet",
+    "sourceId": "Unique_DarkMechaDragon_WarpComet",
+    "slug": "Cosmic_Meteor",
+    "names": {
+      "en": "Cosmic Meteor",
+      "pt-BR": "Meteoro Cósmico"
+    },
+    "descriptions": {
+      "en": "Xenolord's exclusive skill. Soars into the air at the speed of light and releases countless meteor projectiles. Afterwards, transforms into a comet and charges forward, causing a massive explosion upon impact.",
+      "pt-BR": "Habilidade exclusiva de Xenolord. Sobe até os céus na velocidade da luz e dispara inúmeros meteoros. Em seguida ele mesmo se torna um cometa para realizar uma investida, causando uma enorme explosão no ponto de impacto."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_white_shield_dragon_shield_tackle",
+    "sourceId": "Unique_WhiteShieldDragon_ShieldTackle",
+    "slug": "Aegis_Charge",
+    "names": {
+      "en": "Aegis Charge",
+      "pt-BR": "Investida de Égide"
+    },
+    "descriptions": {
+      "en": "Silvegis's exclusive skill. Deploys a shield in front that reduces all types of attacks, then charges forward, crushing the enemy.",
+      "pt-BR": "Habilidade exclusiva de Silvegis. Cria um escudo capaz de atenuar todo e qualquer ataque à sua frente e investe contra o inimigo para esmagá-lo."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_blue_sky_dragon_sweep_breath",
+    "sourceId": "Unique_BlueSkyDragon_SweepBreath",
+    "slug": "Azure_Dracoflare",
+    "names": {
+      "en": "Azure Dracoflare",
+      "pt-BR": "Chama do Dragão Azul"
+    },
+    "descriptions": {
+      "en": "Shaolong's exclusive skill. Breathes Dragon-elemental flames in a sweeping motion, scorching the surrounding area.",
+      "pt-BR": "Habilidade exclusiva de Shaolong. Sopra chamas dracônicas num movimento horizontal, transformando a área em um campo de cinzas."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_jet_dragon_jump_beam",
+    "sourceId": "Unique_JetDragon_JumpBeam",
+    "slug": "Beam_Comet",
+    "names": {
+      "en": "Beam Comet",
+      "pt-BR": "Cometa de Raio"
+    },
+    "descriptions": {
+      "en": "Jetragon's exclusive skill. Illuminates its wings and fires innumerable beams as it flies towards the enemy. The beams explode on impact.",
+      "pt-BR": "Habilidade exclusiva de Jetragon. Fazendo suas asas brilharem, ele voa enquanto dispara incontáveis raios contra o inimigo, os quais causam explosões ao fazerem contato."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_king_bahamut_air_crash",
+    "sourceId": "Unique_KingBahamut_AirCrash",
+    "slug": "Magna_Crush",
+    "names": {
+      "en": "Magna Crush",
+      "pt-BR": "Esmagamento Magno"
+    },
+    "descriptions": {
+      "en": "Blazamut Ryu's exclusive skill. After a big jump, moves at high speed in the air, gathering strength to unleash a powerful punch.",
+      "pt-BR": "Habilidade exclusiva de Blazamut Ryu. Ele dá um grande salto e se move em alta velocidade pelo céu enquanto concentra energia para desferir um soco com todas as suas forças."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "commet_rain",
+    "sourceId": "CommetRain",
+    "slug": "Meteorain",
+    "names": {
+      "en": "Meteorain",
+      "pt-BR": "Chuva de Meteoros"
+    },
+    "descriptions": {
+      "en": "Drops countless meteorites, generating an array of shock waves.",
+      "pt-BR": "Faz caírem inúmeros meteoritos, gerando uma onda de choque nos arredores."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": false
+  },
+  {
+    "id": "unique_dark_mecha_dragon_funnel_laser",
+    "sourceId": "Unique_DarkMechaDragon_FunnelLaser",
+    "slug": "Omega_Laser",
+    "names": {
+      "en": "Omega Laser",
+      "pt-BR": "Laser Ômega"
+    },
+    "descriptions": {
+      "en": "Xenolord's exclusive skill. Summons the light of destruction from subspace and continuously fires it in all directions, burning everything in its sight to ashes.",
+      "pt-BR": "Habilidade exclusiva de Xenolord. Dispara de forma indiscriminada uma luz aniquiladora trazida do hiperespaço, reduzindo a cinzas tudo aquilo que sua vista alcança."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_ghost_dragon_phosphorous_beam",
+    "sourceId": "Unique_GhostDragon_PhosphorousBeam",
+    "slug": "Blazing_Beam",
+    "names": {
+      "en": "Blazing Beam",
+      "pt-BR": "Raio Refulgente"
+    },
+    "descriptions": {
+      "en": "Eidrolon's exclusive skill. Emits a superheated light beam for a short time. At the final moment, the targeted area is engulfed in a massive explosion.",
+      "pt-BR": "Habilidade exclusiva de espécies de Eidrolon. Cospe raios de luz incandescentes de forma contínua por algum tempo. Quando termina, causa uma grande explosão no local alvejado."
+    },
+    "element": "dragon",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "mud_shot",
+    "sourceId": "MudShot",
+    "slug": "Bog_Blast",
+    "names": {
+      "en": "Bog Blast",
+      "pt-BR": "Disparo de Lama"
+    },
+    "descriptions": {
+      "en": "Hurls sticky mud at an enemy.",
+      "pt-BR": "Dispara uma lama pegajosa na direção do inimigo."
+    },
+    "element": "ground",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_golden_horse_bite_v2",
+    "sourceId": "Unique_GoldenHorse_BiteV2",
+    "slug": "Double_Fang_%28Ground%29",
+    "names": {
+      "en": "Double Fang (Ground)",
+      "pt-BR": "Presas Duplas (Terra)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "ground",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_samurai_dog_bite_v2",
+    "sourceId": "Unique_SamuraiDog_BiteV2",
+    "slug": "Double_Fang_%28Ground%29",
+    "names": {
+      "en": "Double Fang (Ground)",
+      "pt-BR": "Presas Duplas (Terra)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "ground",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_golden_horse_bite",
+    "sourceId": "Unique_GoldenHorse_Bite",
+    "slug": "Fierce_Fang_%28Ground%29",
+    "names": {
+      "en": "Fierce Fang (Ground)",
+      "pt-BR": "Presas Selvagens (Terra)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "ground",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_samurai_dog_bite",
+    "sourceId": "Unique_SamuraiDog_Bite",
+    "slug": "Fierce_Fang_%28Ground%29",
+    "names": {
+      "en": "Fierce Fang (Ground)",
+      "pt-BR": "Presas Selvagens (Terra)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "ground",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_boar_tackle",
+    "sourceId": "Unique_Boar_Tackle",
+    "slug": "Reckless_Charge",
+    "names": {
+      "en": "Reckless Charge",
+      "pt-BR": "Investida Javali"
+    },
+    "descriptions": {
+      "en": "Rushoar's exclusive skill. Takes aim at a foe and rushes at them with a fierce charge.",
+      "pt-BR": "Habilidade exclusiva de Rushoar. Ele fixa os olhos no inimigo e se lança contra ele com um ímpeto ensandecido."
+    },
+    "element": "ground",
+    "cooldown": 4,
+    "power": 60,
+    "exclusive": true
+  },
+  {
+    "id": "unique_cute_mole_digging_attack",
+    "sourceId": "Unique_CuteMole_DiggingAttack",
+    "slug": "Fuddler_Tunneler",
+    "names": {
+      "en": "Fuddler Tunneler",
+      "pt-BR": "Tunelador Fuddler"
+    },
+    "descriptions": {
+      "en": "Fuddler's exclusive skill. Burrows underground and bursts out from beneath enemies.",
+      "pt-BR": "Habilidade exclusiva de Fuddler. Mergulha no solo e salta para fora com ímpeto por baixo do inimigo."
+    },
+    "element": "ground",
+    "cooldown": 4,
+    "power": 60,
+    "exclusive": true
+  },
+  {
+    "id": "stone_shotgun",
+    "sourceId": "StoneShotgun",
+    "slug": "Stone_Blast",
+    "names": {
+      "en": "Stone Blast",
+      "pt-BR": "Rajada de Pedra"
+    },
+    "descriptions": {
+      "en": "Fires a barrage of stones forward.",
+      "pt-BR": "Dispara inúmeras pedras pequenas para a frente."
+    },
+    "element": "ground",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_samurai_dog_dash_slash",
+    "sourceId": "Unique_SamuraiDog_DashSlash",
+    "slug": "Persistent_Slash",
+    "names": {
+      "en": "Persistent Slash",
+      "pt-BR": "Corte Tenaz"
+    },
+    "descriptions": {
+      "en": "Pupperai's exclusive skill. Charges at full speed, delivering two consecutive slashes with the wooden stick held in its mouth.",
+      "pt-BR": "Habilidade exclusiva de Pupperai. Corre a toda velocidade enquanto corta o inimigo com a vara que carrega na boca. Realiza o ataque duas vezes seguidas."
+    },
+    "element": "ground",
+    "cooldown": 4,
+    "power": 90,
+    "exclusive": true
+  },
+  {
+    "id": "unique_drill_game_shell_attack",
+    "sourceId": "Unique_DrillGame_ShellAttack",
+    "slug": "Shell_Spin",
+    "names": {
+      "en": "Shell Spin",
+      "pt-BR": "Giro de Casco"
+    },
+    "descriptions": {
+      "en": "Digtoise's exclusive skill. Moves while spinning its whole body at high speed. Drills through enemies, dealing continuous damage.",
+      "pt-BR": "Habilidade exclusiva de Digtoise. Ela se desloca enquanto faz o corpo inteiro girar em alta velocidade, causando dano contínuo ao triturar o inimigo com sua broca."
+    },
+    "element": "ground",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "throw_rock",
+    "sourceId": "ThrowRock",
+    "slug": "Stone_Cannon",
+    "names": {
+      "en": "Stone Cannon",
+      "pt-BR": "Canhão de Pedra"
+    },
+    "descriptions": {
+      "en": "Digs up a boulder and hurls it at an enemy.",
+      "pt-BR": "Retira uma rocha do solo à sua frente e a dispara na direção do inimigo."
+    },
+    "element": "ground",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_deer_ground_dirty_horn",
+    "sourceId": "Unique_Deer_Ground_DirtyHorn",
+    "slug": "Mud_Horn",
+    "names": {
+      "en": "Mud Horn",
+      "pt-BR": "Chifre de Lama"
+    },
+    "descriptions": {
+      "en": "Eikthyrdeer Terra's exclusive skill. Charges at foes and uses its antlers to whip mud at them. When used while riding, the direction of the charge can be controlled.",
+      "pt-BR": "Habilidade exclusiva de Eikthyrdeer Terra. Ele investe contra o inimigo e ataca levantando uma onda de lama com uma chifrada. Quando ativada durante a montaria, permite controlar a direção da investida."
+    },
+    "element": "ground",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "sand_tornado",
+    "sourceId": "SandTornado",
+    "slug": "Sand_Tornado",
+    "names": {
+      "en": "Sand Tornado",
+      "pt-BR": "Tornado de Areia"
+    },
+    "descriptions": {
+      "en": "Generates two sand tornadoes on either side before launching them at an enemy.",
+      "pt-BR": "Gera redemoinhos de areia para os lados, lançando-os contra o inimigo."
+    },
+    "element": "ground",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "unique_hercules_beetle_beetle_tackle",
+    "sourceId": "Unique_HerculesBeetle_BeetleTackle",
+    "slug": "Giga_Horn",
+    "names": {
+      "en": "Giga Horn",
+      "pt-BR": "Chifre Giga"
+    },
+    "descriptions": {
+      "en": "Warsect's exclusive skill. Skewers enemies with its four sturdy horns.",
+      "pt-BR": "Habilidade exclusiva de espécies de Warsect. Faz espetinho do inimigo usando seus quatro chifres robustos."
+    },
+    "element": "ground",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_feather_ostrich_tossin",
+    "sourceId": "Unique_FeatherOstrich_Tossin",
+    "slug": "Earth_Dash",
+    "names": {
+      "en": "Earth Dash",
+      "pt-BR": "Corrida Terrestre"
+    },
+    "descriptions": {
+      "en": "Dazemu's exclusive skill. Accelerates all at once and dashes forward at high speed.",
+      "pt-BR": "Habilidade exclusiva de Dazemu. Acelera subitamente, avançando em alta velocidade."
+    },
+    "element": "ground",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_anubis_low_round_kick",
+    "sourceId": "Unique_Anubis_LowRoundKick",
+    "slug": "Spinning_Roundhouse",
+    "names": {
+      "en": "Spinning Roundhouse",
+      "pt-BR": "Corte de Perna Giratória"
+    },
+    "descriptions": {
+      "en": "Anubis' exclusive skill. Performs a spin kick with its strong legs, sweeping enemies over a wide area.",
+      "pt-BR": "Habilidade exclusiva de Anubis. Ele executa um chute giratório com suas pernas poderosas para aniquilar todos em uma grande área ao redor."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grassmammoth_earthquake",
+    "sourceId": "Unique_Grassmammoth_Earthquake",
+    "slug": "Earth_Impact",
+    "names": {
+      "en": "Earth Impact",
+      "pt-BR": "Impacto Terrestre"
+    },
+    "descriptions": {
+      "en": "Mammorest's exclusive skill. Uses its massive body to shake the earth, dealing damage over a wide area.",
+      "pt-BR": "Habilidade exclusiva de Mammorest e subespécies. Ele faz estremecer a terra com seu corpo colossal, causando dano em uma grande área ao redor de si."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "tremor",
+    "sourceId": "Tremor",
+    "slug": "Rockburst",
+    "names": {
+      "en": "Rockburst",
+      "pt-BR": "Estouro de Rochas"
+    },
+    "descriptions": {
+      "en": "Causes the ground to shake before hurling a massive stone mass at its surroundings.",
+      "pt-BR": "Estremece a terra e faz voar um grande aglomerado de rochas pelos arredores."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_white_tiger_ground_iron_scratch",
+    "sourceId": "Unique_WhiteTiger_Ground_IronScratch",
+    "slug": "Stone_Claw",
+    "names": {
+      "en": "Stone Claw",
+      "pt-BR": "Garra de Pedra"
+    },
+    "descriptions": {
+      "en": "Cryolinx Terra's exclusive skill. First, it strikes with its claws, followed by a second slash, and culminates with a powerful slash using its entire body. When swinging the claws, rocks are launched forward in a fan shape.",
+      "pt-BR": "Habilidade exclusiva de Cryolinx Terra. Dilacera o inimigo com as garras no primeiro e segundo ataques , e por último usa o corpo inteiro para rasgá-lo em pedaços. Quando golpeia com as garras, lança 3 rochas para a frente em forma de leque."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_gorilla_ground_earth_punch",
+    "sourceId": "Unique_Gorilla_Ground_EarthPunch",
+    "slug": "Rumble_Combo",
+    "names": {
+      "en": "Rumble Combo",
+      "pt-BR": "Combo Trepidante do Gorila"
+    },
+    "descriptions": {
+      "en": "Gorirat Terra's exclusive skill. Pounds the ground twice before leaping into the air and delivers a powerful punch infused with the Power of Gaia.",
+      "pt-BR": "Habilidade exclusiva de Gorirat Terra. Ele salta depois de golpear o solo duas vezes, desferindo um soco carregado com a força da terra."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_sekhmet_somersault_scratch",
+    "sourceId": "Unique_Sekhmet_SomersaultScratch",
+    "slug": "Somersault_Scratch",
+    "names": {
+      "en": "Somersault Scratch",
+      "pt-BR": "Arranhão Acrobático"
+    },
+    "descriptions": {
+      "en": "Sekhmets exclusive skill. Scratches the enemy while performing a backward somersault to create distance.",
+      "pt-BR": "Habilidade exclusiva de Sekhmet. Arranha o inimigo enquanto dá um salto mortal para trás para tomar distância."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_dark_scorpion_pierce",
+    "sourceId": "Unique_DarkScorpion_Pierce",
+    "slug": "Jumping_Stinger",
+    "names": {
+      "en": "Jumping Stinger",
+      "pt-BR": "Salto de Ferroada"
+    },
+    "descriptions": {
+      "en": "Menasting's exclusive skill. Jumps high and forcefully stabs its prey with its tail. The poison from the tail is deadly.",
+      "pt-BR": "Habilidade exclusiva de Menasting e subespécies. Ele salta às alturas e perfura sua presa com ímpeto usando a cauda peçonhenta."
+    },
+    "element": "ground",
+    "cooldown": 16,
+    "power": 350,
+    "exclusive": true
+  },
+  {
+    "id": "unique_anubis_tackle",
+    "sourceId": "Unique_Anubis_Tackle",
+    "slug": "Forceful_Charge",
+    "names": {
+      "en": "Forceful Charge",
+      "pt-BR": "Impulso de Força"
+    },
+    "descriptions": {
+      "en": "Anubis' exclusive skill. Rapidly pursues its foes while releasing energy and unleashing a powerful punch.",
+      "pt-BR": "Habilidade exclusiva de Anubis. Ele persegue o inimigo em alta velocidade, liberando energia para executar um soco poderoso."
+    },
+    "element": "ground",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "rock_lance",
+    "sourceId": "RockLance",
+    "slug": "Rock_Lance",
+    "names": {
+      "en": "Rock Lance",
+      "pt-BR": "Lança de Rocha"
+    },
+    "descriptions": {
+      "en": "Generates a sharp rock spear under an enemy.",
+      "pt-BR": "Faz aparecer uma lança de rocha afiada sob os pés do inimigo."
+    },
+    "element": "ground",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "unique_sekhmet_rolling_scratch",
+    "sourceId": "Unique_Sekhmet_RollingScratch",
+    "slug": "Rolling_Scratch",
+    "names": {
+      "en": "Rolling Scratch",
+      "pt-BR": "Arranhão Rolante"
+    },
+    "descriptions": {
+      "en": "Sekhmets exclusive skill. Spins forward to quickly close the distance and scratch the enemy.",
+      "pt-BR": "Habilidade exclusiva de Sekhmet. Sai girando e encurta subitamente a distância até o inimigo para arranhá-lo."
+    },
+    "element": "ground",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "unique_wing_golem_round_cutter",
+    "sourceId": "Unique_WingGolem_RoundCutter",
+    "slug": "Ground_Cutter",
+    "names": {
+      "en": "Ground Cutter",
+      "pt-BR": "Cortador de Chão"
+    },
+    "descriptions": {
+      "en": "Knocklem's exclusive skill. Takes a big swing and throws the ring from its back. The ring flies in a circular trajectory.",
+      "pt-BR": "Habilidade exclusiva de Knocklem. Ergue a roda em suas costas bem alto e então a arremessa, fazendo com que trace um círculo no ar."
+    },
+    "element": "ground",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "unique_anubis_ground_punch",
+    "sourceId": "Unique_Anubis_GroundPunch",
+    "slug": "Ground_Smash",
+    "names": {
+      "en": "Ground Smash",
+      "pt-BR": "Esmagador de Chão"
+    },
+    "descriptions": {
+      "en": "Anubis' exclusive skill. Leaps high into the air and strikes a punch to the ground, causing a shockwave that deals damge over a wide area.",
+      "pt-BR": "Habilidade exclusiva de Anubis. Ele salta às alturas e desce com um soco contra o chão. O choque se espalha pelo solo, causando dano em grande área."
+    },
+    "element": "ground",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "sand_twister",
+    "sourceId": "SandTwister",
+    "slug": "Sand_Twister",
+    "names": {
+      "en": "Sand Twister",
+      "pt-BR": "Furacão de Areia"
+    },
+    "descriptions": {
+      "en": "Creates multiple sand tornadoes. The tornadoes continuously spin in circles.",
+      "pt-BR": "Gera vários redemoinhos de areia que rodopiam continuamente como que traçando um círculo no ar."
+    },
+    "element": "ground",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": false
+  },
+  {
+    "id": "unique_golden_horse_stone_dash",
+    "sourceId": "Unique_GoldenHorse_StoneDash",
+    "slug": "Crash_Dash",
+    "names": {
+      "en": "Crash Dash",
+      "pt-BR": "Corrida Esmagadora"
+    },
+    "descriptions": {
+      "en": "Gildane's exclusive skill. Charges forward, hurling rocks to the left and right with great force.",
+      "pt-BR": "Habilidade exclusiva de Gildane. Realiza uma investida enquanto faz voarem rochas com grande ímpeto para os lados."
+    },
+    "element": "ground",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_sumo_dog_sumo_stomp",
+    "sourceId": "Unique_SumoDog_SumoStomp",
+    "slug": "Sumo_Stomp",
+    "names": {
+      "en": "Sumo Stomp",
+      "pt-BR": "Pisada de Sumô"
+    },
+    "descriptions": {
+      "en": "Bulldosu's exclusive skill. Raises its right hind leg high and stomps the ground, creating a shockwave that strikes enemies in a fan-shaped area ahead.",
+      "pt-BR": "Habilidade exclusiva de Bulldosu. Ergue alto a pata traseira direita para dar uma pisada no solo, atacando com as ondas de choque que se alastram em leque para a frente."
+    },
+    "element": "ground",
+    "cooldown": 24,
+    "power": 550,
+    "exclusive": true
+  },
+  {
+    "id": "rock_beat",
+    "sourceId": "RockBeat",
+    "slug": "Rocky_Impact",
+    "names": {
+      "en": "Rocky Impact",
+      "pt-BR": "Batida de Pedra"
+    },
+    "descriptions": {
+      "en": "Shakes the ground and lifts a massive boulder into the air.",
+      "pt-BR": "Estremece o solo e faz levitar uma rocha gigantesca."
+    },
+    "element": "ground",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_grass_golem_rocket_punch",
+    "sourceId": "Unique_GrassGolem_RocketPunch",
+    "slug": "Rocket_Arm",
+    "names": {
+      "en": "Rocket Arm",
+      "pt-BR": "Braço-Foguete"
+    },
+    "descriptions": {
+      "en": "Dualiths exclusive skill. Detaches its left arm to sweep enemies, then launches its right arm.",
+      "pt-BR": "Habilidade exclusiva de espécies de Dualith. Remove o braço esquerdo do corpo para dar um golpe horizontal contra os inimigos. Em seguida, dispara seu braço direito."
+    },
+    "element": "ground",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_cube_turtle_cube_press",
+    "sourceId": "Unique_CubeTurtle_CubePress",
+    "slug": "Cube_Press",
+    "names": {
+      "en": "Cube Press",
+      "pt-BR": "Prensa de Pedra"
+    },
+    "descriptions": {
+      "en": "Tetroise's exclusive skill. Leaps into the air and crushes enemies with its massive weight.",
+      "pt-BR": "Habilidade exclusiva de Tetroise. Salta como se estivesse flutuando no ar e pulveriza o inimigo com seu peso esmagador."
+    },
+    "element": "ground",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_rock_beast_rock_horn",
+    "sourceId": "Unique_RockBeast_RockHorn",
+    "slug": "Horn_Burst",
+    "names": {
+      "en": "Horn Burst",
+      "pt-BR": "Estouro de Chifre"
+    },
+    "descriptions": {
+      "en": "Pierdon's exclusive skill. Rakes the ground with its horn, then hurls a rock projectile at enemies.",
+      "pt-BR": "Habilidade exclusiva de Pierdon. Cavuca a terra com o chifre e então ergue a cabeça de repente, fazendo voar um projétil de rocha contra o inimigo."
+    },
+    "element": "ground",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_dome_armor_dragon_explosive_missile",
+    "sourceId": "Unique_DomeArmorDragon_ExplosiveMissile",
+    "slug": "Missile_Burst",
+    "names": {
+      "en": "Missile Burst",
+      "pt-BR": "Mísseis Explosivos"
+    },
+    "descriptions": {
+      "en": "Aegidron's exclusive skill. Launches countless explosive missiles from its wings.",
+      "pt-BR": "Habilidade exclusiva de Aegidron. Ataca disparando inúmeros mísseis explosivos de suas penas."
+    },
+    "element": "ground",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "thunder_spear",
+    "sourceId": "ThunderSpear",
+    "slug": "Thunder_Spear",
+    "names": {
+      "en": "Thunder Spear",
+      "pt-BR": "Lança do Trovão"
+    },
+    "descriptions": {
+      "en": "Fires a high-speed lightning spear straight ahead towards the enemy.",
+      "pt-BR": "Dispara uma lança relâmpago em linha reta e alta velocidade na direção do inimigo."
+    },
+    "element": "electric",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_thunder_dog_bite_v2",
+    "sourceId": "Unique_ThunderDog_BiteV2",
+    "slug": "Double_Fang_%28Electric%29",
+    "names": {
+      "en": "Double Fang (Electric)",
+      "pt-BR": "Presas Duplas (Raio)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "electric",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_elec_pomeranian_bite_v2",
+    "sourceId": "Unique_ElecPomeranian_BiteV2",
+    "slug": "Double_Fang_%28Electric%29",
+    "names": {
+      "en": "Double Fang (Electric)",
+      "pt-BR": "Presas Duplas (Raio)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "electric",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "spread_pulse",
+    "sourceId": "SpreadPulse",
+    "slug": "Spark_Blast",
+    "names": {
+      "en": "Spark Blast",
+      "pt-BR": "Tiro de Faísca"
+    },
+    "descriptions": {
+      "en": "Releases lightning orbs in a fan shape, spreading as they travel.",
+      "pt-BR": "Dispara uma bola elétrica que se espalha em forma de leque."
+    },
+    "element": "electric",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_thunder_dog_bite",
+    "sourceId": "Unique_ThunderDog_Bite",
+    "slug": "Fierce_Fang_%28Electric%29",
+    "names": {
+      "en": "Fierce Fang (Electric)",
+      "pt-BR": "Presas Selvagens (Raio)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "electric",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_elec_pomeranian_bite",
+    "sourceId": "Unique_ElecPomeranian_Bite",
+    "slug": "Fierce_Fang_%28Electric%29",
+    "names": {
+      "en": "Fierce Fang (Electric)",
+      "pt-BR": "Presas Selvagens (Raio)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "electric",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "elec_wave",
+    "sourceId": "ElecWave",
+    "slug": "Shockwave",
+    "names": {
+      "en": "Shockwave",
+      "pt-BR": "Onda de Choque"
+    },
+    "descriptions": {
+      "en": "Quickly discharges electricity, shocking those around it.",
+      "pt-BR": "Descarrega energia rapidamente para causar um choque nos arredores."
+    },
+    "element": "electric",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "thunder_ball",
+    "sourceId": "ThunderBall",
+    "slug": "Electric_Ball",
+    "names": {
+      "en": "Electric Ball",
+      "pt-BR": "Bola Trovão"
+    },
+    "descriptions": {
+      "en": "Fires an electric ball that slowly pursues an enemy.",
+      "pt-BR": "Dispara uma bola elétrica que persegue o inimigo lentamente."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 100,
+    "exclusive": false
+  },
+  {
+    "id": "unique_thunder_dog_inazuma_shorai",
+    "sourceId": "Unique_ThunderDog_InazumaShorai",
+    "slug": "Beckon_Lightning",
+    "names": {
+      "en": "Beckon Lightning",
+      "pt-BR": "Invocar Raio"
+    },
+    "descriptions": {
+      "en": "Rayhound's exclusive skill. Summons lightning one after another in front, then charges forward at high speed through the gaps between the falling bolts.",
+      "pt-BR": "Habilidade exclusiva de Rayhound. Invoca relâmpagos em sequência à sua frente, investindo em alta velocidade por entre eles."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 100,
+    "exclusive": true
+  },
+  {
+    "id": "thunder_funnel",
+    "sourceId": "ThunderFunnel",
+    "slug": "Plasma_Funnel",
+    "names": {
+      "en": "Plasma Funnel",
+      "pt-BR": "Funil de Plasma"
+    },
+    "descriptions": {
+      "en": "Creates two balls of electric energy that fire numerous lightning orbs at enemies.",
+      "pt-BR": "Cria duas esferas contendo energia elétrica e as usa para disparar inúmeros projéteis de eletricidade contra o inimigo."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_kirin_lightning_tackle",
+    "sourceId": "Unique_Kirin_LightningTackle",
+    "slug": "Lightning_Gale",
+    "names": {
+      "en": "Lightning Gale",
+      "pt-BR": "Choque Vendaval"
+    },
+    "descriptions": {
+      "en": "Univolt's exclusive skill. Generates bolts of lightning all around while charging at its target.",
+      "pt-BR": "Habilidade exclusiva de Univolt. Ela investe contra o inimigo enquanto faz cair raios ao redor de si mesma."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "lockon_laser",
+    "sourceId": "LockonLaser",
+    "slug": "Lock-on_Laser",
+    "names": {
+      "en": "Lock-on Laser",
+      "pt-BR": "Laser Certeiro"
+    },
+    "descriptions": {
+      "en": "Takes aim at an enemy before firing a super high speed laser.",
+      "pt-BR": "Depois de fixar a mira no inimigo, dispara um laser de eletricidade ultraveloz."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 140,
+    "exclusive": false
+  },
+  {
+    "id": "unique_elec_panda_elec_scratch",
+    "sourceId": "Unique_ElecPanda_ElecScratch",
+    "slug": "Lightning_Claw",
+    "names": {
+      "en": "Lightning Claw",
+      "pt-BR": "Garra Relâmpago"
+    },
+    "descriptions": {
+      "en": "Grizzbolt's exclusive skill. After leaping at an enemy and tearing at it twice with its electrically charged claws, it attacks the ground, sending an electric shock throughout the area.",
+      "pt-BR": "Habilidade exclusiva de Grizzbolt. Ele salta contra o inimigo para fatiá-lo com suas garras carregadas de eletricidade. Após o segundo salto, termina colocando as garras sobre o solo e espalhando um ataque elétrico por uma grande área."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 150,
+    "exclusive": true
+  },
+  {
+    "id": "line_thunder",
+    "sourceId": "LineThunder",
+    "slug": "Lightning_Streak",
+    "names": {
+      "en": "Lightning Streak",
+      "pt-BR": "Trovão Linear"
+    },
+    "descriptions": {
+      "en": "Generates a lightning bolt that moves forward in a line.",
+      "pt-BR": "Gera um ataque elétrico que avança em linha reta."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "unique_grass_panda_electric_electric_punch",
+    "sourceId": "Unique_GrassPanda_Electric_ElectricPunch",
+    "slug": "Blast_Punch",
+    "names": {
+      "en": "Blast Punch",
+      "pt-BR": "Soco Rajada"
+    },
+    "descriptions": {
+      "en": "Mossanda Lux's exclusive skill. Winds up its right arm before delivering an electrically charged punch.",
+      "pt-BR": "Habilidade exclusiva de Mossanda Lux. Ele gira o braço direito antes de desferir um soco eletrizante para a frente."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 180,
+    "exclusive": true
+  },
+  {
+    "id": "unique_thunder_bird_thunder_storm",
+    "sourceId": "Unique_ThunderBird_ThunderStorm",
+    "slug": "Lightning_Dive",
+    "names": {
+      "en": "Lightning Dive",
+      "pt-BR": "Mergulho Relâmpago"
+    },
+    "descriptions": {
+      "en": "Beakon's exclusive skill. First, it strikes the enemy's location with lightning. Then, while gliding forward, it drops lightning to the left and right.",
+      "pt-BR": "Habilidade exclusiva de Beakon. Primeiro faz cair um raio no local onde o inimigo se encontra, para então realizar uma investida aérea e continuar soltando raios para os lados."
+    },
+    "element": "electric",
+    "cooldown": 8,
+    "power": 180,
+    "exclusive": true
+  },
+  {
+    "id": "three_thunder",
+    "sourceId": "ThreeThunder",
+    "slug": "Tri-Lightning",
+    "names": {
+      "en": "Tri-Lightning",
+      "pt-BR": "Trovão Triplo"
+    },
+    "descriptions": {
+      "en": "Generates lightning that strikes an enemy three times from above.",
+      "pt-BR": "Gera três raios que fulminam o inimigo a partir dos céus."
+    },
+    "element": "electric",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "unique_thunder_dragon_man_thunder_sword_attack",
+    "sourceId": "Unique_ThunderDragonMan_ThunderSwordAttack",
+    "slug": "Kerauno",
+    "names": {
+      "en": "Kerauno",
+      "pt-BR": "Keravnos"
+    },
+    "descriptions": {
+      "en": "Orserk's exclusive skill. Summons a spear of lightning while leaping into the air before throwing it at an enemy.",
+      "pt-BR": "Habilidade exclusiva de Orserk. Ele salta e invoca uma lança de trovão, arremessando-a contra o inimigo."
+    },
+    "element": "electric",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "tri_spark",
+    "sourceId": "TriSpark",
+    "slug": "TriSpark",
+    "names": {
+      "en": "TriSpark",
+      "pt-BR": "Faísca Tripla"
+    },
+    "descriptions": {
+      "en": "A high-speed lightning ball that flies in a straight line. Simultaneously fires slow lightning balls that track the enemy.",
+      "pt-BR": "Dispara projéteis de eletricidade velozes que voam em linha reta e, ao mesmo tempo, outros mais lentos que perseguem o inimigo."
+    },
+    "element": "electric",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": false
+  },
+  {
+    "id": "lightning_strike",
+    "sourceId": "LightningStrike",
+    "slug": "Lightning_Strike",
+    "names": {
+      "en": "Lightning Strike",
+      "pt-BR": "Golpe Relâmpago"
+    },
+    "descriptions": {
+      "en": "Acts as a lightning rod, calling down thunderbolts that electrocute the surrounding area.",
+      "pt-BR": "Servindo de para-raios para causar a queda de um relâmpago, cria uma descarga elétrica explosiva no local."
+    },
+    "element": "electric",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_fengyun_deeper_electric_thunder_tempest",
+    "sourceId": "Unique_FengyunDeeper_Electric_ThunderTempest",
+    "slug": "Thunder_Tempest",
+    "names": {
+      "en": "Thunder Tempest",
+      "pt-BR": "Tormenta de Trovão"
+    },
+    "descriptions": {
+      "en": "Charges forward while manipulating the atmosphere and enveloping itself in thunderclouds.",
+      "pt-BR": "Habilidade exclusiva de Fenglope Lux. Ele controla a atmosfera para arremeter com o corpo envolto por nuvens trovejantes."
+    },
+    "element": "electric",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_flower_dinosaur_electric_thunder_whip",
+    "sourceId": "Unique_FlowerDinosaur_Electric_ThunderWhip",
+    "slug": "Lightning_Smash",
+    "names": {
+      "en": "Lightning Smash",
+      "pt-BR": "Colisão Relâmpago"
+    },
+    "descriptions": {
+      "en": "Dinossom Lux's exclusive skill. Uses its large tail to strike the ground in front of it, delivering a bolt of lightning in a straight line.",
+      "pt-BR": "Habilidade exclusiva de Dinossom Lux. Ele usa sua grande cauda para golpear o solo à frente, causando um choque elétrico em linha reta."
+    },
+    "element": "electric",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "thunder_rain",
+    "sourceId": "ThunderRain",
+    "slug": "Thunder_Rain",
+    "names": {
+      "en": "Thunder Rain",
+      "pt-BR": "Chuva de Trovão"
+    },
+    "descriptions": {
+      "en": "Calls lightning that strikes an enemy after a set amount of time has passed.",
+      "pt-BR": "Invoca uma tormenta para fulminar o inimigo com vários raios após certo tempo."
+    },
+    "element": "electric",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "unique_captain_penguin_black_body_slide_electric",
+    "sourceId": "Unique_CaptainPenguin_Black_BodySlide_Electric",
+    "slug": "Thunderslide",
+    "names": {
+      "en": "Thunderslide",
+      "pt-BR": "Deslizada do Trovão"
+    },
+    "descriptions": {
+      "en": "Penking Lux's exclusive skill. Lies on its belly while generating electric charge all around it before sliding at enemies at high speed.",
+      "pt-BR": "Habilidade exclusiva de Penking Lux. Ele se deita de barriga no chão e sai deslizando contra o inimigo enquanto libera eletricidade de todo o seu corpo."
+    },
+    "element": "electric",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "thunderbolt",
+    "sourceId": "Thunderbolt",
+    "slug": "Lightning_Bolt",
+    "names": {
+      "en": "Lightning Bolt",
+      "pt-BR": "Faísca Relâmpago"
+    },
+    "descriptions": {
+      "en": "Charges electric energy before blasting enemies with a powerful shock.",
+      "pt-BR": "Carrega energia elétrica para lançar um ataque de eletricidade poderoso contra o inimigo."
+    },
+    "element": "electric",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "range_thunder",
+    "sourceId": "RangeThunder",
+    "slug": "All_Range_Thunder",
+    "names": {
+      "en": "All Range Thunder",
+      "pt-BR": "Trovão a Todo Alcance"
+    },
+    "descriptions": {
+      "en": "Generates lightning strikes that travel in a straight line in all directions.",
+      "pt-BR": "Gera um ataque elétrico que avança em linha reta em todas as direções."
+    },
+    "element": "electric",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": false
+  },
+  {
+    "id": "unique_blue_thunder_horse_tossin",
+    "sourceId": "Unique_BlueThunderHorse_Tossin",
+    "slug": "Flash_Charge",
+    "names": {
+      "en": "Flash Charge",
+      "pt-BR": "Investida Relâmpago"
+    },
+    "descriptions": {
+      "en": "Azurmane's exclusive skill. Cloaks the body in lightning and performs a high-speed charge toward the enemy.",
+      "pt-BR": "Habilidade exclusiva de Azurmane. Avança em grande velocidade contra o inimigo enquanto envolto em raios."
+    },
+    "element": "electric",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_elec_snail_shell_charge",
+    "sourceId": "Unique_ElecSnail_ShellCharge",
+    "slug": "Shell_Charge",
+    "names": {
+      "en": "Shell Charge",
+      "pt-BR": "Investida de Concha"
+    },
+    "descriptions": {
+      "en": "Snock's exclusive skill. Withdraws into its shell to reduce damage taken while building electric charge. Once fully charged, it discharges, damaging nearby enemies. After discharging, the Attack of this Pal's Electric skills is increased for a limited time.",
+      "pt-BR": "Habilidade exclusiva de espécies de Snock. Esconde-se na sua concha para reduzir o dano sofrido e começa a carregar energia elétrica. Ao terminar de carregar, libera a eletricidade para causar dano nos inimigos ao redor. Depois do ataque elétrico, o poder de ataque de habilidades elétricas deste Pal aumenta por tempo limitado."
+    },
+    "element": "electric",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_elec_panda_gatling_attack",
+    "sourceId": "Unique_ElecPanda_GatlingAttack",
+    "slug": "Heavy_Thunder_Tank",
+    "names": {
+      "en": "Heavy Thunder Tank",
+      "pt-BR": "Tanque Pesado Elétrico"
+    },
+    "descriptions": {
+      "en": "Grizzbolt's exclusive skill. Pulls out a minigun out of nowhere and starts blasting. Finishes with a single, charged power shot.",
+      "pt-BR": "Habilidade exclusiva de Grizzbolt. Descarrega no inimigo a Minigun que saca sabe-se lá de onde. Ao final, depois de concentrar um pouco o ataque, dispara um último tiro poderoso."
+    },
+    "element": "electric",
+    "cooldown": 24,
+    "power": 550,
+    "exclusive": true
+  },
+  {
+    "id": "unique_thunder_dragon_man_numerous_sword_attack",
+    "sourceId": "Unique_ThunderDragonMan_NumerousSwordAttack",
+    "slug": "Polykeraunos",
+    "names": {
+      "en": "Polykeraunos",
+      "pt-BR": "Polikeravnos"
+    },
+    "descriptions": {
+      "en": "Orserk's exclusive skill. Summons numerous thunder spears and hurls them at the enemy. The first spear is imbued with the power of lightning and explodes after a few seconds.",
+      "pt-BR": "Habilidade exclusiva de Orserk. Invoca inúmeras lanças elétricas e as arremessa contra o inimigo. A primeira lança contém poder elétrico concentrado e explode após alguns segundos."
+    },
+    "element": "electric",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "thunder_storm",
+    "sourceId": "ThunderStorm",
+    "slug": "Thunderstorm",
+    "names": {
+      "en": "Thunderstorm",
+      "pt-BR": "Tempestade de Trovões"
+    },
+    "descriptions": {
+      "en": "Generates a huge tornado of lightning that moves slowly towards the enemy.",
+      "pt-BR": "Gera um redemoinho elétrico gigantesco que se move lentamente rumo ao inimigo."
+    },
+    "element": "electric",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "railbolt",
+    "sourceId": "Railbolt",
+    "slug": "Thunder_Rail",
+    "names": {
+      "en": "Thunder Rail",
+      "pt-BR": "Trilho de Trovão"
+    },
+    "descriptions": {
+      "en": "Charge the power of lightning to the limit and fires multiple simultaneous electric shocks at the enemy.",
+      "pt-BR": "Carrega energia elétrica até o limite para disparar simultaneamente vários ataques de eletricidade poderosos contra o inimigo."
+    },
+    "element": "electric",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "shokei_laser",
+    "sourceId": "ShokeiLaser",
+    "slug": "Lethal_Laser",
+    "names": {
+      "en": "Lethal Laser",
+      "pt-BR": "Laser Executor"
+    },
+    "descriptions": {
+      "en": "After aiming at the enemy, fires multiple ultra-fast lightning lasers.",
+      "pt-BR": "Depois de fixar a mira no inimigo, dispara vários lasers de eletricidade ultravelozes."
+    },
+    "element": "electric",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_blue_thunder_horse_flash_dash",
+    "sourceId": "Unique_BlueThunderHorse_FlashDash",
+    "slug": "Bolt_Blink",
+    "names": {
+      "en": "Bolt Blink",
+      "pt-BR": "Lampejo de Faísca"
+    },
+    "descriptions": {
+      "en": "Azurmane's exclusive skill. Moves with the speed of lightning, engulfing everything in its path.",
+      "pt-BR": "Habilidade exclusiva de Azurmane. Move-se tão rápido quanto um relâmpago, envolvendo no ataque tudo que estiver no seu caminho."
+    },
+    "element": "electric",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_scorpion_man_erectric_upper_thunder",
+    "sourceId": "Unique_ScorpionMan_Erectric_UpperThunder",
+    "slug": "Thunder_Uppercut",
+    "names": {
+      "en": "Thunder Uppercut",
+      "pt-BR": "Gancho de Trovão"
+    },
+    "descriptions": {
+      "en": "ScorpionMan_Erectric's exclusive skill. Uses superconductivity to closes the distance to the enemy at high speed, then swings its pincers upward with full force.",
+      "pt-BR": "Habilidade exclusiva de Prixter Lux. Usa supercondutividade para encurtar rapidamente a distância até o inimigo e desfere um golpe sem piedade com sua pinça."
+    },
+    "element": "electric",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "fire_blast",
+    "sourceId": "FireBlast",
+    "slug": "Ignis_Blast",
+    "names": {
+      "en": "Ignis Blast",
+      "pt-BR": "Tiro de Fogo"
+    },
+    "descriptions": {
+      "en": "Hurls a ball of fire straight at an enemy.",
+      "pt-BR": "Dispara um projétil de fogo que voa em linha reta na direção do inimigo."
+    },
+    "element": "fire",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_amaterasu_wolf_bite_v2",
+    "sourceId": "Unique_AmaterasuWolf_BiteV2",
+    "slug": "Double_Fang_%28Fire%29",
+    "names": {
+      "en": "Double Fang (Fire)",
+      "pt-BR": "Presas Duplas (Fogo)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "fire",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_monster001_slime_press_fire",
+    "sourceId": "Unique_YakushimaMonster001_SlimePress_Fire",
+    "slug": "Slime_Press_%28Fire%29",
+    "names": {
+      "en": "Slime Press (Fire)",
+      "pt-BR": "Prensa de Geleia (Fogo)"
+    },
+    "descriptions": {
+      "en": "Red Slime's exclusive skill. Leaps toward the enemy and delivers an attack.",
+      "pt-BR": "Habilidade exclusiva de Geleia vermelha. Salta contra o inimigo para atacá-lo."
+    },
+    "element": "fire",
+    "cooldown": 1,
+    "power": 50,
+    "exclusive": true
+  },
+  {
+    "id": "unique_amaterasu_wolf_bite",
+    "sourceId": "Unique_AmaterasuWolf_Bite",
+    "slug": "Fierce_Fang_%28Fire%29",
+    "names": {
+      "en": "Fierce Fang (Fire)",
+      "pt-BR": "Presas Selvagens (Fogo)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "fire",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "fire_seed",
+    "sourceId": "FireSeed",
+    "slug": "Spirit_Fire",
+    "names": {
+      "en": "Spirit Fire",
+      "pt-BR": "Fogo Fendido"
+    },
+    "descriptions": {
+      "en": "Shoots fireballs towards an enemy. The fireballs explode after a short distance, generating smaller fireballs that spread forward.",
+      "pt-BR": "Dispara uma bola de fogo contra o inimigo. Ela estoura depois de avançar certa distância, espalhando bolas de fogo menores pela frente."
+    },
+    "element": "fire",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_flame_buffalo_flame_horn",
+    "sourceId": "Unique_FlameBuffalo_FlameHorn",
+    "slug": "Blazing_Horn",
+    "names": {
+      "en": "Blazing Horn",
+      "pt-BR": "Chifre Ardente"
+    },
+    "descriptions": {
+      "en": "Arsox's exclusive skill. Takes aim and charges with fierce momentum while raising its horn.",
+      "pt-BR": "Habilidade exclusiva de Arsox. Depois de fixar a mira no inimigo, ele arremete com um ímpeto ensandecido enquanto golpeia com os chifres para o alto."
+    },
+    "element": "fire",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "flare_arrow",
+    "sourceId": "FlareArrow",
+    "slug": "Flare_Arrow",
+    "names": {
+      "en": "Flare Arrow",
+      "pt-BR": "Flecha de Fulgor"
+    },
+    "descriptions": {
+      "en": "Fires three flaming arrows in succession that home in on an enemy.",
+      "pt-BR": "Dispara três flechas de fogo contínuas que perseguem o inimigo em alta velocidade."
+    },
+    "element": "fire",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_ronin_iai",
+    "sourceId": "Unique_Ronin_Iai",
+    "slug": "Iaigiri",
+    "names": {
+      "en": "Iaigiri",
+      "pt-BR": "Iai-kiri"
+    },
+    "descriptions": {
+      "en": "Bushi's exclusive skill. Taking hold of the sword, it appears in front of an enemy in an instant and unleashes an ultra-fast sword draw attack.",
+      "pt-BR": "Habilidade exclusiva de espécies de Bushi e subespécies. Levando a mão à espada, ele surge na frente do inimigo num piscar de olhos e desfere um único golpe de velocidade impressionante."
+    },
+    "element": "fire",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": true
+  },
+  {
+    "id": "flamethrower",
+    "sourceId": "Flamethrower",
+    "slug": "Ignis_Breath",
+    "names": {
+      "en": "Ignis Breath",
+      "pt-BR": "Baforada de Fogo"
+    },
+    "descriptions": {
+      "en": "Shoots flames at an enemy, dealing continuous damage.",
+      "pt-BR": "Lança contra o inimigo uma chama que causa dano contínuo."
+    },
+    "element": "fire",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "unique_baphomet_swallow_kite",
+    "sourceId": "Unique_Baphomet_SwallowKite",
+    "slug": "Hellfire_Claw",
+    "names": {
+      "en": "Hellfire Claw",
+      "pt-BR": "Garra do Fogo Infernal"
+    },
+    "descriptions": {
+      "en": "Incineram's exclusive skill. Draws near enemies using its left claw to slash them into the air before cutting them down with its right claw.",
+      "pt-BR": "Habilidade exclusiva de Incineram e subespécies. Ele se aproxima e lança o inimigo para cima com um corte da garra esquerda, logo saltando para derrubá-lo rapidamente com a garra direita."
+    },
+    "element": "fire",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "unique_amaterasu_wolf_fire_charge",
+    "sourceId": "Unique_AmaterasuWolf_FireCharge",
+    "slug": "Daring_Flames",
+    "names": {
+      "en": "Daring Flames",
+      "pt-BR": "Furinkazan"
+    },
+    "descriptions": {
+      "en": "Kitsun's exclusive skill. Charges forward with great speed while enveloped in intense blue flames.",
+      "pt-BR": "Habilidade exclusiva de Kitsun. Ele envolve o corpo inteiro com uma chama azul e investe com grande ímpeto."
+    },
+    "element": "fire",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "flare_tornado",
+    "sourceId": "FlareTornado",
+    "slug": "Flare_Storm",
+    "names": {
+      "en": "Flare Storm",
+      "pt-BR": "Tempestade de Fulgor"
+    },
+    "descriptions": {
+      "en": "Generates two flaming tornadoes on either side before launching them at an enemy.",
+      "pt-BR": "Gera redemoinhos escaldantes para os lados, lançando-os contra o inimigo."
+    },
+    "element": "fire",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "unique_red_armor_bird_triple_peck",
+    "sourceId": "Unique_RedArmorBird_TriplePeck",
+    "slug": "Rush_Beak",
+    "names": {
+      "en": "Rush Beak",
+      "pt-BR": "Arranque com Bico"
+    },
+    "descriptions": {
+      "en": "Ragnahawk's exclusive skill. While flapping forward, it strikes with its beak to ignite fires in front, right, and left, causing a small explosion.",
+      "pt-BR": "Habilidade exclusiva de Ragnahawk. Bate as asas para a frente e dá bicadas pela dianteira, direita e esquerda, acendendo chamas para causar uma pequena explosão."
+    },
+    "element": "fire",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "unique_bird_dragon_fire_breath",
+    "sourceId": "Unique_BirdDragon_FireBreath",
+    "slug": "Flame_Breath",
+    "names": {
+      "en": "Flame Breath",
+      "pt-BR": "Sopro Voador"
+    },
+    "descriptions": {
+      "en": "Vanwyrms exclusive skill. Advances while breathing fire from its mouth.",
+      "pt-BR": "Habilidade exclusiva de Vanwyrm. Avança enquanto cospe fogo pela boca."
+    },
+    "element": "fire",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "flame_wall",
+    "sourceId": "FlameWall",
+    "slug": "Flame_Wall",
+    "names": {
+      "en": "Flame Wall",
+      "pt-BR": "Parede de Chamas"
+    },
+    "descriptions": {
+      "en": "Creates a wall of flames at the enemy's location. The wall of flames will remain for a while, and deal damage to the enemies it touches.",
+      "pt-BR": "Gera uma parede de fogo ardente no local do inimigo. A parede de fogo continua queimando por algum tempo, causando dano nos inimigos que a tocarem."
+    },
+    "element": "fire",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": false
+  },
+  {
+    "id": "unique_fire_kirin_tackle",
+    "sourceId": "Unique_FireKirin_Tackle",
+    "slug": "Ignis_Charge",
+    "names": {
+      "en": "Ignis Charge",
+      "pt-BR": "Investida de Chamas"
+    },
+    "descriptions": {
+      "en": "Pyrin's exclusive skill. Charges forward while engulfed in a veil of flames. Flames continue to burn in its path.",
+      "pt-BR": "Habilidade exclusiva de Pyrin. Ela investe com o corpo envolto em chamas, incendiando tudo em seu trajeto."
+    },
+    "element": "fire",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_volcanic_monster_magma_attack",
+    "sourceId": "Unique_VolcanicMonster_MagmaAttack",
+    "slug": "Volcanic_Burst",
+    "names": {
+      "en": "Volcanic Burst",
+      "pt-BR": "Explosão Vulcânica"
+    },
+    "descriptions": {
+      "en": "Reptyro's exclusive skill. Raises its front legs and slams them into the ground, causing a volcanic eruptions under its enemies. It simultaneously bombards them with volcanic bombs from above.",
+      "pt-BR": "Habilidade exclusiva de Reptyro. Ele ergue as patas dianteiras e golpeia o solo, criando uma erupção de chamas junto ao inimigo. Durante a erupção, também chovem bombas vulcânicas nos arredores."
+    },
+    "element": "fire",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "flame_funnel",
+    "sourceId": "FlameFunnel",
+    "slug": "Flame_Funnel",
+    "names": {
+      "en": "Flame Funnel",
+      "pt-BR": "Funil de Chamas"
+    },
+    "descriptions": {
+      "en": "Creates multiple spheres of fiery energy, from which countless fireballs shoot towards the enemy.",
+      "pt-BR": "Cria esferas contendo energia flamejante e as usa para disparar inúmeros projéteis de fogo contra o inimigo."
+    },
+    "element": "fire",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_horus_flare_bird",
+    "sourceId": "Unique_Horus_FlareBird",
+    "slug": "Phoenix_Flare",
+    "names": {
+      "en": "Phoenix Flare",
+      "pt-BR": "Onda Voadora da Fênix"
+    },
+    "descriptions": {
+      "en": "Faleris' exclusive skill. After creating scorching tornadoes, it cloaks itself in hellfire and charges forward.",
+      "pt-BR": "Habilidade exclusiva de Faleris. Depois de gerar um redemoinho escaldante, ele envolve seu corpo em chamas infernais e se arremete numa investida rasante."
+    },
+    "element": "fire",
+    "cooldown": 16,
+    "power": 320,
+    "exclusive": true
+  },
+  {
+    "id": "unique_manticore_inferno_strike",
+    "sourceId": "Unique_Manticore_InfernoStrike",
+    "slug": "Volcanic_Fang",
+    "names": {
+      "en": "Volcanic Fang",
+      "pt-BR": "Presa Vulcânica"
+    },
+    "descriptions": {
+      "en": "Blazehowl's exclusive skill. With momentum, it pounces mercilessly on the enemy and causes an explosion of fire at the point of impact.",
+      "pt-BR": "Habilidade exclusiva de Blazehowl e subespécies. Voa em uma investida sem piedade contra os inimigos, fazendo suas chamas estourarem ao se aproximar."
+    },
+    "element": "fire",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "unique_umihebi_fire_fire_winding_tackle",
+    "sourceId": "Unique_Umihebi_Fire_FireWindingTackle",
+    "slug": "Magma_Serpent",
+    "names": {
+      "en": "Magma Serpent",
+      "pt-BR": "Serpente Magmática"
+    },
+    "descriptions": {
+      "en": "Jormuntide Ignis's exclusive skill. Letting out a roar, it charges toward the enemy, twisting its fire-covered body as it advances.",
+      "pt-BR": "Habilidade exclusiva de Jormuntide Ignis. Soltando um berro, serpenteia o corpo envolvido pelo fogo e avança na direção do inimigo."
+    },
+    "element": "fire",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "eruption",
+    "sourceId": "Eruption",
+    "slug": "Volcanic_Rain",
+    "names": {
+      "en": "Volcanic Rain",
+      "pt-BR": "Chuva Vulcânica"
+    },
+    "descriptions": {
+      "en": "Fires countless volcanic bombs into the sky. After a while, the bombs rain down around their originator.",
+      "pt-BR": "Dispara incontáveis bombas vulcânicas rumo ao céu. Depois de passado algum tempo, as bombas retornam chovendo ao redor de quem as lançou."
+    },
+    "element": "fire",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "unique_ghost_anglerfish_fire_sweep_bait_fire",
+    "sourceId": "Unique_GhostAnglerfish_Fire_SweepBait_Fire",
+    "slug": "Scorching_Lantern_Sweep",
+    "names": {
+      "en": "Scorching Lantern Sweep",
+      "pt-BR": "Lanterna Varredora Incandescente"
+    },
+    "descriptions": {
+      "en": "Ghangler Ignis's exclusive skill. Lashes forward with the flaming lantern atop its head, sweeping broadly ahead.",
+      "pt-BR": "Habilidade exclusiva de Ghangler Ignis. Varre a área à sua frente com um grande movimento da lanterna flamejante em sua cabeça."
+    },
+    "element": "fire",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "inferno",
+    "sourceId": "Inferno",
+    "slug": "Ignis_Rage",
+    "names": {
+      "en": "Ignis Rage",
+      "pt-BR": "Inferno"
+    },
+    "descriptions": {
+      "en": "Infuses the surrounding ground with energy, causing it to explode after a set amount of time.",
+      "pt-BR": "Estimula o solo ao redor do inimigo, fazendo-o explodir após certo tempo."
+    },
+    "element": "fire",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": false
+  },
+  {
+    "id": "fire_ball",
+    "sourceId": "FireBall",
+    "slug": "Fire_Ball",
+    "names": {
+      "en": "Fire Ball",
+      "pt-BR": "Bola de Fogo"
+    },
+    "descriptions": {
+      "en": "Creates a giant ball of flame and hurls it at an enemy. The ball explodes over a wide area upon impact.",
+      "pt-BR": "Cria uma bola de fogo gigantesca sobre sua cabeça e a dispara contra o inimigo. Ao fazer contato, ela explode e espalha sua rajada por uma grande área."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_king_bahamut_arm_smash",
+    "sourceId": "Unique_KingBahamut_ArmSmash",
+    "slug": "Brawn_Impact",
+    "names": {
+      "en": "Brawn Impact",
+      "pt-BR": "Impacto de Braço"
+    },
+    "descriptions": {
+      "en": "Blazamut's exclusive skill. Raises and inflates its arms, then slams them together, causing a massive explosion in the surrounding area.",
+      "pt-BR": "Habilidade exclusiva de Blazamut e subespécies. Ele ergue os braços e, depois de expandi-los, batendo um contra o outro para criar uma grande explosão nos arredores."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_volcano_dragon_magma_spit",
+    "sourceId": "Unique_VolcanoDragon_MagmaSpit",
+    "slug": "Magma_Spit",
+    "names": {
+      "en": "Magma Spit",
+      "pt-BR": "Cuspe de Magma"
+    },
+    "descriptions": {
+      "en": "Moldron's exclusive skill. Spits a mass of magma from its mouth. The impact creates magma pools that damage enemies on contact.",
+      "pt-BR": "Habilidade exclusiva de Moldron. Expele aglomerados de magma pela boca. O magma então se acumula no local de impacto, causando dano aos inimigos que o tocam."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_horus_perfect_storm",
+    "sourceId": "Unique_Horus_PerfectStorm",
+    "slug": "Raging_Flame_Wave",
+    "names": {
+      "en": "Raging Flame Wave",
+      "pt-BR": "Onda Intensa da Fênix Flamejante"
+    },
+    "descriptions": {
+      "en": "Faleris' exclusive skill. Generates multiple scorching tornadoes and charges forward while gliding. The tornadoes converge in the center and eventually merge into a single massive tornado.",
+      "pt-BR": "Habilidade exclusiva de Faleris. Depois de produzir vários redemoinhos incandescentes, avança planando pelo ar. Os redemoinhos então se reúnem ao centro, acabando por formar um único furacão gigantesco."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 650,
+    "exclusive": true
+  },
+  {
+    "id": "unique_volcano_dragon_volcanic_laser",
+    "sourceId": "Unique_VolcanoDragon_VolcanicLaser",
+    "slug": "Magma_Laser",
+    "names": {
+      "en": "Magma Laser",
+      "pt-BR": "Laser de Magma"
+    },
+    "descriptions": {
+      "en": "Moldron's exclusive skill. Emits a thermal beam from its mouth that scorches the ground. Heated ground forms magma pools that damage enemies on contact.",
+      "pt-BR": "Habilidade exclusiva de Moldron. Incendeia o solo com os raios de calor que expele de sua boca. Magma então se acumula no chão escaldante, causando dano aos inimigos que o tocam."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_clown_rabbit_trick_show",
+    "sourceId": "Unique_ClownRabbit_TrickShow",
+    "slug": "Trickster_Show",
+    "names": {
+      "en": "Trickster Show",
+      "pt-BR": "Espetáculo de Truques"
+    },
+    "descriptions": {
+      "en": "Dupin's exclusive skill. Creates two illusions to distract enemies, then launches fire birds from its top hat.",
+      "pt-BR": "Habilidade exclusiva de Dupin. Cria duas ilusões para confundir o inimigo enquanto ataca lançando um pássaro de fogo da sua cartola."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_wing_golem_fire_flame_cutter",
+    "sourceId": "Unique_WingGolem_Fire_FlameCutter",
+    "slug": "Flame_Cutter",
+    "names": {
+      "en": "Flame Cutter",
+      "pt-BR": "Cortador de Chamas"
+    },
+    "descriptions": {
+      "en": "Knocklem Ignis's exclusive skill. Takes a big swing and throws the flaming ring from its back. The ring flies in a circular trajectory.",
+      "pt-BR": "Habilidade exclusiva de Knocklem Ignis. Ergue a roda de fogo em suas costas bem alto e a arremessa, fazendo com que ela trace um círculo flamejante no ar."
+    },
+    "element": "fire",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "ice_missile",
+    "sourceId": "IceMissile",
+    "slug": "Ice_Missile",
+    "names": {
+      "en": "Ice Missile",
+      "pt-BR": "Míssil de Gelo"
+    },
+    "descriptions": {
+      "en": "Creates ice lances in the air that fly towards enemies.",
+      "pt-BR": "Produz pedaços afiados de gelo em pleno ar e os dispara contra o inimigo."
+    },
+    "element": "ice",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_thunder_dog_ice_bite_v2",
+    "sourceId": "Unique_ThunderDog_Ice_BiteV2",
+    "slug": "Double_Fang_%28Ice%29",
+    "names": {
+      "en": "Double Fang (Ice)",
+      "pt-BR": "Presas Duplas (Gelo)"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "ice",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_thunder_dog_ice_bite",
+    "sourceId": "Unique_ThunderDog_Ice_Bite",
+    "slug": "Fierce_Fang_%28Ice%29",
+    "names": {
+      "en": "Fierce Fang (Ice)",
+      "pt-BR": "Presas Selvagens (Gelo)"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "ice",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "ice_blade",
+    "sourceId": "IceBlade",
+    "slug": "Icicle_Cutter",
+    "names": {
+      "en": "Icicle Cutter",
+      "pt-BR": "Cortador de Gelo"
+    },
+    "descriptions": {
+      "en": "Creates a crescent blade of ice and hurls it forward.",
+      "pt-BR": "Cria uma lâmina de gelo na forma da lua crescente e a dispara para a frente."
+    },
+    "element": "ice",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_ice_deer_ice_horn",
+    "sourceId": "Unique_IceDeer_IceHorn",
+    "slug": "Freezing_Charge",
+    "names": {
+      "en": "Freezing Charge",
+      "pt-BR": "Arranque de Chifres Gélidos"
+    },
+    "descriptions": {
+      "en": "Reindrix's exclusive skill. Charges at an enemy with antlers adorned in ice.",
+      "pt-BR": "Habilidade exclusiva de Reindrix. Ele dá uma investida e manda o inimigo para o alto com sua majestosa galhada de gelo."
+    },
+    "element": "ice",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "blizzard_lance",
+    "sourceId": "BlizzardLance",
+    "slug": "Iceberg",
+    "names": {
+      "en": "Iceberg",
+      "pt-BR": "Iceberg"
+    },
+    "descriptions": {
+      "en": "Summons a sharp ice lance under an enemy.",
+      "pt-BR": "Faz aparecer uma lâmina de gelo afiada sob os pés do inimigo."
+    },
+    "element": "ice",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_captain_penguin_body_slide",
+    "sourceId": "Unique_CaptainPenguin_BodySlide",
+    "slug": "Emperor_Slide",
+    "names": {
+      "en": "Emperor Slide",
+      "pt-BR": "Deslizada do Capitão"
+    },
+    "descriptions": {
+      "en": "Penking's exclusive skill. Lies on its belly while generating frozen air all around it before sliding at enemies at high speed.",
+      "pt-BR": "Habilidade exclusiva de Penking. Ele se deita de barriga no chão e sai deslizando contra o inimigo enquanto emana um ar gelado do corpo inteiro."
+    },
+    "element": "ice",
+    "cooldown": 8,
+    "power": 140,
+    "exclusive": true
+  },
+  {
+    "id": "frost_breath",
+    "sourceId": "FrostBreath",
+    "slug": "Crystal_Breath",
+    "names": {
+      "en": "Crystal Breath",
+      "pt-BR": "Baforada Gélida"
+    },
+    "descriptions": {
+      "en": "Enshrouds an enemy in a frigid blast of air, dealing continuous damage.",
+      "pt-BR": "Expele um ar gélido na direção do inimigo, causando dano contínuo."
+    },
+    "element": "ice",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "unique_werewolf_ice_snow_scratch",
+    "sourceId": "Unique_Werewolf_Ice_SnowScratch",
+    "slug": "Snow_Claw",
+    "names": {
+      "en": "Snow Claw",
+      "pt-BR": "Garra de Neve"
+    },
+    "descriptions": {
+      "en": "Loupmoon Cryst's exclusive skill. Leaps forward and attacks twice with vicious claws imbued with ice element.",
+      "pt-BR": "Habilidade exclusiva de Loupmoon Cryst. Ele salta para a frente e dá dois arranhões velozes, um ataque lancinante que contém a força do gelo."
+    },
+    "element": "ice",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": true
+  },
+  {
+    "id": "unique_ice_crocodile_spit_attack",
+    "sourceId": "Unique_IceCrocodile_SpitAttack",
+    "slug": "Chaotic_Spray",
+    "names": {
+      "en": "Chaotic Spray",
+      "pt-BR": "Cuspida Indiscriminada"
+    },
+    "descriptions": {
+      "en": "Munchill's exclusive skill. Coughs up three cold grenades kept undigested inside its body and lobs them at enemies. May occasionally spit out something more dangerous...?",
+      "pt-BR": "Habilidade exclusiva de Munchill. Ataca cuspindo em sequência três granadas que mantinha resfriadas dentro do corpo, sem digerir. Parece que, às vezes, também cospe algo ainda mais perigoso..."
+    },
+    "element": "ice",
+    "cooldown": 8,
+    "power": 180,
+    "exclusive": true
+  },
+  {
+    "id": "unique_bird_dragon_ice_ice_breath",
+    "sourceId": "Unique_BirdDragon_Ice_IceBreath",
+    "slug": "Tempest_Blizzard",
+    "names": {
+      "en": "Tempest Blizzard",
+      "pt-BR": "Nevasca Voadora"
+    },
+    "descriptions": {
+      "en": "Vanwyrm Cryst's exclusive skill. Advances while exhaling cold air from its mouth.",
+      "pt-BR": "Habilidade exclusiva de Vanwyrm Cryst. Avança enquanto cospe um ar gelado pela boca."
+    },
+    "element": "ice",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "ice_wall",
+    "sourceId": "IceWall",
+    "slug": "Freeze_Wall",
+    "names": {
+      "en": "Freeze Wall",
+      "pt-BR": "Parede de Gelo"
+    },
+    "descriptions": {
+      "en": "Creates a wall of ice that rises from the ground. The ice wall remains standing for a while, and breaks after taking enough damage.",
+      "pt-BR": "Faz surgir uma muralha de gelo do solo. A muralha permanece por algum tempo, mas se rompe depois de sofrer certo dano."
+    },
+    "element": "ice",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "icicle_pierce",
+    "sourceId": "IciclePierce",
+    "slug": "Icicle_Bullet",
+    "names": {
+      "en": "Icicle Bullet",
+      "pt-BR": "Projétil de Sincelo"
+    },
+    "descriptions": {
+      "en": "Generates multiple sharp ice blocks in the sky and fires them at the enemy.",
+      "pt-BR": "Produz vários volumes afiados de gelo em pleno ar e os dispara contra o inimigo."
+    },
+    "element": "ice",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": false
+  },
+  {
+    "id": "unique_grass_minotaur_ice_bull_rush_lower",
+    "sourceId": "Unique_GrassMinotaur_Ice_BullRush_Lower",
+    "slug": "Snow_Rush",
+    "names": {
+      "en": "Snow Rush",
+      "pt-BR": "Arranque de Neve"
+    },
+    "descriptions": {
+      "en": "Elgrove Cryst's exclusive skill. Enters a wild frenzy and unleashes two consecutive Ice-element charge attacks.",
+      "pt-BR": "Habilidade exclusiva de Elgrove Cryst. Instiga a si mesmo de forma selvagem e realiza duas investidas de gelo em sequência."
+    },
+    "element": "ice",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "icicle_line",
+    "sourceId": "IcicleLine",
+    "slug": "Icicle_Line",
+    "names": {
+      "en": "Icicle Line",
+      "pt-BR": "Linha de Sincelos"
+    },
+    "descriptions": {
+      "en": "Generates pillars of ice that move in a straight line in three directions.",
+      "pt-BR": "Gera pilares de gelo que avançam em linha reta em três direções."
+    },
+    "element": "ice",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_white_tiger_ice_scratch",
+    "sourceId": "Unique_WhiteTiger_IceScratch",
+    "slug": "Blizzard_Claw",
+    "names": {
+      "en": "Blizzard Claw",
+      "pt-BR": "Garra de Nevasca"
+    },
+    "descriptions": {
+      "en": "Cryolinx's exclusive skill. First, it strikes with its claws, followed by a second slash, and culminates with a powerful slash using its entire body. When swinging the claws, ice pillars are launched forward in a fan shape.",
+      "pt-BR": "Habilidade exclusiva de Cryolinx. Dilacera o inimigo com as garras no primeiro e segundo ataques e por último usa o corpo inteiro para rasgá-lo em pedaços. Quando golpeia com as garras, lança 3 pilares de gelo para a frente em forma de leque."
+    },
+    "element": "ice",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_snow_tiger_beastman_trample_slash",
+    "sourceId": "Unique_SnowTigerBeastman_TrampleSlash",
+    "slug": "Frost_Talon",
+    "names": {
+      "en": "Frost Talon",
+      "pt-BR": "Garras Ferozes de Gelo"
+    },
+    "descriptions": {
+      "en": "Bastigor's exclusive skill. Stomps the ground, creating a fissure of ice ahead. Then, rapidly closes the distance and slashes with the right hand.",
+      "pt-BR": "Habilidade exclusiva de Bastigor. Pisoteia o solo para gerar uma fenda de gelo à frente. Em seguida se aproxima de súbito do inimigo e o dilacera com a mão direita."
+    },
+    "element": "ice",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_thunder_dog_ice_kori_shorai",
+    "sourceId": "Unique_ThunderDog_Ice_KoriShorai",
+    "slug": "Frostcall",
+    "names": {
+      "en": "Frostcall",
+      "pt-BR": "Invocar Neve"
+    },
+    "descriptions": {
+      "en": "Rayhound Cryst's exclusive skill. Generates ice pillars ahead and charges forward at high speed through the gaps between them.",
+      "pt-BR": "Habilidade exclusiva de Rayhound Cryst. Gera pilares de gelo em sequência à sua frente, investindo em alta velocidade por entre eles."
+    },
+    "element": "ice",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_volcanic_monster_ice_ice_attack",
+    "sourceId": "Unique_VolcanicMonster_Ice_IceAttack",
+    "slug": "Frost_Burst",
+    "names": {
+      "en": "Frost Burst",
+      "pt-BR": "Estouro de Geada"
+    },
+    "descriptions": {
+      "en": "Reptyro Cryst's exclusive skill. Raises its front legs and slams them into the ground, causing a frozen blast under its enemies. It simultaneously bombards them with snow balls from above.",
+      "pt-BR": "Habilidade exclusiva de Reptyro Cryst. Ele ergue as patas dianteiras e golpeia o solo, criando uma erupção de neve junto ao inimigo. Durante a erupção, também chovem bolas de neve nos arredores."
+    },
+    "element": "ice",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "unique_yeti_snow_ball",
+    "sourceId": "Unique_Yeti_SnowBall",
+    "slug": "Snow_Bowling",
+    "names": {
+      "en": "Snow Bowling",
+      "pt-BR": "Boliche de Neve"
+    },
+    "descriptions": {
+      "en": "Wumpo's exclusive skill. Rolls a snowball as it moves forward, and when it grows large enough, it throws it to cause an explosion.",
+      "pt-BR": "Habilidade exclusiva de Wumpo. Faz rolar uma bola de neve enquanto avança, lançando-a para que estoure contra o inimigo quando está grande o bastante."
+    },
+    "element": "ice",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "unique_king_alpaca_ice_ice_press",
+    "sourceId": "Unique_KingAlpaca_Ice_IcePress",
+    "slug": "Frozen_Press",
+    "names": {
+      "en": "Frozen Press",
+      "pt-BR": "Prensa Regelante"
+    },
+    "descriptions": {
+      "en": "Kingpaca Cryst's exclusive skill. Leaps high into the air before smashing into an enemy with ice and its chubby, massive body.",
+      "pt-BR": "Habilidade exclusiva de Kingpaca Cryst. Ele dá um grande salto e esmaga o inimigo com gelo e seu gigantesco corpo."
+    },
+    "element": "ice",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "icicle_throw",
+    "sourceId": "IcicleThrow",
+    "slug": "Blizzard_Spike",
+    "names": {
+      "en": "Blizzard Spike",
+      "pt-BR": "Aguilhão de Nevasca"
+    },
+    "descriptions": {
+      "en": "Creates a giant lump of ice and hurls it at an enemy. It deals damage to those in the surrounding area upon impact.",
+      "pt-BR": "Cria um aglomerado de gelo gigantesco e o dispara em alta velocidade na direção do inimigo. Ao fazer contato, o gelo cria um choque nos arredores."
+    },
+    "element": "ice",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "diamond_fall",
+    "sourceId": "DiamondFall",
+    "slug": "Diamond_Rain",
+    "names": {
+      "en": "Diamond Rain",
+      "pt-BR": "Queda de Diamantes"
+    },
+    "descriptions": {
+      "en": "Creates numerous lumps of ice that are consecutively dropped on a foe's head.",
+      "pt-BR": "Cria aglomerados de gelo sobre a cabeça do inimigo e faz com que caiam sobre este um após o outro."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_ice_narwhal_jumping_horn",
+    "sourceId": "Unique_IceNarwhal_JumpingHorn",
+    "slug": "High_Breach",
+    "names": {
+      "en": "High Breach",
+      "pt-BR": "Salto Alto"
+    },
+    "descriptions": {
+      "en": "Whalaska's exclusive skill. Charges straight ahead and briefly submerges, then bursts high into the air to launch an attack. An ice-element explosion occurs upon emerging.",
+      "pt-BR": "Habilidade exclusiva de espécies de Whalaska e subespécies. Depois de avançar e mergulhar por um instante, salta até as alturas para atacar. Cria uma explosão de gelo assim que inicia o salto."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_kirin_ice_ice_tackle",
+    "sourceId": "Unique_Kirin_Ice_IceTackle",
+    "slug": "Ice_Gale_Strike",
+    "names": {
+      "en": "Ice Gale Strike",
+      "pt-BR": "Vendaval Gelado"
+    },
+    "descriptions": {
+      "en": "Univolt Cryst's exclusive skill. Generates ice pillars around itself while charging toward enemies.",
+      "pt-BR": "Habilidade exclusiva de Univolt Cryst. Investe contra o inimigo enquanto gera pilares de gelo ao redor de si."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_rock_beast_ice_ice_horn",
+    "sourceId": "Unique_RockBeast_Ice_IceHorn",
+    "slug": "Ice_Burst",
+    "names": {
+      "en": "Ice Burst",
+      "pt-BR": "Estouro de Gelo"
+    },
+    "descriptions": {
+      "en": "Pierdon Cryst's exclusive skill. Rakes the ground with its horn, then hurls a snow chunk at enemies.",
+      "pt-BR": "Habilidade exclusiva de Pierdon Cryst. Cavouca a terra com o chifre e então ergue a cabeça de repente, fazendo voar um monte de neve contra o inimigo."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_volcano_dragon_ice_icicle_spit",
+    "sourceId": "Unique_VolcanoDragon_Ice_IcicleSpit",
+    "slug": "Ice_Spit",
+    "names": {
+      "en": "Ice Spit",
+      "pt-BR": "Cuspe de Gelo"
+    },
+    "descriptions": {
+      "en": "Moldron Cryst's exclusive skill. Spits a chunk of ice from its mouth. The impact creates frost pools that freeze and damage enemies on contact.",
+      "pt-BR": "Habilidade exclusiva de Moldron Cryst. Expele aglomerados de gelo pela boca. Geada então se acumula no chão congelado, congelando e causando dano aos inimigos que a tocam."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_thunder_bird_ice_snow_strom",
+    "sourceId": "Unique_ThunderBird_Ice_SnowStrom",
+    "slug": "Glacial_Plunge",
+    "names": {
+      "en": "Glacial Plunge",
+      "pt-BR": "Mergulho de Gelo"
+    },
+    "descriptions": {
+      "en": "Beakon Cryst's exclusive skill Ice first erupts from the ground at the target's location. Then glides forward in a rushing charge, causing ice to burst from the ground on both sides along its path.",
+      "pt-BR": "Habilidade exclusiva de Beakon Cryst. Primeiro faz subir uma lança de gelo no local onde o inimigo se encontra e em seguida realiza uma investida aérea enquanto continua a erguer lanças de gelo para os lados."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_snow_tiger_beastman_snow_impact",
+    "sourceId": "Unique_SnowTigerBeastman_SnowImpact",
+    "slug": "Glacial_Impact",
+    "names": {
+      "en": "Glacial Impact",
+      "pt-BR": "Manto de Gelo Devastador"
+    },
+    "descriptions": {
+      "en": "Bastigor's exclusive skill. Let out a mighty roar and leap into the air. Then, embed both arms into the ground to create a massive ice crack. Continue to channel power into the ground, ultimately causing a large explosion of ice energy",
+      "pt-BR": "Habilidade exclusiva de Bastigor. Depois de soltar um grande rugido e pular para o alto, enterra ambos os braços no chão e cria rachaduras de gelo gigantescas. Em seguida concentra sua força no solo e termina o golpe causando uma enorme explosão gélida."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 650,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grass_minotaur_ice_bull_rush",
+    "sourceId": "Unique_GrassMinotaur_Ice_BullRush",
+    "slug": "Raging_Snow_Rush",
+    "names": {
+      "en": "Raging Snow Rush",
+      "pt-BR": "Arranque de Neve Furioso"
+    },
+    "descriptions": {
+      "en": "Elgrove Cryst's exclusive skill. Enters a violent frenzy and unleashes four consecutive rage-fueled Ice-element charge attacks.",
+      "pt-BR": "Habilidade exclusiva de Elgrove Cryst. Instiga a si mesmo de forma violenta e realiza quatro investidas de gelo furiosas em sequência."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 650,
+    "exclusive": true
+  },
+  {
+    "id": "unique_ice_horse_ice_blade_attack",
+    "sourceId": "Unique_IceHorse_IceBladeAttack",
+    "slug": "Crystal_Wing",
+    "names": {
+      "en": "Crystal Wing",
+      "pt-BR": "Asas de Cristal"
+    },
+    "descriptions": {
+      "en": "Frostallion's exclusive skill. Dashes forward while concentrating frigid air around its wings, using them to slash enemies with icy blade.",
+      "pt-BR": "Habilidade exclusiva de Frostallion e subespécies. Ele condensa o ar frio para cobrir as asas de gelo e então as usa para dilacerar o inimigo enquanto passa por ele a galope."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "double_icicle_throw",
+    "sourceId": "DoubleIcicleThrow",
+    "slug": "Double_Blizzard_Spike",
+    "names": {
+      "en": "Double Blizzard Spike",
+      "pt-BR": "Duplo Aguilhão de Nevasca"
+    },
+    "descriptions": {
+      "en": "Creates two huge ice blocks and fires them at the enemy one after another. On impact, it also shocks those close by.",
+      "pt-BR": "Cria dois aglomerados de gelo gigantescos e os dispara um após o outro na direção do inimigo. Ao fazer contato, o gelo cria um choque nos arredores."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": false
+  },
+  {
+    "id": "ice_age",
+    "sourceId": "IceAge",
+    "slug": "Absolute_Frost",
+    "names": {
+      "en": "Absolute Frost",
+      "pt-BR": "Geada Absoluta"
+    },
+    "descriptions": {
+      "en": "Throws icicles in a wide area from under the enemy's feet.",
+      "pt-BR": "Faz sincelos perfurarem o chão em grande área ao redor dos pés do inimigo."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": false
+  },
+  {
+    "id": "unique_volcano_dragon_ice_ice_laser",
+    "sourceId": "Unique_VolcanoDragon_Ice_IceLaser",
+    "slug": "Ice_Laser",
+    "names": {
+      "en": "Ice Laser",
+      "pt-BR": "Laser de Gelo"
+    },
+    "descriptions": {
+      "en": "Moldron Cryst's exclusive skill. Fires a freezing beam from the mouth that coats the ground in ice. Frozen ground forms frost pools that freeze and damage enemies on contact.",
+      "pt-BR": "Habilidade exclusiva de Moldron Cryst. Congela o solo com os raios de gelo que expele de sua boca. Geada então se acumula no chão congelado, congelando e causando dano aos inimigos que a tocam."
+    },
+    "element": "ice",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_lily_queen_lily_healing",
+    "sourceId": "Unique_LilyQueen_LilyHealing",
+    "slug": "Bountiful_Protection",
+    "names": {
+      "en": "Bountiful Protection",
+      "pt-BR": "Proteção da Fertilidade"
+    },
+    "descriptions": {
+      "en": "Lyleen's exclusive skill. Restores health to all allies within range using the power of healing.",
+      "pt-BR": "Habilidade exclusiva de Lyleen. Ela restaura o PV de todos os companheiros ao redor graças aos seus poderes terapêuticos."
+    },
+    "element": "grass",
+    "cooldown": 240,
+    "power": 0,
+    "exclusive": true
+  },
+  {
+    "id": "wind_cutter",
+    "sourceId": "WindCutter",
+    "slug": "Wind_Cutter",
+    "names": {
+      "en": "Wind Cutter",
+      "pt-BR": "Cortador de Vento"
+    },
+    "descriptions": {
+      "en": "Fires a high speed blade of wind that flies straight at an enemy.",
+      "pt-BR": "Dispara uma lâmina de vento ultraveloz que voa em linha reta na direção do inimigo."
+    },
+    "element": "grass",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_monster001_slime_press_leaf",
+    "sourceId": "Unique_YakushimaMonster001_SlimePress_Leaf",
+    "slug": "Slime_Press_%28Grass%29",
+    "names": {
+      "en": "Slime Press (Grass)",
+      "pt-BR": "Prensa de Geleia (Grama)"
+    },
+    "descriptions": {
+      "en": "Green Slime's exclusive skill. Leaps toward the enemy and delivers an attack.",
+      "pt-BR": "Habilidade exclusiva de Geleia verde. Salta contra o inimigo para atacá-lo."
+    },
+    "element": "grass",
+    "cooldown": 1,
+    "power": 50,
+    "exclusive": true
+  },
+  {
+    "id": "seed_machinegun",
+    "sourceId": "SeedMachinegun",
+    "slug": "Seed_Machine_Gun",
+    "names": {
+      "en": "Seed Machine Gun",
+      "pt-BR": "Metralhadora de Sementes"
+    },
+    "descriptions": {
+      "en": "Fires a volley of hard seeds at enemies in front of it.",
+      "pt-BR": "Lança diversas sementes rígidas para atacar o inimigo à frente."
+    },
+    "element": "grass",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_flower_dinosaur_whip",
+    "sourceId": "Unique_FlowerDinosaur_Whip",
+    "slug": "Botanical_Smash",
+    "names": {
+      "en": "Botanical Smash",
+      "pt-BR": "Colisão Botânica"
+    },
+    "descriptions": {
+      "en": "Dinossom's exclusive skill. Uses its large tail to strike the ground in front of it, delivering a shockwave in a straight line.",
+      "pt-BR": "Habilidade exclusiva de Dinossom e subespécies. Ele usa sua grande cauda para golpear o solo à frente, causando um choque em linha reta."
+    },
+    "element": "grass",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "unique_sakura_saurus_side_tackle",
+    "sourceId": "Unique_SakuraSaurus_SideTackle",
+    "slug": "Muscle_Slam",
+    "names": {
+      "en": "Muscle Slam",
+      "pt-BR": "Colisão de Corpo"
+    },
+    "descriptions": {
+      "en": "Broncherry's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying into the air.",
+      "pt-BR": "Habilidade exclusiva de Broncherry e subespécies. Ele se posiciona de lado e toma impulso para dar um encontrão adiante e lançar o inimigo longe."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "seed_mine",
+    "sourceId": "SeedMine",
+    "slug": "Seed_Mine",
+    "names": {
+      "en": "Seed Mine",
+      "pt-BR": "Mina de Sementes"
+    },
+    "descriptions": {
+      "en": "Launches a deadly seed. If it hits an enemy, the seed explodes.",
+      "pt-BR": "Dispara sementes perigosas que explodem em contato com o inimigo."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_robin_hood_bow_snipe",
+    "sourceId": "Unique_RobinHood_BowSnipe",
+    "slug": "Focus_Shot",
+    "names": {
+      "en": "Focus Shot",
+      "pt-BR": "Tiro de Emboscada"
+    },
+    "descriptions": {
+      "en": "Robinquill's exclusive skill. Takes aim while drawing its bow before releasing a powerful shot at an enemy.",
+      "pt-BR": "Habilidade exclusiva de Robinquill e subespécies. Ele estira o arco e afina a pontaria antes de disparar contra o inimigo."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grass_panda_muscle_punch",
+    "sourceId": "Unique_GrassPanda_MusclePunch",
+    "slug": "Crushing_Punch",
+    "names": {
+      "en": "Crushing Punch",
+      "pt-BR": "Soco Musculoso"
+    },
+    "descriptions": {
+      "en": "Mossanda's exclusive skill. Winds up its right arm before striking an enemy with a devastating punch.",
+      "pt-BR": "Habilidade exclusiva de Mossanda. Ele gira o braço direito antes de desferir um soco violento para a frente."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "unique_soldier_bee_needle_lance",
+    "sourceId": "Unique_SoldierBee_NeedleLance",
+    "slug": "Needle_Spear",
+    "names": {
+      "en": "Needle Spear",
+      "pt-BR": "Lança de Agulha"
+    },
+    "descriptions": {
+      "en": "Beegarde's exclusive skill. Charges at the enemy at high speed, delivering a final thrust with a spear.",
+      "pt-BR": "Habilidade exclusiva de Beegarde. Avança em grande velocidade contra o inimigo e termina por espetá-lo com uma lança, só por garantia."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "special_cutter",
+    "sourceId": "SpecialCutter",
+    "slug": "Multicutter",
+    "names": {
+      "en": "Multicutter",
+      "pt-BR": "Cortador Múltiplo"
+    },
+    "descriptions": {
+      "en": "The user fires three high-speed blades of wind in quick succession that fly straight at enemies.",
+      "pt-BR": "Dispara três lâminas de vento ultravelozes que voam em linha reta na direção do inimigo."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "unique_queen_bee_spin_lance",
+    "sourceId": "Unique_QueenBee_SpinLance",
+    "slug": "Spinning_Staff",
+    "names": {
+      "en": "Spinning Staff",
+      "pt-BR": "Ataque Giratório"
+    },
+    "descriptions": {
+      "en": "Elizabee's exclusive skill. Channels power into its staff, and unleashes it in a whirl.",
+      "pt-BR": "Habilidade exclusiva de Elizabee. Ela concentra força em seu cetro e então a libera em um movimento rodopiante."
+    },
+    "element": "grass",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": true
+  },
+  {
+    "id": "grass_tornado",
+    "sourceId": "GrassTornado",
+    "slug": "Grass_Tornado",
+    "names": {
+      "en": "Grass Tornado",
+      "pt-BR": "Tornado de Grama"
+    },
+    "descriptions": {
+      "en": "Generates two tornadoes on either side before launching them at an enemy.",
+      "pt-BR": "Gera redemoinhos para os lados, lançando-os contra o inimigo."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "wind_edge",
+    "sourceId": "WindEdge",
+    "slug": "Wind_Edge",
+    "names": {
+      "en": "Wind Edge",
+      "pt-BR": "Gume de Vento"
+    },
+    "descriptions": {
+      "en": "Launches sharp blades of air that fan out.",
+      "pt-BR": "Lança uma lâmina de vento afiada em forma de leque."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "root_attack",
+    "sourceId": "RootAttack",
+    "slug": "Spine_Vine",
+    "names": {
+      "en": "Spine Vine",
+      "pt-BR": "Vinha Espinhosa"
+    },
+    "descriptions": {
+      "en": "Generates spiny thorns that chase an enemy along the ground, piercing them from below.",
+      "pt-BR": "Raízes afiadas enterradas no solo perseguem o inimigo e então o perfuram quando chegam aos seus pés."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": false
+  },
+  {
+    "id": "unique_grass_rabbit_man_grass_round_kick",
+    "sourceId": "Unique_GrassRabbitMan_GrassRoundKick",
+    "slug": "Leaping_Roundhouse",
+    "names": {
+      "en": "Leaping Roundhouse",
+      "pt-BR": "Arranque de Perna Giratória"
+    },
+    "descriptions": {
+      "en": "Verdash's exclusive skill. While jumping forward, it sweeps the surroundings with a high-speed spinning kick.",
+      "pt-BR": "Habilidade exclusiva de Verdash. Dá um pulo para a frente e executa um chute giratório para aniquilar todos ao redor."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_leaf_momonga_somer_sault",
+    "sourceId": "Unique_LeafMomonga_SomerSault",
+    "slug": "Konoha_Flip",
+    "names": {
+      "en": "Konoha Flip",
+      "pt-BR": "Pirueta de Folha"
+    },
+    "descriptions": {
+      "en": "Herbil's exclusive skill. After a brief moment of preparation, charges at the enemy at high speed, finishing with a flip.",
+      "pt-BR": "Habilidade exclusiva de Herbil. Depois de se preparar na pose adequada, realiza um salto mortal enquanto vai se chocando em alta velocidade contra o inimigo."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grass_minotaur_bull_rush_lower",
+    "sourceId": "Unique_GrassMinotaur_BullRush_Lower",
+    "slug": "Bull_Rush",
+    "names": {
+      "en": "Bull Rush",
+      "pt-BR": "Arranque Táureo"
+    },
+    "descriptions": {
+      "en": "Elgrove's exclusive skill. Enters a wild frenzy and unleashes two consecutive Grass-element charge attacks.",
+      "pt-BR": "Habilidade exclusiva de Elgrove. Instiga a si mesmo de forma selvagem e realiza duas investidas de grama em sequência."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "unique_panda_girl_rapid_kick",
+    "sourceId": "Unique_PandaGirl_RapidKick",
+    "slug": "Rapid_Kick",
+    "names": {
+      "en": "Rapid Kick",
+      "pt-BR": "Sequência de Chutes Giratórios"
+    },
+    "descriptions": {
+      "en": "Leafan's exclusive skill. Rapidly delivers a series of consecutive roundhouse kicks, finishing with an engery blast.",
+      "pt-BR": "Habilidade exclusiva de Leafan. Realiza chutes giratórios contínuos rapidamente e, por fim, lança uma onda de ki."
+    },
+    "element": "grass",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "self_destruct_bee",
+    "sourceId": "SelfDestruct_Bee",
+    "slug": "Bee_Quiet",
+    "names": {
+      "en": "Bee Quiet",
+      "pt-BR": "Não Seja Abelhudo"
+    },
+    "descriptions": {
+      "en": "Risks its life to cause a violent explosion, but receives the honor of falling in battle.",
+      "pt-BR": "Arrisca a própria vida para causar uma explosão. Técnica honrada de quem se sacrifica pelo próprio dever."
+    },
+    "element": "grass",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "root_lance",
+    "sourceId": "RootLance",
+    "slug": "Circle_Vine",
+    "names": {
+      "en": "Circle Vine",
+      "pt-BR": "Vinhas em Círculo"
+    },
+    "descriptions": {
+      "en": "Sprouts sharp roots in and around the enemy's location.",
+      "pt-BR": "Projeta raízes afiadas contra o local do inimigo e seus arredores."
+    },
+    "element": "grass",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_tropical_ostrich_dash_kick",
+    "sourceId": "Unique_TropicalOstrich_DashKick",
+    "slug": "Dash_Kick",
+    "names": {
+      "en": "Dash Kick",
+      "pt-BR": "Chute Rápido"
+    },
+    "descriptions": {
+      "en": "Palumba's exclusive skill. Dashes to build up speed, then launches a devastating airborne kick at its target.",
+      "pt-BR": "Habilidade exclusiva de Palumba. Ganha impulso com uma corrida e então castiga o inimigo com um chute voador violento."
+    },
+    "element": "grass",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "raid_cutter",
+    "sourceId": "RaidCutter",
+    "slug": "Raid_Cutter",
+    "names": {
+      "en": "Raid Cutter",
+      "pt-BR": "Cortador de Assalto"
+    },
+    "descriptions": {
+      "en": "Shoots countless wind swords that fly straight towards the enemy.",
+      "pt-BR": "Dispara inúmeras lâminas de vento que voam na direção do inimigo."
+    },
+    "element": "grass",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yeti_grass_grass_ball",
+    "sourceId": "Unique_Yeti_Grass_GrassBall",
+    "slug": "Lawn_Bowling",
+    "names": {
+      "en": "Lawn Bowling",
+      "pt-BR": "Boliche de Grama"
+    },
+    "descriptions": {
+      "en": "Wumpo Botan's exclusive skill. Rolls a ball made of grass as it moves forward, and when it grows large enough, it throws it to cause an explosion.",
+      "pt-BR": "Habilidade exclusiva de Wumpo Botan. Faz rolar uma bola de mato enquanto avança, lançando-a para que estoure contra o inimigo quando está grande o bastante."
+    },
+    "element": "grass",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "reflective_shuriken",
+    "sourceId": "ReflectiveShuriken",
+    "slug": "Reflect_Leaf",
+    "names": {
+      "en": "Reflect Leaf",
+      "pt-BR": "Folha Refletora"
+    },
+    "descriptions": {
+      "en": "Launches a blade of wind that rebounds off enemies or trees, striking repeatedly. Can ricochet up to four times.",
+      "pt-BR": "Lança uma lâmina de vento capaz de criar uma série de ataques ao ricochetear em inimigos ou árvores. A lâmina pode ricochetear um máximo de quatro vezes."
+    },
+    "element": "grass",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "unique_plesiosaur_long_breath",
+    "sourceId": "Unique_Plesiosaur_LongBreath",
+    "slug": "Deep_Breath",
+    "names": {
+      "en": "Deep Breath",
+      "pt-BR": "Sopro Longo"
+    },
+    "descriptions": {
+      "en": "Braloha's exclusive skill. From the base of its long neck to the tip of its snout, it gradually spreads the breath of grass element.",
+      "pt-BR": "Habilidade exclusiva de Braloha. Faz um sopro de grama ir se expandindo gradualmente desde a base até o alto do seu comprido pescoço."
+    },
+    "element": "grass",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "solar_beam",
+    "sourceId": "SolarBeam",
+    "slug": "Solar_Blast",
+    "names": {
+      "en": "Solar Blast",
+      "pt-BR": "Rajada Solar"
+    },
+    "descriptions": {
+      "en": "Charges solar energy before blasting enemies with a powerful beam.",
+      "pt-BR": "Carrega energia solar para disparar um raio poderoso contra o inimigo."
+    },
+    "element": "grass",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "cross_wind",
+    "sourceId": "CrossWind",
+    "slug": "Crosswind",
+    "names": {
+      "en": "Crosswind",
+      "pt-BR": "Vento Cruzado"
+    },
+    "descriptions": {
+      "en": "Conjures blades of wind in front of the enemy, converging to deliver a cutting cross attack.",
+      "pt-BR": "Ataca cruzando as lâminas de vento que cria na frente do inimigo."
+    },
+    "element": "grass",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": false
+  },
+  {
+    "id": "unique_red_flower_bird_jump_kick",
+    "sourceId": "Unique_RedFlowerBird_JumpKick",
+    "slug": "Flower_Stomp",
+    "names": {
+      "en": "Flower Stomp",
+      "pt-BR": "Pisada Floral"
+    },
+    "descriptions": {
+      "en": "Tropicaw's exclusive skill. Leaps lightly into the air, then forcefully slams its sharp claws into the ground.",
+      "pt-BR": "Habilidade exclusiva de Tropicaw. Flutua com leveza no ar e então ataca o solo ferozmente com suas garras afiadas."
+    },
+    "element": "grass",
+    "cooldown": 24,
+    "power": 550,
+    "exclusive": true
+  },
+  {
+    "id": "wind_burst",
+    "sourceId": "WindBurst",
+    "slug": "Wind_Burst",
+    "names": {
+      "en": "Wind Burst",
+      "pt-BR": "Rajada de Vento"
+    },
+    "descriptions": {
+      "en": "Summons a massive wind vortex around itself and unleashes a powerful attack.",
+      "pt-BR": "Provoca um turbilhão de vento imenso ao seu redor, realizando um ataque de grande potência."
+    },
+    "element": "grass",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_grass_minotaur_bull_rush",
+    "sourceId": "Unique_GrassMinotaur_BullRush",
+    "slug": "Raging_Bull_Rush",
+    "names": {
+      "en": "Raging Bull Rush",
+      "pt-BR": "Arranque Táureo Furioso"
+    },
+    "descriptions": {
+      "en": "Elgrove's exclusive skill. Enters a violent frenzy and unleashes four consecutive rage-fueled Grass-element charge attacks.",
+      "pt-BR": "Habilidade exclusiva de Elgrove. Instiga a si mesmo de forma violenta e realiza quatro investidas de grama furiosas em sequência."
+    },
+    "element": "grass",
+    "cooldown": 30,
+    "power": 650,
+    "exclusive": true
+  },
+  {
+    "id": "unique_grass_golem_arm_cannon",
+    "sourceId": "Unique_GrassGolem_ArmCannon",
+    "slug": "Root_Cannon",
+    "names": {
+      "en": "Root Cannon",
+      "pt-BR": "Canhão de Raízes"
+    },
+    "descriptions": {
+      "en": "Dualiths exclusive skill. Fires a Grass-elemental energy projectile from its arm. Upon impact, the blast transforms into persistent roots that track and pierce the enemy from below.",
+      "pt-BR": "Habilidade exclusiva de Dualith. Dispara um projétil de energia de grama pelo braço. Após o impacto, o projétil se converte numa raiz que persegue o inimigo e o perfura por baixo."
+    },
+    "element": "grass",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_mothman_giant_spore",
+    "sourceId": "Unique_Mothman_GiantSpore",
+    "slug": "Giant_Spore",
+    "names": {
+      "en": "Giant Spore",
+      "pt-BR": "Esporo Gigante"
+    },
+    "descriptions": {
+      "en": "Silvance's exclusive skill. Fires a massive tracking spore that pursues enemies. It explodes on impact, releasing a wide-area blast.",
+      "pt-BR": "Habilidade exclusiva de Silvance. Dispara um esporo gigantesco que persegue o inimigo. O esporo detona ao fazer contato, causando uma explosão que cobre uma grande área."
+    },
+    "element": "grass",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_lotus_dragon_lotus_bloom",
+    "sourceId": "Unique_LotusDragon_LotusBloom",
+    "slug": "Lotus_Bloom",
+    "names": {
+      "en": "Lotus Bloom",
+      "pt-BR": "Florescer dos Nenúfares"
+    },
+    "descriptions": {
+      "en": "Ophydia's exclusive skill. Burrows into the ground and vanishes. It then emerges at the surface as a flower bud, blooms, and unleashes a wide-area attack.",
+      "pt-BR": "Habilidade exclusiva de Ophydia. Mergulha no solo para se ocultar. Depois de aparecer na superfície na forma de um botão, desabrocha para atacar cobrindo uma grande área."
+    },
+    "element": "grass",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_mothman_spore_scatter",
+    "sourceId": "Unique_Mothman_SporeScatter",
+    "slug": "Spore_Burst",
+    "names": {
+      "en": "Spore Burst",
+      "pt-BR": "Estouro de Esporos"
+    },
+    "descriptions": {
+      "en": "Silvance's exclusive skill. Scatters explosive spores over a wide area, then triggers a mass explosion after a set period of time.",
+      "pt-BR": "Habilidade exclusiva de Silvance. Espalha esporos explosivos em uma grande área que detonam todos juntos após algum tempo."
+    },
+    "element": "grass",
+    "cooldown": 30,
+    "power": 800,
+    "exclusive": true
+  },
+  {
+    "id": "unique_chicken_pal_chicken_peck",
+    "sourceId": "Unique_ChickenPal_ChickenPeck",
+    "slug": "Chicken_Rush",
+    "names": {
+      "en": "Chicken Rush",
+      "pt-BR": "Empurrão de Galinha"
+    },
+    "descriptions": {
+      "en": "Chikipi's exclusive skill. Flies at enemies in its sights, attacking them with its sharp beak.",
+      "pt-BR": "Habilidade exclusiva de Chikipi. Ela salta na direção do inimigo para atacá-lo com seu bico afiado."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 30,
+    "exclusive": true
+  },
+  {
+    "id": "air_canon",
+    "sourceId": "AirCanon",
+    "slug": "Air_Cannon",
+    "names": {
+      "en": "Air Cannon",
+      "pt-BR": "Canhão de Ar"
+    },
+    "descriptions": {
+      "en": "Quickly fires a burst of highly pressurized air.",
+      "pt-BR": "Dispara uma massa de ar que voa a grande velocidade."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_sheep_ball_roll",
+    "sourceId": "Unique_SheepBall_Roll",
+    "slug": "Roly_Poly",
+    "names": {
+      "en": "Roly Poly",
+      "pt-BR": "Fofura Rolante"
+    },
+    "descriptions": {
+      "en": "Lamball's exclusive skill. Curls into a ball, rolling after any enemies in its way. Becomes dizzy and unable to move after the attack ends.",
+      "pt-BR": "Habilidade exclusiva de Lamball. Ela persegue o inimigo enquanto sai rolando pelo solo. Após o ataque, acaba ficando tonta e incapaz de se mover."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": true
+  },
+  {
+    "id": "unique_pink_cat_cat_punch",
+    "sourceId": "Unique_PinkCat_CatPunch",
+    "slug": "Punch_Flurry",
+    "names": {
+      "en": "Punch Flurry",
+      "pt-BR": "Soco Incessante"
+    },
+    "descriptions": {
+      "en": "Cattiva's exclusive skill. Chases after enemies, swinging both arms and delivering a flurry of punches.",
+      "pt-BR": "Habilidade exclusiva de Cattiva. Ele persegue o inimigo enquanto gira ambos os braços, executando socos consecutivos."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": true
+  },
+  {
+    "id": "unique_garm_bite_v2",
+    "sourceId": "Unique_Garm_BiteV2",
+    "slug": "Double_Fang",
+    "names": {
+      "en": "Double Fang",
+      "pt-BR": "Presas Duplas"
+    },
+    "descriptions": {
+      "en": "Launches a rapid succession of bites at the enemy.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_guardian_dog_bite_v2",
+    "sourceId": "Unique_GuardianDog_BiteV2",
+    "slug": "Double_Fang",
+    "names": {
+      "en": "Double Fang",
+      "pt-BR": "Presas Duplas"
+    },
+    "descriptions": {
+      "en": "Bites rapidly in succession to attack enemies.",
+      "pt-BR": "Ataca o inimigo com várias mordidas rápidas consecutivas."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "unique_alpaca_tackle",
+    "sourceId": "Unique_Alpaca_Tackle",
+    "slug": "Fluffy_Tackle",
+    "names": {
+      "en": "Fluffy Tackle",
+      "pt-BR": "Empurrão Fofo"
+    },
+    "descriptions": {
+      "en": "Melpaca's exclusive skill. Charges forward while surrounded by an adorable aura.",
+      "pt-BR": "Habilidade exclusiva de Melpaca. Ela investe contra o inimigo envolta por uma aura de fofura."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": true
+  },
+  {
+    "id": "unique_garm_bite",
+    "sourceId": "Unique_Garm_Bite",
+    "slug": "Fierce_Fang",
+    "names": {
+      "en": "Fierce Fang",
+      "pt-BR": "Presa Selvagem"
+    },
+    "descriptions": {
+      "en": "Swiftly leaps at an enemy and bites into them.",
+      "pt-BR": "Habilidade exclusiva de Direhowl. Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_monster001_slime_press_normal",
+    "sourceId": "Unique_YakushimaMonster001_SlimePress_Normal",
+    "slug": "Slime_Press_%28Neutral%29",
+    "names": {
+      "en": "Slime Press (Neutral)",
+      "pt-BR": "Prensa de Geleia (Não Elemental)"
+    },
+    "descriptions": {
+      "en": "Illuminant Slime's exclusive skill. Leaps toward the enemy and delivers an attack.",
+      "pt-BR": "Habilidade exclusiva de Geleia Luminosa. Salta contra o inimigo para atacá-lo."
+    },
+    "element": "neutral",
+    "cooldown": 1,
+    "power": 50,
+    "exclusive": true
+  },
+  {
+    "id": "unique_guardian_dog_bite",
+    "sourceId": "Unique_GuardianDog_Bite",
+    "slug": "Fierce_Fang",
+    "names": {
+      "en": "Fierce Fang",
+      "pt-BR": "Presas Selvagens"
+    },
+    "descriptions": {
+      "en": "Quickly lunges at the enemy and bites to deal damage.",
+      "pt-BR": "Ele salta rapidamente contra o inimigo, atacando com uma mordida."
+    },
+    "element": "neutral",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_monster003_bat_charge",
+    "sourceId": "Unique_YakushimaMonster003_BatCharge",
+    "slug": "Winged_Assault",
+    "names": {
+      "en": "Winged Assault",
+      "pt-BR": "Invasão de Morcegos"
+    },
+    "descriptions": {
+      "en": "Cave Bat's exclusive skill. Using its whole body, it lunges at the enemy, bouncing off the ground or walls on impact.",
+      "pt-BR": "Habilidade exclusiva de Morcego de Caverna. Joga-se em um ataque de corpo inteiro contra o inimigo. Ricocheteia quando atinge o solo ou uma parede."
+    },
+    "element": "neutral",
+    "cooldown": 1,
+    "power": 70,
+    "exclusive": true
+  },
+  {
+    "id": "power_shot",
+    "sourceId": "PowerShot",
+    "slug": "Power_Shot",
+    "names": {
+      "en": "Power Shot",
+      "pt-BR": "Tiro de Poder"
+    },
+    "descriptions": {
+      "en": "Charges energy into a focused blast.",
+      "pt-BR": "Carrega energia para dispará-la como um projétil."
+    },
+    "element": "neutral",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "unique_eagle_gliding_nail",
+    "sourceId": "Unique_Eagle_GlidingNail",
+    "slug": "Gale_Claw",
+    "names": {
+      "en": "Gale Claw",
+      "pt-BR": "Garras Planadoras"
+    },
+    "descriptions": {
+      "en": "Galeclaw's exclusive skill. With talons outstretched, it glides forward in a ferocious charge.",
+      "pt-BR": "Habilidade exclusiva de Galeclaw. Ela realiza uma impetuosa investida aérea com as garras apontadas para a frente."
+    },
+    "element": "neutral",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "unique_hawk_bird_storm",
+    "sourceId": "Unique_HawkBird_Storm",
+    "slug": "Tornado_Attack",
+    "names": {
+      "en": "Tornado Attack",
+      "pt-BR": "Ataque Tornado"
+    },
+    "descriptions": {
+      "en": "Nitewing's exclusive skill. Generates a tornado ahead before soaring towards its target.",
+      "pt-BR": "Habilidade exclusiva de Nitewing. Depois de gerar um redemoinho à sua frente, ele desliza pelos ares para investir contra o inimigo."
+    },
+    "element": "neutral",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "unique_yakushima_monster002_sword_charge",
+    "sourceId": "Unique_YakushimaMonster002_SwordCharge",
+    "slug": "Sword_Charge",
+    "names": {
+      "en": "Sword Charge",
+      "pt-BR": "Investida com Espada"
+    },
+    "descriptions": {
+      "en": "Enchanted Sword's exclusive skill. Lunges forward to deliver a sharp thrust.",
+      "pt-BR": "Habilidade exclusiva de Espada Encantada. Realiza um ataque perfurante direcionado ao inimigo."
+    },
+    "element": "neutral",
+    "cooldown": 1,
+    "power": 80,
+    "exclusive": true
+  },
+  {
+    "id": "unique_deer_pushup_horn",
+    "sourceId": "Unique_Deer_PushupHorn",
+    "slug": "Antler_Uppercut",
+    "names": {
+      "en": "Antler Uppercut",
+      "pt-BR": "Gancho com Chifre"
+    },
+    "descriptions": {
+      "en": "Eikthyrdeer's exclusive skill. Charges at foes and uses antlers to launch them into the air. When used while riding, the direction of the charge can be controlled.",
+      "pt-BR": "Habilidade exclusiva de Eikthyrdeer e subespécies. Ele investe contra o inimigo e ataca com uma chifrada para cima. Quando ativada durante a montaria, permite controlar a direção da investida."
+    },
+    "element": "neutral",
+    "cooldown": 4,
+    "power": 90,
+    "exclusive": true
+  },
+  {
+    "id": "unique_yakushima_monster001_slime_press_rainbow",
+    "sourceId": "Unique_YakushimaMonster001_SlimePress_Rainbow",
+    "slug": "Slime_Press_%28Rainbow%29",
+    "names": {
+      "en": "Slime Press (Rainbow)",
+      "pt-BR": "Prensa de Geleia (Arco-Íris)"
+    },
+    "descriptions": {
+      "en": "Rainbow Slime's exclusive skill. Leaps toward the enemy and delivers an attack.",
+      "pt-BR": "Habilidade exclusiva de Geleia do Arco-íris. Salta contra o inimigo para atacá-lo."
+    },
+    "element": "neutral",
+    "cooldown": 1,
+    "power": 100,
+    "exclusive": true
+  },
+  {
+    "id": "unique_naughty_cat_cat_press",
+    "sourceId": "Unique_NaughtyCat_CatPress",
+    "slug": "Cat_Press",
+    "names": {
+      "en": "Cat Press",
+      "pt-BR": "Prensa Felina"
+    },
+    "descriptions": {
+      "en": "Grintale's exclusive skill. Grins menacingly before leaping into the air and smashing foes with its body.",
+      "pt-BR": "Habilidade exclusiva de Grintale. Com um sorriso ousado, ele salta para o alto e esmaga o inimigo usando seu corpo inteiro."
+    },
+    "element": "neutral",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "power_ball",
+    "sourceId": "PowerBall",
+    "slug": "Power_Bomb",
+    "names": {
+      "en": "Power Bomb",
+      "pt-BR": "Bomba Poderosa"
+    },
+    "descriptions": {
+      "en": "Charges a massive amount of energy before firing a large destructive ball.",
+      "pt-BR": "Carrega grande quantidade de energia para dispará-la como uma esfera gigantesca."
+    },
+    "element": "neutral",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_gorilla_ground_punch",
+    "sourceId": "Unique_Gorilla_GroundPunch",
+    "slug": "Ground_Pound",
+    "names": {
+      "en": "Ground Pound",
+      "pt-BR": "Combo Terrestre do Gorila"
+    },
+    "descriptions": {
+      "en": "Gorirat's exclusive skill. Pounds the ground twice before leaping into the air and delivers a powerful punch.",
+      "pt-BR": "Habilidade exclusiva de Gorirat e subespécies. Ele salta depois de golpear o solo duas vezes, desferindo então um soco violento."
+    },
+    "element": "neutral",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "unique_fengyun_deeper_cloud_tempest",
+    "sourceId": "Unique_FengyunDeeper_CloudTempest",
+    "slug": "Cloud_Tempest",
+    "names": {
+      "en": "Cloud Tempest",
+      "pt-BR": "Tormenta de Nuvens"
+    },
+    "descriptions": {
+      "en": "Fenglope's exclusive skill. Charges forward while manipulating the atmosphere to create a pressurized wind tunnel around itself.",
+      "pt-BR": "Habilidade exclusiva de Fenglope. Ele controla a atmosfera para arremeter com o corpo envolto pela pressão do ar."
+    },
+    "element": "neutral",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "air_blade",
+    "sourceId": "AirBlade",
+    "slug": "Air_Blade",
+    "names": {
+      "en": "Air Blade",
+      "pt-BR": "Lâmina de Ar"
+    },
+    "descriptions": {
+      "en": "Sends out sharp blades of air in a fan shape.",
+      "pt-BR": "Lança uma lâmina de ar cortante em forma de leque."
+    },
+    "element": "neutral",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "unique_king_alpaca_body_press",
+    "sourceId": "Unique_KingAlpaca_BodyPress",
+    "slug": "Kingly_Slam",
+    "names": {
+      "en": "Kingly Slam",
+      "pt-BR": "Prensa Real"
+    },
+    "descriptions": {
+      "en": "Kingpaca's exclusive skill. Leaps high into the air before smashing into an enemy with its chubby, massive body.",
+      "pt-BR": "Habilidade exclusiva de Kingpaca e subespécies. Ele dá um grande salto e esmaga o inimigo com seu gigantesco corpo rechonchudo."
+    },
+    "element": "neutral",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "unique_legend_deer_radiant_purge_otomo",
+    "sourceId": "Unique_LegendDeer_RadiantPurge_Otomo",
+    "slug": "Purifying_Light",
+    "names": {
+      "en": "Purifying Light",
+      "pt-BR": "Luz da Purificação"
+    },
+    "descriptions": {
+      "en": "Hartalis' exclusive skill. Leaps high into the air, condensing immense energy into a descending sphere of light. When it strikes the ground, it purifies all on the ground below.",
+      "pt-BR": "Habilidade exclusiva de Hartalis. Salta às alturas e concentra uma energia imensa para dispará-la contra o solo. A esfera de luz que cai do céu purifica tudo que estiver abaixo."
+    },
+    "element": "neutral",
+    "cooldown": 100,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "self_destruct",
+    "sourceId": "SelfDestruct",
+    "slug": "Implode",
+    "names": {
+      "en": "Implode",
+      "pt-BR": "Explosão Suicida"
+    },
+    "descriptions": {
+      "en": "Risks its life to cause a violent explosion. Becomes incapacitated afterwards.",
+      "pt-BR": "Arrisca a própria vida para causar uma explosão, ficando incapacitado."
+    },
+    "element": "neutral",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_moon_queen_moon_blade",
+    "sourceId": "Unique_MoonQueen_MoonBlade",
+    "slug": "Seigetsu_Blade",
+    "names": {
+      "en": "Seigetsu Blade",
+      "pt-BR": "Lâmina da Lua Pálida"
+    },
+    "descriptions": {
+      "en": "Selyne's exclusive skill. Fires two consecutive high-speed blades imbued with the power of moonlight.",
+      "pt-BR": "Habilidade exclusiva de Selyne. Lança em sequência duas lâminas velozes que abrigam o poder do luar."
+    },
+    "element": "neutral",
+    "cooldown": 16,
+    "power": 350,
+    "exclusive": true
+  },
+  {
+    "id": "star_mine",
+    "sourceId": "StarMine",
+    "slug": "Star_Mine",
+    "names": {
+      "en": "Star Mine",
+      "pt-BR": "Mina Estelar"
+    },
+    "descriptions": {
+      "en": "Generates stars around the enemy that explode on contact. Stars also explode after some time.",
+      "pt-BR": "Gera estrelas ao redor do inimigo que explodem ao contato. As estrelas também explodem depois de passado algum tempo."
+    },
+    "element": "neutral",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": false
+  },
+  {
+    "id": "hyper_beam",
+    "sourceId": "HyperBeam",
+    "slug": "Pal_Blast",
+    "names": {
+      "en": "Pal Blast",
+      "pt-BR": "Rajada Pal"
+    },
+    "descriptions": {
+      "en": "Charges destructive energy before firing a high-powered beam forward across a wide area.",
+      "pt-BR": "Carrega uma energia destruidora para disparar um raio superpoderoso contra uma grande área à sua frente."
+    },
+    "element": "neutral",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "unique_sifu_dog_counter",
+    "sourceId": "Unique_SifuDog_Counter",
+    "slug": "Wholehearted_Stance",
+    "names": {
+      "en": "Wholehearted Stance",
+      "pt-BR": "Foco Total"
+    },
+    "descriptions": {
+      "en": "Dogen's exclusive skill. Adopts an aiki stance. While in this stance, nulify any incoming attack, instantly close in on the enemy, and counter with a full-forced palm strike.",
+      "pt-BR": "Habilidade exclusiva de Dogen. Entra em concentração para receber o inimigo. Enquanto está concentrado, anula qualquer ataque e se aproxima do inimigo em um só instante, desferindo um golpe fulminante com a palma da mão."
+    },
+    "element": "neutral",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "unique_moon_queen_moon_beam",
+    "sourceId": "Unique_MoonQueen_MoonBeam",
+    "slug": "Moonlight_Beam",
+    "names": {
+      "en": "Moonlight Beam",
+      "pt-BR": "Raio Lunar"
+    },
+    "descriptions": {
+      "en": "Selyne's exclusive skill. Stores energy in the moon on its back, then fires a crescent-shaped beam forward.",
+      "pt-BR": "Habilidade exclusiva de Selyne. Concentra energia na lua nas suas costas e dispara um raio em forma de crescente adiante."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": true
+  },
+  {
+    "id": "unique_saint_centaur_one_spear_rushes",
+    "sourceId": "Unique_SaintCentaur_OneSpearRushes",
+    "slug": "Spear_Thrust",
+    "names": {
+      "en": "Spear Thrust",
+      "pt-BR": "Lampejo da Lança Única"
+    },
+    "descriptions": {
+      "en": "Paladius' exclusive skill. Charges forward while enveloped in holy power with its spear thrust ahead. The shield in its other hand blocks all attacks during the charge.",
+      "pt-BR": "Habilidade exclusiva de Paladius. Ele envolve o corpo em força sagrada e então investe com a lança na mão esquerda apontada adiante. O escudo na mão direita o protege de todo e qualquer ataque durante a investida."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "holy_blast",
+    "sourceId": "HolyBlast",
+    "slug": "Holy_Burst",
+    "names": {
+      "en": "Holy Burst",
+      "pt-BR": "Estouro Sagrado"
+    },
+    "descriptions": {
+      "en": "Creates a wide explosion of light at the enemy's location and around it.",
+      "pt-BR": "Causa explosões de luz em grande área no local do inimigo e seus arredores."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": false
+  },
+  {
+    "id": "unique_moon_queen_ice_moon_blade",
+    "sourceId": "Unique_MoonQueen_IceMoonBlade",
+    "slug": "Seigetsu_Flash",
+    "names": {
+      "en": "Seigetsu Flash",
+      "pt-BR": "Fulgor da Lua Gélida"
+    },
+    "descriptions": {
+      "en": "Selyne's exclusive skill. Fires three consecutive high-speed slashes imbued with the power of moonlight.",
+      "pt-BR": "Habilidade exclusiva de Selyne. Lança em sequência três lâminas velozes que abrigam o poder do luar."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_white_deer_holy_pillar",
+    "sourceId": "Unique_WhiteDeer_HolyPillar",
+    "slug": "Holy_Nova",
+    "names": {
+      "en": "Holy Nova",
+      "pt-BR": "Nova Sagrada"
+    },
+    "descriptions": {
+      "en": "Celesdir's exclusive skill. After igniting a burst of holy light across a vast area ahead, it strides forward, radiating holy light around itself.",
+      "pt-BR": "Habilidade exclusiva de Celesdir. Depois de causar uma explosão de luz sagrada numa grande área à sua frente, gera mais luz sagrada ao seu redor enquanto caminha."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_legend_deer_radiant_wing_rush",
+    "sourceId": "Unique_LegendDeer_RadiantWingRush",
+    "slug": "Divine_Wing",
+    "names": {
+      "en": "Divine Wing",
+      "pt-BR": "Asas Divinas"
+    },
+    "descriptions": {
+      "en": "Hartalis' exclusive skill. Leaps back and sprouts wings of light, then dives toward the enemy.",
+      "pt-BR": "Habilidade exclusiva de Hartalis. Salta para trás e cria asas luminosas nas costas, avançando contra o inimigo desde os ares."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "radiant_barrage",
+    "sourceId": "RadiantBarrage",
+    "slug": "Radiant_Barrage",
+    "names": {
+      "en": "Radiant Barrage",
+      "pt-BR": "Barragem Radiante"
+    },
+    "descriptions": {
+      "en": "Unleashes a sphere of light that slowly tracks down an enemy. As it nears its target, it splits into countless light bullets that strike all at once.",
+      "pt-BR": "Dispara uma bola de luz que persegue o inimigo lentamente. Quando se aproxima do alvo, ela se parte em inúmeros projéteis luminosos para atacá-lo."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": false
+  },
+  {
+    "id": "unique_night_blue_horse_neutral_tossin",
+    "sourceId": "Unique_NightBlueHorse_Neutral_Tossin",
+    "slug": "Silver_Steed",
+    "names": {
+      "en": "Silver Steed",
+      "pt-BR": "Galope do Cavalo Prateado"
+    },
+    "descriptions": {
+      "en": "Starryon Primo's exclusive skill. Cloaks the body in radiant flames and charges toward the enemy.",
+      "pt-BR": "Habilidade exclusiva de Starryon Primo. Avança em grande velocidade contra o inimigo enquanto envolto em chamas cintilantes."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_cube_turtle_neutral_holy_press",
+    "sourceId": "Unique_CubeTurtle_Neutral_HolyPress",
+    "slug": "Holy_Press",
+    "names": {
+      "en": "Holy Press",
+      "pt-BR": "Prensa Sagrada"
+    },
+    "descriptions": {
+      "en": "Tetroise Primo's exclusive skill. Leaps into the air and crushes enemies with its massive weight. Upon landing, light spreads outward, forming pillars of light that burst forth and strike nearby enemies.",
+      "pt-BR": "Habilidade exclusiva de Tetroise Primo. Salta como se estivesse flutuando no ar e pulveriza o inimigo. Uma luz então se espalha pelo local, atacando novamente com pilares luminosos."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_legend_deer_warp_pillar_burst",
+    "sourceId": "Unique_LegendDeer_WarpPillarBurst",
+    "slug": "Sacred_Rain",
+    "names": {
+      "en": "Sacred Rain",
+      "pt-BR": "Chuva Sacra"
+    },
+    "descriptions": {
+      "en": "Hartalis' exclusive skill. Fades from sight, then calls down a massive barrage of light pillars centered on its position.",
+      "pt-BR": "Habilidade exclusiva de Hartalis. Depois de desaparecer por um instante, faz chover diversos pilares de luz numa grande área ao seu redor."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 800,
+    "exclusive": true
+  },
+  {
+    "id": "unique_night_blue_horse_neutral_air_step",
+    "sourceId": "Unique_NightBlueHorse_Neutral_AirStep",
+    "slug": "Royal_Step",
+    "names": {
+      "en": "Royal Step",
+      "pt-BR": "Passo Real"
+    },
+    "descriptions": {
+      "en": "Starryon Primo's exclusive skill. Confuses enemies with an elegant stride and launches slashing attack with its sharp horn.",
+      "pt-BR": "Habilidade exclusiva de Starryon Primo. Zomba do inimigo com um passo gracioso e então lança um ataque cortante com seu chifre afiado."
+    },
+    "element": "neutral",
+    "cooldown": 30,
+    "power": 800,
+    "exclusive": true
+  },
+  {
+    "id": "self_explosion",
+    "sourceId": "SelfExplosion",
+    "slug": "Megaton_Implode",
+    "names": {
+      "en": "Megaton Implode",
+      "pt-BR": "Autodestruição Megaton"
+    },
+    "descriptions": {
+      "en": "Risks life to cause a massive explosion. Those who perish for their duty become glistening stars in the night sky.",
+      "pt-BR": "Causa uma grande explosão suicida. Extingue a própria vida e torna-se uma estrelinha brilhante no céu noturno."
+    },
+    "element": "neutral",
+    "cooldown": 60,
+    "power": 1200,
+    "exclusive": false
+  },
+  {
+    "id": "aqua_jet",
+    "sourceId": "AquaJet",
+    "slug": "Hydro_Jet",
+    "names": {
+      "en": "Hydro Jet",
+      "pt-BR": "Jato de Água"
+    },
+    "descriptions": {
+      "en": "Hurls a high speed ball of water at an enemy.",
+      "pt-BR": "Dispara projéteis de água a alta velocidade contra o inimigo."
+    },
+    "element": "water",
+    "cooldown": 2,
+    "power": 40,
+    "exclusive": false
+  },
+  {
+    "id": "water_gun",
+    "sourceId": "WaterGun",
+    "slug": "Aqua_Gun",
+    "names": {
+      "en": "Aqua Gun",
+      "pt-BR": "Tiro Aquático"
+    },
+    "descriptions": {
+      "en": "Hurls a ball of water straight at an enemy.",
+      "pt-BR": "Dispara um projétil de água que voa em linha reta contra o alvo."
+    },
+    "element": "water",
+    "cooldown": 2,
+    "power": 50,
+    "exclusive": false
+  },
+  {
+    "id": "unique_yakushima_monster001_slime_press_water",
+    "sourceId": "Unique_YakushimaMonster001_SlimePress_Water",
+    "slug": "Slime_Press_%28Water%29",
+    "names": {
+      "en": "Slime Press (Water)",
+      "pt-BR": "Prensa de Geleia (Água)"
+    },
+    "descriptions": {
+      "en": "Blue Slime's exclusive skill. Leaps toward the enemy and delivers an attack.",
+      "pt-BR": "Habilidade exclusiva de Geleia Azul. Salta contra o inimigo para atacá-lo."
+    },
+    "element": "water",
+    "cooldown": 1,
+    "power": 50,
+    "exclusive": true
+  },
+  {
+    "id": "bubble_shot",
+    "sourceId": "BubbleShot",
+    "slug": "Bubble_Blast",
+    "names": {
+      "en": "Bubble Blast",
+      "pt-BR": "Tiro de Bolha"
+    },
+    "descriptions": {
+      "en": "Fires numerous bubbles that slowly pursue an enemy.",
+      "pt-BR": "Dispara uma grande quantidade de bolhas que perseguem o inimigo lentamente."
+    },
+    "element": "water",
+    "cooldown": 4,
+    "power": 80,
+    "exclusive": false
+  },
+  {
+    "id": "acid_rain",
+    "sourceId": "AcidRain",
+    "slug": "Acid_Rain",
+    "names": {
+      "en": "Acid Rain",
+      "pt-BR": "Chuva Ácida"
+    },
+    "descriptions": {
+      "en": "Creates acidic clouds that pour down acid rain on enemies.",
+      "pt-BR": "Cria nuvens ácidas e faz cair uma chuva corrosiva sobre a cabeça do inimigo."
+    },
+    "element": "water",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": false
+  },
+  {
+    "id": "unique_octopurs_girl_ink_jet",
+    "sourceId": "Unique_OctopursGirl_InkJet",
+    "slug": "Smoke_Jet",
+    "names": {
+      "en": "Smoke Jet",
+      "pt-BR": "Fumaça a Jato"
+    },
+    "descriptions": {
+      "en": "Gloopie's exclusive skill. Releases smoke to conceal itself, then launches a surprise headbutt from the shadows.",
+      "pt-BR": "Habilidade exclusiva de espécies de Gloopie. Cria uma cortina de fumaça à sua frente para se ocultar e então realiza uma cabeçada poderosa enquanto está escondida."
+    },
+    "element": "water",
+    "cooldown": 8,
+    "power": 120,
+    "exclusive": true
+  },
+  {
+    "id": "line_geyser",
+    "sourceId": "LineGeyser",
+    "slug": "Splash",
+    "names": {
+      "en": "Splash",
+      "pt-BR": "Linha de Salpicos"
+    },
+    "descriptions": {
+      "en": "Generates a column of water that travels in a straight line.",
+      "pt-BR": "Gera um pilar de água que avança em linha reta."
+    },
+    "element": "water",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": false
+  },
+  {
+    "id": "unique_tentacle_turtle_hydro_spin",
+    "sourceId": "Unique_TentacleTurtle_HydroSpin",
+    "slug": "Hydro_Spin",
+    "names": {
+      "en": "Hydro Spin",
+      "pt-BR": "Giro Hídrico"
+    },
+    "descriptions": {
+      "en": "Turtacle's exclusive skill. Uses jet-powered propulsion to spin rapidly and launch itself at the enemy.",
+      "pt-BR": "Habilidade exclusiva de espécies de Turtacle e subespécies. Utiliza a força de propulsão do jato emitido para voar contra o inimigo enquanto gira em alta velocidade."
+    },
+    "element": "water",
+    "cooldown": 8,
+    "power": 160,
+    "exclusive": true
+  },
+  {
+    "id": "water_ball",
+    "sourceId": "WaterBall",
+    "slug": "Aqua_Burst",
+    "names": {
+      "en": "Aqua Burst",
+      "pt-BR": "Bomba Salpicadora"
+    },
+    "descriptions": {
+      "en": "Creates a giant ball of water and hurls it at an enemy.",
+      "pt-BR": "Cria uma bola de água gigantesca sobre sua cabeça e a dispara na direção do inimigo."
+    },
+    "element": "water",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": false
+  },
+  {
+    "id": "unique_king_whale_homing_bubble",
+    "sourceId": "Unique_KingWhale_HomingBubble",
+    "slug": "Bubble_Rain",
+    "names": {
+      "en": "Bubble Rain",
+      "pt-BR": "Chuva de Bolhas"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Fires a large cluster of homing bubbles that remain in place upon landing. Bubbles burst and deal damage upon contact or after several seconds.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Dispara uma grande quantidade de bolhas que perseguem o inimigo. As bolhas permanecem presas no alvo depois do impacto. Elas estouram e causam dano após alguns segundos ou ao serem tocadas."
+    },
+    "element": "water",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "creeping_bubble",
+    "sourceId": "CreepingBubble",
+    "slug": "Creeping_Bubbles",
+    "names": {
+      "en": "Creeping Bubbles",
+      "pt-BR": "Marcha de Bolhas"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Generates a multitude of bubbles around the enemy to surround and attack them.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Gera uma grande quantidade de bolhas ao redor do inimigo para um ataque em cerco."
+    },
+    "element": "water",
+    "cooldown": 12,
+    "power": 200,
+    "exclusive": true
+  },
+  {
+    "id": "diversion_laser",
+    "sourceId": "DiversionLaser",
+    "slug": "Torrential_Blast",
+    "names": {
+      "en": "Torrential Blast",
+      "pt-BR": "Jato Pressurizado"
+    },
+    "descriptions": {
+      "en": "Fires a high-pressure stream of water forward. After a short delay, the stream branches off to the left and right.",
+      "pt-BR": "Dispara um jato d’água em alta pressão para a frente. Após algum tempo, o jato também se divide para os lados."
+    },
+    "element": "water",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": false
+  },
+  {
+    "id": "unique_sakura_saurus_water_splash_tackle",
+    "sourceId": "Unique_SakuraSaurus_Water_SplashTackle",
+    "slug": "Splash_Tackle",
+    "names": {
+      "en": "Splash Tackle",
+      "pt-BR": "Empurrão Salpicador"
+    },
+    "descriptions": {
+      "en": "Broncherry Aqua's exclusive skill. Turns sideways before tackling enemies in front of it, sending them flying with a burst of water.",
+      "pt-BR": "Habilidade exclusiva de Broncherry Aqua. Ele se posiciona de lado e toma impulso para dar um encontrão adiante, lançando o inimigo longe enquanto esguicha água para o alto."
+    },
+    "element": "water",
+    "cooldown": 12,
+    "power": 250,
+    "exclusive": true
+  },
+  {
+    "id": "wall_splash",
+    "sourceId": "WallSplash",
+    "slug": "Curtain_Splash",
+    "names": {
+      "en": "Curtain Splash",
+      "pt-BR": "Parede de Salpicos"
+    },
+    "descriptions": {
+      "en": "Continously creates walls made from water columns at the enemy's location.",
+      "pt-BR": "Gera contínuas paredes formadas por colunas de água no local do inimigo."
+    },
+    "element": "water",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": false
+  },
+  {
+    "id": "unique_stuffed_shark_hidden_weapon",
+    "sourceId": "Unique_StuffedShark_HiddenWeapon",
+    "slug": "Trigger_Happy",
+    "names": {
+      "en": "Trigger Happy",
+      "pt-BR": "Nervoso no Gatilho"
+    },
+    "descriptions": {
+      "en": "Finsider's exclusive skill. Draws twin water blasters from its mouth, firing six shots alternately left and right, then finishes by combining both blasters to unleash one powerful shot.",
+      "pt-BR": "Habilidade exclusiva de Finsider e subespécies. Revela os dois hidrocanhões que possui dentro da boca e dispara seis projéteis de água alternadamente de cada lado. Por último, une os dois canhões para executar um poderoso tiro final."
+    },
+    "element": "water",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_king_whale_aqua_blade",
+    "sourceId": "Unique_KingWhale_AquaBlade",
+    "slug": "Aqua_Blade",
+    "names": {
+      "en": "Aqua Blade",
+      "pt-BR": "Lâmina Marinha"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Launches sharp water blades at enemies.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Ataca fazendo saltar uma lâmina de água afiada."
+    },
+    "element": "water",
+    "cooldown": 16,
+    "power": 300,
+    "exclusive": true
+  },
+  {
+    "id": "unique_horus_water_aqua_storm",
+    "sourceId": "Unique_Horus_Water_AquaStorm",
+    "slug": "Phoenix_Tide",
+    "names": {
+      "en": "Phoenix Tide",
+      "pt-BR": "Onda Marinha da Fênix"
+    },
+    "descriptions": {
+      "en": "Faleris Aqua's exclusive skill. After summoning a massive tornado, it envelops its body in water and charges forward.",
+      "pt-BR": "Habilidade exclusiva de Faleris Aqua. Depois de gerar um redemoinho turbulento, ele envolve seu corpo em água e se arremete numa investida rasante."
+    },
+    "element": "water",
+    "cooldown": 16,
+    "power": 320,
+    "exclusive": true
+  },
+  {
+    "id": "hydro_slicer",
+    "sourceId": "HydroSlicer",
+    "slug": "Hydro_Slicer",
+    "names": {
+      "en": "Hydro Slicer",
+      "pt-BR": "Hidrofatiador"
+    },
+    "descriptions": {
+      "en": "Mows down the frontal area with a blast of compressed water. The area struck by the blast erupts with water after a short delay.",
+      "pt-BR": "Devasta a área em frente com uma corrente de água pressurizada. Após algum tempo, mais água começa a jorrar do local atingido."
+    },
+    "element": "water",
+    "cooldown": 16,
+    "power": 350,
+    "exclusive": false
+  },
+  {
+    "id": "unique_umihebi_winding_tackle",
+    "sourceId": "Unique_Umihebi_WindingTackle",
+    "slug": "Slither_Slam",
+    "names": {
+      "en": "Slither Slam",
+      "pt-BR": "Serpente Oceânica"
+    },
+    "descriptions": {
+      "en": "Jormuntide's exclusive skill. Letting out a roar, it charges toward the enemy, twisting its water-covered body as it advances.",
+      "pt-BR": "Habilidade exclusiva de Jormuntide. Soltando um berro, serpenteia o corpo envolvido pela água e avança na direção do inimigo."
+    },
+    "element": "water",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "unique_king_whale_wave_tackle",
+    "sourceId": "Unique_KingWhale_WaveTackle",
+    "slug": "Tidal_Charge",
+    "names": {
+      "en": "Tidal Charge",
+      "pt-BR": "Investida de Tsunâmi"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Slams the body into the enemy, generating a massive wave on impact.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Joga-se de corpo inteiro contra o inimigo, provocando uma onda."
+    },
+    "element": "water",
+    "cooldown": 20,
+    "power": 400,
+    "exclusive": true
+  },
+  {
+    "id": "hydro_pump",
+    "sourceId": "HydroPump",
+    "slug": "Hydro_Laser",
+    "names": {
+      "en": "Hydro Laser",
+      "pt-BR": "Corrente Hídrica"
+    },
+    "descriptions": {
+      "en": "Shoots pressurized water at extreme velocities, sweeping over a wide area in front of it.",
+      "pt-BR": "Lança água com um ímpeto incrível, devastando uma grande área à sua frente."
+    },
+    "element": "water",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": false
+  },
+  {
+    "id": "unique_ghost_anglerfish_sweep_bait",
+    "sourceId": "Unique_GhostAnglerfish_SweepBait",
+    "slug": "Lantern_Sweep",
+    "names": {
+      "en": "Lantern Sweep",
+      "pt-BR": "Lanterna Varredora"
+    },
+    "descriptions": {
+      "en": "Ghangler's exclusive skill. Lashes forward with the lantern atop its head, sweeping broadly ahead.",
+      "pt-BR": "Habilidade exclusiva de Ghangler. Varre a área à sua frente com um grande movimento da longa lanterna em sua cabeça."
+    },
+    "element": "water",
+    "cooldown": 20,
+    "power": 450,
+    "exclusive": true
+  },
+  {
+    "id": "rip_tide",
+    "sourceId": "RipTide",
+    "slug": "Aqua_Surge",
+    "names": {
+      "en": "Aqua Surge",
+      "pt-BR": "Pico Aquático"
+    },
+    "descriptions": {
+      "en": "Generates waves that surge around the enemy from all sides. They converge and explode at the center, erupting into a column of water.",
+      "pt-BR": "Gera ondas esmagadoras nos arredores do inimigo. No final, as ondas explodem ao centro e fazem com que se erga uma coluna de água."
+    },
+    "element": "water",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": false
+  },
+  {
+    "id": "unique_king_whale_maelstrom",
+    "sourceId": "Unique_KingWhale_Maelstrom",
+    "slug": "Maelstrom",
+    "names": {
+      "en": "Maelstrom",
+      "pt-BR": "Voragem"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Creates a vortex around the enemy. The vortex pulls targets toward its center while shrinking, ending in a high-pressure water pillar explosion.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Gera um turbilhão em volta do alvo. O turbilhão atrai o inimigo enquanto vai se contraindo, finalmente explodindo em uma coluna de água."
+    },
+    "element": "water",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "unique_blue_sky_dragon_tossin",
+    "sourceId": "Unique_BlueSkyDragon_Tossin",
+    "slug": "Hydra_Charge",
+    "names": {
+      "en": "Hydra Charge",
+      "pt-BR": "Acometida do Dragão das Águas"
+    },
+    "descriptions": {
+      "en": "Shaolong's exclusive skill. Cloaks the body in water and charges straight forward.",
+      "pt-BR": "Habilidade exclusiva de Shaolong. Envolve o corpo inteiro em água e dá uma investida em linha reta para a frente."
+    },
+    "element": "water",
+    "cooldown": 24,
+    "power": 500,
+    "exclusive": true
+  },
+  {
+    "id": "sea_gush",
+    "sourceId": "SeaGush",
+    "slug": "Geyser_Gush",
+    "names": {
+      "en": "Geyser Gush",
+      "pt-BR": "Erupção de Colunas de Água"
+    },
+    "descriptions": {
+      "en": "Erupts massive pillars of water beneath and around the enemy.",
+      "pt-BR": "Faz jorrar uma grande quantidade de colunas de água no local do inimigo e seus arredores."
+    },
+    "element": "water",
+    "cooldown": 30,
+    "power": 600,
+    "exclusive": false
+  },
+  {
+    "id": "unique_poseidon_orca_torrent_laser",
+    "sourceId": "Unique_PoseidonOrca_TorrentLaser",
+    "slug": "Thalassonic_Laser",
+    "names": {
+      "en": "Thalassonic Laser",
+      "pt-BR": "Laser Ultrassônico"
+    },
+    "descriptions": {
+      "en": "Neptilius's exclusive skill. Rising slightly, it gathers water at its mouth, then sweeps a high-pressure stream vertically and horizontally three times. Fissures form at the swept locations, erupting with water.",
+      "pt-BR": "Habilidade exclusiva de Neptilius. Coleta água na boca enquanto boia levemente. Em seguida, devasta os arredores com três jatos d’água pressurizados, criando rachaduras que começam a jorrar água nos pontos atingidos."
+    },
+    "element": "water",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_king_whale_breaching",
+    "sourceId": "Unique_KingWhale_Breaching",
+    "slug": "Grand_Breach",
+    "names": {
+      "en": "Grand Breach",
+      "pt-BR": "Salto Grandioso"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Dives underwater and leaps out after a short delay. The momentum of the leap creates ripples that damage the surrounding area.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Mergulha na água e, após um momento, dá um grande salto para fora. Seu salto é tão potente que causa ondas nos arredores."
+    },
+    "element": "water",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_blue_sky_dragon_drain_storm",
+    "sourceId": "Unique_BlueSkyDragon_DrainStorm",
+    "slug": "Celestial_Vortex",
+    "names": {
+      "en": "Celestial Vortex",
+      "pt-BR": "Redemoinho Cataclísmico"
+    },
+    "descriptions": {
+      "en": "Shaolong's exclusive skill. Summons a massive vortex reaching into the heavens. The vortex draws in and eliminates all surrounding enemies at once.",
+      "pt-BR": "Habilidade exclusiva de Shaolong. Provoca um turbilhão colossal que se estende até os céus. O turbilhão então engole os inimigos ao redor, capturando todos ao mesmo tempo."
+    },
+    "element": "water",
+    "cooldown": 30,
+    "power": 700,
+    "exclusive": true
+  },
+  {
+    "id": "unique_king_whale_aqua_tornado",
+    "sourceId": "Unique_KingWhale_AquaTornado",
+    "slug": "Aqua_Tornado",
+    "names": {
+      "en": "Aqua Tornado",
+      "pt-BR": "Tornado de Água"
+    },
+    "descriptions": {
+      "en": "Panthalus's exclusive skill. Soars into the sky and generates multiple massive tornadoes that slowly track enemies.",
+      "pt-BR": "Habilidade exclusiva de Panthalus. Voa na direção dos céus e gera vários redemoinhos gigantescos. Os redemoinhos então perseguem os inimigos lentamente."
+    },
+    "element": "water",
+    "cooldown": 40,
+    "power": 800,
+    "exclusive": true
+  }
+]
