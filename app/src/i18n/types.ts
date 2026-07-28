@@ -375,5 +375,46 @@ export type TranslationKey =
   | 'element.ice'
   | 'element.ground'
   | 'element.dark'
-  | 'element.dragon';
+  | 'element.dragon'
+
+  // Footer
+  | 'footer.about'
+  | 'footer.privacy'
+  | 'footer.disclaimer'
+
+  // Cookie Consent
+  | 'consent.message'
+  | 'consent.accept'
+  | 'consent.reject'
+
+  // Ads
+  | 'ads.label'
+
+  // Privacy Policy
+  | 'privacy.title'
+  | 'privacy.updated'
+  | 'privacy.intro.title'
+  | 'privacy.intro.body'
+  | 'privacy.data.title'
+  | 'privacy.data.body'
+  | 'privacy.cookies.title'
+  | 'privacy.cookies.body'
+  | 'privacy.ads.title'
+  | 'privacy.ads.body'
+  | 'privacy.rights.title'
+  | 'privacy.rights.body'
+  | 'privacy.contact.title'
+  | 'privacy.contact.body'
+
+  // About
+  | 'about.title'
+  | 'about.what.title'
+  | 'about.what.body'
+  | 'about.data.title'
+  | 'about.data.body'
+  | 'about.disclaimer.title'
+  | 'about.disclaimer.body'
+  | 'about.contact.title'
+  | 'about.contact.body';
+
 export type Translations = Record<TranslationKey, string>;

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://find-my-pal.vercel.app/sitemap.xml

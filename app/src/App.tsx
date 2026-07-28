@@ -1,6 +1,7 @@
 import { I18nProvider } from '@/i18n';
 import { useAppState } from '@/hooks/useAppState';
 import Layout from '@/components/Layout';
+import CookieConsent from '@/components/CookieConsent';
 import Home from './pages/Home';
 import Packages from './pages/Packages';
 import TeamBuilder from './pages/TeamBuilder';
@@ -9,6 +10,8 @@ import PalsPage from './pages/Pals';
 import BossDrops from './pages/BossDrops';
 import Builds from './pages/Builds';
 import CraftingPlanner from './pages/CraftingPlanner';
+import Privacy from './pages/Privacy';
+import About from './pages/About';
 
 export default function App() {
   const appState = useAppState();
@@ -24,7 +27,10 @@ export default function App() {
         {appState.currentView === 'bossdrops' && <BossDrops />}
         {appState.currentView === 'crafting' && <CraftingPlanner />}
         {appState.currentView === 'builds' && <Builds />}
+        {appState.currentView === 'privacy' && <Privacy />}
+        {appState.currentView === 'about' && <About />}
       </Layout>
+      <CookieConsent />
     </I18nProvider>
   );
 }

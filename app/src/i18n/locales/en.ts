@@ -376,4 +376,44 @@ export const en: Translations = {
   'element.ground': 'Ground',
   'element.dark': 'Dark',
   'element.dragon': 'Dragon',
+
+  // Footer
+  'footer.about': 'About',
+  'footer.privacy': 'Privacy Policy',
+  'footer.disclaimer': 'Unofficial fan-made site. Not affiliated with or endorsed by Pocketpair, Inc.',
+
+  // Cookie Consent
+  'consent.message': 'We use cookies to remember your preferences and, with your consent, to show ads served by Google AdSense. See the Privacy Policy for details.',
+  'consent.accept': 'Accept',
+  'consent.reject': 'Reject',
+
+  // Ads
+  'ads.label': 'Advertisement',
+
+  // Privacy Policy
+  'privacy.title': 'Privacy Policy',
+  'privacy.updated': 'Last updated: July 2026',
+  'privacy.intro.title': 'Overview',
+  'privacy.intro.body': 'Find My Pal is a free, fan-made companion tool for Palworld players. This page explains what information is handled when you use the site.',
+  'privacy.data.title': 'Data we store',
+  'privacy.data.body': 'The site does not require an account and does not send personal data to any server. Your packages, teams, completed combinations, theme and language preferences are stored only in your own browser (localStorage) and never leave your device.',
+  'privacy.cookies.title': 'Cookies',
+  'privacy.cookies.body': 'We use cookies and similar storage only to remember your preferences (language, theme and your cookie consent choice). You can clear them at any time in your browser settings.',
+  'privacy.ads.title': 'Advertising',
+  'privacy.ads.body': 'This site may display ads served by Google AdSense. Google and its partners use cookies to serve ads based on your visits to this and other websites. You can opt out of personalized advertising at any time in Google Ads Settings (adssettings.google.com) or at aboutads.info/choices. If you reject cookies in the consent banner, only non-personalized ads may be shown.',
+  'privacy.rights.title': 'Your rights (LGPD / GDPR)',
+  'privacy.rights.body': 'Under the LGPD (Brazil) and the GDPR (European Union), you have the right to know what data is stored about you, to correct it and to delete it. Since all your data stays in your own browser, you can exercise these rights at any time by clearing the site data in your browser settings.',
+  'privacy.contact.title': 'Contact',
+  'privacy.contact.body': 'Questions about this policy can be sent to danielgomesmoura@gmail.com.',
+
+  // About
+  'about.title': 'About Find My Pal',
+  'about.what.title': 'What is this site?',
+  'about.what.body': 'Find My Pal is a free companion app for Palworld players. It helps you look up Pals, explore breeding combinations, organize packages, check boss drops and mounts, plan crafting steps and browse recommended builds.',
+  'about.data.title': 'Where the data comes from',
+  'about.data.body': 'Game data is compiled from community sources (paldb.cc, wiki.gg and palpedia) and bundled with the app. Pal names, images and game assets belong to Palworld.',
+  'about.disclaimer.title': 'Disclaimer',
+  'about.disclaimer.body': 'Find My Pal is an unofficial fan-made project and is not affiliated with, endorsed by or connected to Pocketpair, Inc. Palworld and all related names, images and assets are trademarks and property of Pocketpair, Inc.',
+  'about.contact.title': 'Contact',
+  'about.contact.body': 'Feedback, suggestions and corrections are welcome: danielgomesmoura@gmail.com',
 };

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
-export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting';
+export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting' | 'privacy' | 'about';
 
 export type SearchMode = 'child' | 'parent' | 'tree';
 
@@ -78,6 +78,8 @@ const VALID_VIEWS: View[] = [
   'bossdrops',
   'builds',
   'crafting',
+  'privacy',
+  'about',
 ];
 
 function isValidView(value: unknown): value is View {

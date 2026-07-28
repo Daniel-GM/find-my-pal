@@ -376,4 +376,44 @@ export const ptBR: Translations = {
   'element.ground': 'Terra',
   'element.dark': 'Sombrio',
   'element.dragon': 'Dragão',
+
+  // Footer
+  'footer.about': 'Sobre',
+  'footer.privacy': 'Política de Privacidade',
+  'footer.disclaimer': 'Site não oficial feito por fãs. Sem afiliação ou endosso da Pocketpair, Inc.',
+
+  // Cookie Consent
+  'consent.message': 'Usamos cookies para lembrar suas preferências e, com seu consentimento, exibir anúncios do Google AdSense. Veja a Política de Privacidade para detalhes.',
+  'consent.accept': 'Aceitar',
+  'consent.reject': 'Recusar',
+
+  // Ads
+  'ads.label': 'Publicidade',
+
+  // Privacy Policy
+  'privacy.title': 'Política de Privacidade',
+  'privacy.updated': 'Última atualização: julho de 2026',
+  'privacy.intro.title': 'Visão geral',
+  'privacy.intro.body': 'O Find My Pal é uma ferramenta gratuita, feita por fãs, para jogadores de Palworld. Esta página explica quais informações são tratadas quando você usa o site.',
+  'privacy.data.title': 'Dados que armazenamos',
+  'privacy.data.body': 'O site não exige cadastro e não envia dados pessoais para nenhum servidor. Seus pacotes, equipes, combinações concluídas, tema e idioma ficam armazenados apenas no seu próprio navegador (localStorage) e nunca saem do seu dispositivo.',
+  'privacy.cookies.title': 'Cookies',
+  'privacy.cookies.body': 'Usamos cookies e armazenamento semelhante apenas para lembrar suas preferências (idioma, tema e sua escolha de consentimento de cookies). Você pode limpá-los a qualquer momento nas configurações do navegador.',
+  'privacy.ads.title': 'Publicidade',
+  'privacy.ads.body': 'Este site pode exibir anúncios veiculados pelo Google AdSense. O Google e seus parceiros usam cookies para exibir anúncios com base nas suas visitas a este e a outros sites. Você pode desativar a publicidade personalizada a qualquer momento nas Configurações de Anúncios do Google (adssettings.google.com) ou em aboutads.info/choices. Se você recusar os cookies no banner de consentimento, apenas anúncios não personalizados poderão ser exibidos.',
+  'privacy.rights.title': 'Seus direitos (LGPD / GDPR)',
+  'privacy.rights.body': 'Nos termos da LGPD (Brasil) e do GDPR (União Europeia), você tem o direito de saber quais dados são armazenados sobre você, de corrigi-los e de excluí-los. Como todos os seus dados ficam no seu próprio navegador, você pode exercer esses direitos a qualquer momento limpando os dados do site nas configurações do navegador.',
+  'privacy.contact.title': 'Contato',
+  'privacy.contact.body': 'Dúvidas sobre esta política podem ser enviadas para danielgomesmoura@gmail.com.',
+
+  // About
+  'about.title': 'Sobre o Find My Pal',
+  'about.what.title': 'O que é este site?',
+  'about.what.body': 'O Find My Pal é um aplicativo gratuito de apoio para jogadores de Palworld. Ele ajuda a consultar Pals, explorar combinações de breeding, organizar pacotes, ver drops de chefes e montarias, planejar etapas de craft e conferir builds recomendadas.',
+  'about.data.title': 'De onde vêm os dados',
+  'about.data.body': 'Os dados do jogo são compilados de fontes da comunidade (paldb.cc, wiki.gg e palpedia) e embutidos no aplicativo. Nomes, imagens e recursos do jogo pertencem a Palworld.',
+  'about.disclaimer.title': 'Aviso legal',
+  'about.disclaimer.body': 'O Find My Pal é um projeto não oficial feito por fãs e não é afiliado, endossado ou ligado à Pocketpair, Inc. Palworld e todos os nomes, imagens e recursos relacionados são marcas e propriedade da Pocketpair, Inc.',
+  'about.contact.title': 'Contato',
+  'about.contact.body': 'Feedbacks, sugestões e correções são bem-vindos: danielgomesmoura@gmail.com',
 };
