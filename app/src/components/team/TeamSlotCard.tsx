@@ -2,20 +2,24 @@ import { useState } from 'react';
 import { Plus, Star, X } from 'lucide-react';
 import { useTranslation } from '@/i18n';
 import { PALS } from '@/data/pals';
-import PalImage from '@/components/PalImage';
 import { ElementBadge } from '@/components/breeding';
 import { findPassiveById } from '@/data/passives';
-import { MAX_SLOT_PASSIVES } from '@/hooks/useAppState';
+import { findActiveSkillById } from '@/data/activeSkills';
+import { MAX_SLOT_ACTIVE_SKILLS, MAX_SLOT_PASSIVES } from '@/hooks/useAppState';
 import type { TeamSlot } from '@/hooks/useAppState';
 import { PalPickerDialog } from './PalPickerDialog';
 import { PassivePickerDialog } from './PassivePickerDialog';
 import { PassiveChip } from './PassiveChip';
+import { ActiveSkillPickerDialog } from './ActiveSkillPickerDialog';
+import { ActiveSkillChip } from './ActiveSkillChip';
+import { PartnerSkillHoverCard } from './PartnerSkillHoverCard';
 
 interface TeamSlotCardProps {
   slot: TeamSlot;
   onPalChange: (palId: string | null) => void;
   onStarsChange: (stars: number) => void;
   onTogglePassive: (passiveId: string) => void;
+  onToggleActiveSkill: (activeSkillId: string) => void;
 }
 
 export function TeamSlotCard({
@@ -23,10 +27,12 @@ export function TeamSlotCard({
   onPalChange,
   onStarsChange,
   onTogglePassive,
+  onToggleActiveSkill,
 }: TeamSlotCardProps) {
   const { t } = useTranslation();
   const [showPalPicker, setShowPalPicker] = useState(false);
   const [showPassivePicker, setShowPassivePicker] = useState(false);
+  const [showActiveSkillPicker, setShowActiveSkillPicker] = useState(false);
 
   const pal = slot.palId ? PALS.find((p) => p.id === slot.palId) || null : null;
 
@@ -78,12 +84,7 @@ export function TeamSlotCard({
     >
       {/* Pal header */}
       <div className="flex items-start gap-3">
-        <PalImage
-          iconName={pal.iconName}
-          name={pal.name}
-          size="lg"
-          style={{ border: '2px solid var(--accent-violet)' }}
-        />
+        <PartnerSkillHoverCard pal={pal} stars={slot.stars} />
         <div className="flex-1 min-w-0">
           <div className="text-[15px] font-bold truncate" style={{ color: 'var(--text-primary)' }}>
             {pal.name}
@@ -135,6 +136,53 @@ export function TeamSlotCard({
             </button>
           );
         })}
+      </div>
+
+      {/* Active skills */}
+      <div>
+        <span
+          className="text-[10px] font-semibold uppercase"
+          style={{ color: 'var(--text-muted)', letterSpacing: '0.06em' }}
+        >
+          {t('team.activeSkills')}
+        </span>
+        <div className="mt-1.5 flex flex-col gap-1">
+          {slot.activeSkillIds.map((activeSkillId) => {
+            const skill = findActiveSkillById(activeSkillId);
+            if (!skill) return null;
+            return (
+              <ActiveSkillChip
+                key={activeSkillId}
+                skill={skill}
+                onRemove={() => onToggleActiveSkill(activeSkillId)}
+              />
+            );
+          })}
+          {slot.activeSkillIds.length < MAX_SLOT_ACTIVE_SKILLS && (
+            <button
+              type="button"
+              onClick={() => setShowActiveSkillPicker(true)}
+              className="flex items-center gap-1.5 text-[12px] font-medium transition-all duration-150"
+              style={{
+                padding: '4px 8px',
+                borderRadius: 6,
+                border: '1px dashed var(--border-subtle)',
+                color: 'var(--text-muted)',
+              }}
+              onMouseEnter={(event) => {
+                event.currentTarget.style.borderColor = 'var(--accent-violet)';
+                event.currentTarget.style.color = 'var(--accent-violet)';
+              }}
+              onMouseLeave={(event) => {
+                event.currentTarget.style.borderColor = 'var(--border-subtle)';
+                event.currentTarget.style.color = 'var(--text-muted)';
+              }}
+            >
+              <Plus size={12} />
+              {t('team.selectActiveSkill')}
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Passives */}
@@ -193,6 +241,12 @@ export function TeamSlotCard({
         selectedIds={slot.passiveIds}
         onToggle={onTogglePassive}
         onClose={() => setShowPassivePicker(false)}
+      />
+      <ActiveSkillPickerDialog
+        isOpen={showActiveSkillPicker}
+        selectedIds={slot.activeSkillIds}
+        onToggle={onToggleActiveSkill}
+        onClose={() => setShowActiveSkillPicker(false)}
       />
     </div>
   );

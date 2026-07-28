@@ -4,6 +4,7 @@ import {
   useAppState,
   TEAM_SIZE,
   MAX_SLOT_PASSIVES,
+  MAX_SLOT_ACTIVE_SKILLS,
   MAX_PLAYER_ACCESSORIES,
   MAX_PLAYER_WEAPONS,
   MAX_PLAYER_FOODS,
@@ -27,7 +28,7 @@ describe('useAppState teams', () => {
     expect(team.name).toBe('Boss Team');
     expect(team.slots).toHaveLength(TEAM_SIZE);
     for (const slot of team.slots) {
-      expect(slot).toEqual({ palId: null, passiveIds: [], stars: 0 });
+      expect(slot).toEqual({ palId: null, passiveIds: [], activeSkillIds: [], stars: 0 });
     }
     expect(team.player).toEqual({
       armorId: null,
@@ -60,7 +61,7 @@ describe('useAppState teams', () => {
       result.current.setSlotPal(id, 0, null);
     });
     slot = result.current.teams[0].slots[0];
-    expect(slot).toEqual({ palId: null, passiveIds: [], stars: 0 });
+    expect(slot).toEqual({ palId: null, passiveIds: [], activeSkillIds: [], stars: 0 });
   });
 
   it('toggleSlotPassive toggles and caps at the maximum', () => {
@@ -101,6 +102,28 @@ describe('useAppState teams', () => {
       result.current.setSlotStars(id, 0, -2);
     });
     expect(result.current.teams[0].slots[0].stars).toBe(0);
+  });
+
+  it('toggleSlotActiveSkill toggles and caps at three skills', () => {
+    const { result } = renderHook(() => useAppState());
+    let id = '';
+    act(() => {
+      id = result.current.addTeam('T1');
+      result.current.setSlotPal(id, 0, 'lamball');
+      for (const skill of ['poison_shot', 'gravity_shot', 'dragon_cannon', 'air_cannon']) {
+        result.current.toggleSlotActiveSkill(id, 0, skill);
+      }
+    });
+
+    expect(result.current.teams[0].slots[0].activeSkillIds).toHaveLength(
+      MAX_SLOT_ACTIVE_SKILLS,
+    );
+    expect(result.current.teams[0].slots[0].activeSkillIds).not.toContain('air_cannon');
+
+    act(() => {
+      result.current.toggleSlotActiveSkill(id, 0, 'poison_shot');
+    });
+    expect(result.current.teams[0].slots[0].activeSkillIds).not.toContain('poison_shot');
   });
 
   it('player gear respects slot limits', () => {
@@ -182,6 +205,7 @@ describe('useAppState teams', () => {
     expect(player.helmetId).toBeNull();
     expect(player.weaponIds).toEqual(['assault_rifle']);
     expect(player.accessoryIds).toEqual(['attack_pendant']);
+    expect(result.current.teams[0].slots[0].activeSkillIds).toEqual([]);
   });
 
   it('deleteTeam removes the team and moves active to the first remaining', () => {

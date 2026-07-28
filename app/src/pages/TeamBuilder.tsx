@@ -20,6 +20,7 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
     setSlotPal,
     setSlotStars,
     toggleSlotPassive,
+    toggleSlotActiveSkill,
     setPlayerGearItem,
     togglePlayerWeapon,
     togglePlayerAccessory,
@@ -243,6 +244,9 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
                   onPalChange={(palId) => setSlotPal(activeTeam.id, i, palId)}
                   onStarsChange={(stars) => setSlotStars(activeTeam.id, i, stars)}
                   onTogglePassive={(passiveId) => toggleSlotPassive(activeTeam.id, i, passiveId)}
+                  onToggleActiveSkill={(activeSkillId) =>
+                    toggleSlotActiveSkill(activeTeam.id, i, activeSkillId)
+                  }
                 />
               ))}
             </div>

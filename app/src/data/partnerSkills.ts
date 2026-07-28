@@ -1,4 +1,5 @@
 import partnerSkillsData from './json/partnerSkills.json';
+import type { Locale } from '@/i18n/types';
 
 // Categories for filtering
 export const SKILL_CATEGORIES = [
@@ -9,12 +10,42 @@ export type SkillCategory = typeof SKILL_CATEGORIES[number];
 
 export interface PartnerSkill {
   palName: string;
+  palSlug?: string;
   skillName: string;
+  skillNames?: Partial<Record<Locale, string>>;
   description: string;
+  descriptions?: Partial<Record<Locale, string>>;
   category: SkillCategory;
+  iconUrl?: string;
+  rankProgression?: PartnerSkillRank[];
+}
+
+export interface PartnerSkillRank {
+  /** Pal condensation level, 0-4 */
+  stars: number;
+  /** Partner Skill level, 1-5 */
+  level: number;
+  /** Exact values as shown by PalDB, including the unit where available */
+  values: string[];
 }
 
 export const PARTNER_SKILLS: PartnerSkill[] = partnerSkillsData as PartnerSkill[];
+
+const PARTNER_SKILL_BY_PAL = new Map(
+  PARTNER_SKILLS.map((skill) => [skill.palName.toLocaleLowerCase('en'), skill]),
+);
+
+export function findPartnerSkillByPalName(palName: string): PartnerSkill | undefined {
+  return PARTNER_SKILL_BY_PAL.get(palName.toLocaleLowerCase('en'));
+}
+
+export function getPartnerSkillName(skill: PartnerSkill, locale: Locale): string {
+  return skill.skillNames?.[locale] || skill.skillName;
+}
+
+export function getPartnerSkillDescription(skill: PartnerSkill, locale: Locale): string {
+  return skill.descriptions?.[locale] || skill.description;
+}
 
 export const CATEGORY_LABELS: Record<SkillCategory, string> = {
   active_attack: 'Active Attack',

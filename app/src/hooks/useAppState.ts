@@ -19,6 +19,7 @@ export interface Package {
 export interface TeamSlot {
   palId: string | null;
   passiveIds: string[];
+  activeSkillIds: string[];
   /** Pal condensation level, 0-4 */
   stars: number;
 }
@@ -43,12 +44,13 @@ export interface Team {
 
 export const TEAM_SIZE = 5;
 export const MAX_SLOT_PASSIVES = 4;
+export const MAX_SLOT_ACTIVE_SKILLS = 3;
 export const MAX_PLAYER_ACCESSORIES = 4;
 export const MAX_PLAYER_WEAPONS = 6;
 export const MAX_PLAYER_FOODS = 3;
 
 function emptySlot(): TeamSlot {
-  return { palId: null, passiveIds: [], stars: 0 };
+  return { palId: null, passiveIds: [], activeSkillIds: [], stars: 0 };
 }
 
 function emptyPlayerGear(): PlayerGear {
@@ -103,6 +105,12 @@ function loadState(): PersistedState {
           const legacy = (t.player || {}) as PlayerGear & { weaponId?: string | null };
           return {
             ...t,
+            slots: (t.slots || []).map((slot) => ({
+              ...slot,
+              passiveIds: slot.passiveIds ?? [],
+              activeSkillIds: slot.activeSkillIds ?? [],
+              stars: slot.stars ?? 0,
+            })),
             player: {
               armorId: legacy.armorId ?? null,
               helmetId: legacy.helmetId ?? null,
@@ -172,6 +180,7 @@ export interface AppState {
   setSlotPal: (teamId: string, slotIndex: number, palId: string | null) => void;
   setSlotStars: (teamId: string, slotIndex: number, stars: number) => void;
   toggleSlotPassive: (teamId: string, slotIndex: number, passiveId: string) => void;
+  toggleSlotActiveSkill: (teamId: string, slotIndex: number, activeSkillId: string) => void;
   setPlayerGearItem: (teamId: string, slot: 'armorId' | 'helmetId', gearId: string | null) => void;
   togglePlayerWeapon: (teamId: string, gearId: string) => void;
   togglePlayerAccessory: (teamId: string, gearId: string) => void;
@@ -384,6 +393,26 @@ export function useAppState(): AppState {
     [updateTeam],
   );
 
+  const toggleSlotActiveSkill = useCallback(
+    (teamId: string, slotIndex: number, activeSkillId: string) => {
+      updateTeam(teamId, (t) => ({
+        ...t,
+        slots: t.slots.map((slot, i) => {
+          if (i !== slotIndex) return slot;
+          if (slot.activeSkillIds.includes(activeSkillId)) {
+            return {
+              ...slot,
+              activeSkillIds: slot.activeSkillIds.filter((id) => id !== activeSkillId),
+            };
+          }
+          if (slot.activeSkillIds.length >= MAX_SLOT_ACTIVE_SKILLS) return slot;
+          return { ...slot, activeSkillIds: [...slot.activeSkillIds, activeSkillId] };
+        }),
+      }));
+    },
+    [updateTeam],
+  );
+
   const setPlayerGearItem = useCallback(
     (teamId: string, slot: 'armorId' | 'helmetId', gearId: string | null) => {
       updateTeam(teamId, (t) => ({
@@ -532,6 +561,7 @@ export function useAppState(): AppState {
     setSlotPal,
     setSlotStars,
     toggleSlotPassive,
+    toggleSlotActiveSkill,
     setPlayerGearItem,
     togglePlayerWeapon,
     togglePlayerAccessory,

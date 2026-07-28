@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitForElementToBeRemoved } from '@testing-library/react';
 import { I18nProvider } from '@/i18n';
 import { useAppState } from '@/hooks/useAppState';
 import TeamBuilder from '@/pages/TeamBuilder';
@@ -26,7 +26,7 @@ describe('TeamBuilder page', () => {
     expect(screen.getByText(/No teams yet|Nenhum time ainda/i)).toBeInTheDocument();
   });
 
-  it('creates a team and fills a pal slot with passives and stars', async () => {
+  it('creates a team and fills a pal slot with active skills, passives and stars', async () => {
     renderTeamBuilder();
     // create team
     fireEvent.click(screen.getAllByRole('button', { name: /New Team|Novo Time/i })[0]);
@@ -46,8 +46,22 @@ describe('TeamBuilder page', () => {
     fireEvent.click(await screen.findByText('Lamball'));
     expect(await screen.findByTitle(/Remove Pal|Remover Pal/i)).toBeInTheDocument();
 
+    // add an active skill
+    fireEvent.click(screen.getByRole('button', { name: /Select Active Skill|Escolher Habilidade Ativa/i }));
+    const activeDialogHeading = await screen.findByRole('heading', {
+      name: /Select Active Skill|Escolher Habilidade Ativa/i,
+    });
+    fireEvent.click(screen.getByRole('button', { name: /^Dark$|^Sombrio$/i }));
+    const activeSearch = await screen.findByPlaceholderText(/^Search$|^Buscar$/i);
+    fireEvent.change(activeSearch, { target: { value: 'Poison Blast' } });
+    fireEvent.click(await screen.findByText('Poison Blast'));
+    fireEvent.click(screen.getByRole('button', { name: /Confirm|Confirmar/i }));
+    await waitForElementToBeRemoved(activeDialogHeading);
+    expect((await screen.findAllByText('Poison Blast')).length).toBeGreaterThan(0);
+
     // add a passive
     fireEvent.click(screen.getByRole('button', { name: /Select Passive|Escolher Passiva/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Tier 4/i }));
     fireEvent.click(await screen.findByText('Legend'));
     fireEvent.click(screen.getByRole('button', { name: /Confirm|Confirmar/i }));
     expect((await screen.findAllByText('Legend')).length).toBeGreaterThan(0);
