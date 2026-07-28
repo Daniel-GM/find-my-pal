@@ -30,14 +30,17 @@ function findCycleNode(root: BreedTreeNode): BreedTreeNode | null {
 describe('breeding-tree', () => {
   const lamball = findPalByName('Lamball')!;
 
-  it('builds a tree for a breedable pal with the easiest combination at each node', () => {
+  it('builds a tree with the easiest non-cyclic combination at each node', () => {
     expect(lamball).toBeDefined();
     const tree = buildBreedingTree(lamball, 2);
     expect(tree.pal.name).toBe('Lamball');
     expect(tree.combination).not.toBeNull();
 
-    const best = sortCombinations(findParentCombinations(lamball), 'power-asc')[0];
-    expect(tree.combination!.id).toBe(best.id);
+    const best = sortCombinations(findParentCombinations(lamball), 'power-asc').find(
+      (combo) => combo.parentA.id !== lamball.id && combo.parentB.id !== lamball.id,
+    );
+    expect(best).toBeDefined();
+    expect(tree.combination!.id).toBe(best!.id);
 
     let maxComboDepth = 0;
     walk(tree, (n) => {

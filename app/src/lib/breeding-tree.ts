@@ -17,10 +17,13 @@ export interface BreedTreeNode {
   depth: number;
 }
 
-function pickBestCombination(pal: Pal): BreedingCombination | null {
-  const combos = findParentCombinations(pal);
+function pickBestCombination(pal: Pal, ancestors: string[]): BreedingCombination | null {
+  const combos = sortCombinations(findParentCombinations(pal), 'power-asc');
   if (combos.length === 0) return null;
-  return sortCombinations(combos, 'power-asc')[0];
+  const blocked = new Set([...ancestors, pal.id]);
+  return combos.find(
+    (combo) => !blocked.has(combo.parentA.id) && !blocked.has(combo.parentB.id),
+  ) ?? combos[0];
 }
 
 function buildNode(
@@ -39,7 +42,7 @@ function buildNode(
     return { nodeId, pal, combination: null, children: null, isCycle: false, depth };
   }
 
-  const combination = forcedCombination ?? pickBestCombination(pal);
+  const combination = forcedCombination ?? pickBestCombination(pal, ancestors);
   if (!combination) {
     return { nodeId, pal, combination: null, children: null, isCycle: false, depth };
   }
@@ -117,22 +120,72 @@ export function getNodeAt(root: BreedTreeNode, nodeId: string): BreedTreeNode | 
  * combo id. This is the execution order saved into a package.
  */
 export function collectExecutionOrder(root: BreedTreeNode): BreedingCombination[] {
-  const result: BreedingCombination[] = [];
-  const seen = new Set<string>();
+  const combinations: BreedingCombination[] = [];
+  const seenInTree = new Set<string>();
 
-  const walk = (node: BreedTreeNode) => {
+  const collect = (node: BreedTreeNode) => {
     if (node.children) {
-      walk(node.children[0]);
-      walk(node.children[1]);
+      collect(node.children[0]);
+      collect(node.children[1]);
     }
-    if (node.combination && !seen.has(node.combination.id)) {
-      seen.add(node.combination.id);
-      result.push(node.combination);
+    if (node.combination && !seenInTree.has(node.combination.id)) {
+      seenInTree.add(node.combination.id);
+      combinations.push(node.combination);
     }
   };
+  collect(root);
 
-  walk(root);
-  return result;
+  // A Pal can occur in more than one branch. Pure post-order traversal can
+  // therefore encounter a consumer before the branch that breeds its parent.
+  // Topologically order the selected combinations so every available parent
+  // recipe is executed first.
+  const byBaby = new Map<string, BreedingCombination[]>();
+  for (const combination of combinations) {
+    const entries = byBaby.get(combination.baby.id) ?? [];
+    entries.push(combination);
+    byBaby.set(combination.baby.id, entries);
+  }
+  const result: BreedingCombination[] = [];
+  const visited = new Set<string>();
+  const visiting = new Set<string>();
+  const visit = (combination: BreedingCombination) => {
+    if (visited.has(combination.id) || visiting.has(combination.id)) return;
+    visiting.add(combination.id);
+    for (const parent of [combination.parentA, combination.parentB]) {
+      for (const dependency of byBaby.get(parent.id) ?? []) {
+        if (dependency.id !== combination.id) visit(dependency);
+      }
+    }
+    visiting.delete(combination.id);
+    visited.add(combination.id);
+    result.push(combination);
+  };
+  for (const combination of combinations) visit(combination);
+
+  // If two branches form a dependency cycle, one Pal in that cycle must be
+  // treated as an already-owned base Pal. Remove the later producer until the
+  // saved package has a genuinely executable order.
+  const executable = [...result];
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (let index = 0; index < executable.length; index += 1) {
+      const combination = executable[index];
+      for (const parent of [combination.parentA, combination.parentB]) {
+        const producerIndex = executable.findIndex(
+          (candidate) => candidate.baby.id === parent.id,
+        );
+        if (producerIndex >= index) {
+          executable.splice(producerIndex, 1);
+          changed = true;
+          break;
+        }
+      }
+      if (changed) break;
+    }
+  }
+
+  return executable;
 }
 
 /** Counts nodes and combinations for summary display. */
