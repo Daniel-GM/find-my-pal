@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ImageOff } from 'lucide-react';
 import { useTranslation } from '@/i18n';
 import { getGearByKind, getRaritySlotStyle } from '@/data/gear';
-import type { GearKind } from '@/data/gear';
+import type { GearItem, GearKind } from '@/data/gear';
 
 const EASE_BEZIER = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
 
@@ -12,6 +13,40 @@ interface GearPickerDialogProps {
   selectedIds: string[];
   onToggle: (gearId: string) => void;
   onClose: () => void;
+}
+
+function GearItemIcon({ item, name }: { item: GearItem; name: string }) {
+  const [imageFailed, setImageFailed] = useState(false);
+  const showImage = Boolean(item.iconUrl) && !imageFailed;
+
+  return (
+    <div
+      className="flex items-center justify-center"
+      style={{
+        width: 56,
+        height: 56,
+        borderRadius: 8,
+        padding: 5,
+        ...getRaritySlotStyle(item),
+      }}
+    >
+      {showImage ? (
+        <img
+          src={item.iconUrl}
+          alt={name}
+          width={46}
+          height={46}
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
+          style={{ objectFit: 'contain' }}
+          onError={() => setImageFailed(true)}
+        />
+      ) : (
+        <ImageOff size={22} aria-label={`${name}: imagem indisponível`} style={{ color: 'var(--text-secondary)' }} />
+      )}
+    </div>
+  );
 }
 
 export function GearPickerDialog({
@@ -117,37 +152,7 @@ export function GearPickerDialog({
                     }}
                     title={item.effects ? item.effects[locale] || item.effects.en : name}
                   >
-                    <div
-                      className="flex items-center justify-center"
-                      style={{
-                        width: 56,
-                        height: 56,
-                        borderRadius: 8,
-                        padding: 5,
-                        ...getRaritySlotStyle(item),
-                      }}
-                    >
-                      {item.iconUrl ? (
-                        <img
-                          src={item.iconUrl}
-                          alt={name}
-                          width={46}
-                          height={46}
-                          loading="lazy"
-                          style={{ objectFit: 'contain' }}
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).style.display = 'none';
-                          }}
-                        />
-                      ) : (
-                        <span
-                          className="text-[8px] font-medium text-center leading-tight"
-                          style={{ color: 'var(--text-secondary)' }}
-                        >
-                          {name}
-                        </span>
-                      )}
-                    </div>
+                    <GearItemIcon item={item} name={name} />
                     <span
                       className="text-[11px] font-medium text-center leading-tight w-full"
                       style={{
