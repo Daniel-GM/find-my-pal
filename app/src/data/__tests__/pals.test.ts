@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { PALS, findPalByName, ALL_WORK_TYPES } from '@/data/pals';
+import {
+  ALL_WORK_TYPES,
+  PALS,
+  findPalByName,
+  getPalName,
+} from '@/data/pals';
+import { getPalDetail } from '@/data/palDetails';
 
 describe('pals data', () => {
   it('has a non-empty pal list', () => {
@@ -32,5 +38,34 @@ describe('pals data', () => {
     expect(ALL_WORK_TYPES).toContain('kindling');
     expect(ALL_WORK_TYPES).toContain('mining');
     expect(ALL_WORK_TYPES).toContain('farming');
+  });
+
+  it('includes the complete current PalDB directory', () => {
+    expect(PALS).toHaveLength(299);
+    expect(findPalByName('Astralym')).toBeDefined();
+  });
+
+  it('keeps localized names and complete detail data', async () => {
+    const chikipi = findPalByName('Chikipi');
+    expect(chikipi).toBeDefined();
+    expect(getPalName(chikipi!, 'pt-BR')).toBe('Chikipi');
+
+    const detail = await getPalDetail('Chikipi');
+    expect(detail?.level1.hp).toEqual([535, 544]);
+    expect(detail?.level80.hp).toEqual([3300, 4020]);
+    expect(detail?.drops.map((drop) => drop.names['pt-BR'])).toEqual([
+      'Ovo',
+      'Carne de Chikipi',
+    ]);
+    expect(detail?.habitats.palpagos.day.count).toBeGreaterThan(0);
+  });
+
+  it('stores all Pal and drop images as local assets', async () => {
+    for (const pal of PALS) {
+      expect(pal.iconUrl).toMatch(/^\/assets\/pals\//);
+      for (const drop of (await getPalDetail(pal.name))?.drops ?? []) {
+        expect(drop.iconUrl).toMatch(/^\/assets\/drops\//);
+      }
+    }
   });
 });
