@@ -191,6 +191,18 @@ const PASSIVE_RANK_OVERRIDES = new Map([
   ['swift', 3],
 ]);
 
+// PalDB does have proper PT names/effects for these passives, but the
+// cross-locale signature pairing cannot match their cards (localized stat
+// labels, free-text phrasing or diverging signs between locale pages). Names
+// and effects verified against https://paldb.cc/pt/Passive_Skills.
+const PT_PASSIVE_OVERRIDES = new Map([
+  ['lavish_hospitality', { name: 'Banquete Generoso', effect: 'Itens deixados ao morrer +100%' }],
+  ['service_minded', { name: 'Mentalidade Altruísta', effect: 'Itens deixados ao morrer +50%' }],
+  ['wellness_watcher', { name: 'Prevenção de Exaustão', effect: 'Redução do Consumo de Fôlego do Jogador +5.0%' }],
+  ['impatient', { name: 'Impaciente', effect: 'Tempo de recarga de habilidades ativas reduzido em 15%' }],
+  ['mercy_hit', { name: 'Clemência', effect: 'Pacifista. Não pode deixar os alvos de seus ataques com vida inferior a 1' }],
+]);
+
 // The PT passive page has a different card structure than EN (no item links,
 // no locale-independent id), and the card order differs between locales, so PT
 // cards are matched to EN cards by a content signature: rank, tooltip weight,
@@ -449,7 +461,9 @@ for (const en of passivesEn) {
   if (seenPassiveIds.has(id)) continue; // PalDB repeats identical passives per obtain source
   seenPassiveIds.add(id);
   // A placeholder PT name ("pt-BR_Text") means paldb has no translation — fall back to EN.
-  const pt = en.pt && !PLACEHOLDER_NAME.test(en.pt.name) ? en.pt : undefined;
+  // Manually verified overrides win over signature pairing.
+  const pt = PT_PASSIVE_OVERRIDES.get(id)
+    ?? (en.pt && !PLACEHOLDER_NAME.test(en.pt.name) ? en.pt : undefined);
   if (pt) passivePtCoverage += 1;
   passives.push({
     id,
