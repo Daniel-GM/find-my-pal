@@ -208,6 +208,41 @@ describe('useAppState teams', () => {
     expect(result.current.teams[0].slots[0].activeSkillIds).toEqual([]);
   });
 
+  it('importTeam creates a team from shared data and activates it', () => {
+    const { result } = renderHook(() => useAppState());
+    let id = '';
+    const shared = {
+      name: 'Shared Build',
+      slots: [
+        { palId: 'lamball', passiveIds: ['lucky'], activeSkillIds: ['poison_shot'], stars: 3 },
+        ...Array.from({ length: TEAM_SIZE - 1 }, () => ({
+          palId: null,
+          passiveIds: [],
+          activeSkillIds: [],
+          stars: 0,
+        })),
+      ],
+      player: {
+        armorId: 'pal_metal_armor',
+        helmetId: 'iron_helmet',
+        accessoryIds: ['attack_pendant'],
+        weaponIds: ['handgun'],
+        foodIds: [],
+      },
+    };
+    act(() => {
+      id = result.current.importTeam(shared);
+    });
+
+    expect(result.current.teams).toHaveLength(1);
+    const team = result.current.teams[0];
+    expect(team.id).toBe(id);
+    expect(team.name).toBe('Shared Build');
+    expect(team.slots).toEqual(shared.slots);
+    expect(team.player).toEqual(shared.player);
+    expect(result.current.activeTeamId).toBe(id);
+  });
+
   it('deleteTeam removes the team and moves active to the first remaining', () => {
     const { result } = renderHook(() => useAppState());
     let first = '';

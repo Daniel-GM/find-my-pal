@@ -198,6 +198,15 @@ export type TranslationKey =
   | 'team.weapon'
   | 'team.food'
   | 'team.selectItem'
+  | 'team.share'
+  | 'team.shareCopied'
+  | 'team.sharedBuildTitle'
+  | 'team.sharedBuildSubtitle'
+  | 'team.saveToDevice'
+  | 'team.savedToDevice'
+  | 'team.invalidShareTitle'
+  | 'team.invalidShareDesc'
+  | 'team.backToApp'
 
   // Mounts
   | 'mounts.title'

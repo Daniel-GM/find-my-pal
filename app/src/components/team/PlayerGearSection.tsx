@@ -18,29 +18,34 @@ interface PlayerGearSectionProps {
   onToggleWeapon: (gearId: string) => void;
   onToggleAccessory: (gearId: string) => void;
   onToggleFood: (gearId: string) => void;
+  /** Hides pickers and remove buttons; slots become static display. */
+  readOnly?: boolean;
 }
 
 interface GearSlotProps {
   itemId: string | null;
   onOpen: () => void;
   onRemove: () => void;
+  readOnly?: boolean;
 }
 
-function GearSlot({ itemId, onOpen, onRemove }: GearSlotProps) {
+function GearSlot({ itemId, onOpen, onRemove, readOnly = false }: GearSlotProps) {
   const { locale, t } = useTranslation();
   const item = itemId ? findGearById(itemId) : null;
 
   return (
     <div style={{ position: 'relative', width: 64, height: 64 }}>
       <button
-        onClick={onOpen}
+        onClick={readOnly ? undefined : onOpen}
+        disabled={readOnly}
         title={item ? item.names[locale] || item.names.en : t('team.selectItem')}
-        className="flex items-center justify-center transition-all duration-150 hover:scale-105"
+        className={`flex items-center justify-center${readOnly ? '' : ' transition-all duration-150 hover:scale-105'}`}
         style={{
           width: 64,
           height: 64,
           borderRadius: 8,
           padding: 6,
+          ...(readOnly ? { cursor: 'default' } : {}),
           ...(item
             ? getRaritySlotStyle(item)
             : {
@@ -72,7 +77,7 @@ function GearSlot({ itemId, onOpen, onRemove }: GearSlotProps) {
           <Plus size={18} style={{ color: 'var(--text-muted)' }} />
         )}
       </button>
-      {item && (
+      {item && !readOnly && (
         <button
           onClick={onRemove}
           className="flex items-center justify-center transition-all duration-150 hover:scale-110"
@@ -103,6 +108,7 @@ export function PlayerGearSection({
   onToggleWeapon,
   onToggleAccessory,
   onToggleFood,
+  readOnly = false,
 }: PlayerGearSectionProps) {
   const { t } = useTranslation();
   const [openKind, setOpenKind] = useState<GearKind | null>(null);
@@ -137,6 +143,7 @@ export function PlayerGearSection({
             itemId={id}
             onOpen={() => setOpenKind(kind)}
             onRemove={() => id && onRemove(id)}
+            readOnly={readOnly}
           />
         );
       })}
@@ -197,47 +204,51 @@ export function PlayerGearSection({
       </div>
 
       {/* Pickers */}
-      <GearPickerDialog
-        isOpen={openKind === 'armor'}
-        kind="armor"
-        selectedIds={player.armorId ? [player.armorId] : []}
-        onToggle={(id) => {
-          onSetArmor(player.armorId === id ? null : id);
-          setOpenKind(null);
-        }}
-        onClose={() => setOpenKind(null)}
-      />
-      <GearPickerDialog
-        isOpen={openKind === 'helmet'}
-        kind="helmet"
-        selectedIds={player.helmetId ? [player.helmetId] : []}
-        onToggle={(id) => {
-          onSetHelmet(player.helmetId === id ? null : id);
-          setOpenKind(null);
-        }}
-        onClose={() => setOpenKind(null)}
-      />
-      <GearPickerDialog
-        isOpen={openKind === 'weapon'}
-        kind="weapon"
-        selectedIds={player.weaponIds}
-        onToggle={onToggleWeapon}
-        onClose={() => setOpenKind(null)}
-      />
-      <GearPickerDialog
-        isOpen={openKind === 'accessory'}
-        kind="accessory"
-        selectedIds={player.accessoryIds}
-        onToggle={onToggleAccessory}
-        onClose={() => setOpenKind(null)}
-      />
-      <GearPickerDialog
-        isOpen={openKind === 'food'}
-        kind="food"
-        selectedIds={player.foodIds}
-        onToggle={onToggleFood}
-        onClose={() => setOpenKind(null)}
-      />
+      {!readOnly && (
+        <>
+          <GearPickerDialog
+            isOpen={openKind === 'armor'}
+            kind="armor"
+            selectedIds={player.armorId ? [player.armorId] : []}
+            onToggle={(id) => {
+              onSetArmor(player.armorId === id ? null : id);
+              setOpenKind(null);
+            }}
+            onClose={() => setOpenKind(null)}
+          />
+          <GearPickerDialog
+            isOpen={openKind === 'helmet'}
+            kind="helmet"
+            selectedIds={player.helmetId ? [player.helmetId] : []}
+            onToggle={(id) => {
+              onSetHelmet(player.helmetId === id ? null : id);
+              setOpenKind(null);
+            }}
+            onClose={() => setOpenKind(null)}
+          />
+          <GearPickerDialog
+            isOpen={openKind === 'weapon'}
+            kind="weapon"
+            selectedIds={player.weaponIds}
+            onToggle={onToggleWeapon}
+            onClose={() => setOpenKind(null)}
+          />
+          <GearPickerDialog
+            isOpen={openKind === 'accessory'}
+            kind="accessory"
+            selectedIds={player.accessoryIds}
+            onToggle={onToggleAccessory}
+            onClose={() => setOpenKind(null)}
+          />
+          <GearPickerDialog
+            isOpen={openKind === 'food'}
+            kind="food"
+            selectedIds={player.foodIds}
+            onToggle={onToggleFood}
+            onClose={() => setOpenKind(null)}
+          />
+        </>
+      )}
     </div>
   );
 }

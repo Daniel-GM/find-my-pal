@@ -176,6 +176,7 @@ export interface AppState {
   moveCombinationDown: (packageId: string, combinationId: string) => void;
   editPackage: (id: string, name: string, description?: string) => void;
   addTeam: (name: string) => string;
+  importTeam: (data: { name: string; slots: TeamSlot[]; player: PlayerGear }) => string;
   deleteTeam: (id: string) => void;
   renameTeam: (id: string, name: string) => void;
   setActiveTeam: (id: string) => void;
@@ -305,6 +306,30 @@ export function useAppState(): AppState {
     }));
     return id;
   }, []);
+
+  const importTeam = useCallback(
+    (data: { name: string; slots: TeamSlot[]; player: PlayerGear }): string => {
+      const id = `team-${Date.now()}-${crypto.randomUUID()}`;
+      const now = new Date().toISOString();
+      setState((s) => ({
+        ...s,
+        teams: [
+          ...s.teams,
+          {
+            id,
+            name: data.name,
+            createdAt: now,
+            updatedAt: now,
+            slots: data.slots,
+            player: data.player,
+          },
+        ],
+        activeTeamId: id,
+      }));
+      return id;
+    },
+    [],
+  );
 
   const deleteTeam = useCallback((id: string) => {
     setState((s) => {
@@ -557,6 +582,7 @@ export function useAppState(): AppState {
     moveCombinationDown,
     editPackage,
     addTeam,
+    importTeam,
     deleteTeam,
     renameTeam,
     setActiveTeam,

@@ -198,6 +198,15 @@ export const ptBR: Translations = {
   'team.weapon': 'Armas',
   'team.food': 'Comidas',
   'team.selectItem': 'Escolher Item',
+  'team.share': 'Compartilhar',
+  'team.shareCopied': 'Link copiado!',
+  'team.sharedBuildTitle': 'Build compartilhada',
+  'team.sharedBuildSubtitle': 'Você está visualizando uma build compartilhada. Salve para editar no seu dispositivo.',
+  'team.saveToDevice': 'Salvar neste dispositivo',
+  'team.savedToDevice': 'Build salva!',
+  'team.invalidShareTitle': 'Link inválido',
+  'team.invalidShareDesc': 'Este link de build está quebrado ou foi gerado por uma versão incompatível.',
+  'team.backToApp': 'Voltar ao app',
 
   // Mounts
   'mounts.title': 'Progressão de Montaria',

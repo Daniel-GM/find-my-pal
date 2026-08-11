@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Check, ChevronDown, Pencil, Plus, Swords, Trash2, X } from 'lucide-react';
+import { Check, ChevronDown, Pencil, Plus, Share2, Swords, Trash2, X } from 'lucide-react';
 import { useTranslation } from '@/i18n';
 import type { AppState } from '@/hooks/useAppState';
+import { encodeTeam } from '@/lib/team-share';
 import { TeamSlotCard, PlayerGearSection } from '@/components/team';
 
 interface TeamBuilderProps {
@@ -31,6 +32,7 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
   // 'create' | 'rename' | null — which inline name form is open
   const [nameForm, setNameForm] = useState<'create' | 'rename' | null>(null);
   const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const [copiedShare, setCopiedShare] = useState(false);
 
   const activeTeam =
     teams.find((team) => team.id === activeTeamId) || teams[0] || null;
@@ -66,6 +68,19 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
     }
     deleteTeam(activeTeam.id);
     setConfirmingDelete(false);
+  };
+
+  const handleShare = async () => {
+    if (!activeTeam) return;
+    const url = `${window.location.origin}${window.location.pathname}#team=${encodeTeam(activeTeam)}`;
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      // Clipboard unavailable (non-secure context, denied permission): show the URL.
+      window.prompt(t('team.share'), url);
+    }
+    setCopiedShare(true);
+    setTimeout(() => setCopiedShare(false), 2000);
   };
 
   return (
@@ -211,6 +226,20 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
                 title={t('team.rename')}
               >
                 <Pencil size={15} />
+              </button>
+              <button
+                onClick={handleShare}
+                className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110 text-[11px] font-semibold"
+                style={{
+                  height: 38,
+                  minWidth: 38,
+                  padding: copiedShare ? '0 10px' : 0,
+                  backgroundColor: copiedShare ? '#22C55E' : 'var(--bg-surface)',
+                  color: copiedShare ? '#FFFFFF' : 'var(--text-secondary)',
+                }}
+                title={t('team.share')}
+              >
+                {copiedShare ? t('team.shareCopied') : <Share2 size={15} />}
               </button>
               <button
                 onClick={handleDelete}
