@@ -6,7 +6,7 @@ import { getFirestore } from 'firebase/firestore';
 // not grant access. Data is protected by Firestore security rules (users can
 // only read/write their own document).
 const firebaseConfig = {
-  apiKey: 'AIzaSyCAhjtTjg_QQuSzC47ccXQzU0nY5osK-Zk',
+  apiKey: 'AIzaSyCAhjtTjg_QQuSzC47ccXQzUOnY5osK-Zk',
   authDomain: 'find-my-pal-58e7c.firebaseapp.com',
   projectId: 'find-my-pal-58e7c',
   storageBucket: 'find-my-pal-58e7c.firebasestorage.app',
