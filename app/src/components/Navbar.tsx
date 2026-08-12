@@ -13,6 +13,8 @@ import {
   X,
   Wrench,
   Factory,
+  LogIn,
+  LogOut,
 } from 'lucide-react';
 import type { AppState, View } from '@/hooks/useAppState';
 import { PALS, ELEMENTS } from '@/data/pals';
@@ -22,6 +24,7 @@ import { getElementIconUrl } from '@/lib/images';
 import type { Locale, TranslationKey } from '@/i18n/types';
 import PalImage from '@/components/PalImage';
 import { useTranslation } from '@/i18n';
+import { useAuth } from '@/hooks/useAuth';
 
 function LanguageFlag({ locale }: { locale: Locale }) {
   if (locale === 'pt-BR') {
@@ -69,6 +72,29 @@ function LanguageFlag({ locale }: { locale: Locale }) {
   );
 }
 
+function GoogleIcon() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 16 16" aria-hidden className="shrink-0">
+      <path
+        fill="#4285F4"
+        d="M15.68 8.18c0-.57-.05-1.11-.14-1.64H8v3.1h4.3a3.68 3.68 0 0 1-1.6 2.42v2h2.59c1.52-1.4 2.39-3.46 2.39-5.88z"
+      />
+      <path
+        fill="#34A853"
+        d="M8 16c2.16 0 3.97-.72 5.29-1.94l-2.59-2c-.72.48-1.64.77-2.7.77-2.08 0-3.84-1.4-4.47-3.29H.85v2.07A8 8 0 0 0 8 16z"
+      />
+      <path
+        fill="#FBBC05"
+        d="M3.53 9.54A4.8 4.8 0 0 1 3.28 8c0-.54.09-1.06.25-1.54V4.39H.85a8 8 0 0 0 0 7.22l2.68-2.07z"
+      />
+      <path
+        fill="#EA4335"
+        d="M8 3.18c1.17 0 2.23.4 3.06 1.2l2.29-2.3A7.98 7.98 0 0 0 8 0 8 8 0 0 0 .85 4.39l2.68 2.07C4.16 4.58 5.92 3.18 8 3.18z"
+      />
+    </svg>
+  );
+}
+
 function useNavItems(): { view: View; labelKey: string; icon: typeof GitBranch }[] {
   const { t } = useTranslation();
   return [
@@ -97,7 +123,18 @@ export default function Navbar({ appState }: NavbarProps) {
     toggleTheme,
   } = appState;
   const { t, locale, setLocale } = useTranslation();
+  const { user, loading: authLoading, signInWithGoogle, logout } = useAuth();
   const NAV_ITEMS = useNavItems();
+
+  const handleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+    } catch (error) {
+      // User closed the popup — nothing to report.
+      if ((error as { code?: string }).code === 'auth/popup-closed-by-user') return;
+      console.warn('Google sign-in failed:', error);
+    }
+  };
 
   const [search, setSearch] = useState('');
   const [activeElement, setActiveElement] = useState<PalElement | 'all'>('all');
@@ -244,6 +281,61 @@ export default function Navbar({ appState }: NavbarProps) {
           </span>
         </button>
       </div>
+
+      {/* Account */}
+      {!authLoading && (
+        <div className="px-3 pb-2 shrink-0">
+          {user ? (
+            <div
+              className="flex items-center gap-3 w-full"
+              style={{
+                padding: '8px 12px',
+                borderRadius: 8,
+                backgroundColor: 'var(--bg-surface)',
+                border: '1px solid var(--border-subtle)',
+                color: 'var(--text-secondary)',
+              }}
+            >
+              {user.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt=""
+                  referrerPolicy="no-referrer"
+                  className="w-4 h-4 rounded-full shrink-0"
+                />
+              ) : (
+                <LogIn size={16} className="shrink-0" />
+              )}
+              <span className="flex-1 truncate text-[13px] font-medium">
+                {user.displayName || user.email}
+              </span>
+              <button
+                onClick={() => void logout()}
+                title={t('auth.signOut')}
+                aria-label={t('auth.signOut')}
+                style={{ color: 'var(--text-muted)' }}
+              >
+                <LogOut size={14} />
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={() => void handleSignIn()}
+              className="flex items-center gap-3 w-full transition-all duration-150"
+              style={{
+                padding: '8px 12px',
+                borderRadius: 8,
+                backgroundColor: 'var(--bg-surface)',
+                border: '1px solid var(--border-subtle)',
+                color: 'var(--text-secondary)',
+              }}
+            >
+              <GoogleIcon />
+              <span className="text-[13px] font-medium">{t('auth.signInGoogle')}</span>
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Divider */}
       <div

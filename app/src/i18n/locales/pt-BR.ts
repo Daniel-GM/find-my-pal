@@ -29,6 +29,10 @@ export const ptBR: Translations = {
   // Language
   'lang.pt-BR': 'Português',
   'lang.en': 'Inglês',
+
+  // Auth
+  'auth.signInGoogle': 'Entrar com Google',
+  'auth.signOut': 'Sair',
   'lang.toggle': 'Mudar Idioma',
 
   // Navigation
@@ -405,7 +409,9 @@ export const ptBR: Translations = {
   'privacy.intro.title': 'Visão geral',
   'privacy.intro.body': 'O Find My Pal é uma ferramenta gratuita, feita por fãs, para jogadores de Palworld. Esta página explica quais informações são tratadas quando você usa o site.',
   'privacy.data.title': 'Dados que armazenamos',
-  'privacy.data.body': 'O site não exige cadastro e não envia dados pessoais para nenhum servidor. Seus pacotes, equipes, combinações concluídas, tema e idioma ficam armazenados apenas no seu próprio navegador (localStorage) e nunca saem do seu dispositivo.',
+  'privacy.data.body': 'Sem login, o site não envia dados pessoais para nenhum servidor: seus pacotes, equipes, combinações concluídas, tema e idioma ficam armazenados apenas no seu próprio navegador (localStorage) e nunca saem do seu dispositivo. Se você entrar com o Google, esses mesmos dados também são guardados na sua conta para sincronizar entre seus dispositivos — veja "Conta e sincronização" abaixo.',
+  'privacy.account.title': 'Conta e sincronização',
+  'privacy.account.body': 'O login é opcional e usa sua conta Google (por meio do Firebase Authentication, um serviço do Google). Ao entrar, recebemos seu nome, e-mail e foto de perfil do Google, e seus dados do app (pacotes, equipes e preferências) são armazenados em um banco de dados Google Cloud Firestore que só você pode ler e alterar. Você pode continuar usando o site sem login — nesse caso seus dados ficam apenas no navegador. Para solicitar a exclusão dos seus dados na nuvem, entre em contato.',
   'privacy.cookies.title': 'Cookies',
   'privacy.cookies.body': 'Usamos cookies e armazenamento semelhante apenas para lembrar suas preferências (idioma, tema e sua escolha de consentimento de cookies). Você pode limpá-los a qualquer momento nas configurações do navegador.',
   'privacy.ads.title': 'Publicidade',

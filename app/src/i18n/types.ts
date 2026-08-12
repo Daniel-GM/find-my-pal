@@ -29,6 +29,10 @@ export type TranslationKey =
   // Language
   | 'lang.pt-BR'
   | 'lang.en'
+
+  // Auth
+  | 'auth.signInGoogle'
+  | 'auth.signOut'
   | 'lang.toggle'
 
   // Navigation
@@ -406,6 +410,8 @@ export type TranslationKey =
   | 'privacy.intro.body'
   | 'privacy.data.title'
   | 'privacy.data.body'
+  | 'privacy.account.title'
+  | 'privacy.account.body'
   | 'privacy.cookies.title'
   | 'privacy.cookies.body'
   | 'privacy.ads.title'

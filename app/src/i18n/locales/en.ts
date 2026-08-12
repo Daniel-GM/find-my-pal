@@ -29,6 +29,10 @@ export const en: Translations = {
   // Language
   'lang.pt-BR': 'Portugues',
   'lang.en': 'English',
+
+  // Auth
+  'auth.signInGoogle': 'Sign in with Google',
+  'auth.signOut': 'Sign out',
   'lang.toggle': 'Change Language',
 
   // Navigation
@@ -405,7 +409,9 @@ export const en: Translations = {
   'privacy.intro.title': 'Overview',
   'privacy.intro.body': 'Find My Pal is a free, fan-made companion tool for Palworld players. This page explains what information is handled when you use the site.',
   'privacy.data.title': 'Data we store',
-  'privacy.data.body': 'The site does not require an account and does not send personal data to any server. Your packages, teams, completed combinations, theme and language preferences are stored only in your own browser (localStorage) and never leave your device.',
+  'privacy.data.body': 'Without an account, the site sends no personal data to any server: your packages, teams, completed combinations, theme and language preferences are stored only in your own browser (localStorage) and never leave your device. If you sign in with Google, this same data is also stored in your account to sync it across your devices — see "Account and sync" below.',
+  'privacy.account.title': 'Account and sync',
+  'privacy.account.body': 'Signing in is optional and uses your Google account (through Firebase Authentication, a Google service). When you sign in, we receive your name, email and profile photo from Google, and your app data (packages, teams and preferences) is stored in a Google Cloud Firestore database that only you can read and write. You can keep using the site without signing in — in that case your data stays only in your browser. To request deletion of your cloud data, contact us.',
   'privacy.cookies.title': 'Cookies',
   'privacy.cookies.body': 'We use cookies and similar storage only to remember your preferences (language, theme and your cookie consent choice). You can clear them at any time in your browser settings.',
   'privacy.ads.title': 'Advertising',

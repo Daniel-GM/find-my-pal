@@ -1,4 +1,11 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { useOptionalAuth } from '@/hooks/useAuth';
+import {
+  fetchCloudState,
+  saveCloudState,
+  subscribeCloudState,
+  mergePersistedStates,
+} from '@/lib/cloud-sync';
 
 export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting' | 'privacy' | 'about';
 
@@ -57,7 +64,7 @@ function emptyPlayerGear(): PlayerGear {
   return { armorId: null, helmetId: null, accessoryIds: [], weaponIds: [], foodIds: [] };
 }
 
-interface PersistedState {
+export interface PersistedState {
   packages: Package[];
   teams: Team[];
   activeTeamId: string | null;
@@ -92,48 +99,43 @@ function isValidSearchMode(value: unknown): value is SearchMode {
   return typeof value === 'string' && (VALID_SEARCH_MODES as string[]).includes(value);
 }
 
-function loadState(): PersistedState {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      const parsed = JSON.parse(raw) as PersistedState;
+export function normalizePersistedState(parsed: Partial<PersistedState>): PersistedState {
+  return {
+    packages: (parsed.packages || []).map((p: Package) => ({
+      ...p,
+      completedCombinationIds: p.completedCombinationIds || [],
+    })),
+    teams: (parsed.teams || []).map((t: Team) => {
+      // migrate legacy player gear shape ({ weaponId } -> { weaponIds }, + helmetId)
+      const legacy = (t.player || {}) as PlayerGear & { weaponId?: string | null };
       return {
-        packages: (parsed.packages || []).map((p: Package) => ({
-          ...p,
-          completedCombinationIds: p.completedCombinationIds || [],
+        ...t,
+        slots: (t.slots || []).map((slot) => ({
+          ...slot,
+          passiveIds: slot.passiveIds ?? [],
+          activeSkillIds: slot.activeSkillIds ?? [],
+          stars: slot.stars ?? 0,
         })),
-        teams: (parsed.teams || []).map((t: Team) => {
-          // migrate legacy player gear shape ({ weaponId } -> { weaponIds }, + helmetId)
-          const legacy = (t.player || {}) as PlayerGear & { weaponId?: string | null };
-          return {
-            ...t,
-            slots: (t.slots || []).map((slot) => ({
-              ...slot,
-              passiveIds: slot.passiveIds ?? [],
-              activeSkillIds: slot.activeSkillIds ?? [],
-              stars: slot.stars ?? 0,
-            })),
-            player: {
-              armorId: legacy.armorId ?? null,
-              helmetId: legacy.helmetId ?? null,
-              accessoryIds: legacy.accessoryIds ?? [],
-              weaponIds: legacy.weaponIds ?? (legacy.weaponId ? [legacy.weaponId] : []),
-              foodIds: legacy.foodIds ?? [],
-            },
-          };
-        }),
-        activeTeamId: parsed.activeTeamId || null,
-        theme: parsed.theme || 'dark',
-        lastSelectedPalId: parsed.lastSelectedPalId || null,
-        currentView: isValidView(parsed.currentView) ? parsed.currentView : 'breeding',
-        breedingSearchMode: isValidSearchMode(parsed.breedingSearchMode)
-          ? parsed.breedingSearchMode
-          : 'child',
+        player: {
+          armorId: legacy.armorId ?? null,
+          helmetId: legacy.helmetId ?? null,
+          accessoryIds: legacy.accessoryIds ?? [],
+          weaponIds: legacy.weaponIds ?? (legacy.weaponId ? [legacy.weaponId] : []),
+          foodIds: legacy.foodIds ?? [],
+        },
       };
-    }
-  } catch {
-    // ignore
-  }
+    }),
+    activeTeamId: parsed.activeTeamId || null,
+    theme: parsed.theme || 'dark',
+    lastSelectedPalId: parsed.lastSelectedPalId || null,
+    currentView: isValidView(parsed.currentView) ? parsed.currentView : 'breeding',
+    breedingSearchMode: isValidSearchMode(parsed.breedingSearchMode)
+      ? parsed.breedingSearchMode
+      : 'child',
+  };
+}
+
+function emptyPersistedState(): PersistedState {
   return {
     packages: [],
     teams: [],
@@ -143,6 +145,18 @@ function loadState(): PersistedState {
     currentView: 'breeding',
     breedingSearchMode: 'child',
   };
+}
+
+function loadState(): PersistedState {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      return normalizePersistedState(JSON.parse(raw) as Partial<PersistedState>);
+    }
+  } catch {
+    // ignore
+  }
+  return emptyPersistedState();
 }
 
 function saveState(state: PersistedState) {
@@ -193,14 +207,29 @@ export interface AppState {
 export function useAppState(): AppState {
   const [state, setState] = useState<PersistedState>(loadState);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const stateRef = useRef(state);
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
+  const authState = useOptionalAuth();
+  const uid = authState?.user?.uid ?? null;
+  // Set once the initial cloud load/merge for this uid finished; until
+  // then nothing is pushed, so a slow network cannot overwrite cloud data.
+  const syncedUidRef = useRef<string | null>(null);
 
-  // Persist to localStorage with debounce
+  // Persist to localStorage with debounce; when logged in and the initial
+  // cloud sync has settled, also write through to Firestore.
   useEffect(() => {
     if (debounceRef.current) {
       clearTimeout(debounceRef.current);
     }
     debounceRef.current = setTimeout(() => {
       saveState(state);
+      if (syncedUidRef.current) {
+        saveCloudState(syncedUidRef.current, state).catch((error) => {
+          console.warn('Cloud sync save failed:', error);
+        });
+      }
     }, 500);
     return () => {
       if (debounceRef.current) {
@@ -208,6 +237,48 @@ export function useAppState(): AppState {
       }
     };
   }, [state]);
+
+  // On login: merge the cloud state into the local one (or upload the
+  // local state on first login) and subscribe to edits from other devices.
+  useEffect(() => {
+    if (!uid) {
+      syncedUidRef.current = null;
+      return;
+    }
+    let cancelled = false;
+    let unsubscribe: (() => void) | undefined;
+
+    const applyRemote = (remote: PersistedState) => {
+      setState((local) => {
+        const merged = mergePersistedStates(local, remote);
+        // Nothing new — keep the same reference to avoid an echo write.
+        return JSON.stringify(merged) === JSON.stringify(local) ? local : merged;
+      });
+    };
+
+    void (async () => {
+      try {
+        const remote = await fetchCloudState(uid);
+        if (cancelled) return;
+        if (remote) {
+          applyRemote(remote);
+        } else {
+          // First login ever: upload the current local state.
+          await saveCloudState(uid, stateRef.current);
+        }
+        if (cancelled) return;
+        syncedUidRef.current = uid;
+        unsubscribe = subscribeCloudState(uid, applyRemote);
+      } catch (error) {
+        console.warn('Cloud sync init failed:', error);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+      unsubscribe?.();
+    };
+  }, [uid]);
 
   const setView = useCallback((view: View) => {
     setState((s) => ({ ...s, currentView: view }));
