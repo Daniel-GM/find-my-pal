@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { Toaster } from 'sonner';
 import { I18nProvider } from '@/i18n';
 import { useAppState } from '@/hooks/useAppState';
-import { teamFromHash } from '@/lib/team-share';
+import { decodeTeam, parseShareHash, teamFromHash } from '@/lib/team-share';
 import type { SharedTeam as SharedTeamData } from '@/lib/team-share';
+import { resolveShortLink } from '@/lib/share-links';
+import { getPublication } from '@/lib/community';
 import Layout from '@/components/Layout';
 import CookieConsent from '@/components/CookieConsent';
 import Home from './pages/Home';
@@ -19,21 +21,62 @@ import CraftingPlanner from './pages/CraftingPlanner';
 import Privacy from './pages/Privacy';
 import About from './pages/About';
 
-// 'invalid' = the URL carried a #team= hash that could not be decoded.
-type SharedState = SharedTeamData | 'invalid' | null;
+type SharedState = SharedTeamData | 'invalid' | 'loading' | null;
 
-function readSharedFromHash(): SharedState {
-  const { hash } = window.location;
-  if (!hash.startsWith('#team=')) return null;
-  return teamFromHash(hash) ?? 'invalid';
+function initialSharedState(): SharedState {
+  const parsed = parseShareHash(window.location.hash);
+  if (!parsed) return null;
+  if (parsed.kind === 'full') return teamFromHash(window.location.hash) ?? 'invalid';
+  return 'loading';
+}
+
+async function resolveSharedFromHash(hash: string): Promise<SharedTeamData | 'invalid' | null> {
+  const parsed = parseShareHash(hash);
+  if (!parsed) return null;
+  if (parsed.kind === 'full') return teamFromHash(hash) ?? 'invalid';
+
+  if (parsed.kind === 'short') {
+    return (await resolveShortLink(parsed.value)) ?? 'invalid';
+  }
+
+  const publication = await getPublication(parsed.value);
+  return publication ? (decodeTeam(publication.teamData) ?? 'invalid') : 'invalid';
 }
 
 export default function App() {
   const appState = useAppState();
-  const [shared, setShared] = useState<SharedState>(readSharedFromHash);
+  const [shared, setShared] = useState<SharedState>(initialSharedState);
 
   useEffect(() => {
-    const onHashChange = () => setShared(readSharedFromHash());
+    let requestId = 0;
+
+    const loadShared = (hash: string) => {
+      requestId += 1;
+      const currentRequestId = requestId;
+      const parsed = parseShareHash(hash);
+      if (!parsed) {
+        setShared(null);
+        return;
+      }
+      if (parsed.kind === 'full') {
+        setShared(teamFromHash(hash) ?? 'invalid');
+        return;
+      }
+
+      setShared('loading');
+      void resolveSharedFromHash(hash)
+        .then((result) => {
+          if (currentRequestId !== requestId || window.location.hash !== hash) return;
+          setShared(result ?? 'invalid');
+        })
+        .catch(() => {
+          if (currentRequestId !== requestId || window.location.hash !== hash) return;
+          setShared('invalid');
+        });
+    };
+
+    loadShared(window.location.hash);
+    const onHashChange = () => loadShared(window.location.hash);
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
@@ -50,7 +93,8 @@ export default function App() {
         {shared ? (
           <SharedTeam
             appState={appState}
-            team={shared === 'invalid' ? null : shared}
+            team={shared === 'invalid' || shared === 'loading' ? null : shared}
+            loading={shared === 'loading'}
             onClose={clearShared}
           />
         ) : (

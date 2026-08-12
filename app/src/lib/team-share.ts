@@ -19,6 +19,11 @@ export interface SharedTeam {
   player: PlayerGear;
 }
 
+export type ShareHash =
+  | { kind: 'full'; value: string }
+  | { kind: 'short'; value: string }
+  | { kind: 'community'; value: string };
+
 const SHARE_VERSION = 1;
 const MAX_TEAM_NAME_LENGTH = 50;
 
@@ -140,4 +145,18 @@ export function teamFromHash(hash: string): SharedTeam | null {
   const match = /^#team=(.+)$/.exec(hash);
   if (!match) return null;
   return decodeTeam(match[1]);
+}
+
+/** Parses supported share hashes without resolving their Firestore payloads. */
+export function parseShareHash(hash: string): ShareHash | null {
+  const fullMatch = /^#team=(.+)$/.exec(hash);
+  if (fullMatch) return { kind: 'full', value: fullMatch[1] };
+
+  const shortMatch = /^#t=([A-Za-z0-9]{8})$/.exec(hash);
+  if (shortMatch) return { kind: 'short', value: shortMatch[1] };
+
+  const communityMatch = /^#p=([A-Za-z0-9_-]+)$/.exec(hash);
+  if (communityMatch) return { kind: 'community', value: communityMatch[1] };
+
+  return null;
 }

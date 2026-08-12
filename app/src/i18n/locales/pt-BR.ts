@@ -205,6 +205,7 @@ export const ptBR: Translations = {
   'team.selectItem': 'Escolher Item',
   'team.share': 'Compartilhar',
   'team.shareCopied': 'Link copiado!',
+  'team.loading': 'Carregando time compartilhado...',
   'team.sharedBuildTitle': 'Build compartilhada',
   'team.sharedBuildSubtitle': 'Você está visualizando uma build compartilhada. Salve para editar no seu dispositivo.',
   'team.saveToDevice': 'Salvar neste dispositivo',
@@ -212,6 +213,11 @@ export const ptBR: Translations = {
   'team.invalidShareTitle': 'Link inválido',
   'team.invalidShareDesc': 'Este link de build está quebrado ou foi gerado por uma versão incompatível.',
   'team.backToApp': 'Voltar ao app',
+
+  // Share links
+  'share.shortLinkCopied': 'Link curto copiado!',
+  'share.shortLinkRequiresLogin': 'Entre com Google para gerar link curto. Link completo copiado.',
+  'share.createFailed': 'Não foi possível gerar o link curto. Tente novamente.',
 
   // Community Teams
   'community.title': 'Times da Comunidade',

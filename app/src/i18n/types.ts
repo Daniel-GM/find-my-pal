@@ -205,6 +205,7 @@ export type TranslationKey =
   | 'team.selectItem'
   | 'team.share'
   | 'team.shareCopied'
+  | 'team.loading'
   | 'team.sharedBuildTitle'
   | 'team.sharedBuildSubtitle'
   | 'team.saveToDevice'
@@ -212,6 +213,11 @@ export type TranslationKey =
   | 'team.invalidShareTitle'
   | 'team.invalidShareDesc'
   | 'team.backToApp'
+
+  // Share links
+  | 'share.shortLinkCopied'
+  | 'share.shortLinkRequiresLogin'
+  | 'share.createFailed'
 
   // Community Teams
   | 'community.title'

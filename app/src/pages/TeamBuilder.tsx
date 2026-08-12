@@ -4,6 +4,7 @@ import { toast } from 'sonner';
 import { useTranslation } from '@/i18n';
 import type { AppState } from '@/hooks/useAppState';
 import { encodeTeam } from '@/lib/team-share';
+import { createShortLink } from '@/lib/share-links';
 import { TeamSlotCard, PlayerGearSection } from '@/components/team';
 import { PublishTeamDialog } from '@/components/community';
 import { useOptionalAuth } from '@/hooks/useAuth';
@@ -83,13 +84,26 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
 
   const handleShare = async () => {
     if (!activeTeam) return;
-    const url = `${window.location.origin}${window.location.pathname}#team=${encodeTeam(activeTeam)}`;
+    const fullUrl = `${window.location.origin}${window.location.pathname}#team=${encodeTeam(activeTeam)}`;
+    let url = fullUrl;
+
+    if (auth?.user) {
+      try {
+        const shortId = await createShortLink(auth.user, activeTeam);
+        url = `${window.location.origin}${window.location.pathname}#t=${shortId}`;
+        toast.success(t('share.shortLinkCopied'));
+      } catch {
+        toast.error(t('share.createFailed'));
+      }
+    }
+
     try {
       await navigator.clipboard.writeText(url);
     } catch {
       // Clipboard unavailable (non-secure context, denied permission): show the URL.
       window.prompt(t('team.share'), url);
     }
+    if (!auth?.user) toast.info(t('share.shortLinkRequiresLogin'));
     setCopiedShare(true);
     setTimeout(() => setCopiedShare(false), 2000);
   };

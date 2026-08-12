@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, Download, Link2Off, Swords } from 'lucide-react';
+import { Check, Download, Link2Off, Loader2, Swords } from 'lucide-react';
 import { useTranslation } from '@/i18n';
 import type { AppState } from '@/hooks/useAppState';
 import type { SharedTeam as SharedTeamData } from '@/lib/team-share';
@@ -9,13 +9,15 @@ interface SharedTeamProps {
   appState: AppState;
   /** Decoded build; null means the share link was invalid. */
   team: SharedTeamData | null;
+  /** Shows the loading state while a short link is resolved. */
+  loading?: boolean;
   /** Clears the share hash and returns to the normal app. */
   onClose: () => void;
 }
 
 const noop = () => {};
 
-export default function SharedTeam({ appState, team, onClose }: SharedTeamProps) {
+export default function SharedTeam({ appState, team, loading = false, onClose }: SharedTeamProps) {
   const { t } = useTranslation();
   const [saved, setSaved] = useState(false);
 
@@ -70,7 +72,12 @@ export default function SharedTeam({ appState, team, onClose }: SharedTeamProps)
       </div>
 
       <div style={{ padding: '24px' }}>
-        {!team ? (
+        {loading ? (
+          <div className="flex flex-col items-center justify-center py-24 gap-4" style={{ color: 'var(--text-secondary)' }}>
+            <Loader2 size={48} className="animate-spin" style={{ color: 'var(--accent-violet)' }} />
+            <p className="text-[14px]">{t('team.loading')}</p>
+          </div>
+        ) : !team ? (
           /* Invalid link */
           <div className="flex flex-col items-center justify-center py-24 gap-4" style={{ color: 'var(--text-secondary)' }}>
             <Link2Off size={64} style={{ color: 'var(--text-muted)', opacity: 0.3 }} />

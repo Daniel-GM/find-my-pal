@@ -57,7 +57,7 @@ export function CommunityTeamCard({ team, index, user }: CommunityTeamCardProps)
   }, [team.id, user]);
 
   const handleOpen = () => {
-    window.location.hash = `#team=${team.teamData}`;
+    window.location.hash = `#p=${team.id}`;
   };
 
   const handleVote = async (selected: VoteValue) => {
@@ -178,7 +178,7 @@ export function CommunityTeamCard({ team, index, user }: CommunityTeamCardProps)
           <ThumbsDown size={14} fill={myVote === -1 ? 'currentColor' : 'none'} />
           {dislikes}
         </button>
-        <span className="ml-auto text-[10px]" style={{ color: 'var(--text-muted)' }}>#team</span>
+        <span className="ml-auto text-[10px]" style={{ color: 'var(--text-muted)' }}>#p</span>
       </div>
     </motion.article>
   );
