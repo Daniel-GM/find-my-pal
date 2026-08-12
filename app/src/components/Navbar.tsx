@@ -11,10 +11,10 @@ import {
   Moon,
   Search,
   X,
-  Wrench,
   Factory,
   LogIn,
   LogOut,
+  Globe2,
 } from 'lucide-react';
 import type { AppState, View } from '@/hooks/useAppState';
 import { PALS, ELEMENTS } from '@/data/pals';
@@ -105,7 +105,7 @@ function useNavItems(): { view: View; labelKey: string; icon: typeof GitBranch }
     { view: 'pals', labelKey: t('nav.pals'), icon: Users },
     { view: 'bossdrops', labelKey: t('nav.bossDrops'), icon: Crown },
     { view: 'crafting', labelKey: t('nav.crafting'), icon: Factory },
-    { view: 'builds', labelKey: t('nav.builds'), icon: Wrench },
+    { view: 'community', labelKey: t('nav.community'), icon: Globe2 },
   ];
 }
 
@@ -288,6 +288,12 @@ export default function Navbar({ appState }: NavbarProps) {
           {user ? (
             <div
               className="flex items-center gap-3 w-full"
+              role="button"
+              tabIndex={0}
+              onClick={() => setView('profile')}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') setView('profile');
+              }}
               style={{
                 padding: '8px 12px',
                 borderRadius: 8,
@@ -310,7 +316,10 @@ export default function Navbar({ appState }: NavbarProps) {
                 {user.displayName || user.email}
               </span>
               <button
-                onClick={() => void logout()}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  void logout();
+                }}
                 title={t('auth.signOut')}
                 aria-label={t('auth.signOut')}
                 style={{ color: 'var(--text-muted)' }}

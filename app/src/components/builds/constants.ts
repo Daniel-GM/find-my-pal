@@ -17,8 +17,7 @@ import {
   Hammer,
   HelpCircle,
 } from 'lucide-react';
-import { PALS } from '@/data/pals';
-import type { PartnerSkill, BuildSuggestion, SkillCategory } from '@/data/partnerSkills';
+import type { SkillCategory } from '@/data/partnerSkills';
 
 export const EASE_BEZIER = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
 
@@ -75,16 +74,3 @@ export const BUILD_ICON_COLORS = [
   { bg: 'rgba(236,72,153,0.1)', icon: '#ec4899' },
 ];
 
-export function findPalByName(palName: string) {
-  return PALS.find((p) => p.name === palName) || null;
-}
-
-export interface SkillWithContext extends PartnerSkill {
-  buildContext?: string[];
-}
-
-export interface BuildCardProps {
-  build: BuildSuggestion;
-  index: number;
-  onSelectBuild: (build: BuildSuggestion) => void;
-}

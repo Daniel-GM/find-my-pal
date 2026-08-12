@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Toaster } from 'sonner';
 import { I18nProvider } from '@/i18n';
 import { useAppState } from '@/hooks/useAppState';
 import { teamFromHash } from '@/lib/team-share';
@@ -12,7 +13,8 @@ import SharedTeam from './pages/SharedTeam';
 import Mounts from './pages/Mounts';
 import PalsPage from './pages/Pals';
 import BossDrops from './pages/BossDrops';
-import Builds from './pages/Builds';
+import CommunityTeams from './pages/CommunityTeams';
+import Profile from './pages/Profile';
 import CraftingPlanner from './pages/CraftingPlanner';
 import Privacy from './pages/Privacy';
 import About from './pages/About';
@@ -60,13 +62,15 @@ export default function App() {
             {appState.currentView === 'pals' && <PalsPage />}
             {appState.currentView === 'bossdrops' && <BossDrops />}
             {appState.currentView === 'crafting' && <CraftingPlanner />}
-            {appState.currentView === 'builds' && <Builds />}
+            {appState.currentView === 'community' && <CommunityTeams appState={appState} />}
+            {appState.currentView === 'profile' && <Profile appState={appState} />}
             {appState.currentView === 'privacy' && <Privacy />}
             {appState.currentView === 'about' && <About />}
           </>
         )}
       </Layout>
       <CookieConsent />
+      <Toaster position="bottom-right" richColors />
     </I18nProvider>
   );
 }

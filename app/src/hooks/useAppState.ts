@@ -7,7 +7,7 @@ import {
   mergePersistedStates,
 } from '@/lib/cloud-sync';
 
-export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'builds' | 'crafting' | 'privacy' | 'about';
+export type View = 'breeding' | 'packages' | 'team' | 'mounts' | 'pals' | 'bossdrops' | 'community' | 'profile' | 'crafting' | 'privacy' | 'about';
 
 export type SearchMode = 'child' | 'parent' | 'tree';
 
@@ -47,6 +47,8 @@ export interface Team {
   /** Always 5 slots */
   slots: TeamSlot[];
   player: PlayerGear;
+  /** Firestore publication linked to this local team, when published. */
+  publishId?: string;
 }
 
 export const TEAM_SIZE = 5;
@@ -83,7 +85,8 @@ const VALID_VIEWS: View[] = [
   'mounts',
   'pals',
   'bossdrops',
-  'builds',
+  'community',
+  'profile',
   'crafting',
   'privacy',
   'about',
@@ -193,6 +196,7 @@ export interface AppState {
   importTeam: (data: { name: string; slots: TeamSlot[]; player: PlayerGear }) => string;
   deleteTeam: (id: string) => void;
   renameTeam: (id: string, name: string) => void;
+  updateTeam: (id: string, updater: (team: Team) => Team) => void;
   setActiveTeam: (id: string) => void;
   setSlotPal: (teamId: string, slotIndex: number, palId: string | null) => void;
   setSlotStars: (teamId: string, slotIndex: number, stars: number) => void;
@@ -656,6 +660,7 @@ export function useAppState(): AppState {
     importTeam,
     deleteTeam,
     renameTeam,
+    updateTeam,
     setActiveTeam,
     setSlotPal,
     setSlotStars,

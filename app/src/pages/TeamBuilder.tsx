@@ -1,9 +1,14 @@
 import { useState } from 'react';
-import { Check, ChevronDown, Pencil, Plus, Share2, Swords, Trash2, X } from 'lucide-react';
+import { Check, ChevronDown, Globe2, Pencil, Plus, Share2, Swords, Trash2, X } from 'lucide-react';
+import { toast } from 'sonner';
 import { useTranslation } from '@/i18n';
 import type { AppState } from '@/hooks/useAppState';
 import { encodeTeam } from '@/lib/team-share';
 import { TeamSlotCard, PlayerGearSection } from '@/components/team';
+import { PublishTeamDialog } from '@/components/community';
+import { useOptionalAuth } from '@/hooks/useAuth';
+import { getPublication, unpublishTeam } from '@/lib/community';
+import type { PublishedTeam } from '@/lib/community';
 
 interface TeamBuilderProps {
   appState: AppState;
@@ -11,6 +16,7 @@ interface TeamBuilderProps {
 
 export default function TeamBuilder({ appState }: TeamBuilderProps) {
   const { t } = useTranslation();
+  const auth = useOptionalAuth();
   const {
     teams,
     activeTeamId,
@@ -26,6 +32,7 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
     togglePlayerWeapon,
     togglePlayerAccessory,
     togglePlayerFood,
+    updateTeam,
   } = appState;
 
   const [nameInput, setNameInput] = useState('');
@@ -33,6 +40,10 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
   const [nameForm, setNameForm] = useState<'create' | 'rename' | null>(null);
   const [confirmingDelete, setConfirmingDelete] = useState(false);
   const [copiedShare, setCopiedShare] = useState(false);
+  const [publicationDialogOpen, setPublicationDialogOpen] = useState(false);
+  const [editingPublication, setEditingPublication] = useState<PublishedTeam | null>(null);
+  const [confirmingUnpublish, setConfirmingUnpublish] = useState(false);
+  const [publicationActionLoading, setPublicationActionLoading] = useState(false);
 
   const activeTeam =
     teams.find((team) => team.id === activeTeamId) || teams[0] || null;
@@ -81,6 +92,53 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
     }
     setCopiedShare(true);
     setTimeout(() => setCopiedShare(false), 2000);
+  };
+
+  const openPublicationDialog = async () => {
+    if (!activeTeam) return;
+    if (!auth?.user) {
+      toast.error(t('community.loginRequired'));
+      return;
+    }
+
+    setPublicationActionLoading(true);
+    try {
+      if (activeTeam.publishId) {
+        const publication = await getPublication(activeTeam.publishId);
+        if (!publication) {
+          updateTeam(activeTeam.id, (team) => ({ ...team, publishId: undefined }));
+          toast.info(t('community.unpublished'));
+          return;
+        }
+        setEditingPublication(publication);
+      } else {
+        setEditingPublication(null);
+      }
+      setPublicationDialogOpen(true);
+    } catch {
+      toast.error(t('community.loadFailed'));
+    } finally {
+      setPublicationActionLoading(false);
+    }
+  };
+
+  const handleUnpublish = async () => {
+    if (!activeTeam?.publishId) return;
+    if (!confirmingUnpublish) {
+      setConfirmingUnpublish(true);
+      return;
+    }
+    setPublicationActionLoading(true);
+    try {
+      await unpublishTeam(activeTeam.publishId);
+      updateTeam(activeTeam.id, (team) => ({ ...team, publishId: undefined }));
+      setConfirmingUnpublish(false);
+      toast.success(t('community.unpublished'));
+    } catch {
+      toast.error(t('community.unpublishFailed'));
+    } finally {
+      setPublicationActionLoading(false);
+    }
   };
 
   return (
@@ -228,7 +286,7 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
                 <Pencil size={15} />
               </button>
               <button
-                onClick={handleShare}
+                onClick={() => void handleShare()}
                 className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110 text-[11px] font-semibold"
                 style={{
                   height: 38,
@@ -241,6 +299,45 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
               >
                 {copiedShare ? t('team.shareCopied') : <Share2 size={15} />}
               </button>
+              {activeTeam.publishId ? (
+                <>
+                  <button
+                    onClick={() => void openPublicationDialog()}
+                    disabled={publicationActionLoading}
+                    className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110 disabled:opacity-60"
+                    style={{ width: 38, height: 38, backgroundColor: 'var(--bg-surface)', color: 'var(--accent-violet)' }}
+                    title={t('community.updatePublication')}
+                  >
+                    <Pencil size={15} />
+                  </button>
+                  <button
+                    onClick={() => void handleUnpublish()}
+                    disabled={publicationActionLoading}
+                    className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110 text-[11px] font-semibold disabled:opacity-60"
+                    style={{
+                      height: 38,
+                      minWidth: 38,
+                      padding: confirmingUnpublish ? '0 10px' : 0,
+                      backgroundColor: confirmingUnpublish ? '#EF4444' : 'var(--bg-surface)',
+                      color: confirmingUnpublish ? '#FFFFFF' : 'var(--accent-red)',
+                    }}
+                    title={t('community.unpublishConfirm')}
+                  >
+                    {confirmingUnpublish ? t('community.unpublish') : <Trash2 size={15} />}
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => void openPublicationDialog()}
+                  disabled={publicationActionLoading}
+                  className="flex items-center gap-2 rounded-lg transition-all duration-150 hover:scale-105 text-[11px] font-semibold px-3 disabled:opacity-60"
+                  style={{ height: 38, backgroundColor: 'rgba(139,92,246,0.12)', color: 'var(--accent-violet)' }}
+                  title={t('community.publish')}
+                >
+                  <Globe2 size={15} />
+                  {t('community.publish')}
+                </button>
+              )}
               <button
                 onClick={handleDelete}
                 className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110 text-[11px] font-semibold"
@@ -292,6 +389,18 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
           </>
         )}
       </div>
+      <PublishTeamDialog
+        isOpen={publicationDialogOpen}
+        team={activeTeam}
+        user={auth?.user ?? null}
+        publication={editingPublication}
+        onClose={() => setPublicationDialogOpen(false)}
+        onPublished={(publishId) => {
+          if (!activeTeam) return;
+          updateTeam(activeTeam.id, (team) => ({ ...team, publishId }));
+          toast.success(editingPublication ? t('community.published') : t('community.published'));
+        }}
+      />
     </div>
   );
 }
