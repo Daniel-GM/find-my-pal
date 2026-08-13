@@ -45,7 +45,7 @@ export function TeamSlotCard({
     if (readOnly) {
       return (
         <div
-          className="flex flex-col items-center justify-center gap-2"
+          className="team-slot-card team-slot-card-empty flex flex-col items-center justify-center gap-2"
           style={{
             minHeight: 220,
             borderRadius: 14,
@@ -62,7 +62,7 @@ export function TeamSlotCard({
       <>
         <button
           onClick={() => setShowPalPicker(true)}
-          className="flex flex-col items-center justify-center gap-2 transition-all duration-150"
+          className="team-slot-card team-slot-card-empty flex flex-col items-center justify-center gap-2 transition-all duration-150"
           style={{
             minHeight: 220,
             borderRadius: 14,
@@ -93,6 +93,7 @@ export function TeamSlotCard({
 
   return (
     <div
+      className="team-slot-card"
       style={{
         backgroundColor: 'var(--bg-surface)',
         border: '1px solid var(--border-subtle)',

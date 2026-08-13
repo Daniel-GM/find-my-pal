@@ -26,6 +26,7 @@ export function TargetPalBanner({
   const resolvedCountLabel = countLabel ?? t('breeding.combinations');
   return (
     <motion.div
+      className="target-pal-banner"
       initial={{ opacity: 0, y: -16 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -16 }}
@@ -39,9 +40,9 @@ export function TargetPalBanner({
         margin: '24px 24px 16px',
       }}
     >
-      <div className="flex items-center gap-5">
+      <div className="target-pal-main flex items-center gap-5">
         {/* Left: Pal Image with Change Pal button above */}
-        <div className="flex flex-col items-center gap-2">
+        <div className="target-pal-image flex flex-col items-center gap-2">
           <button
             onClick={onChangePal}
             className="flex items-center gap-1 text-[11px] font-medium transition-colors duration-150"
@@ -53,7 +54,7 @@ export function TargetPalBanner({
           <PalIconImg pal={pal} size="lg" borderColor="var(--accent-violet)" />
         </div>
 
-        <div className="flex-1 min-w-0">
+        <div className="target-pal-info flex-1 min-w-0">
           <span
             className="text-[11px] font-semibold uppercase"
             style={{
@@ -83,7 +84,7 @@ export function TargetPalBanner({
         </div>
 
         {/* Center: Work Suitability */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="target-pal-work flex flex-col items-center justify-center">
           <span
             className="text-[10px] font-semibold uppercase mb-1.5"
             style={{ color: 'var(--text-muted)', letterSpacing: '0.06em' }}
@@ -93,7 +94,7 @@ export function TargetPalBanner({
           <WorkSuitabilityGrid pal={pal} />
         </div>
 
-        <div className="flex gap-6">
+        <div className="target-pal-stats flex gap-6">
           <div className="text-center">
             <div
               className="text-[18px] font-bold"

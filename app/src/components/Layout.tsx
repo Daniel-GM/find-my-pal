@@ -41,7 +41,7 @@ export default function Layout({ children, appState }: LayoutProps) {
           flexDirection: 'column',
         }}
       >
-        <div style={{ flex: 1 }}>{children}</div>
+        <div className="app-content" style={{ flex: 1 }}>{children}</div>
         <footer
           className="app-footer flex flex-wrap items-center justify-center gap-x-4 gap-y-1 px-6 py-4"
           style={{ borderTop: '1px solid var(--border-subtle)' }}

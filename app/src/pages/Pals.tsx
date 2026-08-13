@@ -226,12 +226,12 @@ export default function PalsPage() {
   }, [elementFilter, locale, search, sortBy, workFilter, workLevelFilter]);
 
   return (
-    <div className="mx-auto max-w-6xl p-6">
+    <div className="pals-page mx-auto max-w-6xl p-6">
       <motion.div
         initial={{ opacity: 0, y: -12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className="mb-5"
+        className="pals-page-header mb-5"
       >
         <div className="mb-2 flex items-center gap-3">
           <Users size={22} style={{ color: 'var(--accent-violet)' }} />
@@ -251,10 +251,10 @@ export default function PalsPage() {
         initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="mb-5 flex flex-col gap-3"
+        className="pals-filter-panel mb-5 flex flex-col gap-3"
       >
-        <div className="flex flex-wrap items-center gap-2">
-          <div className="relative min-w-[200px] flex-1">
+        <div className="pals-filter-top flex flex-wrap items-center gap-2">
+          <div className="pals-search relative min-w-[200px] flex-1">
             <Search
               size={14}
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2"
@@ -308,7 +308,7 @@ export default function PalsPage() {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className="pals-filter-row pals-element-filters flex flex-wrap items-center gap-1.5">
           <button
             type="button"
             onClick={() => setElementFilter(null)}
@@ -352,7 +352,7 @@ export default function PalsPage() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <div className="flex flex-wrap items-center gap-1.5">
+          <div className="pals-filter-row pals-work-filters flex flex-wrap items-center gap-1.5">
             <button
               type="button"
               onClick={() => {
@@ -395,7 +395,7 @@ export default function PalsPage() {
             ))}
           </div>
           {workFilter && (
-            <div className="flex flex-wrap items-center gap-1.5">
+            <div className="pals-filter-row pals-work-levels flex flex-wrap items-center gap-1.5">
               <span className="text-[10px] font-medium" style={{ color: 'var(--text-muted)' }}>
                 {t('pals.minLevel')}
               </span>

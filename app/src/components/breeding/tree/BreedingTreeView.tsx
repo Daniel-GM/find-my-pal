@@ -233,19 +233,19 @@ export function BreedingTreeView({ targetPal, appState }: BreedingTreeViewProps)
     <div>
       {/* Toolbar */}
       <div
-        className="flex items-center justify-between"
+        className="breeding-tree-toolbar flex items-center justify-between"
         style={{
           padding: '12px 24px',
           borderBottom: '1px solid var(--border-subtle)',
         }}
       >
-        <div className="flex items-center gap-3">
+        <div className="breeding-tree-controls flex items-center gap-3">
           {/* Depth selector */}
           <div className="relative">
             <select
+              className="breeding-tree-depth appearance-none cursor-pointer text-[13px] font-medium pr-8 pl-3 transition-all duration-150 outline-none"
               value={depth}
               onChange={(e) => handleDepthChange(Number(e.target.value))}
-              className="appearance-none cursor-pointer text-[13px] font-medium pr-8 pl-3 transition-all duration-150 outline-none"
               style={{
                 height: 34,
                 borderRadius: 8,
@@ -297,7 +297,7 @@ export function BreedingTreeView({ targetPal, appState }: BreedingTreeViewProps)
           <p className="text-[14px]">{t('breeding.tree.empty')}</p>
         </div>
       ) : (
-        <div style={{ overflowX: 'auto', padding: '24px 24px 48px' }}>
+        <div className="breeding-tree-canvas" style={{ overflowX: 'auto', padding: '24px 24px 48px' }}>
           <div
             style={{
               display: 'flex',

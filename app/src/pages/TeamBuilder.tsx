@@ -156,10 +156,10 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
   };
 
   return (
-    <div>
+    <div className="team-page">
       {/* Top Bar */}
       <div
-        className="sticky top-0 z-10 flex items-center justify-between"
+        className="sticky top-0 z-10 flex items-center justify-between team-page-header"
         style={{
           height: 60,
           padding: '0 24px',
@@ -192,7 +192,7 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
         </button>
       </div>
 
-      <div style={{ padding: '24px' }}>
+      <div className="team-page-body" style={{ padding: '24px' }}>
         {/* Inline name form (create / rename) */}
         {nameForm && (
           <div className="flex items-center gap-2 mb-4">
@@ -263,8 +263,8 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
         ) : (
           <>
             {/* Team management bar */}
-            <div className="flex items-center gap-2 mb-5">
-              <div className="relative">
+            <div className="team-management-bar flex items-center gap-2 mb-5">
+              <div className="team-select-wrap relative">
                 <select
                   value={activeTeam.id}
                   onChange={(e) => setActiveTeam(e.target.value)}
@@ -291,6 +291,7 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
                 />
               </div>
 
+              <div className="team-management-actions flex items-center gap-2">
               <button
                 onClick={openRenameForm}
                 className="flex items-center justify-center rounded-lg transition-all duration-150 hover:scale-110"
@@ -366,10 +367,12 @@ export default function TeamBuilder({ appState }: TeamBuilderProps) {
               >
                 {confirmingDelete ? t('app.confirm') : <Trash2 size={15} />}
               </button>
+              </div>
             </div>
 
             {/* Pal slots */}
             <div
+              className="team-slots-grid"
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',

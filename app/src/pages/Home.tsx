@@ -144,10 +144,10 @@ export default function Home({ appState }: HomeProps) {
   }, []);
 
   return (
-    <div>
+    <div className="breeding-page">
       {/* Top Bar */}
       <div
-        className="sticky top-0 z-10 flex items-center justify-between"
+        className="sticky top-0 z-10 flex items-center justify-between breeding-page-header"
         style={{
           height: 60,
           padding: '0 24px',
@@ -180,9 +180,9 @@ export default function Home({ appState }: HomeProps) {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="breeding-toolbar flex items-center gap-2">
           {/* Search Mode Toggle */}
-          <div className="flex items-center" style={{ borderRadius: 8, border: '1px solid var(--border-subtle)', overflow: 'hidden' }}>
+          <div className="breeding-mode-toggle flex items-center" style={{ borderRadius: 8, border: '1px solid var(--border-subtle)', overflow: 'hidden' }}>
             <button
               onClick={() => setSearchMode('child')}
               className="flex items-center gap-1.5 px-2.5 transition-all duration-150 text-[12px] font-medium"
@@ -226,7 +226,7 @@ export default function Home({ appState }: HomeProps) {
 
           {selectedPal && (
             <div
-              className="flex items-center gap-2"
+              className="breeding-result-tools flex items-center gap-2"
               style={{
                 opacity: searchMode === 'tree' ? 0.35 : 1,
                 pointerEvents: searchMode === 'tree' ? 'none' : 'auto',
@@ -319,7 +319,7 @@ export default function Home({ appState }: HomeProps) {
               <>
             {/* Summary Bar */}
             <div
-              className="flex items-center justify-between"
+              className="breeding-summary-bar flex items-center justify-between"
               style={{
                 padding: '12px 24px',
                 borderBottom: '1px solid var(--border-subtle)',
