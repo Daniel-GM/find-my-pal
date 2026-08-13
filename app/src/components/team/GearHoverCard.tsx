@@ -125,7 +125,7 @@ export function GearHoverCard({ item, children }: GearHoverCardProps) {
   return (
     <HoverCard.Root openDelay={160} closeDelay={100}>
       <HoverCard.Trigger asChild>
-        <span className="inline-flex">{children}</span>
+        <span className="flex w-full">{children}</span>
       </HoverCard.Trigger>
       <HoverCard.Portal>
         <HoverCard.Content

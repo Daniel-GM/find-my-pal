@@ -135,7 +135,7 @@ export function GearPickerDialog({
                 const itemButton = (
                   <button
                     onClick={() => onToggle(item.id)}
-                    className="flex flex-col items-center gap-1.5 transition-all duration-150"
+                    className="flex w-full flex-col items-center gap-1.5 transition-all duration-150"
                     style={{
                       padding: 10,
                       borderRadius: 10,
