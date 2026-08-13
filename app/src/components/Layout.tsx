@@ -23,7 +23,7 @@ export default function Layout({ children, appState }: LayoutProps) {
 
   return (
     <div
-      className={appState.theme === 'dark' ? 'dark' : 'light'}
+      className={`app-shell ${appState.theme === 'dark' ? 'dark' : 'light'}`}
       style={{
         minHeight: '100dvh',
         fontFamily: "'Inter', sans-serif",
@@ -31,6 +31,7 @@ export default function Layout({ children, appState }: LayoutProps) {
     >
       <Navbar appState={appState} />
       <main
+        className="app-main"
         style={{
           marginLeft: 280,
           minHeight: '100dvh',
@@ -42,7 +43,7 @@ export default function Layout({ children, appState }: LayoutProps) {
       >
         <div style={{ flex: 1 }}>{children}</div>
         <footer
-          className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 px-6 py-4"
+          className="app-footer flex flex-wrap items-center justify-center gap-x-4 gap-y-1 px-6 py-4"
           style={{ borderTop: '1px solid var(--border-subtle)' }}
         >
           <button style={linkStyle} onClick={() => appState.setView('about')}>

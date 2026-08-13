@@ -45,6 +45,7 @@ export const en: Translations = {
   'nav.community': 'Community Teams',
   'nav.profile': 'My Profile',
   'nav.crafting': 'Crafting Planner',
+  'nav.more': 'More',
 
   'crafting.title': 'Crafting Planner',
   'crafting.description': 'Select a craftable item or structure to see raw materials and dependency-safe crafting steps.',

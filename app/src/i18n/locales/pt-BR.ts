@@ -45,6 +45,7 @@ export const ptBR: Translations = {
   'nav.community': 'Times da Comunidade',
   'nav.profile': 'Meu Perfil',
   'nav.crafting': 'Planejador de Craft',
+  'nav.more': 'Mais',
 
   'crafting.title': 'Planejador de Craft',
   'crafting.description': 'Selecione um item ou estrutura craftável para ver materiais brutos e etapas em ordem de dependência.',

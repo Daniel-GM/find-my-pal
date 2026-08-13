@@ -15,6 +15,9 @@ import {
   LogIn,
   LogOut,
   Globe2,
+  Menu,
+  MoreHorizontal,
+  UserRound,
 } from 'lucide-react';
 import type { AppState, View } from '@/hooks/useAppState';
 import { PALS, ELEMENTS } from '@/data/pals';
@@ -138,6 +141,18 @@ export default function Navbar({ appState }: NavbarProps) {
 
   const [search, setSearch] = useState('');
   const [activeElement, setActiveElement] = useState<PalElement | 'all'>('all');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const primaryMobileItems = NAV_ITEMS.filter((item) =>
+    ['breeding', 'packages', 'team', 'pals'].includes(item.view),
+  );
+  const currentLabel = currentView === 'profile'
+    ? t('nav.profile')
+    : NAV_ITEMS.find((item) => item.view === currentView)?.labelKey ?? t('app.title');
+  const goToView = (view: View) => {
+    setView(view);
+    setMobileMenuOpen(false);
+  };
 
   const filteredPals = useMemo(() => {
     let result = [...PALS];
@@ -160,8 +175,9 @@ export default function Navbar({ appState }: NavbarProps) {
   }, [search, activeElement]);
 
   return (
+    <>
     <aside
-      className="fixed left-0 top-0 h-screen w-[280px] flex flex-col overflow-hidden"
+      className="desktop-sidebar fixed left-0 top-0 h-screen w-[280px] flex flex-col overflow-hidden"
       style={{
         backgroundColor: 'var(--bg-sidebar)',
         borderRight: '1px solid var(--border-subtle)',
@@ -511,5 +527,149 @@ export default function Navbar({ appState }: NavbarProps) {
         )}
       </div>
     </aside>
+
+    <header className="mobile-app-bar" aria-label={t('app.title')}>
+      <div className="flex min-w-0 items-center gap-2.5">
+        <div className="mobile-brand-mark" aria-hidden="true">
+          <img src="/favicon.png" alt="" />
+        </div>
+        <div className="min-w-0">
+          <p className="mobile-app-kicker">{t('app.title')}</p>
+          <p className="mobile-app-title truncate">{currentLabel}</p>
+        </div>
+      </div>
+      <button
+        type="button"
+        className="mobile-toolbar-button"
+        aria-label={t('nav.more')}
+        aria-expanded={mobileMenuOpen}
+        onClick={() => setMobileMenuOpen((open) => !open)}
+      >
+        <Menu size={21} />
+      </button>
+    </header>
+
+    <nav className="mobile-bottom-nav" aria-label={t('app.title')}>
+      {primaryMobileItems.map((item) => {
+        const Icon = item.icon;
+        const active = currentView === item.view;
+        return (
+          <button
+            key={`mobile-${item.view}`}
+            type="button"
+            className={`mobile-nav-item ${active ? 'is-active' : ''}`}
+            aria-current={active ? 'page' : undefined}
+            onClick={() => goToView(item.view)}
+          >
+            <Icon size={19} strokeWidth={active ? 2.4 : 2} />
+            <span>{item.labelKey}</span>
+          </button>
+        );
+      })}
+      <button
+        type="button"
+        className={`mobile-nav-item ${mobileMenuOpen ? 'is-active' : ''}`}
+        aria-expanded={mobileMenuOpen}
+        onClick={() => setMobileMenuOpen((open) => !open)}
+      >
+        <MoreHorizontal size={20} />
+        <span>{t('nav.more')}</span>
+      </button>
+    </nav>
+
+    <AnimatePresence>
+      {mobileMenuOpen && (
+        <motion.div
+          className="mobile-more-backdrop"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setMobileMenuOpen(false)}
+        >
+          <motion.div
+            className="mobile-more-sheet"
+            initial={{ y: 24, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 24, opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="mobile-sheet-handle" />
+            <div className="flex items-center justify-between gap-3 px-1 pb-3">
+              <div>
+                <p className="mobile-sheet-kicker">{t('app.title')}</p>
+                <h2 className="mobile-sheet-title">{t('nav.more')}</h2>
+              </div>
+              <button type="button" className="mobile-toolbar-button" onClick={() => setMobileMenuOpen(false)} aria-label="Fechar">
+                <X size={19} />
+              </button>
+            </div>
+            <div className="mobile-quick-picker">
+              <label htmlFor="mobile-pal-search">{t('app.searchPals')}</label>
+              <div className="mobile-quick-search">
+                <Search size={17} aria-hidden="true" />
+                <input
+                  id="mobile-pal-search"
+                  type="search"
+                  value={search}
+                  onChange={(event) => setSearch(event.target.value)}
+                  placeholder={t('app.searchPals')}
+                />
+                {search && (
+                  <button type="button" onClick={() => setSearch('')} aria-label={t('app.close')}>
+                    <X size={16} />
+                  </button>
+                )}
+              </div>
+              {search.trim() && (
+                <div className="mobile-quick-results">
+                  {filteredPals.slice(0, 6).map((pal) => (
+                    <button
+                      key={`quick-${pal.id}`}
+                      type="button"
+                      className={selectedPalId === pal.id ? 'is-selected' : ''}
+                      onClick={() => {
+                        selectPal(pal.id);
+                        setView('breeding');
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      <PalImage iconName={pal.iconName} name={pal.name} size="sm" />
+                      <span>{pal.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="mobile-more-grid">
+              {NAV_ITEMS.filter((item) => !primaryMobileItems.some((primary) => primary.view === item.view)).map((item) => {
+                const Icon = item.icon;
+                return (
+                  <button key={`more-${item.view}`} type="button" className="mobile-more-item" onClick={() => goToView(item.view)}>
+                    <Icon size={19} />
+                    <span>{item.labelKey}</span>
+                  </button>
+                );
+              })}
+              <button type="button" className="mobile-more-item" onClick={() => goToView('profile')}>
+                <UserRound size={19} />
+                <span>{t('nav.profile')}</span>
+              </button>
+            </div>
+            <div className="mobile-sheet-actions">
+              <button type="button" onClick={toggleTheme}>
+                {theme === 'dark' ? <Moon size={17} /> : <Sun size={17} />}
+                <span>{theme === 'dark' ? t('theme.dark') : t('theme.light')}</span>
+              </button>
+              <button type="button" onClick={() => setLocale(locale === 'pt-BR' ? 'en' : 'pt-BR')}>
+                <LanguageFlag locale={locale} />
+                <span>{locale === 'pt-BR' ? t('lang.pt-BR') : t('lang.en')}</span>
+              </button>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+    </>
   );
 }

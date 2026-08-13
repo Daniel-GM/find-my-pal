@@ -45,6 +45,7 @@ export type TranslationKey =
   | 'nav.community'
   | 'nav.profile'
   | 'nav.crafting'
+  | 'nav.more'
 
   // Crafting Planner
   | 'crafting.title'
