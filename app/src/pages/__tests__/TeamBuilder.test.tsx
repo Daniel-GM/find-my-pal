@@ -69,5 +69,10 @@ describe('TeamBuilder page', () => {
     // set 3 stars
     const starButtons = screen.getAllByTitle('3');
     fireEvent.click(starButtons[0]);
+
+    // open the complete Pal details from the slot image
+    fireEvent.click(screen.getByRole('button', { name: /Open all information about Lamball|Abrir todas as informações de Lamball/i }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Lamball' })).toBeInTheDocument();
   }, 15000);
 });

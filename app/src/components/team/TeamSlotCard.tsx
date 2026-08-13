@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Plus, Star, X } from 'lucide-react';
 import { useTranslation } from '@/i18n';
 import { PALS } from '@/data/pals';
+import type { Pal } from '@/data/pals';
 import { ElementBadge } from '@/components/breeding';
 import { findPassiveById } from '@/data/passives';
 import { findActiveSkillById } from '@/data/activeSkills';
@@ -13,6 +14,7 @@ import { PassiveChip } from './PassiveChip';
 import { ActiveSkillPickerDialog } from './ActiveSkillPickerDialog';
 import { ActiveSkillChip } from './ActiveSkillChip';
 import { PartnerSkillHoverCard } from './PartnerSkillHoverCard';
+import { PalDetailDialog } from '@/components/pals/PalDetailDialog';
 
 interface TeamSlotCardProps {
   slot: TeamSlot;
@@ -36,8 +38,8 @@ export function TeamSlotCard({
   const [showPalPicker, setShowPalPicker] = useState(false);
   const [showPassivePicker, setShowPassivePicker] = useState(false);
   const [showActiveSkillPicker, setShowActiveSkillPicker] = useState(false);
-
   const pal = slot.palId ? PALS.find((p) => p.id === slot.palId) || null : null;
+  const [selectedPal, setSelectedPal] = useState<Pal | null>(null);
 
   if (!pal) {
     if (readOnly) {
@@ -103,7 +105,11 @@ export function TeamSlotCard({
     >
       {/* Pal header */}
       <div className="flex items-start gap-3">
-        <PartnerSkillHoverCard pal={pal} stars={slot.stars} />
+        <PartnerSkillHoverCard
+          pal={pal}
+          stars={slot.stars}
+          onPalClick={setSelectedPal}
+        />
         <div className="flex-1 min-w-0">
           <div className="text-[15px] font-bold truncate" style={{ color: 'var(--text-primary)' }}>
             {pal.name}
@@ -277,6 +283,12 @@ export function TeamSlotCard({
           />
         </>
       )}
+      <PalDetailDialog
+        pal={selectedPal}
+        onOpenChange={(open) => {
+          if (!open) setSelectedPal(null);
+        }}
+      />
     </div>
   );
 }

@@ -12,9 +12,10 @@ import { useTranslation } from '@/i18n';
 interface PartnerSkillHoverCardProps {
   pal: Pal;
   stars: number;
+  onPalClick?: (pal: Pal) => void;
 }
 
-export function PartnerSkillHoverCard({ pal, stars }: PartnerSkillHoverCardProps) {
+export function PartnerSkillHoverCard({ pal, stars, onPalClick }: PartnerSkillHoverCardProps) {
   const { t, locale } = useTranslation();
   const skill = findPartnerSkillByPalName(pal.name);
 
@@ -24,7 +25,8 @@ export function PartnerSkillHoverCard({ pal, stars }: PartnerSkillHoverCardProps
         <button
           type="button"
           className="shrink-0 rounded-full outline-none transition-transform duration-150 hover:scale-105 focus-visible:ring-2"
-          aria-label={`${t('team.partnerSkill')}: ${pal.name}`}
+          aria-label={t('pals.openDetails', { pal: pal.name })}
+          onClick={() => onPalClick?.(pal)}
           style={{ '--tw-ring-color': 'var(--accent-violet)' } as React.CSSProperties}
         >
           <PalImage
