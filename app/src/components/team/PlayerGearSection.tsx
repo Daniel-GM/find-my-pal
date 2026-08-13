@@ -10,6 +10,7 @@ import {
   MAX_PLAYER_FOODS,
 } from '@/hooks/useAppState';
 import { GearPickerDialog } from './GearPickerDialog';
+import { GearHoverCard } from './GearHoverCard';
 
 interface PlayerGearSectionProps {
   player: PlayerGear;
@@ -33,50 +34,54 @@ function GearSlot({ itemId, onOpen, onRemove, readOnly = false }: GearSlotProps)
   const { locale, t } = useTranslation();
   const item = itemId ? findGearById(itemId) : null;
 
+  const slotButton = (
+    <button
+      onClick={readOnly ? undefined : onOpen}
+      disabled={readOnly}
+      title={item ? item.names[locale] || item.names.en : t('team.selectItem')}
+      className={`flex items-center justify-center${readOnly ? '' : ' transition-all duration-150 hover:scale-105'}`}
+      style={{
+        width: 64,
+        height: 64,
+        borderRadius: 8,
+        padding: 6,
+        ...(readOnly ? { cursor: 'default' } : {}),
+        ...(item
+          ? getRaritySlotStyle(item)
+          : {
+              backgroundColor: 'var(--bg-base)',
+              border: '1px dashed var(--border-subtle)',
+            }),
+      }}
+    >
+      {item?.iconUrl ? (
+        <img
+          src={item.iconUrl}
+          alt={item.names[locale] || item.names.en}
+          width={52}
+          height={52}
+          loading="lazy"
+          style={{ objectFit: 'contain' }}
+          onError={(e) => {
+            (e.target as HTMLImageElement).style.display = 'none';
+          }}
+        />
+      ) : item ? (
+        <span
+          className="text-[9px] font-medium text-center leading-tight"
+          style={{ color: 'var(--text-primary)' }}
+        >
+          {item.names[locale] || item.names.en}
+        </span>
+      ) : (
+        <Plus size={18} style={{ color: 'var(--text-muted)' }} />
+      )}
+    </button>
+  );
+
   return (
     <div style={{ position: 'relative', width: 64, height: 64 }}>
-      <button
-        onClick={readOnly ? undefined : onOpen}
-        disabled={readOnly}
-        title={item ? item.names[locale] || item.names.en : t('team.selectItem')}
-        className={`flex items-center justify-center${readOnly ? '' : ' transition-all duration-150 hover:scale-105'}`}
-        style={{
-          width: 64,
-          height: 64,
-          borderRadius: 8,
-          padding: 6,
-          ...(readOnly ? { cursor: 'default' } : {}),
-          ...(item
-            ? getRaritySlotStyle(item)
-            : {
-                backgroundColor: 'var(--bg-base)',
-                border: '1px dashed var(--border-subtle)',
-              }),
-        }}
-      >
-        {item?.iconUrl ? (
-          <img
-            src={item.iconUrl}
-            alt={item.names[locale] || item.names.en}
-            width={52}
-            height={52}
-            loading="lazy"
-            style={{ objectFit: 'contain' }}
-            onError={(e) => {
-              (e.target as HTMLImageElement).style.display = 'none';
-            }}
-          />
-        ) : item ? (
-          <span
-            className="text-[9px] font-medium text-center leading-tight"
-            style={{ color: 'var(--text-primary)' }}
-          >
-            {item.names[locale] || item.names.en}
-          </span>
-        ) : (
-          <Plus size={18} style={{ color: 'var(--text-muted)' }} />
-        )}
-      </button>
+      {item ? <GearHoverCard item={item}>{slotButton}</GearHoverCard> : slotButton}
       {item && !readOnly && (
         <button
           onClick={onRemove}

@@ -378,8 +378,14 @@ export function parseGearPage(html) {
     const sourceId = sourceMatch ? decodeSourceId(sourceMatch[1]) : undefined;
     const slug = decodeHtml(nameMatch[2]);
     const iconMatch = chunk.match(/<div class="hover_icon_bg[\s\S]*?<img[^>]*src="([^"]+)"/i);
-    const statMatch = chunk.match(
-      /<span class="bg-dark bg-gradient p-1">([\s\S]*?)<\/span><span class="border p-1">([\s\S]*?)<\/span>/i,
+    const stats = [...chunk.matchAll(
+      /<span class="bg-dark bg-gradient p-1">([\s\S]*?)<\/span><span class="border p-1">([\s\S]*?)<\/span>/gi,
+    )].map(([, label, value]) => ({
+      label: textContent(label),
+      value: textContent(value),
+    }));
+    const descriptionMatch = chunk.match(
+      /<div class="card-body py-2">([\s\S]*?)<div class="recipes">/i,
     );
     const rarityMatch = chunk.match(/<div class="hover_banner banner_rarity(\d)"/i);
     items.push({
@@ -391,7 +397,8 @@ export function parseGearPage(html) {
       sourceId,
       name: textContent(nameMatch[3]),
       iconUrl: iconMatch?.[1],
-      effect: statMatch ? `${textContent(statMatch[1])} ${textContent(statMatch[2])}` : undefined,
+      stats,
+      description: descriptionMatch ? textContent(descriptionMatch[1]) : undefined,
       rarity: rarityMatch ? Number(rarityMatch[1]) : undefined, // 0 common .. 4 legendary
     });
   }
@@ -519,11 +526,24 @@ for (const { page, kind } of GEAR_PAGES) {
     const resolvedKind = kind === 'armor' && (HELMET_PATTERN.test(en.sourceId ?? '') || HELMET_PATTERN.test(en.name))
       ? 'helmet'
       : kind;
+    const enStats = en.stats ?? [];
+    const ptStats = pt?.stats?.length ? pt.stats : enStats;
+    const effectText = (stats) => stats.map((stat) => `${stat.label} ${stat.value}`).join('; ');
+    const enDescription = en.description?.trim();
+    const ptDescription = pt?.description?.trim() || enDescription;
     gear.push({
       id,
       kind: resolvedKind,
       names: { en: en.name, 'pt-BR': ptName || en.name },
-      ...(en.effect || pt?.effect ? { effects: { en: en.effect || pt.effect, 'pt-BR': pt?.effect || en.effect } } : {}),
+      ...(enStats.length || ptStats.length
+        ? { stats: { en: enStats, 'pt-BR': ptStats } }
+        : {}),
+      ...(effectText(enStats) || effectText(ptStats)
+        ? { effects: { en: effectText(enStats), 'pt-BR': effectText(ptStats) } }
+        : {}),
+      ...(enDescription || ptDescription
+        ? { descriptions: { en: enDescription || ptDescription, 'pt-BR': ptDescription || enDescription } }
+        : {}),
       ...(en.iconUrl || pt?.iconUrl ? { iconUrl: en.iconUrl || pt.iconUrl } : {}),
       ...(en.sourceId || pt?.sourceId ? { sourceId: en.sourceId || pt.sourceId } : {}),
       // rarity of the kept (first/base) occurrence; omitted when unmarked — the app defaults to 0

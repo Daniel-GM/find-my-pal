@@ -4,6 +4,7 @@ import { ImageOff } from 'lucide-react';
 import { useTranslation } from '@/i18n';
 import { getGearByKind, getRaritySlotStyle } from '@/data/gear';
 import type { GearItem, GearKind } from '@/data/gear';
+import { GearHoverCard } from './GearHoverCard';
 
 const EASE_BEZIER = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
 
@@ -131,9 +132,8 @@ export function GearPickerDialog({
               {items.map((item) => {
                 const isSelected = selectedIds.includes(item.id);
                 const name = item.names[locale] || item.names.en;
-                return (
+                const itemButton = (
                   <button
-                    key={item.id}
                     onClick={() => onToggle(item.id)}
                     className="flex flex-col items-center gap-1.5 transition-all duration-150"
                     style={{
@@ -166,6 +166,11 @@ export function GearPickerDialog({
                       {name}
                     </span>
                   </button>
+                );
+                return (
+                  <GearHoverCard key={item.id} item={item}>
+                    {itemButton}
+                  </GearHoverCard>
                 );
               })}
             </div>

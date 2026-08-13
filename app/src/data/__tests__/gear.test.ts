@@ -74,4 +74,21 @@ describe('player gear catalog', () => {
     });
     expect(findGearById('eye_of_cthulhu_mask')?.iconUrl).toMatch(/^\/assets\/gear\/.+\.webp$/);
   });
+
+  it('keeps detailed stats and bonuses for gear and food hover cards', () => {
+    expect(findGearById('pal_metal_armor')?.stats?.['pt-BR']).toEqual(
+      expect.arrayContaining([
+        { label: 'Defesa', value: '220' },
+        { label: 'PV', value: '750' },
+      ]),
+    );
+    expect(findGearById('life_pendant')?.descriptions?.['pt-BR']).toContain('Aumento de PV Nv. 3');
+    expect(findGearById('omelet')?.stats?.en).toEqual(
+      expect.arrayContaining([
+        { label: 'Attack', value: '10' },
+        { label: 'Nutrition', value: '67' },
+      ]),
+    );
+    expect(findGearById('omelet')?.descriptions?.['pt-BR']).toContain('Ataque +10%');
+  });
 });

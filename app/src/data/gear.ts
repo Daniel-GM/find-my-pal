@@ -3,11 +3,18 @@ import type { Locale } from '@/i18n/types';
 
 export type GearKind = 'armor' | 'helmet' | 'accessory' | 'weapon' | 'food';
 
+export interface GearStat {
+  label: string;
+  value: string;
+}
+
 export interface GearItem {
   id: string;
   kind: GearKind;
   names: Record<Locale, string>;
   effects?: Record<Locale, string>;
+  stats?: Record<Locale, GearStat[]>;
+  descriptions?: Record<Locale, string>;
   iconUrl?: string;
   sourceId?: string;
   /** 0 common, 1 uncommon, 2 rare, 3 epic, 4 legendary */
